@@ -1,0 +1,841 @@
+{
+ "lines": 5420,
+ "characters_total": 559991,
+ "approx_hours_at_15_chars_per_sec": 10.4,
+ "by_kind": {
+  "dialogue": [
+   1524,
+   234469
+  ],
+  "card": [
+   52,
+   9146
+  ],
+  "player": [
+   1037,
+   37953
+  ],
+  "narration": [
+   2151,
+   173684
+  ],
+  "item": [
+   228,
+   16788
+  ],
+  "journal": [
+   428,
+   87951
+  ]
+ },
+ "by_character": {
+  "narrator": [
+   2860,
+   287791
+  ],
+  "npc:player": [
+   1037,
+   37953
+  ],
+  "mina": [
+   156,
+   26042
+  ],
+  "vanhelsing": [
+   139,
+   22794
+  ],
+  "seward": [
+   125,
+   20186
+  ],
+  "lucy": [
+   79,
+   11015
+  ],
+  "harker": [
+   60,
+   10232
+  ],
+  "quincey": [
+   60,
+   9335
+  ],
+  "renfield": [
+   49,
+   8194
+  ],
+  "arthur": [
+   54,
+   6659
+  ],
+  "npc:Captain": [
+   49,
+   5038
+  ],
+  "npc:Mr. Swales": [
+   20,
+   3571
+  ],
+  "dracula": [
+   18,
+   3023
+  ],
+  "npc:Mrs. Westenra": [
+   19,
+   2993
+  ],
+  "npc:Sister Agatha": [
+   14,
+   2436
+  ],
+  "npc:Mr. Hawkins": [
+   10,
+   1859
+  ],
+  "npc:Hodge": [
+   10,
+   1771
+  ],
+  "npc:Amramoff": [
+   12,
+   1711
+  ],
+  "npc:Mamma": [
+   9,
+   1690
+  ],
+  "npc:Stanciu": [
+   7,
+   1678
+  ],
+  "npc:Professor Verhoeven": [
+   11,
+   1566
+  ],
+  "npc:Sexton": [
+   10,
+   1438
+  ],
+  "npc:Hobbs": [
+   9,
+   1395
+  ],
+  "npc:Father Pieter": [
+   9,
+   1345
+  ],
+  "npc:Clerk": [
+   7,
+   1226
+  ],
+  "npc:Hennessey": [
+   8,
+   1219
+  ],
+  "npc:Harbour master": [
+   6,
+   1155
+  ],
+  "npc:The Voivode": [
+   13,
+   1091
+  ],
+  "npc:Dora": [
+   5,
+   1089
+  ],
+  "npc:Miss Hallam": [
+   5,
+   1086
+  ],
+  "npc:Father Dragomir": [
+   6,
+   1082
+  ],
+  "npc:Gideon Marsh": [
+   7,
+   1025
+  ],
+  "npc:Cabman": [
+   8,
+   1012
+  ],
+  "npc:Old gardener": [
+   7,
+   1011
+  ],
+  "npc:Coastguard": [
+   4,
+   987
+  ],
+  "npc:Miss Tuck": [
+   6,
+   984
+  ],
+  "npc:Radu": [
+   5,
+   970
+  ],
+  "npc:Hannah": [
+   6,
+   954
+  ],
+  "npc:Mr. Crowle": [
+   7,
+   952
+  ],
+  "npc:Mr. Bilder": [
+   4,
+   950
+  ],
+  "npc:Mr. Pomfret": [
+   5,
+   928
+  ],
+  "npc:Van Helsing (letter)": [
+   3,
+   925
+  ],
+  "npc:Arminius": [
+   3,
+   901
+  ],
+  "npc:Frau Lindner": [
+   4,
+   900
+  ],
+  "npc:Street boy": [
+   8,
+   896
+  ],
+  "npc:Constable": [
+   8,
+   891
+  ],
+  "npc:The scholar": [
+   5,
+   890
+  ],
+  "npc:Dr. Hennessey": [
+   5,
+   868
+  ],
+  "npc:Mr. Wilkes": [
+   6,
+   867
+  ],
+  "npc:My wife": [
+   5,
+   853
+  ],
+  "npc:Captain Donelson": [
+   4,
+   830
+  ],
+  "npc:Mr. Smollet": [
+   6,
+   823
+  ],
+  "npc:Shippers' agent": [
+   5,
+   807
+  ],
+  "npc:Hildesheim": [
+   5,
+   792
+  ],
+  "npc:Maria": [
+   5,
+   781
+  ],
+  "npc:Wash": [
+   4,
+   776
+  ],
+  "npc:Mrs. Pargeter": [
+   4,
+   775
+  ],
+  "npc:Szgany woman": [
+   4,
+   704
+  ],
+  "npc:Pfarrer Albrecht": [
+   3,
+   692
+  ],
+  "npc:Priest": [
+   4,
+   691
+  ],
+  "npc:Dr. Seward (phonograph)": [
+   2,
+   686
+  ],
+  "npc:Vasile": [
+   4,
+   681
+  ],
+  "npc:Mr. Billington": [
+   4,
+   674
+  ],
+  "npc:Stepan": [
+   4,
+   672
+  ],
+  "npc:Anselmo": [
+   3,
+   663
+  ],
+  "npc:English chaplain": [
+   7,
+   658
+  ],
+  "npc:Maid": [
+   4,
+   656
+  ],
+  "npc:Mrs. Dunmore": [
+   4,
+   649
+  ],
+  "npc:Ileana": [
+   4,
+   628
+  ],
+  "npc:Mrs. Pym": [
+   4,
+   620
+  ],
+  "npc:The map": [
+   5,
+   618
+  ],
+  "npc:Mr. Ashby": [
+   3,
+   618
+  ],
+  "npc:Father Hermann": [
+   4,
+   610
+  ],
+  "npc:Pettit": [
+   5,
+   606
+  ],
+  "npc:Mr. Quill": [
+   4,
+   602
+  ],
+  "npc:Sam Bloxam": [
+   4,
+   585
+  ],
+  "npc:Edith": [
+   4,
+   584
+  ],
+  "npc:Mijnheer de Vries": [
+   4,
+   581
+  ],
+  "npc:Case ledger": [
+   3,
+   574
+  ],
+  "npc:Officer Dunn": [
+   4,
+   570
+  ],
+  "npc:The Roll": [
+   3,
+   570
+  ],
+  "npc:Cristea": [
+   3,
+   566
+  ],
+  "npc:Mr. Marquand": [
+   3,
+   565
+  ],
+  "npc:The Akinji": [
+   3,
+   562
+  ],
+  "npc:Mr. Greer": [
+   3,
+   561
+  ],
+  "npc:Mr. Candy's clerk": [
+   6,
+   557
+  ],
+  "npc:Matthias": [
+   4,
+   555
+  ],
+  "npc:Mircea": [
+   3,
+   554
+  ],
+  "npc:Mr. Pell": [
+   4,
+   554
+  ],
+  "npc:Father's trunk": [
+   4,
+   553
+  ],
+  "npc:Porter": [
+   5,
+   552
+  ],
+  "npc:Elderly reader": [
+   3,
+   547
+  ],
+  "npc:Landlord": [
+   4,
+   546
+  ],
+  "npc:Mr. Pym": [
+   4,
+   546
+  ],
+  "npc:Dobbs": [
+   3,
+   535
+  ],
+  "npc:Dr. Hartenstein": [
+   4,
+   535
+  ],
+  "npc:Jan": [
+   3,
+   534
+  ],
+  "npc:Dunning": [
+   4,
+   532
+  ],
+  "npc:Miss Vane": [
+   3,
+   527
+  ],
+  "npc:The Voice": [
+   3,
+   525
+  ],
+  "npc:Slovak boatman": [
+   3,
+   516
+  ],
+  "npc:Mr. Pennefather": [
+   3,
+   500
+  ],
+  "npc:Pocock": [
+   4,
+   489
+  ],
+  "npc:Mevrouw Bakker": [
+   3,
+   489
+  ],
+  "npc:Dealer": [
+   3,
+   481
+  ],
+  "npc:Old fisherman": [
+   3,
+   480
+  ],
+  "npc:Father Nikolai": [
+   3,
+   474
+  ],
+  "npc:Szgany captain": [
+   3,
+   466
+  ],
+  "npc:Lady from Leeds": [
+   3,
+   462
+  ],
+  "npc:Landlady": [
+   3,
+   461
+  ],
+  "npc:Mrs. Pinder": [
+   4,
+   460
+  ],
+  "npc:Neighbour": [
+   3,
+   459
+  ],
+  "npc:Greek sailor": [
+   3,
+   446
+  ],
+  "npc:Vlaicu": [
+   3,
+   445
+  ],
+  "npc:Telegraph boy": [
+   4,
+   433
+  ],
+  "npc:Housemaid": [
+   3,
+   432
+  ],
+  "npc:Landlord Huber": [
+   3,
+   419
+  ],
+  "npc:Candle-seller": [
+   3,
+   418
+  ],
+  "npc:Newsboy": [
+   3,
+   417
+  ],
+  "npc:The grandmother": [
+   3,
+   417
+  ],
+  "npc:Peasant woman": [
+   3,
+   414
+  ],
+  "npc:Farmer": [
+   3,
+   410
+  ],
+  "npc:Nursemaid": [
+   3,
+   409
+  ],
+  "npc:The student": [
+   3,
+   404
+  ],
+  "npc:The Order chest": [
+   4,
+   402
+  ],
+  "npc:The rite-altar": [
+   5,
+   402
+  ],
+  "npc:The sisters": [
+   3,
+   399
+  ],
+  "npc:Officer": [
+   3,
+   396
+  ],
+  "npc:Dr. Lenox": [
+   3,
+   396
+  ],
+  "npc:Nurse Dowling": [
+   3,
+   395
+  ],
+  "npc:Superintendent": [
+   4,
+   387
+  ],
+  "npc:Teodor": [
+   2,
+   385
+  ],
+  "npc:Olgaren": [
+   3,
+   382
+  ],
+  "npc:The ferryman": [
+   4,
+   382
+  ],
+  "npc:Bates": [
+   3,
+   380
+  ],
+  "npc:Innkeeper": [
+   3,
+   376
+  ],
+  "npc:Old Gerrit": [
+   2,
+   368
+  ],
+  "npc:Verger": [
+   3,
+   366
+  ],
+  "npc:Slovak herdsman": [
+   3,
+   360
+  ],
+  "npc:Simmons": [
+   3,
+   359
+  ],
+  "npc:Lloyd's clerk": [
+   2,
+   353
+  ],
+  "npc:Customs officer": [
+   4,
+   348
+  ],
+  "npc:Ileana's tomb": [
+   3,
+   345
+  ],
+  "npc:Dr. Vincent": [
+   3,
+   343
+  ],
+  "npc:The tall dark figure": [
+   3,
+   339
+  ],
+  "npc:Raftsman": [
+   2,
+   335
+  ],
+  "npc:A small girl": [
+   3,
+   330
+  ],
+  "npc:Abramoff": [
+   3,
+   329
+  ],
+  "npc:Flower-seller": [
+   3,
+   328
+  ],
+  "npc:The herdsman": [
+   2,
+   327
+  ],
+  "npc:Slovak foreman": [
+   3,
+   324
+  ],
+  "npc:The altar": [
+   1,
+   324
+  ],
+  "npc:Onlooker": [
+   2,
+   323
+  ],
+  "npc:Watchman": [
+   2,
+   317
+  ],
+  "npc:Dan": [
+   1,
+   313
+  ],
+  "npc:Thomas Snelling": [
+   2,
+   310
+  ],
+  "npc:The seal-press": [
+   3,
+   305
+  ],
+  "npc:Sailor": [
+   2,
+   302
+  ],
+  "npc:Magyar patient": [
+   3,
+   301
+  ],
+  "npc:Hostess": [
+   3,
+   294
+  ],
+  "npc:Mrs. Bilder": [
+   2,
+   284
+  ],
+  "npc:Captain's log": [
+   1,
+   278
+  ],
+  "npc:Nan": [
+   2,
+   276
+  ],
+  "npc:Lucy (letter)": [
+   1,
+   265
+  ],
+  "npc:Deckhand": [
+   2,
+   264
+  ],
+  "npc:Petrofsky": [
+   3,
+   262
+  ],
+  "npc:Bradshaw's Guide": [
+   1,
+   258
+  ],
+  "npc:Tomas": [
+   2,
+   256
+  ],
+  "npc:The miller": [
+   2,
+   245
+  ],
+  "npc:Petru": [
+   2,
+   238
+  ],
+  "npc:Ward sister": [
+   3,
+   235
+  ],
+  "npc:Carter": [
+   2,
+   235
+  ],
+  "npc:Letter 1": [
+   1,
+   230
+  ],
+  "npc:Letter 9": [
+   1,
+   227
+  ],
+  "npc:The vault lock": [
+   4,
+   218
+  ],
+  "npc:Mrs. Marsh": [
+   2,
+   217
+  ],
+  "npc:Small pupil": [
+   2,
+   210
+  ],
+  "npc:Letter 7": [
+   1,
+   203
+  ],
+  "npc:Ivan": [
+   2,
+   200
+  ],
+  "npc:Fair woman": [
+   2,
+   198
+  ],
+  "npc:Dmitri": [
+   2,
+   197
+  ],
+  "npc:Bradshaw": [
+   1,
+   197
+  ],
+  "npc:Latin note": [
+   1,
+   194
+  ],
+  "npc:Berserker": [
+   1,
+   193
+  ],
+  "npc:Young convalescent": [
+   2,
+   186
+  ],
+  "npc:Bolotin": [
+   2,
+   173
+  ],
+  "npc:Driver": [
+   2,
+   171
+  ],
+  "npc:Slate": [
+   1,
+   168
+  ],
+  "npc:The kneeling woman": [
+   1,
+   166
+  ],
+  "npc:Tom": [
+   1,
+   165
+  ],
+  "npc:Rustler": [
+   2,
+   165
+  ],
+  "npc:The child": [
+   2,
+   158
+  ],
+  "npc:Sister Maria": [
+   1,
+   151
+  ],
+  "npc:Postman": [
+   1,
+   137
+  ],
+  "npc:Footbridge": [
+   1,
+   122
+  ],
+  "npc:Copy-book": [
+   1,
+   111
+  ],
+  "npc:Pike": [
+   1,
+   107
+  ],
+  "npc:Altar": [
+   1,
+   100
+  ],
+  "npc:Arminius's letters": [
+   1,
+   97
+  ],
+  "npc:Writing-desk": [
+   1,
+   75
+  ],
+  "npc:Footman": [
+   1,
+   64
+  ],
+  "npc:Reading-table": [
+   1,
+   60
+  ]
+ }
+}

@@ -151,3 +151,8 @@ Skirt / coat tails / cloak = hanging grids on chain bones `cloth_<name>_c<col>_b
 `build_costumes.sh [model ...]` rebuilds `assets/models/chars/sk_<model>.glb`; `Actor.setup` uses them automatically when the file exists (`MixamoRig.config_for`), otherwise the procedural model.
 The shared animation library is retargeted per skeleton (`MixamoRig.library_for`): only the hips keep a position track (height scaled, no travel), all other bones are rotation-only so other proportions do not stretch.
 Mixamo files are git-ignored (licence); release builds embed them.
+
+## 18. Opening titles (2026-10-26)
+`scripts/intro.gd` (`Intro`): 44 s sequence in its own SubViewport world - night sky, moonlit mist, castle keep on its crag, pines, bats, the skinned Count with swaying cape - under quotes from the novel
+(`BRAM STOKER`, "Listen to them...", "I am Dracula...", "For the dead travel fast."), then DRACULA / THE BORGO PASS and credits. Shown on a normal launch (no debug args); `--intro` forces, `--nointro` skips,
+`--introshots=<dir>` saves frames for docs and quits. Any click / Space / Enter / Esc skips.

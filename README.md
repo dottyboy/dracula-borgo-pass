@@ -6,6 +6,16 @@ an optional real-time action mode.
 
 Everything visual is generated from the book by the pipeline below - no hand-made assets.
 
+![Opening titles](docs/img/title.png)
+
+| | |
+|---|---|
+| ![Golden Krone inn](docs/img/inn.png) | ![Borgo Pass](docs/img/borgo_pass.png) |
+| ![Castle courtyard](docs/img/courtyard.png) | ![Whitby harbour](docs/img/whitby_region.png) |
+| ![Travel map](docs/img/travel_map.png) | ![Turn-based combat](docs/img/combat.png) |
+
+![Verb ring](docs/img/pie_menu.png)
+
 ## Play
     ~/Programi/godot4/Godot_v4.7.1-stable_linux.x86_64 --path .
 
@@ -159,6 +169,8 @@ Each has a `data/dungeons/<id>.story.json`. Tests: `--loc=<origin> --sidetest=<d
 `--dungeontest` on all four levels and `--stairtest` on the catacombs also pass, as do all acts/arcs, selftest and the earlier story tests.
 Import recipes: `python3 pipeline/import_dungeon.py abbey.glb abbey_undercroft --from a2_abbey_ruins:-1.8,3.4 --from-name "Sunken steps" --ambient "#3c4452,0.8,#07090c"` (likewise `asylum_cellar` from `a3_asylum_ward:0.9,3.0`,
 `kingstead_catacombs` from `a4_kingstead_churchyard:4.2,-5.8` using the `_f0` file).
+
+The game opens with a short title sequence (quotes from the novel over a moonlit approach to the castle); click, Space, Enter or Esc skips it. `--nointro` disables it.
 
 ## Download
 Linux AppImage on the Releases page: `chmod +x Dracula-*.AppImage && ./Dracula-*.AppImage` (includes the Mixamo characters).

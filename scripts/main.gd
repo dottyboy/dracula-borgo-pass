@@ -8,6 +8,16 @@ var _busy := false
 var _args: Dictionary = {}
 
 
+## Opening titles over the title screen (normal launch only; `--intro` forces, `--nointro` skips).
+func _play_intro() -> void:
+	var layer := CanvasLayer.new()
+	layer.layer = 100
+	add_child(layer)
+	var intro := Intro.new()
+	layer.add_child(intro)
+	intro.finished.connect(layer.queue_free)
+
+
 func _ready() -> void:
 	for a in OS.get_cmdline_user_args():
 		var kv := a.trim_prefix("--").split("=", true, 1)
@@ -18,6 +28,8 @@ func _ready() -> void:
 		if a in ["--selftest", "--arcflow", "--combattest", "--genworld"] or a.begins_with("--act") or a.begins_with("--arc=") or a.begins_with("--replay"):
 			Audio.enabled = false
 	Audio.music("mus_title", 0.5)
+	if (_args.is_empty() or _args.has("intro")) and not _args.has("nointro"):
+		_play_intro()
 	hud.start_pressed.connect(_start)
 	hud.continue_pressed.connect(_continue)
 	Game.goto_requested.connect(_goto)

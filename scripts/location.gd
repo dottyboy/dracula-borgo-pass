@@ -68,6 +68,8 @@ func build(loc_id: String, from_loc: String) -> void:
 ## One continuous landscape out of several outdoor scenes (see Regions). Members are built as islands of content
 ## (props, NPCs, buildings, lights) on top of one shared terrain, sea, camera and player.
 func build_region(rid: String, focus: String, from_loc: String) -> void:
+	if not Game.pie_chosen.is_connected(_on_pie_chosen):
+		Game.pie_chosen.connect(_on_pie_chosen)      # the region root handles verb-ring choices for all its members
 	region = rid
 	var R: Dictionary = Regions.DEF[rid]
 	var lay := Regions.layout(rid)
@@ -886,6 +888,7 @@ func _props() -> void:
 	Game.speaking.connect(_on_speaking)
 	if host == null and not Game.pie_chosen.is_connected(_on_pie_chosen):
 		Game.pie_chosen.connect(_on_pie_chosen)
+
 	_apply_conditions()
 
 

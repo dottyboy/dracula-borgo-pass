@@ -533,10 +533,44 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 			print("BODYTEST ", eid, " ", en.data.get("variant", ""), ": ", info, " pick=", pick)
 		get_tree().quit()
 		return
+	if _args.has("regionpie"):
+		## Verb-ring choice in the current scene: take the first takeable entity through the pie signal and report.
+		Engine.time_scale = 6.0
+		hud.modal = false
+		print("REGIONPIE connected=", Game.pie_chosen.get_connections().size(), " region=", loc.region)
+		var target := ""
+		for eid in loc.entities.keys():
+			if loc.entities[eid].data.get("interact", {}).has("take"):
+				target = str(eid)
+				break
+		var before := Game.inventory.size()
+		Game.pie_chosen.emit(target, "take")
+		var t := 0.0
+		while Game.inventory.size() == before and t < 40.0:
+			await get_tree().create_timer(0.25).timeout
+			t += 0.25
+		print("REGIONPIE take ", target, ": ", "OK" if Game.inventory.size() > before else "FAILED", " after ", t, " s")
+		get_tree().quit()
+		return
 	if _args.has("maptest"):
 		## Opens the travel map in the current scene and travels to the first exit (works in classic and region mode).
 		Engine.time_scale = 4.0
 		hud.modal = false
+		if _args.has("realkeys"):
+			# the real input path: key T, then Esc, with autosave on like normal play
+			Game.autosave = true
+			if _args.has("as"):
+				Game.protagonist = str(_args.as)
+				Game.apply_act_start("a2_whitby_lodging")
+			hud._title.visible = false
+			var ev := InputEventKey.new()
+			ev.keycode = KEY_T
+			ev.pressed = true
+			Input.parse_input_event(ev)
+			await get_tree().create_timer(0.5).timeout
+			print("MAPTEST key T -> visible=", hud._travel != null and hud._travel.visible, " modal=", hud.modal, " protagonist=", Game.protagonist, " card=", hud._card.visible, " title=", hud._title.visible)
+			get_tree().quit()
+			return
 		print("MAPTEST can_map=", loc._can_map(), " has_map=", TravelMap.has_map(Game.current), " cur=", Game.current, " region=", loc.region)
 		hud.open_map()
 		await get_tree().create_timer(0.6).timeout

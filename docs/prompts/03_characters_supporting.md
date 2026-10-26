@@ -9,7 +9,7 @@ Use the blocks from `README.md` section 1.
 | szgany_man_a | Szgany labourer, 30, black curly hair, stubble, rolled-sleeve cream shirt, brown leather waistcoat, brown trousers, boots, red neckerchief |
 | szgany_man_b | Szgany driver, 40, long black hair tied back, thick moustache, dark blue jacket with brass buttons, leather belt, grey trousers, boots, no hat |
 | szgany_youth | Szgany youth, 17, wiry, short black hair, clean-shaven, patched grey shirt, dark waistcoat, barefoot or in worn boots |
-| szgany_woman | Szgany woman, 35, long black braided hair, gold coin necklace, bright red blouse, dark green long skirt, colourful headscarf, boots |
+| szgany_woman | Szgany woman, 35, long black braided hair, gold coin necklace, fitted bright red long-sleeved blouse, tight dark green trousers into boots, colourful headscarf, NO skirt (made separately) |
 | szgany_elder | Szgany elder, 70, white hair and beard, deeply lined brown face, long dark coat, felt hat on head |
 
 
@@ -27,10 +27,10 @@ in **`04_characters_npc_generated.md`** with ready-to-paste prompts. Use this se
 | villager (human_peasant_m:villager) | Transylvanian villager, 45, grey stubble, green wool jacket, brown trousers, fur hat, worn boots |
 | fisher / sailor (human_peasant_m:a2_fisher) | Whitby fisherman, 55, weather-beaten, oilskin coat, woollen cap, tall boots |
 | old_man (human_peasant_m:a2_swales) | Mr Swales, very old Whitby man, bald with white side hair, deeply lined, dark worn coat, walking stick NOT held |
-| innkeeper_wife (human_peasant_f:innkeeper_wife) | innkeeper's wife, 50, round kind face, dark red dress, white collar and apron, white shawl over the hair |
-| village_woman (human_peasant_f:village_woman) | village woman, 40, slate-blue wool dress, light apron, dark headscarf, black shoes |
-| sister_agatha | nun / nurse in a black habit with white wimple (use a nurse variant) |
+| innkeeper_wife (human_peasant_f:innkeeper_wife) | innkeeper's wife, 50, round kind face, fitted dark red long-sleeved top with white collar, tight dark trousers into boots, white shawl over the hair, NO dress, NO apron (made separately) |
+| village_woman (human_peasant_f:village_woman) | village woman, 40, fitted slate-blue wool long-sleeved top, tight dark trousers into black shoes, dark headscarf, NO dress, NO apron (made separately) |
+| sister_agatha | nun / nurse: fitted black long-sleeved top with a white wimple and collar, tight black trousers and boots, NO habit skirt (made separately) |
 | constable | Victorian policeman, dark blue coat with brass buttons, helmet on head |
 | gentleman_extra | unnamed Victorian gentleman (3 variants: frock coat black, grey, brown) with top hat on head |
-| lady_extra | unnamed Victorian lady (3 variants: dark green, plum, grey) in long dress, bonnet on head |
+| lady_extra | unnamed Victorian lady (3 variants: dark green, plum, grey): fitted long-sleeved high-collar top and tight trousers into boots, bonnet on the head, NO skirt, NO coat, NO mantle (made separately) |
 

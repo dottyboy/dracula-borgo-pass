@@ -4,7 +4,7 @@ Steps: scale/place the mesh, decimate, pose a Y Bot to the mesh (arms down), cop
 surface, put the mesh into the Mixamo T pose (the rest pose all shared animations expect) and bind it to a fresh Y Bot
 skeleton. Output: skinned GLB with the Mixamo bone names.
 
-blender -b --factory-startup -P rig_ai.py -- <model.glb> "<Y Bot.fbx>" <out.glb> [height_m] [target_tris]
+blender -b --factory-startup -P rig_ai.py -- <model.glb> "<Y Bot.fbx>" <out.glb> [height_m] [target_tris] [arm_deg]
 """
 import bpy
 import bmesh
@@ -16,6 +16,7 @@ args = sys.argv[sys.argv.index("--") + 1:]
 src, botfile, out = args[0], args[1], args[2]
 HEIGHT = float(args[3]) if len(args) > 3 else 1.9
 TRIS = int(args[4]) if len(args) > 4 else 35000
+ARM_DEG = float(args[5]) if len(args) > 5 else 80.0       # arm angle of the picture below horizontal: A-pose 35, T-pose 0, arms down 80
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=src)
@@ -68,7 +69,8 @@ for side in ("Left", "Right"):
     pb = arm.pose.bones["mixamorig:%sArm" % side]
     v = (arm.matrix_world.to_3x3() @ (pb.tail - pb.head)).normalized()
     # swing the arm down but a little away from the body
-    tgt = (down + Vector((0.12 if side == "Left" else -0.12, 0, 0))).normalized()
+    a_ = math.radians(ARM_DEG)
+    tgt = Vector(((math.cos(a_) if side == "Left" else -math.cos(a_)), 0, -math.sin(a_)))
     rot = v.rotation_difference(tgt).to_matrix().to_4x4()
     wm = arm.matrix_world
     m = wm @ pb.matrix

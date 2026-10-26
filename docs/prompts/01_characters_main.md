@@ -5,6 +5,8 @@ https://huggingface.co/spaces/Aura1in/Krea-2-Turbo_v2
 
 https://perchance.org/ai-text-to-image-generator
 
+https://huggingface.co/spaces/microsoft/TRELLIS.2
+
 
 Use the blocks from `README.md` section 1.
 

@@ -33,6 +33,7 @@ var _shot_len := 0.0
 var _flash: StandardMaterial3D
 var _ap: AnimationPlayer      # skinned (Mixamo) characters
 var _female := false
+var skin_height := 1.8       # skinned characters: standing height in metres (used for the click collider)
 var _idle_pick := "idle"
 var _rest_y := 0.0           # rest height of the animated root joint (hips / body)
 
@@ -63,6 +64,7 @@ func _setup_skinned(cfg: Dictionary, scale_f: float, variant: String) -> void:
 	add_child(model)
 	Assets.apply_variant(model, str(cfg.model), variant if variant != "" else Assets.default_variant(str(cfg.model)))
 	MixamoRig.fit_height(model, float(cfg.height) * scale_f)
+	skin_height = float(cfg.height) * scale_f * maxf(float(cfg.get("build", 1.0)), 1.0)
 	var bd := float(cfg.get("build", 1.0))
 	model.scale = Vector3(model.scale.x * bd, model.scale.y, model.scale.z * bd)
 	_female = bool(cfg.get("female", false))

@@ -245,7 +245,11 @@ func region_spawn(mid: String, from_loc: String) -> Vector3:
 ## Route inside a merged region: through the connecting strips, never across the sea.
 func go_to(p: Vector3) -> void:
 	if region == "":
-		player.walk_to(p)
+		var pts := _route(Vector2(player.position.x, player.position.z), Vector2(p.x, p.z))
+		if pts.size() > 1:
+			player.walk_path(pts)
+		else:
+			player.walk_to(p)
 		return
 	if not _dungeon_cells.is_empty():
 		var route: Array = Dungeon.find_path(_dungeon_cells, _dungeon_tile, Vector2(player.position.x, player.position.z), Vector2(p.x, p.z))
@@ -924,7 +928,12 @@ func _apply_conditions() -> void:
 func _make_body(node: Node3D, eid: String, tall: bool = false) -> void:
 	var box := AABB()
 	var first := true
-	for m in Assets._meshes(node):
+	if node is Actor and (node as Actor).kind == "skinned":
+		# skinned meshes report a useless AABB: use a standing-person box
+		var h := (node as Actor).skin_height
+		box = AABB(Vector3(-0.38, 0.0, -0.32), Vector3(0.76, h, 0.64))
+		first = false
+	for m in Assets._meshes(node) if not (node is Actor and (node as Actor).kind == "skinned") else []:
 		var mi: MeshInstance3D = m
 		var bb := mi.get_aabb()
 		var t := node.global_transform.affine_inverse() * mi.global_transform
@@ -1172,6 +1181,96 @@ func _update_hover(pos: Vector2) -> void:
 		hover_changed.emit(label)
 
 
+## Classic scenes: route around the blockers (tables, barrels, trees) by a visibility graph over points on circles around them,
+## so a click behind a table walks around it instead of pushing against it. Returns waypoints (last one = goal).
+func _route(a: Vector2, b: Vector2) -> Array:
+	const PAD := 0.3
+	var near: Array = []
+	for bl in _blockers:
+		var c: Vector2 = bl.pos
+		var r: float = float(bl.r)
+		if r < 0.15:
+			continue
+		var cl := Geometry2D.get_closest_point_to_segment(c, a, b)
+		if cl.distance_to(c) < r + 4.0:
+			near.append({"c": c, "r": r + PAD})
+	var direct_ok := func(u: Vector2, v: Vector2) -> bool:
+		for n in near:
+			if (n.c as Vector2).distance_to(u) < float(n.r) - 0.02:
+				continue                                  # starting inside an inflated circle (just pushed out): ignore it
+			if Geometry2D.get_closest_point_to_segment(n.c, u, v).distance_to(n.c) < float(n.r) - 0.02:
+				return false
+		return true
+	if near.is_empty() or direct_ok.call(a, b):
+		return [Vector3(b.x, 0, b.y)]
+	var nodes: Array = [a, b]
+	for n in near:
+		for k in 10:
+			var q: Vector2 = n.c + Vector2.from_angle(TAU * k / 10.0) * (float(n.r) + 0.12)
+			if not bounds.grow(-0.3).has_point(q):
+				continue
+			var inside := false
+			for m in near:
+				if (m.c as Vector2).distance_to(q) < float(m.r) - 0.05:
+					inside = true
+					break
+			if not inside:
+				nodes.append(q)
+	var dist: Array = []
+	var prev: Array = []
+	var done: Array = []
+	for i in nodes.size():
+		dist.append(INF)
+		prev.append(-1)
+		done.append(false)
+	dist[0] = 0.0
+	for _i in nodes.size():
+		var u := -1
+		var best := INF
+		for i in nodes.size():
+			if not done[i] and dist[i] < best:
+				best = dist[i]
+				u = i
+		if u < 0 or u == 1:
+			break
+		done[u] = true
+		for v in nodes.size():
+			if done[v]:
+				continue
+			var d: float = (nodes[u] as Vector2).distance_to(nodes[v])
+			if dist[u] + d < dist[v] and direct_ok.call(nodes[u], nodes[v]):
+				dist[v] = dist[u] + d
+				prev[v] = u
+	if prev[1] < 0:
+		return [Vector3(b.x, 0, b.y)]
+	var path: Array = []
+	var cur := 1
+	while cur != 0 and cur >= 0:
+		path.push_front(Vector3((nodes[cur] as Vector2).x, 0, (nodes[cur] as Vector2).y))
+		cur = prev[cur]
+	return path
+
+
+func _flat_dist(a: Vector3, b: Vector3) -> float:
+	return Vector2(a.x - b.x, a.z - b.z).length()
+
+
+## Where to stand and how close counts as "there" for an entity. Things that sit on another blocker (a bottle on a table) can
+## only be reached from outside that blocker, so the stand-off distance grows with it.
+func reach_info(eid: String) -> Dictionary:
+	var e: Dictionary = entities[eid]
+	var c: Vector3 = (e.node as Node3D).global_position
+	var r := float(e.data.get("radius", 0.5))
+	var stand := r + 0.9
+	var reach := r + 1.25
+	var cp := Vector2(c.x, c.z)
+	for b in _blockers:
+		if (b.pos as Vector2).distance_to(cp) < float(b.r) + 0.05:
+			stand = maxf(stand, float(b.r) + 0.6)
+			reach = maxf(reach, float(b.r) + 0.9)
+	return {"stand": stand, "reach": reach}
+
+
 func _approach(eid: String, verb: String) -> void:
 	var e: Dictionary = entities[eid]
 	var node: Node3D = e.node
@@ -1179,15 +1278,15 @@ func _approach(eid: String, verb: String) -> void:
 		player.face_point(node.global_position)
 		_look(eid)
 		return
-	var r := float(e.data.get("radius", 0.5))
+	var ri := reach_info(eid)
 	var dir := player.position - node.global_position
 	dir.y = 0
 	dir = dir.normalized() if dir.length() > 0.01 else Vector3(0, 0, 1)
 	pending = {"eid": eid, "verb": verb}
-	if player.position.distance_to(node.global_position) < r + 1.3:
+	if _flat_dist(player.position, node.global_position) < float(ri.reach) + 0.05:
 		_on_arrived()
 	else:
-		go_to(node.global_position + dir * (r + 0.9))
+		go_to(node.global_position + dir * float(ri.stand))
 
 
 func _process(delta: float) -> void:
@@ -1222,13 +1321,34 @@ func _process(delta: float) -> void:
 		o.light_energy = f[1] * (0.88 + 0.12 * sin(_t * 9.0 + f[2]) + 0.06 * sin(_t * 23.0 + f[2] * 2.0))
 	if not pending.is_empty() and player != null:
 		var e: Dictionary = entities[pending.eid]
-		var near := player.position.distance_to(e.node.global_position) < float(e.data.get("radius", 0.5)) + 1.25
-		if near:
+		var ri := reach_info(pending.eid)
+		var fd := _flat_dist(player.position, e.node.global_position)
+		if fd < float(ri.reach):
 			player.stop()
+			_stuck_t = 0.0
 			_on_arrived()
+		elif player.moving:
+			# hemmed in (a crowd of NPCs, a cluttered corner): give up walking after a moment and act from where we stand
+			if player.position.distance_to(_stuck_pos) > 0.25:
+				_stuck_pos = player.position
+				_stuck_t = 0.0
+			_stuck_t += delta
+			if _stuck_t > 1.6:
+				_stuck_t = 0.0
+				player.stop()
+				if fd < float(ri.reach) + 1.8:
+					_on_arrived()
+				else:
+					pending = {}
+					Game.message.emit("I cannot get there from here.")
+		else:
+			_stuck_t = 0.0
 
 
 var _edge_wait := 1.0
+var _stuck_t := 0.0
+var _stuck_pos := Vector3.ZERO
+var dry_run := false         # tests: arriving does not trigger the entity's action
 
 
 ## Walking into an open edge of an outdoor scene opens the overworld map.
@@ -1254,6 +1374,8 @@ func _on_arrived() -> void:
 		return
 	var p := pending
 	pending = {}
+	if dry_run:
+		return
 	var e: Dictionary = entities[p.eid]
 	player.face_point(e.node.global_position)
 	if p.verb == "use":

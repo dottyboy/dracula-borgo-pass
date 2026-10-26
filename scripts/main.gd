@@ -514,6 +514,83 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 		print("LINKTEST ", "PASS" if ok else "FAIL")
 		get_tree().quit(0 if ok else 1)
 		return
+	if _args.has("bodytest"):
+		## Prints the click collider of every NPC (size/centre) and whether a ray through the NPC's screen position picks it.
+		await get_tree().create_timer(0.5).timeout
+		for eid in loc.entities.keys():
+			var en: Dictionary = loc.entities[eid]
+			if not str(en.data.get("asset", "")).begins_with("human"):
+				continue
+			var nd: Node3D = en.node
+			var bodies := nd.get_children().filter(func(c: Node) -> bool: return c is StaticBody3D)
+			var info := "no body"
+			var pick := ""
+			if not bodies.is_empty():
+				var sh: CollisionShape3D = bodies[0].get_child(0)
+				var gc: Vector3 = (bodies[0] as Node3D).to_global(sh.position)
+				info = "size %s centre %s (node at %s, scale %s)" % [(sh.shape as BoxShape3D).size, gc, nd.global_position, nd.scale]
+				pick = loc._pick(loc.cam.unproject_position(gc))
+			print("BODYTEST ", eid, " ", en.data.get("variant", ""), ": ", info, " pick=", pick)
+		get_tree().quit()
+		return
+	if _args.has("maptest"):
+		## Opens the travel map in the current scene and travels to the first exit (works in classic and region mode).
+		Engine.time_scale = 4.0
+		hud.modal = false
+		print("MAPTEST can_map=", loc._can_map(), " has_map=", TravelMap.has_map(Game.current), " cur=", Game.current, " region=", loc.region)
+		hud.open_map()
+		await get_tree().create_timer(0.6).timeout
+		print("MAPTEST open: modal=", hud.modal, " visible=", hud._travel != null and hud._travel.visible)
+		if _args.has("shot"):
+			get_viewport().get_texture().get_image().save_png(str(_args.shot))
+		var ex := TravelMap.exits_of(Game.current)
+		if not ex.is_empty() and hud._travel != null:
+			var to: String = str(_args.get("to", ex.keys()[0]))
+			hud._travel.travel.emit(to)
+			await get_tree().create_timer(2.5).timeout
+			print("MAPTEST travelled to ", to, " -> current=", Game.current, " modal=", hud.modal, " busy=", _busy)
+		get_tree().quit()
+		return
+	if _args.has("reachtest"):
+		## For every location: walk the player to every interactable entity the way a click would (stand-off from reach_info).
+		Engine.time_scale = 8.0
+		var only := str(_args.get("only", ""))
+		var ids: Array = Game.resolved.locations.keys()
+		ids.sort()
+		var fails := 0
+		var total := 0
+		for lid in ids:
+			if (only != "" and not str(lid).begins_with(only)) or Dungeon.exists(str(lid)):
+				continue
+			loc.queue_free()
+			await get_tree().process_frame
+			loc = Location.new()
+			add_child(loc)
+			loc.build(str(lid), "")
+			await get_tree().process_frame
+			var start: Vector3 = loc.player.position
+			for eid in loc.entities.keys():
+				var en: Dictionary = loc.entities[eid]
+				var it: Dictionary = en.data.get("interact", {})
+				if not (it.has("take") or it.has("talk") or it.has("go") or it.has("fight") or it.has("set")):
+					continue
+				loc.player.position = start
+				loc.player.stop()
+				loc.dry_run = true
+				loc._approach(eid, "primary")
+				var t := 0.0
+				while not loc.pending.is_empty() and t < 60.0:
+					await get_tree().create_timer(0.25).timeout
+					t += 0.25
+				total += 1
+				if not loc.pending.is_empty() or t >= 59.0:
+					fails += 1
+					print("REACH FAIL ", lid, " ", eid, " (", it.keys(), ") player ", loc.player.position)
+				elif t > 20.0:
+					print("REACH SLOW ", lid, " ", eid, " ", t)
+		print("REACHTEST ", "PASS" if fails == 0 else "FAIL", " ", total, " entities, ", fails, " unreachable")
+		get_tree().quit(0 if fails == 0 else 1)
+		return
 	if _args.has("dungeontest"):
 		## Walk from the entrance to the exit and to the middle of every room of a generated dungeon.
 		Engine.time_scale = 8.0

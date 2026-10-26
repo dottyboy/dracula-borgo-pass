@@ -10,3 +10,5 @@ pipeline/mixamo/poses/
 pipeline/mixamo/clean/
 assets/anims/mixamo_lib.glb*
 assets/models/chars/
+
+ai/

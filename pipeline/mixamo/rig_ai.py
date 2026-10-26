@@ -109,20 +109,28 @@ src_body.name = "weights_src"
 names = [g.name for g in src_body.vertex_groups]
 for n in names:
     dr.vertex_groups.new(name=n)
-bpy.ops.object.select_all(action="DESELECT")
-dr.select_set(True)
-src_body.select_set(True)
-bpy.context.view_layer.objects.active = dr
-bpy.ops.object.data_transfer(data_type="VGROUP_WEIGHTS", use_object_transform=True, vert_mapping="POLYINTERP_NEAREST",
-                             layers_select_src="ALL", layers_select_dst="NAME", mix_mode="REPLACE", use_create=False)
-# smooth + limit + normalise
-bpy.context.view_layer.objects.active = dr
-bpy.ops.object.mode_set(mode="WEIGHT_PAINT")
-bpy.ops.object.vertex_group_smooth(group_select_mode="ALL", factor=0.5, repeat=2)
-bpy.ops.object.vertex_group_limit_total(group_select_mode="ALL", limit=4)
-bpy.ops.object.vertex_group_normalize_all(group_select_mode="ALL", lock_active=False)
-bpy.ops.object.mode_set(mode="OBJECT")
+from mathutils.kdtree import KDTree
 
+kd = KDTree(len(src_body.data.vertices))
+smw = src_body.matrix_world
+for i, v in enumerate(src_body.data.vertices):
+    kd.insert(smw @ v.co, i)
+kd.balance()
+svw = [{g.group: g.weight for g in v.groups} for v in src_body.data.vertices]
+name_to_idx = {g.name: g.index for g in dr.vertex_groups}
+src_idx_name = {g.index: g.name for g in src_body.vertex_groups}
+dmw = dr.matrix_world
+for v in dr.data.vertices:
+    acc = {}
+    for co, i, dist in kd.find_n(dmw @ v.co, 4):
+        wgt = 1.0 / (dist + 0.003)
+        for gi, wv in svw[i].items():
+            acc[gi] = acc.get(gi, 0.0) + wv * wgt
+    top = sorted(acc.items(), key=lambda kv: -kv[1])[:4]
+    tot = sum(w for _, w in top) or 1.0
+    for gi, w in top:
+        dr.vertex_groups[name_to_idx[src_idx_name[gi]]].add([v.index], w / tot, "REPLACE")
+print('WEIGHTS dst', sum(1 for v in dr.data.vertices if len(v.groups) > 0), flush=True)
 # ---- rest pose of the posed armature := arms down (so the mesh is "bound" in its sculpted pose) ...
 md = dr.modifiers.new("Armature", "ARMATURE")
 md.object = arm
@@ -160,5 +168,6 @@ md = dr.modifiers.new("Armature", "ARMATURE")
 md.object = arm2
 dr.name = "AiBody"
 bpy.ops.export_scene.gltf(filepath=out, export_format="GLB", export_yup=True, export_apply=False,
-                          export_image_format="JPEG", export_jpeg_quality=90, export_animations=False, export_skins=True)
+                          export_image_format="JPEG", export_jpeg_quality=90, export_animations=False, export_skins=True,
+                          export_vertex_color="ACTIVE", export_active_vertex_color_when_no_material=True)
 print("EXPORTED", out)

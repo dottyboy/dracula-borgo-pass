@@ -96,3 +96,12 @@ Checked 2026-10-26:
 * **Resolution:** all images are 768 x 768 (or 512 x 768): upscale to at least 1536 px (any 2x upscaler) before image-to-3D so faces and hands survive.
 * **Rig setting:** the rigging script needs the arm angle of the image: `rig_ai.py ... <height> <tris> <arm_deg_below_horizontal>` (A-pose = 35, T-pose = 0, arms down = 80).
 * **Dracula forms:** the old cape versions (`DraculaYoung.jpeg`, `DraculaVampire.jpeg`, ...) stay for cape/vampire art reference; rig only the no-cape versions.
+
+## 12. Findings from the first rigged model (DraculaYoung_nocape, 2026-10-26)
+
+* The model rigs and animates (idle, walk, attack, talk, cast) with `rig_ai.py ... 1.9 35000 40`.
+* **Export the textured GLB** from the image-to-3D tool: the first file was grey geometry only (20 000 faces, no texture, no vertex colours).
+* **Arms:** with arms about 40 degrees below horizontal the "web" of cloth between arm and body stretches into flat sheets when the arm is raised.
+  Generate with arms clearly away from the body (T-pose: 70 to 90 degrees from the body, i.e. 0 to 20 below horizontal) and pass the angle to `rig_ai.py`.
+* **Hands:** open hands with spread fingers rig fine; closed fists or hands holding things do not.
+* The weight transfer is now done in Python (nearest vertices of a posed Y Bot), because Blender's data-transfer operator produced empty weights.

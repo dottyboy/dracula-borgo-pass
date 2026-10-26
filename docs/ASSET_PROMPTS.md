@@ -50,7 +50,7 @@ a short one, and keep the long coat open at the front only if the legs still sho
 Your four prompts stay as they are (they worked). Use them with the CHARACTER_SUFFIX instead of the walking stick / flowing
 cape details when the model is to be rigged. Extra variants to generate:
 
-**DraculaOld_nocape** (rig this one, keep the first model for the cape version)
+**DraculaOld_nocape** (replaces the old DraculaOld model: rig this one; the first DraculaOld GLB is retired)
 ```
 <CHARACTER_PREFIX> Count Dracula in human form as an elderly, ancient man, completely clean-shaven, no beard, no mustache.
 Pale gaunt deeply wrinkled face, sharp cheekbones, aquiline nose, piercing red eyes, long slicked-back stark white hair.
@@ -166,6 +166,8 @@ in **`docs/ASSET_PROMPTS_CAST.md`** with ready-to-paste prompts. Use this sectio
 | lady_extra | unnamed Victorian lady (3 variants: dark green, plum, grey) in long dress, bonnet on head |
 
 ## 5. Creatures
+
+**The complete creature sheet (wolves, dogs, horses, livestock, small mammals, birds, bats, insects, supernatural effects, with scale, rig class and sound ids) is `docs/ASSET_PROMPTS_CREATURES.md`.** The short list below is kept for reference.
 
 Template (side view works better for four-legged animals, then ask for a front view of the head separately if needed):
 ```

@@ -22,10 +22,11 @@ Per tier: tag (LLM) -> review 5 % -> render -> post -> index -> listen to 10 ran
 
 | tier | work | done when |
 |---|---|---|
-| **C0** | finish rigging the AI-made old Dracula (`pipeline/mixamo/rig_ai.py`): drop slow weight smoothing, bind, test with idle/walk/talk/attack, coat tails on cloth chains | old Dracula walks and talks in game; replays pass |
+| **C0** | old Dracula is **regenerated without a cape** (prompt `DraculaOld_nocape`), then rigged with `pipeline/mixamo/rig_ai.py` (drop the slow weight smoothing step; the previous cape model is retired); cape comes from the separate cape model/cloth | new old Dracula walks and talks in game; replays pass |
 | **C1** | same pipeline for young Dracula, vampire form and fog form from `ai portraits/` (one script call each); variant mapping `sk_<model>_<variant>.glb` in `MixamoRig.config_for` | all Dracula variants skinned |
 | **C2** | more AI portraits for the other main cast (Van Helsing, Mina, Lucy, Harker ...) through the same path; fall back to the dressed bots where missing | every main character has a face that matches the portraits |
 | **C3** | dressed-bot polish: faces, hair shapes, softer skirts, shoulders, sleeves; remaining generic NPC looks | no visible mannequin joints or floating limbs |
+| **C5** | quadruped, bird and rat rigs for AI animals (generic quad rig in Blender, `rig_quad.py`), replace the rat enemy that currently uses the bat model | wolves, horses, rats, ravens animated from AI models |
 | **C4** | animation extras: sitting/ladder/climb/lying poses wired to props, shout/whisper gestures driven by voice energy | voice-driven gestures in dialogue |
 
 Licence check before any AI-made model enters the public repository or a release (tool terms for output).
@@ -46,3 +47,17 @@ Licence check before any AI-made model enters the public repository or a release
 2. V0 (cast and tooling) - the longest preparation, everything else is mechanical after it.
 3. V1 with the first act, then continue act by act.
 4. After each tier: G3 release.
+
+## Track D - Sound (details: `docs/AUDIO_PROMPTS.md`, creatures `docs/ASSET_PROMPTS_CREATURES.md`)
+
+| tier | content | done when |
+|---|---|---|
+| **S1** | creature vocals for existing encounters (wolf, bat, rat, horse, dog) + footsteps for stone, wood, grass, cobble | encounters and walking sound right |
+| **S2** | ambiences for every location type (about 40 loops) | no silent location |
+| **S3** | missing SFX: doors, coffin, key, thunder, boats, weapons, holy items | every interaction has a sound |
+| **S4** | music: one explore theme per region, boss, chase, Dracula theme, stingers | each act has its own score |
+| **S5** | remaining animal sounds (farm, birds, insects), extra surfaces and stingers | polish |
+
+## Track E - AI asset production (details: `docs/ASSET_PROMPTS.md`, `docs/ASSET_PROMPTS_CAST.md`, `docs/ASSET_PROMPTS_CREATURES.md`)
+
+Order: Dracula (no cape) + capes, main cast, generic roles, creatures, props by frequency, textures (stone, cobble, planks, plaster first), skies, decals, NPC variants.

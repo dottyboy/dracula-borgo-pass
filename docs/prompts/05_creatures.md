@@ -1,7 +1,7 @@
 # Creatures and animals: complete prompt sheet
 
-Companion to `docs/ASSET_PROMPTS.md` (read its sections 0, 1 and 8 first: pipeline, reusable blocks, quality checklist).
-Everything below is copy-paste ready. Sounds for each creature are in `docs/AUDIO_PROMPTS.md` (ids in the "sound" column).
+Companion to `README.md` (read its sections 0, 1 and 8 first: pipeline, reusable blocks, quality checklist).
+Everything below is copy-paste ready. Sounds for each creature are in `09_audio.md` (ids in the "sound" column).
 
 ## 0. How creatures differ from people
 
@@ -185,7 +185,7 @@ A photorealistic bluebottle blowfly, metallic blue-green body, transparent wings
 | dust_motes | moonlit dust, Dracula's dust in the coffin | particle system; reference texture: "soft white round dust particle, black background" |
 | blue_flames | the treasure flames at Borgo Pass | particle effect; reference "small cold blue flame floating above the ground, black background, photoreal" |
 | rat_wave / bat_cloud | summoned swarms | `swarm` rigs from sections 3 and 5 |
-| coffin_earth | earth boxes: "a long black oak box filled with dark soil, lid open" (static prop in ASSET_PROMPTS section 6) |
+| coffin_earth | earth boxes: "a long black oak box filled with dark soil, lid open" (static prop in `06_props.md`) |
 | ghost_lucy / shade | the tall thin figure on the Demeter | human model with translucent shader (use a normal human model, no prompt needed) |
 | eye_glint | red eyes in the dark | emissive small sprites; no prompt |
 | wolf_pack_silhouette | background silhouettes on the horizon | "five wolves in a line silhouetted against a pale moonlit horizon, flat black, side view" (decal) |

@@ -3,7 +3,7 @@
 Each tier ends with something playable or releasable. Do them top to bottom; tracks B and C can be interleaved
 between voice tiers when a long render is running. Audio hours = characters / 15 per second (`voice/summary.json`).
 
-## Track A - Voice (details: `docs/VOICE_PLAN.md`)
+## Track A - Voice (details: docs/prompts/10_voice_plan.md)
 
 | tier | content | lines | audio | done when |
 |---|---|---|---|---|
@@ -48,7 +48,7 @@ Licence check before any AI-made model enters the public repository or a release
 3. V1 with the first act, then continue act by act.
 4. After each tier: G3 release.
 
-## Track D - Sound (details: `docs/AUDIO_PROMPTS.md`, creatures `docs/ASSET_PROMPTS_CREATURES.md`)
+## Track D - Sound (details: `docs/prompts/09_audio.md`, creatures `docs/prompts/05_creatures.md`)
 
 | tier | content | done when |
 |---|---|---|
@@ -58,6 +58,6 @@ Licence check before any AI-made model enters the public repository or a release
 | **S4** | music: one explore theme per region, boss, chase, Dracula theme, stingers | each act has its own score |
 | **S5** | remaining animal sounds (farm, birds, insects), extra surfaces and stingers | polish |
 
-## Track E - AI asset production (details: `docs/ASSET_PROMPTS.md`, `docs/ASSET_PROMPTS_CAST.md`, `docs/ASSET_PROMPTS_CREATURES.md`)
+## Track E - AI asset production (all prompts: `docs/prompts/` (index in `docs/prompts/README.md`))
 
 Order: Dracula (no cape) + capes, main cast, generic roles, creatures, props by frequency, textures (stone, cobble, planks, plaster first), skies, decals, NPC variants.

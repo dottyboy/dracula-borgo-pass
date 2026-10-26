@@ -1,8 +1,8 @@
 # Audio prompts: animals, footsteps, ambiences, effects, music, voices
 
 Everything is written to be pasted into a text-to-audio tool (sound-effect generators, music generators, TTS). Voices have
-their own plan: `docs/VOICE_PLAN.md` (this file only adds the voice-design prompts, section 7). Creature list and ids:
-`docs/ASSET_PROMPTS_CREATURES.md`.
+their own plan: `10_voice_plan.md` (this file only adds the voice-design prompts, section 7). Creature list and ids:
+`05_creatures.md`.
 
 ## 0. Specs, tools, naming
 
@@ -24,7 +24,7 @@ Tools (check licence terms of each for commercial output before shipping): Eleve
 credits), Stable Audio Open (open weights, music and effects up to 47 s, runs on a rented GPU or Colab, licence permits many uses
 but read it), AudioGen / MusicGen (open weights, GPU), Suno / Udio (music, commercial rights depend on plan), Freesound.org
 (filter **CC0**), Kenney / OpenGameArt (CC0 packs), Sonniss GDC game audio bundles (royalty-free). For the 10 hours of voice use the
-voice plan. Post-processing is ffmpeg (loudnorm, trim, crossfade, encode): recipes in `docs/VOICE_PLAN.md` section 6.
+voice plan. Post-processing is ffmpeg (loudnorm, trim, crossfade, encode): recipes in `10_voice_plan.md` section 6.
 
 ## 1. Creature vocals
 
@@ -343,7 +343,7 @@ Existing ids: `mus_title, mus_explore, mus_dread, mus_combat, mus_sad`.
 
 ## 7. Voice-design prompts (for ElevenLabs Voice Design, Parler-TTS, or to choose a stock voice)
 
-The full plan, tagging and post-processing: `docs/VOICE_PLAN.md`. Each prompt describes the voice only; send the sample lines to audition.
+The full plan, tagging and post-processing: `10_voice_plan.md`. Each prompt describes the voice only; send the sample lines to audition.
 
 | id | voice design prompt | audition lines |
 |---|---|---|
@@ -371,6 +371,6 @@ The full plan, tagging and post-processing: `docs/VOICE_PLAN.md`. Each prompt de
 3. SFX not yet in the game: door variants, coffin lid, key, thunder, boat, gunshots, blades, crucifix/host/garlic.
 4. Music: one explore theme per region plus combat boss, chase, Dracula theme, stingers.
 5. Remaining creature vocals (farm animals, birds, insects), footsteps for the remaining surfaces, extra stingers.
-6. Voices follow `docs/VOICE_PLAN.md`.
+6. Voices follow `10_voice_plan.md`.
 
 Checklist per file: trimmed, no clipping, loudness matches its kind, loops without a click (check by repeating twice), id as file name, entry in `data/audio.json`, licence recorded in `ai/SOURCES.md`.

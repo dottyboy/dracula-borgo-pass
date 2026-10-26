@@ -4,7 +4,7 @@
 Sources: dialogue nodes (NPC and protagonist lines), player choices, prop/NPC "look" texts and pickup texts, location
 descriptions, item descriptions, journal entries, story cards. Each line gets a stable id (sha1 of its source path), a
 canonical character, a `kind` (dialogue | player | narration | journal | card | item) and empty `emotion` / `delivery`
-fields for the tagging pass (see docs/VOICE_PLAN.md).
+fields for the tagging pass (see docs/prompts/10_voice_plan.md).
 
 usage: python3 pipeline/voice/extract_script.py
 """

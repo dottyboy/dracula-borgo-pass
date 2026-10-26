@@ -1,0 +1,89 @@
+{
+"chapter": 18,
+"narrator": "Dr. Seward and Mina Harker",
+"dates": "30 September - 1 October 4 a.m.",
+"summary": "Mina meets Renfield, who tidies by eating flies and spiders, then speaks as a polished philosopher, urging her to leave and later blessing her. Van Helsing arrives and agrees that Mina must be removed from further danger. At nine o'clock the party forms a committee: Van Helsing lectures on the vampire's powers, weaknesses and the Dracula history from Arminius, and all pledge their hands over his golden crucifix. Morris fires at a bat on the windowsill, shattering the window pane. Plans: trace and sterilise the earth boxes and catch the Count between noon and sunset. Mina is excluded henceforth. As the men prepare to go to Carfax, Renfield begs frantically to be released that night, but Seward refuses.",
+"scenes": [
+{"id":"c18_s01","title":"Mina visits Renfield","location":"Renfield's room","time":"30 September, evening","characters":["Mina Harker","Dr. Seward","Renfield"],"summary":"Renfield swallows his flies and spiders to 'tidy up', asks Mina to leave, then gives a lucid account of his old delusion about consuming life.","mood":"disturbing then astonishing","key_quote":"For the blood is the life."},
+{"id":"c18_s02","title":"Van Helsing arrives","location":"Station and carriage to the asylum","time":"30 September","characters":["Van Helsing","Dr. Seward"],"summary":"Van Helsing learns the Count's house is next door and decides Mina must be kept out after tonight.","mood":"eager, regretful","key_quote":"Oh that we had known it before!"},
+{"id":"c18_s03","title":"The committee and the pact","location":"Seward's study","time":"30 September, 8 pm","characters":["Van Helsing","Mina","Jonathan","Godalming","Seward","Morris"],"summary":"Van Helsing lays his golden crucifix on the table; all clasp hands in a solemn compact. He lectures on the enemy, the vampire's limits and Dracula's history.","mood":"solemn, grave","key_quote":"There are such beings as vampires; some of us have evidence that they exist."},
+{"id":"c18_s04","title":"The bat and the pistol shot","location":"Seward's study window and lawn","time":"30 September, night","characters":["Quincey Morris"],"summary":"Morris sees a big bat on the window-sill and fires from outside, shattering the glass; it flies into the wood.","mood":"startling","key_quote":"a big bat came and sat on the window-sill."},
+{"id":"c18_s05","title":"Campaign planned; Mina excluded","location":"Seward's study","time":"30 September, night","characters":["Van Helsing","Mina","Morris"],"summary":"Plan: trace each box, capture or kill the Count, or sterilise the earth; he is weakest between noon and sunset. Mina is told to rest.","mood":"resolute, bitter for Mina","key_quote":"we must, so to speak, sterilise the earth, so that no more he can seek safety in it."},
+{"id":"c18_s06","title":"Renfield begs to be released","location":"Renfield's room","time":"1 October, 4 a.m.","characters":["Renfield","Seward","Van Helsing","Godalming","Morris","Harker"],"summary":"Renfield, courtly and lucid, introduces himself to each man and pleads to be freed immediately. Refused, he throws himself on his knees, then collapses into sullen silence.","mood":"desperate, eerie","key_quote":"Don’t you know that I am sane and earnest now; that I am no lunatic in a mad fit, but a sane man fighting for his soul?"}
+],
+"locations": [
+{"name":"Renfield's room","kind":"indoor","description":"Cell with a bed, boxes in which flies and spiders are kept, an attendant's call.","features":["bed","boxes of insects","door with passage outside"],"atmosphere":"squalid yet orderly","lighting_time":"evening/pre-dawn","quote":"he simply swallowed all the flies and spiders in the boxes before I could stop him."},
+{"name":"Seward's study","kind":"indoor","description":"Table with Van Helsing at the head, window with embrasure and sash, chairs for six.","features":["long table","window with embrasure","sash window","chairs"],"atmosphere":"council room","lighting_time":"night","quote":"we unconsciously formed a sort of board or committee."},
+{"name":"Asylum corridor and passage","kind":"indoor","description":"Passage leading down to Renfield's room.","features":["passage","attendants"],"atmosphere":"tense","lighting_time":"4 am","quote":"we all went down the passage together."},
+{"name":"Lawn and wood beyond the asylum","kind":"outdoor","description":"Garden where Morris stands and fires; wood into which the bat flies.","features":["lawn","wood"],"atmosphere":"dark","lighting_time":"night","quote":"it flew away into the wood."}
+],
+"characters": [
+{"name":"Renfield","role":"zoophagous patient, Count's servant","appearance":"white stubble on jaws (later chapters), eyelids raised under lowered head","clothing":"","personality":"switches between cunning, courtesy, abject pleading","speech_style":"learned, polished, philosophical","notable_lines":["Good-bye, my dear. I pray God I may never see your sweet face again."],"abilities":["knows of Lucy's death and Seward's love without being told"]},
+{"name":"Abraham Van Helsing","role":"vampire hunter","appearance":"bushy eyebrows almost meeting when concentrated","clothing":"golden crucifix","personality":"scholarly, courageous","speech_style":"broken English","notable_lines":["Life is nothings; I heed him not."],"abilities":["occult knowledge","leadership"]},
+{"name":"Mina Harker","role":"secretary, now excluded","appearance":"","clothing":"","personality":"graceful, brave","speech_style":"","notable_lines":["I answer for Mina and myself"],"abilities":["calming the insane by easy grace"]},
+{"name":"Quincey Morris","role":"marksman","appearance":"","clothing":"","personality":"laconic Texan, hates bats","speech_style":"","notable_lines":["Count me in, Professor"],"abilities":["pistol shooting at bats"]},
+{"name":"Lord Godalming","role":"ally","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":["I am with you, for Lucy’s sake, if for no other reason."],"abilities":[]},
+{"name":"Jonathan Harker","role":"ally","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":["I answer for Mina and myself"],"abilities":[]},
+{"name":"Dr. Seward","role":"host and asylum physician","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":[]}
+],
+"objects": [
+{"name":"Golden crucifix","category":"ward","description":"Van Helsing's golden crucifix laid on the table for the oath.","function_in_story":"Seal of the compact; vampire cannot approach sacred things.","location_or_owner":"Van Helsing","quote":"after laying his golden crucifix on the table, held out his hand on either side."},
+{"name":"Pistol","category":"weapon","description":"Morris's pistol, fired at the bat.","function_in_story":"Shot shatters the window.","location_or_owner":"Quincey Morris","quote":"Outside the house came the sound of a pistol-shot"},
+{"name":"Garlic","category":"ward","description":"Garlic afflicts the Count.","function_in_story":"Known vampire ward.","location_or_owner":"","quote":"the garlic that we know of"},
+{"name":"Wild rose branch","category":"occult","description":"A branch of wild rose on his coffin keeps him from moving from it.","function_in_story":"Containment.","location_or_owner":"","quote":"The branch of wild rose on his coffin keep him that he move not from it"},
+{"name":"Sacred bullet","category":"weapon","description":"A blessed bullet fired into the coffin kills the vampire for good.","function_in_story":"Destruction method.","location_or_owner":"","quote":"a sacred bullet fired into the coffin kill him so that he be true dead"},
+{"name":"Stake and decapitation","category":"weapon","description":"Stake through heart or cut-off head grants rest.","function_in_story":"Destruction method seen with Lucy.","location_or_owner":"","quote":"the stake through him, we know already of its peace; or the cut-off head that giveth rest."},
+{"name":"Records and typescripts","category":"document","description":"Complete typed set; Van Helsing takes a copy to study. Mina's day record on paper from her pocket.","function_in_story":"Briefing for the committee.","location_or_owner":"Van Helsing and party","quote":"all the records we have are complete and in order."},
+{"name":"Renfield's insect boxes","category":"container","description":"Boxes holding his flies and spiders.","function_in_story":"His food stock.","location_or_owner":"Renfield","quote":"he simply swallowed all the flies and spiders in the boxes"},
+{"name":"Arminius's record","category":"document","description":"Research from Buda-Pesth professor on Dracula's origins.","function_in_story":"Identifies the Count with Voivode Dracula.","location_or_owner":"Van Helsing","quote":"I have asked my friend Arminius, of Buda-Pesth University, to make his record"}
+],
+"creatures": [
+{"name":"Count Dracula (described)","description":"Strength of twenty men, ancient cunning, necromancy, no shadow or reflection, sees in the dark.","behaviour":"Changes form to wolf, bat, mist, elemental dust, can become small; commands rat, owl, bat, moth, fox, wolf; directs storm, fog, thunder.","weaknesses":["garlic","crucifix and sacred things","cannot enter uninvited the first time","power ceases at day; changes only at noon, sunrise, sunset when away from his lair","running water only at slack or flood of tide","wild rose on coffin","sacred bullet in coffin","stake","decapitation","needs native earth and cannot rest in soil barren of holy memories"],"quote":"he is brute, and more than brute; he is devil in callous, and the heart of him is not"},
+{"name":"Bat at the window","description":"Large bat on the sill.","behaviour":"Flew into the wood after the shot.","weaknesses":["gunfire (missed)"],"quote":"there came a big bat and sat on the window-sill."}
+],
+"vampire_lore": [
+{"rule":"Strength of twenty men","kind":"power","detail":"Cannot be hurt by mere strength; a stronger body of men can hold him only at certain times.","quote":"This vampire which is amongst us is of himself so strong in person as twenty men"},
+{"rule":"Necromancy and command of the dead and animals","kind":"power","detail":"Commands rat, owl, bat, moth, fox, wolf and the elements.","quote":"he can command all the meaner things: the rat, and the owl, and the bat—the moth, and the fox, and the wolf"},
+{"rule":"Shape changes","kind":"transformation","detail":"Wolf (Whitby dog), bat (Whitby window, Lucy's window), mist round himself only, moonlight dust, can grow small to slip hairbreadth gaps.","quote":"He can transform himself to wolf, as we gather from the ship arrival in Whitby, when he tear open the dog"},
+{"rule":"Sees in the dark","kind":"power","detail":"No small power in a half-dark world.","quote":"He can see in the dark—no small power this"},
+{"rule":"Feeds on blood and grows younger","kind":"power","detail":"Does not eat other food; plentiful blood refreshes him.","quote":"he can even grow younger"},
+{"rule":"No shadow or reflection","kind":"detection","detail":"Throws no shadow, no mirror image.","quote":"He throws no shadow; he make in the mirror no reflect"},
+{"rule":"Must be invited in the first time","kind":"limitation","detail":"After that he can enter as he pleases.","quote":"He may not enter anywhere at the first, unless there be some one of the household who bid him to come"},
+{"rule":"Power ceases at day","kind":"limitation","detail":"Away from his earth-home he can change only at noon, exact sunrise or sunset.","quote":"His power ceases, as does that of all evil things, at the coming of the day."},
+{"rule":"Running water crossing","kind":"limitation","detail":"He can pass running water only at slack or flood of the tide.","quote":"he can only pass running water at the slack or the flood of the tide"},
+{"rule":"Garlic and sacred things","kind":"weakness","detail":"Garlic afflicts him; in presence of a crucifix he stays far off and silent.","quote":"in their presence he take his place far off and silent with respect."},
+{"rule":"Wild rose, sacred bullet, stake, beheading","kind":"ritual","detail":"Rose confines him to coffin; sacred bullet fired into coffin kills; stake or cut-off head gives rest.","quote":"a sacred bullet fired into the coffin kill him so that he be true dead"},
+{"rule":"Needs his earth/coffin-home and unhallowed ground","kind":"limitation","detail":"Cannot rest in soil of holy memories; graves of his good descendants sanctify the earth where he can dwell.","quote":"in soil barren of holy memories it cannot rest."},
+{"rule":"Vampire origin: Voivode Dracula, Scholomance","kind":"ritual","detail":"Dracula family learned secrets in the Scholomance above Lake Hermanstadt where the devil claims the tenth scholar.","quote":"where the devil claims the tenth scholar as his due."},
+{"rule":"Best time to strike: noon to sunset","kind":"weakness","detail":"Find him in man form between noon and sunset.","quote":"we may find him in his form of man between the hours of noon and sunset"}
+],
+"puzzles": [
+{"name":"Interpreting Renfield","setup":"Renfield's lucidity and urgency.","obstacle":"Is his plea madness or a warning?","book_solution":"Seward and Van Helsing decide to keep him confined.","items_used":[],"game_idea":"Judgement puzzle: weigh testimony and observed behaviour to decide whether to release him; hidden consequences.","quote":"I am no lunatic in a mad fit, but a sane man fighting for his soul"},
+{"name":"Sterilise the earth","setup":"Fifty boxes across London.","obstacle":"Boxes must be traced and sanctified.","book_solution":"Plan only: trace each box; sterilise between sunrise and sunset.","items_used":["records"],"game_idea":"Map-tracing planning puzzle with timed daylight windows.","quote":"We must trace each of these boxes"}
+],
+"combat": [
+{"name":"Bat at the window","participants":["Quincey Morris"],"enemy_types":["bat (possible Dracula)"],"weapons_used":["pistol"],"tactics":"Morris slips out and fires at the bat on the sill.","outcome":"Missed, bat escapes into the wood; window broken.","game_idea":"Single-shot skill check on a fleeing bat sprite; success reveals the form was Dracula's scout.","quote":"I went out to have a shot, as I have been doing of late of evenings, whenever I have seen one."}
+],
+"crafting": [],
+"dialogue_samples": [
+{"speaker":"Renfield","line":"What an asinine question!","context":"Seward asks how he knew Seward wanted to marry"},
+{"speaker":"Renfield","line":"Good-bye, my dear. I pray God I may never see your sweet face again.","context":"Parting from Mina"},
+{"speaker":"Van Helsing","line":"Life is nothings; I heed him not.","context":"Warning of what failure means"},
+{"speaker":"Renfield","line":"Let me go! let me go! let me go!","context":"Begging release"}
+],
+"asset_candidates": [
+{"name":"Golden crucifix","type":"prop","visual_description":"Palm-sized gold crucifix on a chain, slightly worn","priority":1},
+{"name":"Council table","type":"prop","visual_description":"Long dark wood table, six chairs, papers and lamp, window with embrasure","priority":2},
+{"name":"Renfield's cell","type":"architecture","visual_description":"Bare cell with iron bed, stool, small boxes of insects, sugar scraps and observation trap","priority":1},
+{"name":"Large bat","type":"creature","visual_description":"Large leather-winged bat perched on a stone window-sill","priority":2},
+{"name":"Revolver","type":"prop","visual_description":"Victorian pistol with wooden grip","priority":2},
+{"name":"Wild rose branch","type":"prop","visual_description":"Thorny stem with pink wild roses","priority":3}
+],
+"quest_hooks": [
+"Take the oath and form the party.",
+"Study the vampire's rules to prepare a loadout.",
+"Decide whether to free Renfield.",
+"Shoot the bat at the window.",
+"Plan the raid on Carfax."
+]
+}

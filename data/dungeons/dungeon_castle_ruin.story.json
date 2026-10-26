@@ -1,0 +1,129 @@
+{
+ "entrance": {
+  "name": "Breach in the curtain wall",
+  "look": "Where the curtain wall has fallen a stairway of tumbled stone climbs into the outer ward.",
+  "pos": [
+   -1.6,
+   3.3
+  ],
+  "back_pos": [
+   -1.6,
+   2.2
+  ],
+  "rot": 180,
+  "asset": "arch",
+  "variant": "stone_mossy"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a6_j_ward"
+    },
+    {
+     "say": "By day it is only a ruin. That is what makes it worse."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "room:0",
+   "dx": -1.4,
+   "id": "ward_merlon",
+   "asset": "rock_big",
+   "variant": "dark",
+   "name": "Fallen merlon",
+   "radius": 0.8,
+   "interact": {
+    "look": "A crenel of the old battlement, brought down by frost and a few hundred winters. Under it, in the snow, the print of a boot."
+   }
+  },
+  {
+   "at": "room:0",
+   "dx": 1.8,
+   "dz": 0.6,
+   "id": "ward_beam",
+   "asset": "log",
+   "variant": "pale",
+   "name": "Splintered beam",
+   "radius": 0.6,
+   "interact": {
+    "look": "A roof beam, sound at its heart. It would split into stakes.",
+    "take": "wood",
+    "take_text": "I split a length from the sound heart of the beam. Ash would be better, but the Count will not mind what it was cut from."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "ward_keep_door",
+   "asset": "door_big",
+   "variant": "ebony",
+   "name": "The keep door",
+   "rot": 180,
+   "radius": 0.25,
+   "interact": {
+    "look": "Rotted through, and hanging by one hinge. Behind it nothing but dust, and the smell of old earth, and a draught that moves where no draught should."
+   },
+   "dz": -0.8
+  },
+  {
+   "at": "room:2",
+   "id": "ward_caleche",
+   "asset": "carriage",
+   "variant": "dark",
+   "name": "The Count's cal\u00e8che",
+   "rot": 90,
+   "radius": 1.2,
+   "interact": {
+    "look": "Broken-axled and snowed under. Four black horses once stood before it. Harker told me of the driver, and of his eyes."
+   }
+  },
+  {
+   "at": "room:2",
+   "dx": 1.8,
+   "id": "ward_pouch",
+   "asset": "bottle",
+   "variant": "amber",
+   "name": "Cartridge pouch",
+   "radius": 0.25,
+   "interact": {
+    "look": "A leather pouch, stiff with frost, dropped by one of the Szgany in their flight.",
+    "take": "bullet",
+    "take_text": "Three cartridges, dry in their paper. Whoever dropped them ran in a great hurry."
+   }
+  },
+  {
+   "at": "room:3",
+   "id": "ward_glass",
+   "asset": "mirror",
+   "variant": "default",
+   "name": "A cracked looking-glass",
+   "radius": 0.4,
+   "interact": {
+    "look": "A shaving glass, set against the wall by some hand long gone. I look in it and see myself plainly, an old man with a cold. I am more glad of that than I can say."
+   }
+  },
+  {
+   "at": "exit",
+   "dx": 0.0,
+   "dz": -1.2,
+   "id": "ward_fire",
+   "asset": "lantern",
+   "variant": "default",
+   "name": "Cold campfire",
+   "radius": 0.4,
+   "interact": {
+    "look": "Ashes, a gnawed bone, boot-prints leading to the gate.",
+    "do": [
+     {
+      "say": "A fire, and not two days old. They camped here and left at a run, leaving the gate open behind them. Whoever guards this place does it from within."
+     },
+     {
+      "xp": 20
+     }
+    ]
+   }
+  }
+ ]
+}

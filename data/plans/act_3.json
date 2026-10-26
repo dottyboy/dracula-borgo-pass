@@ -1,0 +1,748 @@
+{
+ "act": 3,
+ "arc": "",
+ "start": {
+  "location": "a3_asylum_study",
+  "protagonist": "seward",
+  "party": [
+   "seward"
+  ],
+  "items": {},
+  "flags": [
+   "a3_begun"
+  ]
+ },
+ "exit_to": "a4_hampstead_heath",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "a3_asylum_study",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_study",
+   "eid": "a3_hennessey",
+   "dialogue": "a3_hennessey",
+   "path": [
+    "Has he tried to get out?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_study",
+   "eid": "a3_ledger",
+   "dialogue": "a3_case_ledger",
+   "path": [
+    "Turn to the dosage page."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_asylum_study",
+   "eid": "a3_study_desk"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_asylum_study",
+   "eid": "a3_study_chest"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_ward",
+   "eid": "a3_basin",
+   "dialogue": "a3_basin",
+   "path": [
+    "Fill a measuring-glass with water."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_asylum_ward",
+   "eid": "a3_cabinet",
+   "item": "a3_dispensary_key"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_ward",
+   "eid": "a3_mix_table",
+   "dialogue": "a3_mix_dose",
+   "path": [
+    "Ten grains: right for nine stone."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_garden",
+   "eid": "a3_pocock",
+   "dialogue": "a3_pocock",
+   "path": [
+    "Mr Hennessey says someone has been through the wall."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_asylum_garden",
+   "eid": "a3_toolbox"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_asylum_garden",
+   "eid": "a3_loose_slat",
+   "item": "hammer"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_asylum_garden",
+   "eid": "a3_loose_slat"
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_zoo_gardens",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_zoo_gardens",
+   "eid": "a3_bilder",
+   "dialogue": "a3_bilder",
+   "path": [
+    "Was anyone about?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_zoo_gardens",
+   "eid": "a3_bilder",
+   "dialogue": "a3_bilder",
+   "path": [
+    "What happened the night he went?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_zoo_gardens",
+   "eid": "a3_gazette_cutting"
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_renfield_cell",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_pillow"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_cell_jar"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_cell_notebook"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_spider_chest"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_renfield_wild",
+   "item": "chloral"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_renfield_talk",
+   "dialogue": "a3_renfield_talk",
+   "path": [
+    "Is it true you asked for a kitten?",
+    "No, Renfield. You may not have one."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_garden",
+   "eid": "a3_boy_asylum",
+   "dialogue": "a3_boy_asylum",
+   "path": [
+    "Take the telegram."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_study",
+   "eid": "a3_case_notes",
+   "dialogue": "a3_case_notes",
+   "path": [
+    "Sugar draws flies; flies feed spiders; spiders feed sparrows. He is building a ladder of lives to feed on, and he wants a cat for the next rung."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_asylum_study",
+   "eid": "a3_hennessey",
+   "dialogue": "a3_hennessey",
+   "path": [
+    "I will take a pull from that flask of yours, if you can spare it."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_renfield_cell",
+   "eid": "a3_renfield_talk",
+   "dialogue": "a3_renfield_talk",
+   "path": [
+    "Who is the Master?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_hillingham_hall",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_bradshaw",
+   "dialogue": "a3_bradshaw",
+   "path": [
+    "Note the night boat times."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_mrs_westenra",
+   "dialogue": "a3_mrs_westenra",
+   "path": [
+    "How is Lucy, Mrs Westenra?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_mrs_westenra",
+   "dialogue": "a3_mrs_westenra",
+   "path": [
+    "And you, Mrs Westenra? Your own heart?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_maid",
+   "dialogue": "a3_maid",
+   "path": [
+    "Where is the key to Miss Lucy's room kept?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_form"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_sideboard"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_key_rack"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r1",
+   "dialogue": "a3_lucy_talk",
+   "path": [
+    "May I look at your throat, Lucy?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r1",
+   "dialogue": "a3_lucy_talk",
+   "path": [
+    "Do you walk in your sleep?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_garden",
+   "eid": "a3_boy_wire",
+   "dialogue": "a3_boy_wire",
+   "path": [
+    "'Come by the night boat from the Hook; boat-train reaches Liverpool Street 6.05; urgent, a matter of life.'"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_hillingham_garden",
+   "eid": "a3_h_shed"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_armchair",
+   "dialogue": "a3_wait_night",
+   "path": [
+    "Sit by the fire until morning."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_buda_hospital",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_jonathan_hosp",
+   "dialogue": "a3_jonathan_hosp",
+   "path": [
+    "Sister Agatha says there is a journal, Jonathan."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_agatha",
+   "dialogue": "a3_agatha",
+   "path": [
+    "Sister, may we be married here, today?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_jonathan_hosp",
+   "dialogue": "a3_jonathan_hosp",
+   "path": [
+    "Jonathan, will you marry me, here, today?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_sealing_wax"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_sister_letter"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_sewing"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_seal_table",
+   "dialogue": "a3_seal_table",
+   "path": [
+    "Tie the journal with the ribbon and seal it with wax."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_seal_table",
+   "item": "a3_harker_diary"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_coat_chair"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_buda_hospital",
+   "eid": "a3_coat_pocket"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_buda_chapel",
+   "eid": "a3_priest",
+   "dialogue": "a3_priest",
+   "path": [
+    "We are ready, Father: the ring, his consent, and the journal sealed."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_hillingham_hall",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_haarlem_box",
+   "dialogue": "a3_haarlem_box",
+   "path": [
+    "Take a handful of the flowers."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_vh_bed",
+   "dialogue": "a3_vh_talk",
+   "path": [
+    "Professor, what do you make of her?",
+    "On her throat, two small punctures, white-edged and torn.",
+    "She sleeps with the window open, walks in her sleep, and wakes weaker each morning.",
+    "Arthur's: her betrothed, who loves her."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_vh_bed",
+   "dialogue": "a3_vh_talk",
+   "path": [
+    "What must be done tonight?"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_door_hall_r1",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_window_seat_r1",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bed_fire_r1",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r1",
+   "item": "garlic"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_arthur",
+   "dialogue": "a3_arthur_talk",
+   "path": [
+    "Arthur, Van Helsing says she needs a man's blood tonight. Will you give it?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_bed",
+   "dialogue": "a3_transfusion_bed",
+   "path": [
+    "First transfusion: Arthur's blood."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bedside_chair",
+   "dialogue": "a3_vigil",
+   "path": [
+    "Keep watch through the first night."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r2",
+   "dialogue": "a3_lucy_talk",
+   "path": [
+    "Do you remember the flowers last night?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_petals"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_slippers"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_vh_bed",
+   "dialogue": "a3_vh_talk",
+   "path": [
+    "Professor, look at the petals and the slippers.",
+    "Lucy herself rose in her sleep, took off the wreath, swept the window, and lay down again."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_bed",
+   "dialogue": "a3_transfusion_bed",
+   "path": [
+    "Second transfusion: my own blood."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_door_hall_r2",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_door_hall_r2",
+   "item": "a3_door_key"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_window_seat_r2",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_window_seat_r2",
+   "item": "a3_window_pin"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r2",
+   "item": "garlic"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bedside_chair",
+   "dialogue": "a3_vigil",
+   "path": [
+    "Keep watch through the second night."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_bed",
+   "dialogue": "a3_transfusion_bed",
+   "path": [
+    "Third transfusion: Van Helsing's blood."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_vh_bed",
+   "dialogue": "a3_vh_talk",
+   "path": [
+    "Mrs Westenra threw out the garlic and opened the window."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_door_hall_r3",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_door_hall_r3",
+   "item": "a3_door_key"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_window_seat_r3",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_window_seat_r3",
+   "item": "a3_window_pin"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bed_fire_r3",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r3",
+   "item": "garlic"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_mrs_westenra",
+   "dialogue": "a3_mrs_westenra",
+   "path": [
+    "About the garlic in Lucy's room, madam...",
+    "Madam, they are as real a medicine as digitalis. If they are moved again, I fear Lucy may not wake. I beg you to trust a physician who has seen this before."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_arthur",
+   "dialogue": "a3_arthur_talk",
+   "path": [
+    "Arthur, there is something I must tell you about the transfusions.",
+    "I gave her blood too, Arthur."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_arthur",
+   "dialogue": "a3_arthur_talk",
+   "path": [
+    "Arthur, there is something I must tell you about the transfusions.",
+    "Nothing. Only that you saved her life."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bedside_chair",
+   "dialogue": "a3_vigil",
+   "path": [
+    "Keep watch for the days that follow."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bedside_chair",
+   "dialogue": "a3_vigil",
+   "path": [
+    "Keep watch through the seventeenth night."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_bureau"
+  },
+  {
+   "kind": "primary",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_decanter"
+  },
+  {
+   "kind": "use",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_maid_asleep",
+   "item": "a3_smelling_salts"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_hillingham_hall",
+   "eid": "a3_quincey",
+   "dialogue": "a3_quincey_talk",
+   "path": [
+    "Quincey, Lucy needs blood, and the Professor says yours is the best we have."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_bed",
+   "dialogue": "a3_transfusion_bed",
+   "path": [
+    "Fourth transfusion: Quincey Morris."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_r3",
+   "dialogue": "a3_lucy_talk",
+   "path": [
+    "Lucy, Arthur is here. He has come to see you.",
+    "[Say, 'Arthur, the forehead.']"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_dead_npc",
+   "dialogue": "a3_lucy_corpse",
+   "path": [
+    "Search for the paper Van Helsing noticed at her breast."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_dead_npc",
+   "dialogue": "a3_lucy_corpse",
+   "path": [
+    "Look closely at her mouth."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_lucy_bedroom",
+   "eid": "a3_lucy_dead_npc",
+   "dialogue": "a3_lucy_corpse",
+   "path": [
+    "Ask Van Helsing what we must do now."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a3_kingstead_churchyard",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_kingstead_churchyard",
+   "eid": "a3_vh_final",
+   "dialogue": "a3_vh_final",
+   "path": [
+    "Professor, the garlic."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a3_kingstead_churchyard",
+   "eid": "a3_vault",
+   "item": "garlic"
+  },
+  {
+   "kind": "talk",
+   "loc": "a3_kingstead_churchyard",
+   "eid": "a3_vh_final",
+   "dialogue": "a3_vh_final",
+   "path": [
+    "I am ready to go back to Purfleet."
+   ]
+  }
+ ]
+}

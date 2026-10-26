@@ -1,0 +1,266 @@
+{
+ "act": "arthur_burden",
+ "arc": "arthur_burden",
+ "start": {
+  "location": "arthur_burden_sickroom",
+  "protagonist": "arthur",
+  "party": [
+   "arthur"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_sickroom",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_specs"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_lord",
+   "dialogue": "arthur_burden_lord_talk",
+   "path": [
+    "Your spectacles, sir. I found them under the Bible."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_cabinet"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_lord",
+   "dialogue": "arthur_burden_lord_talk",
+   "path": [
+    "The cordial, sir. Dr. Lenox's evening dose."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_hall",
+   "eid": "arthur_burden_salver"
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_hall",
+   "eid": "arthur_burden_bust"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_lord",
+   "dialogue": "arthur_burden_lord_talk",
+   "path": [
+    "There is a telegram from Hillingham, sir."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "arthur_burden_sickroom",
+   "eid": "arthur_burden_desk",
+   "item": "arthur_burden_desk_key"
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_office",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_office",
+   "eid": "arthur_burden_ledger"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_office",
+   "eid": "arthur_burden_wilkes",
+   "dialogue": "arthur_burden_wilkes_talk",
+   "path": [
+    "Show him the ledger of arrears.",
+    "You lied to me for four years.",
+    "Forgive me. Give me the key, and stay."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_garden",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_garden",
+   "eid": "arthur_burden_mrsw",
+   "dialogue": "arthur_burden_mrsw_talk",
+   "path": [
+    "[Give her the Lord's letter]",
+    "It is burdened, madam. My father's illness has cost us dear. But my honour is not for sale."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_garden",
+   "eid": "arthur_burden_arbour"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_garden",
+   "eid": "arthur_burden_lucy",
+   "dialogue": "arthur_burden_lucy_talk",
+   "path": [
+    "[Offer the wild rose and the ring]",
+    "[Wait for her answer]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_summerhouse",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_summerhouse",
+   "eid": "arthur_burden_mallets"
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_summerhouse",
+   "eid": "arthur_burden_music"
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_summerhouse",
+   "eid": "arthur_burden_poems"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_summerhouse",
+   "eid": "arthur_burden_servant",
+   "dialogue": "arthur_burden_footman_talk",
+   "path": [
+    "[Read it]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_hall",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_hall",
+   "eid": "arthur_burden_crowle",
+   "dialogue": "arthur_burden_crowle_talk",
+   "path": [
+    "Please do."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_chapel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_chapel",
+   "eid": "arthur_burden_d_vault",
+   "dialogue": "arthur_burden_vault_lock",
+   "path": [
+    "1643.",
+    "[Go in]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_vault",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_vault",
+   "eid": "arthur_burden_coffin",
+   "dialogue": "arthur_burden_coffin_talk",
+   "path": [
+    "[Take the signet from his hand]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_chapel",
+   "eid": "arthur_burden_d_vault",
+   "dialogue": "arthur_burden_vault_lock",
+   "path": [
+    "[Go in]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_chapel",
+   "eid": "arthur_burden_nurse",
+   "dialogue": "arthur_burden_nurse_talk",
+   "path": [
+    "How does one open the vault, Nan?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_wood",
+   "index": 0
+  },
+  {
+   "kind": "fight",
+   "loc": "arthur_burden_wood",
+   "eid": "arthur_burden_poachers",
+   "enc": "arthur_burden_poachers"
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_village",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_village",
+   "eid": "arthur_burden_marsh",
+   "dialogue": "arthur_burden_marsh_talk",
+   "path": [
+    "The Home Wood is clear, Mr. Marsh.",
+    "The estate is mortgaged to its roof, but not a cottage will be sold."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "arthur_burden_muniment",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_muniment",
+   "eid": "arthur_burden_mortgage"
+  },
+  {
+   "kind": "primary",
+   "loc": "arthur_burden_muniment",
+   "eid": "arthur_burden_letter"
+  },
+  {
+   "kind": "talk",
+   "loc": "arthur_burden_hall",
+   "eid": "arthur_burden_crowle",
+   "dialogue": "arthur_burden_crowle_talk",
+   "path": [
+    "I have read the deed, Mr. Crowle.",
+    "[Refuse, and tell the truth to the tenants]"
+   ]
+  }
+ ]
+}

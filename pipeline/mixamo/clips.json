@@ -1,0 +1,23 @@
+{
+ "idle": "standing_idle", "idle_neutral": "neutral_idle", "idle_old": "old_man_idle", "idle_warrior": "warrior_idle", "look_far": "lookingfar",
+ "idle_torch": "standing_torch_idle_01", "idle_injured": "Male_Injured_Pack/injured_idle", "idle_sit": "seated_idle", "idle_kneel": "kneeling_idle", "idle_lay": "laying_idle",
+ "idle_f1": "female/idle", "idle_f2": "female/idle2", "idle_f3": "female/idle3",
+ "walk": "walking", "walk2": "walking2", "walk3": "walking3", "walk_back": "walking_backwards", "walk_sneak": "sneak_walk", "walk_injured": "Male_Injured_Pack/injured_walk",
+ "walk_drunk": "Male_Drunk_Pack/drunk_walk", "walk_f": "female/walking", "walk_f2": "female/female_walk", "walk_f_tough": "female/female_tough_walk", "walk_stairs": "walking_up_the_stairs",
+ "walk_zombie": "Scary_Zombie_Pack/zombie_walk", "walk_crouch": "crouched_walking", "run": "running", "run2": "running2", "run_injured": "Male_Injured_Pack/injured_run",
+ "start_walk": "start_walking", "stop_walk": "stop_walking", "turn_l": "left_turn", "turn_r": "right_turn",
+ "talk": "talking", "talk_f": "female/talking", "gesture_arm": "arm_gesture", "nod": "head_nod_yes", "shake": "shaking_head_no", "think": "Gestures_Pack_Basic/thoughtful_head_shake",
+ "dismiss": "Gestures_Pack_Basic/dismissing_gesture", "gesture_happy": "Gestures_Pack_Basic/happy_hand_gesture", "acknowledge": "Gestures_Pack_Basic/acknowledging", "annoyed": "Gestures_Pack_Basic/angry_gesture",
+ "greet": "standing_greeting", "bow": "quick_formal_bow", "bow_light": "quick_informal_bow", "handshake": "shaking_hands_1", "rally": "rallying", "clap": "clapping",
+ "reach": "reaching_out", "pickup": "picking_up_object", "pickup_low": "picking_up", "open": "opening", "close": "closing", "try_open": "attemptopening", "push": "push", "lever": "pulling_lever",
+ "pull_heavy": "pull_heavy_object", "pull_rope": "pulling_a_rope", "lift": "lifting", "throw": "throw_object", "drink": "drinking", "torch_floor": "unarmed_grab_torch_from_floor", "torch_wall": "unarmed_grab_torch_from_wall",
+ "sit_down": "sittingdown", "sit": "sitting", "stand_up": "stand_up", "sit_drink": "sitting_drinking", "bartend": "bartending",
+ "climb_up": "climbing_up_wall", "climb_down": "climbing_down_wall", "climb_top": "climbing_to_top", "ladder": "start_climbing_ladder", "climb": "climbing", "hang": "hanging_idle",
+ "attack": "standing_melee_attack_horizontal", "slash": "sword_and_shield_slash", "slash2": "sword_and_shield_slash2", "stab": "stabbing", "stab2": "stabbing2", "bayonet": "bayonet_stab",
+ "punch": "punching", "cross": "cross_punch", "hook": "hook_punch", "block": "block", "block_center": "center_block", "hurt": "taking_punch", "react": "reacting",
+ "cast": "Magic_Spell_Pack/standing_1h_cast_spell_01", "cast2": "Magic_Spell_Pack/standing_2h_cast_spell_01", "magic_attack": "Magic_Spell_Pack/standing_1h_magic_attack_01", "magic_area": "Magic_Spell_Pack/standing_2h_magic_area_attack_01",
+ "surprised": "surprised", "terrified": "terrified", "cry": "crying", "yell": "yelling", "victory": "victory", "victory_idle": "victory_idle", "cheer": "cheering", "defeat": "defeat", "defeated": "defeated2",
+ "die": "dying", "die_back": "dying_backwards", "die_fly": "flying_back_death", "fallen": "fallen_idle", "convulse": "convulsing",
+ "bite": "vampiric_bite", "bitten": "getting_bit", "zombie_idle": "Scary_Zombie_Pack/zombie_idle", "zombie_attack": "Scary_Zombie_Pack/zombie_attack", "zombie_scream": "Scary_Zombie_Pack/zombie_scream",
+ "pose_f_stand1": "female/female_standing_pose", "pose_f_stand2": "female/female_standing_pose2", "pose_f_stand3": "female/female_standing_pose3", "pose_f_sit": "female/female_sitting_pose", "pose_f_lay": "female/female_laying_pose"
+}

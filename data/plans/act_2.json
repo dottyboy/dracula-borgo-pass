@@ -1,0 +1,498 @@
+{
+ "act": 2,
+ "arc": "",
+ "start": {
+  "location": "a2_whitby_lodging",
+  "protagonist": "mina",
+  "party": [
+   "mina"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "a3_asylum_study",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "a2_whitby_lodging",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_lucy_l",
+   "dialogue": "a2_lucy_talk",
+   "path": [
+    "Tell me about the three proposals, Lucy.",
+    "You must marry the man you love, and no regrets."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_lucy_l",
+   "dialogue": "a2_lucy_talk",
+   "path": [
+    "Poor Dr. Seward, among his madmen. Let me hear how he fares.",
+    "[Let your thoughts go to the asylum]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_seward_study",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_seward_study",
+   "eid": "a2_renfield",
+   "dialogue": "a2_renfield_talk",
+   "path": [
+    "Why do you eat flies, Mr. Renfield?",
+    "[Make a note]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_seward_study",
+   "eid": "a2_s_phono",
+   "dialogue": "a2_phono",
+   "path": [
+    "Record today's entry on R. M. Renfield.",
+    "Close the lid and think of Whitby."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_maid",
+   "dialogue": "a2_maid_talk",
+   "path": [
+    "May I have a head of that garlic?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_l_table"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_l_letter"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_l_basket"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_east_cliff",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_east_cliff",
+   "eid": "a2_swales",
+   "dialogue": "a2_swales_talk",
+   "path": [
+    "May I sit and hear you talk?",
+    "What do you mean, the stones lie?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_east_cliff",
+   "eid": "a2_swales",
+   "dialogue": "a2_swales_talk",
+   "path": [
+    "You are known to every officer on the quay. Would you vouch for me if I need to see something there?",
+    "Will the weather hold, Mr. Swales?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_east_cliff",
+   "eid": "a2_c_stone_canon"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_harbour",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_harbour",
+   "eid": "a2_chandler",
+   "dialogue": "a2_chandler_talk",
+   "path": [
+    "A second head of garlic, for a friend.",
+    "A length of good rope, if you please."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_harbour",
+   "eid": "a2_fisher",
+   "dialogue": "a2_fisher_talk",
+   "path": [
+    "Is the coastguard about?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_harbour",
+   "eid": "a2_h_garlic"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_coastguard_hut",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_board",
+   "dialogue": "a2_notice_read",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_coastguard",
+   "dialogue": "a2_coastguard_talk",
+   "path": [
+    "Might I borrow a little brandy for Lucy's nerves?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_knife"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_chest"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_lantern"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_water"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_abbey_ruins",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_abbey_ruins",
+   "eid": "a2_sexton",
+   "dialogue": "a2_sexton_talk",
+   "path": [
+    "Is there anything of value in the Abbey?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_abbey_ruins",
+   "eid": "a2_a_rose"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_abbey_ruins",
+   "eid": "a2_a_bough"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_abbey_ruins",
+   "eid": "a2_a_font"
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_l_baro",
+   "dialogue": "a2_barometer",
+   "path": [
+    "Take Lucy's arm and go to the East Cliff to watch the sky."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_cliff_storm",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_cliff_storm",
+   "eid": "a2_st_rail",
+   "dialogue": "a2_storm_watch",
+   "path": [
+    "Look where the light has stopped.",
+    "Go home to Lucy, shaken and soaked."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_harbour",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_harbour",
+   "eid": "a2_constable",
+   "dialogue": "a2_constable_talk",
+   "path": [
+    "Mr. Swales sent me."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_harbour",
+   "eid": "a2_billington",
+   "dialogue": "a2_billington_talk",
+   "path": [
+    "May I look at the vessel? I should like to describe it for friends."
+   ]
+  },
+  {
+   "kind": "fight",
+   "loc": "a2_harbour",
+   "eid": "a2_dog",
+   "enc": "a2_dog_pier"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_demeter_deck",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_deck",
+   "eid": "a2_d_locker"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_deck",
+   "eid": "a2_d_spike"
+  },
+  {
+   "kind": "use",
+   "loc": "a2_demeter_deck",
+   "eid": "a2_captain",
+   "item": "knife"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_demeter_cabin",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_bunk"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_chart"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_seachest"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_box2"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_toolchest"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_demeter_cabin",
+   "eid": "a2_m_sack"
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_harbour",
+   "eid": "a2_billington",
+   "dialogue": "a2_billington_talk",
+   "path": [
+    "Where were the boxes to go, Mr. Billington?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_coastguard_hut",
+   "eid": "a2_t_desk",
+   "dialogue": "a2_log_desk",
+   "path": [
+    "Lay out the four leaves of the log.",
+    "The leaf headed Varna, 6 July to 16 July.",
+    "The leaf dated 17 to 28 July, about the stranger.",
+    "The leaf dated 29 July to 3 August, with the mate.",
+    "Read the last leaf: 4 August."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_east_cliff",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_lucy_l",
+   "dialogue": "a2_lucy_talk",
+   "path": [
+    "How are you sleeping, Lucy?",
+    "You walk in your sleep, Lucy. We must be careful tonight."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_mrs_w",
+   "dialogue": "a2_westenra_talk",
+   "path": [
+    "Where do you keep the spare key to Lucy's door?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_lucy_bedroom",
+   "eid": "a2_b_window"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_lucy_bedroom",
+   "eid": "a2_b_shawl"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_lucy_bedroom",
+   "eid": "a2_b_brandy"
+  },
+  {
+   "kind": "use",
+   "loc": "a2_lucy_bedroom",
+   "eid": "a2_b_door",
+   "item": "a2_lucy_door_key"
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_lucy_bedroom",
+   "eid": "a2_b_bed_mina",
+   "dialogue": "a2_bed_dialogue",
+   "path": [
+    "Lie down and sleep, everything being in order."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_night_steps",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_night_steps",
+   "eid": "a2_watchman",
+   "dialogue": "a2_watchman_talk",
+   "path": [
+    "Which way? Did she say anything?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_night_steps",
+   "eid": "a2_n_print"
+  },
+  {
+   "kind": "primary",
+   "loc": "a2_night_steps",
+   "eid": "a2_n_rail"
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_east_cliff_night",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_east_cliff_night",
+   "eid": "a2_nc_figure",
+   "dialogue": "a2_figure_talk",
+   "path": [
+    "Call her name as loudly as I can."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_east_cliff_night",
+   "eid": "a2_nc_lucy",
+   "dialogue": "a2_lucy_seat",
+   "path": [
+    "Wrap her in the shawl and fasten it with the safety-pin.",
+    "Wake her gently."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_east_cliff_night",
+   "eid": "a2_nc_lucy",
+   "dialogue": "a2_lucy_seat",
+   "path": [
+    "Lead her home."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a2_whitby_lodging",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_postman",
+   "dialogue": "a2_postman_talk",
+   "path": [
+    "Give it here, quickly."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_lucy_l_b",
+   "dialogue": "a2_lucy_talk",
+   "path": [
+    "How do you feel today?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a2_whitby_lodging",
+   "eid": "a2_l_trunk",
+   "dialogue": "a2_depart",
+   "path": [
+    "Pack and go. Jonathan needs me, and Lucy has her mother and Arthur."
+   ]
+  }
+ ]
+}

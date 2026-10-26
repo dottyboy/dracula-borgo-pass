@@ -1,0 +1,610 @@
+{
+ "act": 4,
+ "arc": "",
+ "start": {
+  "location": "a4_hampstead_heath",
+  "protagonist": "seward",
+  "party": [
+   "seward",
+   "vanhelsing"
+  ],
+  "items": {
+   "brandy": 1,
+   "bandage": 1
+  },
+  "flags": []
+ },
+ "exit_to": "a5_asylum_library",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "a4_hampstead_heath",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_newsboy",
+   "dialogue": "a4_newsboy",
+   "path": [
+    "Buy a copy (tuppence)."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_nursemaid",
+   "dialogue": "a4_nursemaid",
+   "path": [
+    "What did the child say when he came back?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_children",
+   "dialogue": "a4_children",
+   "path": [
+    "Where does the real lady live?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_constable",
+   "dialogue": "a4_constable",
+   "path": [
+    "Where was the last found?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_clue_hollow"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_clue_bushes"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_clue_trail"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hampstead_heath",
+   "eid": "a4_heath_bench",
+   "dialogue": "a4_vh_heath",
+   "path": [
+    "The shoe, the thread and the prints all lead north, toward Kingstead."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_north_hospital",
+   "eid": "a4_ward_sister",
+   "dialogue": "a4_ward_sister",
+   "path": [
+    "Might I trouble you for some clean linen?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_north_hospital",
+   "eid": "a4_vincent",
+   "dialogue": "a4_vincent",
+   "path": [
+    "I am a physician of the same kind. Here is my card; I should be glad of your opinion on the wound."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_north_hospital",
+   "eid": "a4_tuesday",
+   "dialogue": "a4_tuesday",
+   "path": [
+    "May I see your neck, little one?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_seward_study",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_seward_study",
+   "eid": "a4_study_fire",
+   "dialogue": "a4_seward_vh_doubt",
+   "path": [
+    "Where is the proof you promise?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_seward_study",
+   "eid": "a4_study_shelf"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_seward_study",
+   "eid": "a4_key_drawer"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_seward_study",
+   "eid": "a4_surgical_case"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_seward_study",
+   "eid": "a4_tool_chest"
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_paddington_hotel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_paddington_hotel",
+   "eid": "a4_jonathan",
+   "dialogue": "a4_jonathan_talk",
+   "path": [
+    "Your journal is not a dream, Mr Harker. I have read it, and I know where the Count has gone.",
+    "I believe what I find in the evidence. That is enough.",
+    "What do you remember of London?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_paddington_hotel",
+   "eid": "a4_mina",
+   "dialogue": "a4_mina_talk",
+   "path": [
+    "Madam, I have a great need of your shorthand and your typewriter."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_paddington_hotel",
+   "eid": "a4_workbasket"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_paddington_hotel",
+   "eid": "a4_type_table",
+   "item": "a4_ribbon"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_paddington_hotel",
+   "eid": "a4_type_machine",
+   "item": "a4_shorthand_diary"
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_seward_study",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_seward_study",
+   "eid": "a4_study_fire",
+   "dialogue": "a4_seward_vh_doubt",
+   "path": [
+    "I have read Mrs Harker's pages and your wound notes. Convince me, if you can."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_seward_study",
+   "eid": "a4_black_bag",
+   "dialogue": "a4_vh_bag",
+   "path": [
+    "Take the turnscrew, the fret-saw and the candle-end."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_marquand",
+   "dialogue": "a4_marquand",
+   "path": [
+    "Please sort the legal papers from the private ones. I shall take the private ones."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_lucy_desk",
+   "dialogue": "a4_papers",
+   "path": [
+    "Her private letters and diary leaves.",
+    "The undertaker's account."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_garlic_box"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_garlic_vase1"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_garlic_vase2"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_hall_rug"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_maid",
+   "dialogue": "a4_maid_talk",
+   "path": [
+    "I have the pawn ticket for a crucifix that was pawned yesterday."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_kindling"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_letter_knife"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_seward_study",
+   "eid": "a4_workbench",
+   "dialogue": "a4_workbench",
+   "path": [
+    "Cut a four-lever key for a falling-bolt lock, as the undertaker's invoice describes."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_jack_straws",
+   "eid": "a4_landlord",
+   "dialogue": "a4_landlord",
+   "path": [
+    "We go to Kingstead churchyard. Is the road watched?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_table",
+   "dialogue": "a4_vh_dinner",
+   "path": [
+    "Which road shall we take to Kingstead?",
+    "The Heath path by Hampstead Lane, after eleven."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_barrel"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_tip"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_lamp"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_matches"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_table",
+   "dialogue": "a4_vh_dinner",
+   "path": [
+    "I am ready. Let us go."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_water"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_jack_straws",
+   "eid": "a4_inn_map"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_kingstead_gate",
+   "eid": "a4_sexton",
+   "dialogue": "a4_sexton",
+   "path": [
+    "A silver coin, good sexton, for a doctor's quiet visit to a grave."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_gate",
+   "eid": "a4_plan_board"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_gate",
+   "eid": "a4_shed_putty"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_gate",
+   "eid": "a4_shed_plumber"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_gate",
+   "eid": "a4_shed_solder"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_lock_plate"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_tomb_door",
+   "item": "a4_tomb_key"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_other_coffin_a",
+   "item": "a4_candle_stub"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_candle_lit",
+   "item": "a4_matches"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_coffin_closed",
+   "item": "a4_turnscrew"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_coffin_lid_off",
+   "item": "a4_fretsaw"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_yew_hide"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_white_n1",
+   "dialogue": "a4_n1_encounter",
+   "path": [
+    "[Whisper] Professor, now?",
+    "[Cry out]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_heath_lane",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_heath_lane",
+   "eid": "a4_handoff_spot",
+   "dialogue": "a4_handoff",
+   "path": [
+    "Lay the child on the bench, ring the policeman's bell and slip behind the hedge."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_westenra_tomb",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_lucy_sleeping",
+   "dialogue": "a4_vh_lucy_sleeping",
+   "path": [
+    "Look at her teeth.",
+    "Look at her lips."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_lucy_sleeping",
+   "dialogue": "a4_vh_lucy_sleeping",
+   "path": [
+    "Professor, we must bring Arthur before tonight."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_hillingham_hall",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_arthur",
+   "dialogue": "a4_arthur_grief",
+   "path": [
+    "Come with us at midnight, and see for yourself.",
+    "Arthur, if you refuse, I shall do it myself."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_vh_case",
+   "dialogue": "a4_vh_prep",
+   "path": [
+    "Professor, I have the ash wood but I cannot work it. Will you sharpen the stake?",
+    "Take the Host."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_hillingham_hall",
+   "eid": "a4_vh_case",
+   "dialogue": "a4_vh_prep",
+   "path": [
+    "Professor, please knead the Host into the putty for me."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_tomb_seal",
+   "item": "a4_host_putty"
+  },
+  {
+   "kind": "primary",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_alder_hide"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_lucy_n3",
+   "dialogue": "a4_n3_lure",
+   "path": [
+    "Stand your ground and say nothing."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_kingstead_churchyard",
+   "eid": "a4_unseal",
+   "dialogue": "a4_unseal",
+   "path": [
+    "Remove the strips and let her go to her coffin."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_kingstead_gate",
+   "index": 0
+  },
+  {
+   "kind": "enter",
+   "loc": "a4_westenra_tomb",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_ritual_order",
+   "dialogue": "a4_vh_ritual_order",
+   "path": [
+    "The stake through the heart, the prayers, then the head, then the garlic in the mouth, and last the coffin sealed."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_tomb_lamp",
+   "item": "a4_soldering_iron"
+  },
+  {
+   "kind": "fight",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_lucy_rising",
+   "enc": "lucy_tomb"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_stake_point",
+   "item": "stake"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_stake_hammer",
+   "item": "hammer"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_missal_prayers",
+   "dialogue": "a4_missal",
+   "path": [
+    "[Join the prayers]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_head_cut",
+   "item": "a4_surgical_knives"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_garlic_mouth",
+   "item": "garlic"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_solder_seam",
+   "item": "a4_solder"
+  },
+  {
+   "kind": "use",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_solder_hot",
+   "item": "a4_hot_iron"
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_arthur_tomb",
+   "dialogue": "a4_arthur_peace",
+   "path": [
+    "We mourn her, but she mourns no longer."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a4_westenra_tomb",
+   "eid": "a4_final_vow",
+   "dialogue": "a4_vh_pledge",
+   "path": [
+    "I will stand with you. Where do we begin?"
+   ]
+  }
+ ]
+}

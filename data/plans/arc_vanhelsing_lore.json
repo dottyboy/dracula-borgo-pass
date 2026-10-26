@@ -1,0 +1,263 @@
+{
+ "act": "vanhelsing_lore",
+ "arc": "vanhelsing_lore",
+ "start": {
+  "location": "vanhelsing_lore_study",
+  "protagonist": "vanhelsing",
+  "party": [
+   "vanhelsing"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_study",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_latin",
+   "dialogue": "vanhelsing_lore_latin_note",
+   "path": [
+    "'He who rises at night is not dead. By day he lies in his own earth. Pierce the heart with wood, cut off the head, fill the mouth with garlic.'"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_casebook"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_bust"
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_cabinet",
+   "item": "vanhelsing_lore_cabinet_key"
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_reading_chair",
+   "dialogue": "vanhelsing_lore_letters_read",
+   "path": [
+    "[Read the first, on the Voivode]",
+    "[Read the second, on Scholomance]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_reading_chair",
+   "dialogue": "vanhelsing_lore_letters_read",
+   "path": [
+    "[Read the third, on Styria]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_stake_case"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_stake"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_hammer"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_crucifix"
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_home",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_home",
+   "eid": "vanhelsing_lore_wife",
+   "dialogue": "vanhelsing_lore_wife_talk",
+   "path": [
+    "Tell me about the little coat.",
+    "Is there anything you need?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_home",
+   "eid": "vanhelsing_lore_keeper",
+   "dialogue": "vanhelsing_lore_keeper_talk",
+   "path": [
+    "Mevrouw, I need garlic for a ward."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_table",
+   "item": "vanhelsing_lore_child_cross"
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_table",
+   "item": "garlic"
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_street",
+   "index": 0
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_chapel",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_chapel",
+   "eid": "vanhelsing_lore_sacristy"
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_lecture",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_lecture",
+   "eid": "vanhelsing_lore_board"
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_lecture",
+   "eid": "vanhelsing_lore_verhoeven",
+   "dialogue": "vanhelsing_lore_verhoeven_talk",
+   "path": [
+    "I think we should settle this today, in the open.",
+    "Superstition. It has never been tested.",
+    "No. It is observed under witness and repeated; it is fact, though we do not understand it.",
+    "By my rule I may not call it so until I have tested it. I will not deny what I have not examined."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_library",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_library",
+   "eid": "vanhelsing_lore_press",
+   "item": "vanhelsing_lore_library_key"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_library",
+   "eid": "vanhelsing_lore_shelf3"
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_chapel",
+   "eid": "vanhelsing_lore_pieter",
+   "dialogue": "vanhelsing_lore_pieter_talk",
+   "path": [
+    "I have the Ordo and a tin of wafers. I need to consecrate them, Father.",
+    "The priest is shriven.",
+    "The hands are washed.",
+    "The Collect is said over the bread.",
+    "The pyx is sealed."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_table",
+   "item": "host"
+  },
+  {
+   "kind": "primary",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_ward_case"
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_village",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_village",
+   "eid": "vanhelsing_lore_pastor",
+   "dialogue": "vanhelsing_lore_pastor_talk",
+   "path": [
+    "Tell me what you know.",
+    "I wish to see the churchyard, Pfarrer."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_village",
+   "eid": "vanhelsing_lore_widow",
+   "dialogue": "vanhelsing_lore_widow_talk",
+   "path": [
+    "[Sit and listen to the whole story]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_village",
+   "eid": "vanhelsing_lore_sexton",
+   "dialogue": "vanhelsing_lore_sexton_talk",
+   "path": [
+    "A girl, nineteen. A wedding-dress. Is it Katharina Lindner?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "vanhelsing_lore_churchyard",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_churchyard",
+   "eid": "vanhelsing_lore_stone_a",
+   "item": "vanhelsing_lore_ward"
+  },
+  {
+   "kind": "use",
+   "loc": "vanhelsing_lore_churchyard",
+   "eid": "vanhelsing_lore_stone_k",
+   "item": "vanhelsing_lore_ward"
+  },
+  {
+   "kind": "fight",
+   "loc": "vanhelsing_lore_churchyard",
+   "eid": "vanhelsing_lore_revenant",
+   "enc": "vanhelsing_lore_vigil"
+  },
+  {
+   "kind": "talk",
+   "loc": "vanhelsing_lore_study",
+   "eid": "vanhelsing_lore_final",
+   "dialogue": "vanhelsing_lore_final_letter",
+   "path": [
+    "[Put the letter in the casebook]"
+   ]
+  }
+ ]
+}

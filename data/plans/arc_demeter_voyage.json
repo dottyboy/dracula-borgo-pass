@@ -1,0 +1,475 @@
+{
+ "act": "demeter_voyage",
+ "arc": "demeter_voyage",
+ "start": {
+  "location": "demeter_voyage_quay",
+  "protagonist": "captain",
+  "party": [
+   "captain"
+  ],
+  "items": {
+   "silver": 2
+  },
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_quay",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_quay",
+   "eid": "demeter_voyage_q_clerk",
+   "dialogue": "demeter_voyage_clerk_talk",
+   "path": [
+    "[Take the bill of lading]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_quay",
+   "eid": "demeter_voyage_q_customs",
+   "dialogue": "demeter_voyage_customs_talk",
+   "path": [
+    "[Show the bill of lading]",
+    "[Pay the backsheesh: one silver coin]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_quay",
+   "eid": "demeter_voyage_q_widow",
+   "dialogue": "demeter_voyage_widow_talk",
+   "path": [
+    "[Buy a candle: one silver coin]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_quay",
+   "eid": "demeter_voyage_q_priest",
+   "dialogue": "demeter_voyage_priest_talk",
+   "path": [
+    "[Light the candle before the icon]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_quay",
+   "eid": "demeter_voyage_q_mate",
+   "dialogue": "demeter_voyage_mate_quay",
+   "path": [
+    "[Give the order to cast off]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_deck",
+   "index": 4
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_sky"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_forecastle",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_forecastle",
+   "eid": "demeter_voyage_f_slate",
+   "dialogue": "demeter_voyage_robin_note",
+   "path": [
+    "[Take the round robin]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_forecastle",
+   "eid": "demeter_voyage_f_chest"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_forecastle",
+   "eid": "demeter_voyage_f_torch"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_galley",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_cook",
+   "dialogue": "demeter_voyage_cook_talk",
+   "path": [
+    "The gulls and the weather...",
+    "Have you any garlic?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_garlic"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_barrel"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_rack"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_g_bandage"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_bow",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_bow",
+   "eid": "demeter_voyage_b_cable"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_cabin",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_bunk"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_chest"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_icon"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_shelf"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_brandy"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_bottle"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_hold",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_row5"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_b13"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_wheelhouse",
+   "index": 1
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_wheelhouse",
+   "eid": "demeter_voyage_w_glass"
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_wheelhouse",
+   "eid": "demeter_voyage_w_plan",
+   "dialogue": "demeter_voyage_weather",
+   "path": [
+    "Take in sail: weather from the south-west by morning."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_log",
+   "dialogue": "demeter_voyage_logbook",
+   "path": [
+    "[Entry: cargo, and the weather]",
+    "Silver sand and fifty boxes of earth, consigned to Mr. Billington, Whitby; customs stamped, Varna.",
+    "Glass falling, mares'-tails NW, weather from SW by morning; reefed down."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_turn",
+   "dialogue": "demeter_voyage_bunk",
+   "path": [
+    "[Turn in: the Archipelago, Matapan, the 16th of July]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_deck",
+   "index": 3
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_olgaren",
+   "dialogue": "demeter_voyage_olgaren_talk",
+   "path": [
+    "Something is on your mind, Olgaren."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_mate",
+   "dialogue": "demeter_voyage_mate_talk",
+   "path": [
+    "I want the whole ship searched."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_trace"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_bow",
+   "eid": "demeter_voyage_b_cap"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_bow",
+   "eid": "demeter_voyage_b_trail"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_bow",
+   "eid": "demeter_voyage_s_bow_p"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_s_cabin_p"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_forecastle",
+   "eid": "demeter_voyage_s_fore_p"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_galley",
+   "eid": "demeter_voyage_s_galley_p"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_trail"
+  },
+  {
+   "kind": "primary",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_s_hold_p"
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_log",
+   "dialogue": "demeter_voyage_logbook",
+   "path": [
+    "[Entry: the search of the ship]",
+    "Searched stem to stern with lanterns: no man; but earth spilled from box thirteen to the bows, and Petrofsky's cap."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_turn",
+   "dialogue": "demeter_voyage_bunk",
+   "path": [
+    "[Turn in: Gibraltar and the Bay of Biscay, 24 July]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_deck",
+   "index": 2
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_mate",
+   "dialogue": "demeter_voyage_mate_talk",
+   "path": [
+    "The men want a double watch. I mean to grant it."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_ivan",
+   "dialogue": "demeter_voyage_ivan_talk",
+   "path": [
+    "Would you stand a watch alone?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_log",
+   "dialogue": "demeter_voyage_logbook",
+   "path": [
+    "[Entry: the men lost]",
+    "Two: Petrofsky and Dmitri."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_forecastle",
+   "eid": "demeter_voyage_f_abramoff",
+   "dialogue": "demeter_voyage_abramoff_talk",
+   "path": [
+    "Who stands which watch?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_watch",
+   "dialogue": "demeter_voyage_roster",
+   "path": [
+    "[Set the watch bill]",
+    "Ivan and Bolotin (kin, they won't be parted).",
+    "The mate and myself, armed.",
+    "Olgaren and Abramoff."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_turn",
+   "dialogue": "demeter_voyage_bunk",
+   "path": [
+    "[Turn in: the storm, 29 and 30 July]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_deck",
+   "index": 1
+  },
+  {
+   "kind": "use",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_b13s",
+   "item": "demeter_voyage_crowbar"
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_b13o",
+   "dialogue": "demeter_voyage_box_dialogue",
+   "path": [
+    "[Pour out the oil and set a torch to it]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_b13o",
+   "dialogue": "demeter_voyage_box_dialogue",
+   "path": [
+    "[Pour the holy water into the earth]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_turn",
+   "dialogue": "demeter_voyage_bunk",
+   "path": [
+    "[Turn in: the Channel, 2 August, midnight]"
+   ]
+  },
+  {
+   "kind": "fight",
+   "loc": "demeter_voyage_hold",
+   "eid": "demeter_voyage_h_dark_a",
+   "enc": "demeter_voyage_dark_blessed"
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_wheelhouse",
+   "index": 0
+  },
+  {
+   "kind": "enter",
+   "loc": "demeter_voyage_deck",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_deck",
+   "eid": "demeter_voyage_d_mate",
+   "dialogue": "demeter_voyage_mate_talk",
+   "path": [
+    "[It is here, I know it now...]",
+    "What will you do?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_cabin",
+   "eid": "demeter_voyage_c_log",
+   "dialogue": "demeter_voyage_logbook",
+   "path": [
+    "[Final entry]",
+    "The mate saw It: tall, thin, pale. The knife went through It. He leapt overboard. I know the secret now, and I will lash my hands to the wheel with the cross."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "demeter_voyage_wheelhouse",
+   "eid": "demeter_voyage_w_wheel",
+   "dialogue": "demeter_voyage_lash",
+   "path": [
+    "[Lash myself to the wheel]"
+   ]
+  }
+ ]
+}

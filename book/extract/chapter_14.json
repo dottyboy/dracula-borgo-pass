@@ -1,0 +1,75 @@
+{
+ "chapter": 14,
+ "narrator": "Mina Harker (journal); letters; Jonathan Harker (journal); Dr. Seward (diary)",
+ "dates": "23 - 26 September",
+ "summary": "Mina reads Jonathan's Transylvanian journal and decides to type it out. Van Helsing writes to her in confidence and visits Exeter on 25 September; she hands him her typed journal on Lucy and then Jonathan's journal. He declares that Jonathan's story is true. Jonathan returns, meets Van Helsing at the hotel on the 26th, learns the diary was real and is cured of his doubt, and agrees to help against the Count. At the station Van Helsing sees the Westminster Gazette and is shocked. Back in London he shows Seward the Hampstead story, gives a long lecture on unexplained natural wonders and open-minded belief, and ends the chapter by revealing that the children's wounds were made by Miss Lucy.",
+ "scenes": [
+  {"id":"c14_s01","title":"Mina reads the journal","location":"Harkers' house, Mina's locked room","time":"23-24 September","characters":["Mina Harker"],"summary":"Mina locks herself in to read Jonathan's foreign journal, is shaken, and decides to prepare for a 'solemn duty' by typing a copy.","mood":"fearful, resolved","key_quote":"There may be a solemn duty; and if it come we must not shrink from it."},
+  {"id":"c14_s02","title":"Van Helsing's letter and Mina's telegram","location":"Exeter (letters)","time":"24-25 September","characters":["Van Helsing","Mina"],"summary":"Van Helsing writes confidentially asking to meet; Mina telegrams him to come by the quarter-past ten train.","mood":"formal, urgent","key_quote":"Come to-day by quarter-past ten train if you can catch it."},
+  {"id":"c14_s03","title":"The interview in Exeter","location":"Harkers' drawing-room, Exeter","time":"2:30 pm, 25 September","characters":["Mina","Van Helsing","maid Mary"],"summary":"Mina plays a small joke with her shorthand diary then gives him the typewritten copy. He reads it, is overjoyed, praises her; she breaks down about Jonathan; he consoles her over lunch and she gives him Jonathan's journal.","mood":"warm, then charged","key_quote":"This paper is as sunshine. It opens the gate to me."},
+  {"id":"c14_s04","title":"Van Helsing's verdict letters","location":"By hand / telegram, 25 September evening","time":"6:00 and 6:30 pm","characters":["Van Helsing","Mina"],"summary":"He writes that Jonathan's diary is true; she replies that Jonathan returns by the 6:25 from Launceston and invites him to breakfast at eight.","mood":"relief, dread","key_quote":"Strange and terrible as it is, it is true!"},
+  {"id":"c14_s05","title":"Jonathan meets Van Helsing","location":"Hotel in Exeter, then the station","time":"26 September morning","characters":["Jonathan","Van Helsing","Mina"],"summary":"Jonathan is relieved to be believed and promises full help vs the Count. He gives the bundle of papers. At the station Van Helsing reads the Westminster Gazette and mutters 'Mein Gott! So soon!'","mood":"relief, alarm","key_quote":"Then I am with you heart and soul."},
+  {"id":"c14_s06","title":"Renfield and the newspaper","location":"Dr. Seward's asylum study","time":"26 September, 5:30 pm","characters":["Dr. Seward","Van Helsing"],"summary":"Seward notes Renfield is stable with his fly and spider business. Van Helsing bursts in with the Westminster Gazette and points out the throat punctures on Hampstead children.","mood":"sudden gravity","key_quote":"It is like poor Lucy’s."},
+  {"id":"c14_s07","title":"Van Helsing's thesis: believe","location":"Seward's study","time":"Evening, 26 September","characters":["Van Helsing","Dr. Seward"],"summary":"Van Helsing lists wonders: Methuselah, Old Parr, the great spider in the Spanish church, vampire bats of the Pampas, toads in rock, the buried fakir; asks Seward to believe. He ends with the revelation that Lucy made the wounds.","mood":"building terror","key_quote":"They were made by Miss Lucy!"}
+ ],
+ "locations": [
+  {"name":"Harkers' home, Exeter","kind":"indoor","description":"Mina's room, drawing-room with sofa and workbasket, a typewriter.","features":["typewriter","workbasket","sofa","drawing-room","study of train timetables"],"atmosphere":"domestic anxiety","lighting_time":"afternoon / evening","quote":"lock myself up in my room and read it"},
+  {"name":"Exeter hotel and railway station","kind":"indoor","description":"The hotel where Van Helsing stayed and the platform with train windows.","features":["train carriage window","newspaper stand"],"atmosphere":"hurried departure","lighting_time":"morning","quote":"waiting for the train to start"},
+  {"name":"Seward's asylum study","kind":"indoor","description":"Study with a table and chairs.","features":["table","chairs"],"atmosphere":"intense","lighting_time":"half-past five evening","quote":"almost bounded into the room"}
+ ],
+ "characters": [
+  {"name":"Abraham Van Helsing","role":"vampire hunter, physician, brain specialist","appearance":"medium weight, strongly built, broad deep chest, set shoulders, noble large head, clean-shaven, hard square chin, large mobile mouth, rather straight nose with quick nostrils, big bushy brows, broad forehead, reddish hair falling back, big dark blue eyes widely set","clothing":"","personality":"courtly, gentle, learned, humble about open mind","speech_style":"broken English with endearments ('Madam Mina', 'friend John')","notable_lines":["My thesis is this: I want you to believe."],"abilities":["knowledge of folklore","brain specialist","reads people"]},
+  {"name":"Mina Harker","role":"transcriber, researcher","appearance":"","clothing":"","personality":"clever, shy, brave, helpful","speech_style":"warm and exact","notable_lines":["I shall be prepared."],"abilities":["shorthand","typewriter","memorises train timetables"]},
+  {"name":"Jonathan Harker","role":"solicitor","appearance":"","clothing":"","personality":"reborn by confirmation","speech_style":"","notable_lines":["Then I am with you heart and soul."],"abilities":["physiognomist"]},
+  {"name":"Dr. John Seward","role":"narrator","appearance":"","clothing":"","personality":"sceptical, loyal","speech_style":"","notable_lines":[],"abilities":[]},
+  {"name":"Renfield","role":"asylum patient","appearance":"","clothing":"","personality":"calm, sane for now","speech_style":"","notable_lines":[],"abilities":[]},
+  {"name":"Mary","role":"Harkers' maid","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":[]}
+ ],
+ "objects": [
+  {"name":"Jonathan's foreign journal (shorthand)","category":"document","description":"Jonathan's shorthand record of Transylvania.","function_in_story":"Mina reads, types and passes it to Van Helsing.","location_or_owner":"Mina","quote":"I shall take his foreign journal"},
+  {"name":"Typewriter","category":"tool","description":"Mina's machine for transcribing diaries.","function_in_story":"Produces copies for Van Helsing.","location_or_owner":"Mina","quote":"I shall get my typewriter this very hour"},
+  {"name":"Mina's typewritten journal","category":"document","description":"Her Whitby journal on Lucy.","function_in_story":"Gives Van Helsing the key to Lucy's sleep-walking.","location_or_owner":"Van Helsing","quote":"I have written it out on the typewriter for you."},
+  {"name":"Mina's shorthand diary","category":"document","description":"Mina's original diary.","function_in_story":"Used as her small joke.","location_or_owner":"Mina","quote":"I handed him the shorthand diary."},
+  {"name":"Lucy's diary","category":"document","description":"Short diary begun after Mina left, imitating hers.","function_in_story":"Contains sleep-walking inference.","location_or_owner":"Van Helsing","quote":"She sometimes kept a diary"},
+  {"name":"Letters between Van Helsing and Mina","category":"document","description":"Confidential letter, telegram, hand-delivered note.","function_in_story":"Arrange the meeting and confirm Jonathan's story.","location_or_owner":"Mina / Van Helsing","quote":"Come to-day by quarter-past ten train"},
+  {"name":"Train timetables (Mina's)","category":"document","description":"Mina's memorised Exeter trains.","function_in_story":"Plans Van Helsing's journey.","location_or_owner":"Mina","quote":"I have made up all the trains to and from Exeter"},
+  {"name":"The Westminster Gazette (26 Sept)","category":"document","description":"The paper with the Hampstead children report.","function_in_story":"Triggers Van Helsing's alarm and reveal.","location_or_owner":"Van Helsing","quote":"“The Westminster Gazette”—I knew it by the colour"}
+ ],
+ "creatures": [
+  {"name":"Vampire bats of the Pampas and Western isles","description":"Bats that open the veins of cattle and horses; on islands hang like giant nuts or pods and attack sleeping sailors.","behaviour":"flit down on sleepers, leave dead men white as Lucy","weaknesses":[],"quote":"there are bats that come at night and open the veins of cattle and horses"},
+  {"name":"The great spider of the Spanish church","description":"A spider that lived for centuries in the tower, drinking the oil of the church lamps.","behaviour":"grew and grew","weaknesses":[],"quote":"one great spider lived for centuries in the tower of the old Spanish church"},
+  {"name":"Lucy as the Un-Dead (implied)","description":"The cause of the children's wounds, revealed in the last line.","behaviour":"lures children at night","weaknesses":[],"quote":"They were made by Miss Lucy!"}
+ ],
+ "vampire_lore": [
+  {"rule":"Vampire wounds are small punctures in the throat.","kind":"detection","detail":"Seward sees the Gazette description and recognises Lucy's wounds.","quote":"small punctured wounds on their throats."},
+  {"rule":"Victims die of blood loss or waste.","kind":"limitation","detail":"Lucy died of nervous prostration after great loss of blood; four men's blood could not save her for one more day.","quote":"with four men’s blood in her poor veins, could not live even one day"},
+  {"rule":"Some beings live far beyond natural age.","kind":"power","detail":"Methuselah, Old Parr, the tortoise, the elephant, the parrot, men and women who cannot die.","quote":"there are men and women who cannot die?"},
+  {"rule":"Sleep-walking is the vampire's opening.","kind":"limitation","detail":"Mina's Whitby journal ties Lucy's sleep-walking to the cliff night.","quote":"in that diary she traces by inference certain things to a sleep-walking"}
+ ],
+ "puzzles": [
+  {"name":"Shorthand joke","setup":"Mina hands Van Helsing a shorthand diary.","obstacle":"He cannot read shorthand.","book_solution":"She gives the typed copy.","items_used":["shorthand diary","typed journal"],"game_idea":"A decoding mini-game: transcribe symbols to type a readable document before the visitor arrives.","quote":"I know not the shorthand."},
+  {"name":"Train planning","setup":"Van Helsing needs to get back to London.","obstacle":"Times and connections change.","book_solution":"Mina cites exact trains and updates by letter.","items_used":["timetables"],"game_idea":"Schedule puzzle: reorder train times so characters meet or avoid each other.","quote":"you could catch the quick 3:34 train"},
+  {"name":"Making Seward believe","setup":"Van Helsing must convince a sceptical scientist.","obstacle":"Seward rejects the unexplained.","book_solution":"List of natural wonders and a request for open belief.","items_used":["newspaper article"],"game_idea":"Persuasion dialogue puzzle: pick the right analogies to unlock Seward's belief.","quote":"I want you to believe."}
+ ],
+ "combat": [],
+ "crafting": [],
+ "dialogue_samples": [
+  {"speaker":"Van Helsing","line":"This paper is as sunshine. It opens the gate to me.","context":"reading Mina's typed journal"},
+  {"speaker":"Van Helsing","line":"I want you to believe.","context":"to Seward"},
+  {"speaker":"Van Helsing","line":"They were made by Miss Lucy!","context":"chapter-ending reveal"},
+  {"speaker":"Jonathan","line":"you don’t know what it is to doubt everything, even yourself.","context":"explaining his cure"}
+ ],
+ "asset_candidates": [
+  {"name":"Typewriter and typed manuscript","type":"prop","visual_description":"1890s black typewriter with stacked typed pages.","priority":2},
+  {"name":"Harkers' drawing-room","type":"architecture","visual_description":"Small Victorian room with sofa, workbasket, writing desk.","priority":3},
+  {"name":"Van Helsing character","type":"character","visual_description":"Medium-built old man with broad head, bushy brows, reddish hair, dark blue eyes, clean-shaven, square chin.","priority":1},
+  {"name":"Westminster Gazette newspaper","type":"document","visual_description":"Folded coloured-pink newsprint.","priority":3},
+  {"name":"Railway carriage at Exeter","type":"vehicle","visual_description":"Victorian compartment with window for waving.","priority":3}
+ ],
+ "quest_hooks": [
+  "Transcribe Jonathan's journal for Van Helsing.",
+  "Convince the sceptic: gather evidence to persuade Seward.",
+  "Arrange the journey and meeting through the train schedule.",
+  "Choose to hide or share the journal with Jonathan."
+ ]
+}

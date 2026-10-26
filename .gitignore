@@ -1,0 +1,12 @@
+.godot/
+build/
+*.tmp
+__pycache__/
+# Mixamo downloads and everything derived from them stay local (Adobe terms: no redistribution of the clips/characters
+# outside a game). The game falls back to the procedural models when these are missing; releases embed them.
+pipeline/mixamo/*.fbx
+pipeline/mixamo/*.zip
+pipeline/mixamo/poses/
+pipeline/mixamo/clean/
+assets/anims/mixamo_lib.glb*
+assets/models/chars/

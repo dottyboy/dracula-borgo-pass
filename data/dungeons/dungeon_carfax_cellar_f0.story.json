@@ -1,0 +1,92 @@
+{
+ "entrance": {
+  "name": "Cellar stair",
+  "look": "A stair of dressed stone beside the nave wall, half hidden under fallen plaster. The smell of earth is stronger here.",
+  "go_cond": "won:carfax_rats",
+  "go_fail": "The nave still crawls with rats. I will not go down among them.",
+  "pos": [
+   -2.8,
+   3.0
+  ],
+  "back_pos": [
+   -2.8,
+   1.8
+  ],
+  "rot": 90,
+  "asset": "stairs",
+  "variant": "stone_tomb"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a5_j_cellar"
+    },
+    {
+     "say": "Cold, and dry as a bone, and older than the house above it."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "entrance",
+   "dx": 1.8,
+   "id": "cel_straw",
+   "asset": "hay_bale",
+   "variant": "old",
+   "name": "Straw packing",
+   "radius": 0.3,
+   "interact": {
+    "look": "Straw packing, trodden flat. Deep gouges run across the flags from the stair toward the cart door: the boxes were dragged this way."
+   }
+  },
+  {
+   "at": "room:0",
+   "id": "cel_racks",
+   "asset": "bookshelf",
+   "variant": "ebony",
+   "name": "Empty racks",
+   "radius": 0.3,
+   "rot": 0,
+   "interact": {
+    "look": "Wine racks, long empty. In one the dust is disturbed where a hand has searched, and not so long ago."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "cel_oil",
+   "asset": "barrel",
+   "variant": "oak",
+   "name": "Lamp-oil jar",
+   "radius": 0.3,
+   "interact": {
+    "look": "A jar of lamp oil, half full, left by whoever lit this place.",
+    "take": "oil",
+    "take_text": "A half-jar of lamp oil. It will burn, and burning is half of what must be done here."
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "cel_labels",
+   "asset": "crate_stack",
+   "variant": "dark",
+   "name": "Packing crates",
+   "radius": 0.3,
+   "interact": {
+    "look": "Packing crates, split and empty. Scraps of paper cling to the straw.",
+    "do": [
+     {
+      "say": "Half-torn labels in a clerk's hand. Whoever sent these boxes did not think anyone would trace them."
+     },
+     {
+      "journal": "a5_j_labels"
+     },
+     {
+      "xp": 20
+     }
+    ]
+   }
+  }
+ ]
+}

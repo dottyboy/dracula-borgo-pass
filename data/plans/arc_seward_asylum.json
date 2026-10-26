@@ -1,0 +1,261 @@
+{
+ "act": "seward_asylum",
+ "arc": "seward_asylum",
+ "start": {
+  "location": "seward_asylum_study",
+  "protagonist": "seward",
+  "party": [
+   "seward"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "seward_asylum_study",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_study",
+   "eid": "seward_asylum_s_note",
+   "dialogue": "seward_asylum_hillingham",
+   "path": [
+    "[Read it again]",
+    "Keep it. A doctor should keep his case-notes."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_study",
+   "eid": "seward_asylum_s_desk"
+  },
+  {
+   "kind": "enter",
+   "loc": "seward_asylum_records",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_records",
+   "eid": "seward_asylum_r_letters",
+   "dialogue": "seward_asylum_letters",
+   "path": [
+    "[The letter of that winter]",
+    "[The letter on open minds]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_records",
+   "eid": "seward_asylum_r_letters",
+   "dialogue": "seward_asylum_letters",
+   "path": [
+    "[The letter on dosage]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_records",
+   "eid": "seward_asylum_r_chest"
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_study",
+   "eid": "seward_asylum_s_phono",
+   "dialogue": "seward_asylum_phono",
+   "path": [
+    "[Dictate a diary entry]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "seward_asylum_ward",
+   "index": 1
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_hennessey",
+   "dialogue": "seward_asylum_hennessey",
+   "path": [
+    "Can you write the ward log tonight, if I am busy?",
+    "Why is the ward clock stopped?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_pym",
+   "dialogue": "seward_asylum_pym",
+   "path": [
+    "It stopped at ten past three, the hour your wife died.",
+    "It need not stay stopped. A clock that runs again is not a clock that forgets."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_vane",
+   "dialogue": "seward_asylum_vane",
+   "path": [
+    "How is the ward at night, Miss Vane?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_w_bed1"
+  },
+  {
+   "kind": "use",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_w_clock",
+   "item": "seward_asylum_clock_key"
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_w_linen"
+  },
+  {
+   "kind": "enter",
+   "loc": "seward_asylum_cell",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_cell",
+   "eid": "seward_asylum_c_ledger",
+   "dialogue": "seward_asylum_ledger",
+   "path": [
+    "[Read about the kitten]",
+    "[Read about the sparrows]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_cell",
+   "eid": "seward_asylum_c_ledger",
+   "dialogue": "seward_asylum_ledger",
+   "path": [
+    "[Read about the spiders]",
+    "[Read about the flies]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_cell",
+   "eid": "seward_asylum_renfield_cell",
+   "dialogue": "seward_asylum_renfield",
+   "path": [
+    "I have read the ledger. I think I understand what the flies were for."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_garden",
+   "eid": "seward_asylum_greer",
+   "dialogue": "seward_asylum_greer",
+   "path": [
+    "Tell me."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "seward_asylum_garden",
+   "eid": "seward_asylum_g_butt",
+   "item": "seward_asylum_blanket"
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_dispensary",
+   "eid": "seward_asylum_d_cupboard"
+  },
+  {
+   "kind": "primary",
+   "loc": "seward_asylum_dispensary",
+   "eid": "seward_asylum_d_jug"
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_dispensary",
+   "eid": "seward_asylum_d_scale",
+   "dialogue": "seward_asylum_scale",
+   "path": [
+    "[Weigh out twenty grains]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_study",
+   "eid": "seward_asylum_s_armchair",
+   "dialogue": "seward_asylum_vigil",
+   "path": [
+    "[Sit up and wait for night]",
+    "[Settle in for the long night]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "seward_asylum_ward",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_garden",
+   "eid": "seward_asylum_renfield_talk",
+   "dialogue": "seward_asylum_renfield_garden",
+   "path": [
+    "Mr. Renfield. You are not hungry. You are afraid of being too late."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_garden",
+   "eid": "seward_asylum_renfield_calm_n",
+   "dialogue": "seward_asylum_renfield_calmed",
+   "path": [
+    "You shall have it."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_dispensary",
+   "eid": "seward_asylum_d_slip",
+   "dialogue": "seward_asylum_slip",
+   "path": [
+    "[Pick it up and examine the ink]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "seward_asylum_dispensary",
+   "eid": "seward_asylum_d_fire",
+   "item": "seward_asylum_wet_blanket"
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_ward",
+   "eid": "seward_asylum_pettit",
+   "dialogue": "seward_asylum_pettit",
+   "path": [
+    "Pettit, I have a slip for sixty grains of morphia. Written in my name.",
+    "The ink is violet, and Miss Vane saw you practising. Hennessey cannot write, and Mrs. Dowling was on the ward. Only one person could have done it.",
+    "[Send him to the Board for it]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "seward_asylum_study",
+   "eid": "seward_asylum_s_phono",
+   "dialogue": "seward_asylum_phono",
+   "path": [
+    "[Finish the night's record]",
+    "[Seal the cylinder and end the night]"
+   ]
+  }
+ ]
+}

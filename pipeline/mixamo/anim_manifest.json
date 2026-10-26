@@ -1,0 +1,3201 @@
+{
+ "kept": {
+  "Action_Adventure_Pack/cover_to_stand.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 102.1,
+   "in_place": false,
+   "has_mesh": true
+  },
+  "Action_Adventure_Pack/cover_to_stand_2.fbx": {
+   "frames": 43,
+   "secs": 1.43,
+   "travel_cm": 97.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/crouched_sneaking_left.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 128.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/crouched_sneaking_right.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 118.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/falling_idle.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 0.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/falling_to_roll.fbx": {
+   "frames": 55,
+   "secs": 1.83,
+   "travel_cm": 293.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/hard_landing.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 39.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/idle.fbx": {
+   "frames": 121,
+   "secs": 4.03,
+   "travel_cm": 2.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/idle_2.fbx": {
+   "frames": 301,
+   "secs": 10.03,
+   "travel_cm": 1.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/idle_3.fbx": {
+   "frames": 99,
+   "secs": 3.3,
+   "travel_cm": 24.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/idle_4.fbx": {
+   "frames": 78,
+   "secs": 2.6,
+   "travel_cm": 0.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/idle_5.fbx": {
+   "frames": 69,
+   "secs": 2.3,
+   "travel_cm": 0.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/jumping_up.fbx": {
+   "frames": 8,
+   "secs": 0.27,
+   "travel_cm": 7.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/left_cover_sneak.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 128.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/left_turn.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 15.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/right_cover_sneak.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 128.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/right_turn.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 18.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/run_to_stop.fbx": {
+   "frames": 28,
+   "secs": 0.93,
+   "travel_cm": 81.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/running.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 318.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/stand_to_cover.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 115.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/stand_to_cover_2.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 121.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Action_Adventure_Pack/walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 177.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/left_turn_45.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 15.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_breathing_idle.fbx": {
+   "frames": 122,
+   "secs": 4.07,
+   "travel_cm": 2.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_dying.fbx": {
+   "frames": 139,
+   "secs": 4.63,
+   "travel_cm": 96.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_flexing_muscles.fbx": {
+   "frames": 141,
+   "secs": 4.7,
+   "travel_cm": 12.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_idle.fbx": {
+   "frames": 160,
+   "secs": 5.33,
+   "travel_cm": 6.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_jumping.fbx": {
+   "frames": 96,
+   "secs": 3.2,
+   "travel_cm": 11.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_left_turn_45.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 20.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_right_turn_45.fbx": {
+   "frames": 60,
+   "secs": 2.0,
+   "travel_cm": 17.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_right_turn_45_2.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 20.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_run.fbx": {
+   "frames": 27,
+   "secs": 0.9,
+   "travel_cm": 197.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_swiping.fbx": {
+   "frames": 81,
+   "secs": 2.7,
+   "travel_cm": 95.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_NPC_Pack/mutant_walking.fbx": {
+   "frames": 44,
+   "secs": 1.47,
+   "travel_cm": 180.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_Pack/jump_attack.fbx": {
+   "frames": 115,
+   "secs": 3.83,
+   "travel_cm": 227.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_idle.fbx": {
+   "frames": 428,
+   "secs": 14.27,
+   "travel_cm": 8.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_jump_attack.fbx": {
+   "frames": 112,
+   "secs": 3.73,
+   "travel_cm": 179.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_jumping_2.fbx": {
+   "frames": 19,
+   "secs": 0.63,
+   "travel_cm": 1.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_punch.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 20.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_right_turn_90.fbx": {
+   "frames": 73,
+   "secs": 2.43,
+   "travel_cm": 25.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Creature_Pack/mutant_roaring.fbx": {
+   "frames": 163,
+   "secs": 5.43,
+   "travel_cm": 35.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/acknowledging.fbx": {
+   "frames": 59,
+   "secs": 1.97,
+   "travel_cm": 1.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/angry_gesture.fbx": {
+   "frames": 67,
+   "secs": 2.23,
+   "travel_cm": 2.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/annoyed_head_shake.fbx": {
+   "frames": 78,
+   "secs": 2.6,
+   "travel_cm": 1.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/being_cocky.fbx": {
+   "frames": 88,
+   "secs": 2.93,
+   "travel_cm": 5.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/dismissing_gesture.fbx": {
+   "frames": 99,
+   "secs": 3.3,
+   "travel_cm": 3.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/happy_hand_gesture.fbx": {
+   "frames": 89,
+   "secs": 2.97,
+   "travel_cm": 3.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/hard_head_nod.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 1.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/head_nod_yes.fbx": {
+   "frames": 79,
+   "secs": 2.63,
+   "travel_cm": 0.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/lengthy_head_nod.fbx": {
+   "frames": 53,
+   "secs": 1.77,
+   "travel_cm": 1.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/look_away_gesture.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 4.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/relieved_sigh.fbx": {
+   "frames": 91,
+   "secs": 3.03,
+   "travel_cm": 0.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/sarcastic_head_nod.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 3.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/shaking_head_no.fbx": {
+   "frames": 55,
+   "secs": 1.83,
+   "travel_cm": 1.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/thoughtful_head_shake.fbx": {
+   "frames": 93,
+   "secs": 3.1,
+   "travel_cm": 0.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Gestures_Pack_Basic/weight_shift.fbx": {
+   "frames": 284,
+   "secs": 9.47,
+   "travel_cm": 17.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_idle.fbx": {
+   "frames": 57,
+   "secs": 1.9,
+   "travel_cm": 4.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_jump.fbx": {
+   "frames": 72,
+   "secs": 2.4,
+   "travel_cm": 16.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_jump_running.fbx": {
+   "frames": 33,
+   "secs": 1.1,
+   "travel_cm": 397.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_jump_running_landing.fbx": {
+   "frames": 42,
+   "secs": 1.4,
+   "travel_cm": 456.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_land_to_standing_idle.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 128.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_run_back.fbx": {
+   "frames": 20,
+   "secs": 0.67,
+   "travel_cm": 197.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_run_forward.fbx": {
+   "frames": 23,
+   "secs": 0.77,
+   "travel_cm": 276.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_run_left.fbx": {
+   "frames": 24,
+   "secs": 0.8,
+   "travel_cm": 258.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_run_right.fbx": {
+   "frames": 24,
+   "secs": 0.8,
+   "travel_cm": 290.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_sprint_forward.fbx": {
+   "frames": 18,
+   "secs": 0.6,
+   "travel_cm": 306.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_turn_left_90.fbx": {
+   "frames": 57,
+   "secs": 1.9,
+   "travel_cm": 18.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_turn_right_90.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 20.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_walk_back.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 139.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_walk_forward.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 181.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_walk_left.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 148.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Locomotion_Pack/standing_walk_right.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 158.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_1h_cast_spell_01.fbx": {
+   "frames": 69,
+   "secs": 2.3,
+   "travel_cm": 13.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_1h_magic_attack_01.fbx": {
+   "frames": 70,
+   "secs": 2.33,
+   "travel_cm": 15.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_1h_magic_attack_02.fbx": {
+   "frames": 67,
+   "secs": 2.23,
+   "travel_cm": 13.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_1h_magic_attack_03.fbx": {
+   "frames": 70,
+   "secs": 2.33,
+   "travel_cm": 22.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_cast_spell_01.fbx": {
+   "frames": 66,
+   "secs": 2.2,
+   "travel_cm": 17.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_area_attack_01.fbx": {
+   "frames": 90,
+   "secs": 3.0,
+   "travel_cm": 21.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_area_attack_02.fbx": {
+   "frames": 99,
+   "secs": 3.3,
+   "travel_cm": 14.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_attack_01.fbx": {
+   "frames": 82,
+   "secs": 2.73,
+   "travel_cm": 19.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_attack_02.fbx": {
+   "frames": 80,
+   "secs": 2.67,
+   "travel_cm": 24.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_attack_03.fbx": {
+   "frames": 130,
+   "secs": 4.33,
+   "travel_cm": 22.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_attack_04.fbx": {
+   "frames": 101,
+   "secs": 3.37,
+   "travel_cm": 27.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Magic_Spell_Pack/standing_2h_magic_attack_05.fbx": {
+   "frames": 107,
+   "secs": 3.57,
+   "travel_cm": 27.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/backward_walking_turn.fbx": {
+   "frames": 60,
+   "secs": 2.0,
+   "travel_cm": 169.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_idle.fbx": {
+   "frames": 223,
+   "secs": 7.43,
+   "travel_cm": 20.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_idle_variation.fbx": {
+   "frames": 120,
+   "secs": 4.0,
+   "travel_cm": 8.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_idle_variation_2.fbx": {
+   "frames": 163,
+   "secs": 5.43,
+   "travel_cm": 25.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_run_backward.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 253.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_run_forward.fbx": {
+   "frames": 56,
+   "secs": 1.87,
+   "travel_cm": 456.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_running_left_turn.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 243.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_turn.fbx": {
+   "frames": 48,
+   "secs": 1.6,
+   "travel_cm": 9.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_walk.fbx": {
+   "frames": 91,
+   "secs": 3.03,
+   "travel_cm": 249.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_walk_backwards.fbx": {
+   "frames": 48,
+   "secs": 1.6,
+   "travel_cm": 184.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/drunk_walking_turn.fbx": {
+   "frames": 78,
+   "secs": 2.6,
+   "travel_cm": 190.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Drunk_Pack/run_backward_arc_right.fbx": {
+   "frames": 38,
+   "secs": 1.27,
+   "travel_cm": 231.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_backwards_turn_left.fbx": {
+   "frames": 23,
+   "secs": 0.77,
+   "travel_cm": 71.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_backwards_turn_right.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 67.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_hurting_idle.fbx": {
+   "frames": 182,
+   "secs": 6.07,
+   "travel_cm": 12.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_idle.fbx": {
+   "frames": 281,
+   "secs": 9.37,
+   "travel_cm": 11.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run.fbx": {
+   "frames": 20,
+   "secs": 0.67,
+   "travel_cm": 149.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_backwards.fbx": {
+   "frames": 19,
+   "secs": 0.63,
+   "travel_cm": 102.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_backwards_left_turn.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 101.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_backwards_right_turn.fbx": {
+   "frames": 17,
+   "secs": 0.57,
+   "travel_cm": 83.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_jump.fbx": {
+   "frames": 23,
+   "secs": 0.77,
+   "travel_cm": 194.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_left_turn.fbx": {
+   "frames": 19,
+   "secs": 0.63,
+   "travel_cm": 133.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_run_right_turn.fbx": {
+   "frames": 20,
+   "secs": 0.67,
+   "travel_cm": 124.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_standing_jump.fbx": {
+   "frames": 58,
+   "secs": 1.93,
+   "travel_cm": 12.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_stumble_idle.fbx": {
+   "frames": 153,
+   "secs": 5.1,
+   "travel_cm": 58.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_turn_left.fbx": {
+   "frames": 28,
+   "secs": 0.93,
+   "travel_cm": 7.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_turn_right.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 7.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_walk.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 200.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_walk_backwards.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 140.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_walk_left_turn.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 205.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_walk_right_turn.fbx": {
+   "frames": 56,
+   "secs": 1.87,
+   "travel_cm": 220.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Injured_Pack/injured_wave_idle.fbx": {
+   "frames": 153,
+   "secs": 5.1,
+   "travel_cm": 12.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/idle.fbx": {
+   "frames": 251,
+   "secs": 8.37,
+   "travel_cm": 1.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/jump.fbx": {
+   "frames": 66,
+   "secs": 2.2,
+   "travel_cm": 13.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/left_strafe.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 289.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/left_strafe_walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 171.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/left_turn_90.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 11.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/right_strafe.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 289.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/right_strafe_walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 171.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/right_turn_90.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 11.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/standard_run.fbx": {
+   "frames": 23,
+   "secs": 0.77,
+   "travel_cm": 310.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Male_Locomotion_Pack/walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 165.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/fall_a_land_to_run_forward.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 169.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/fall_a_land_to_standing_idle_01.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 4.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/fall_a_loop.fbx": {
+   "frames": 33,
+   "secs": 1.1,
+   "travel_cm": 0.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_overdraw.fbx": {
+   "frames": 114,
+   "secs": 3.8,
+   "travel_cm": 3.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_recoil.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 3.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_walk_back.fbx": {
+   "frames": 45,
+   "secs": 1.5,
+   "travel_cm": 133.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_walk_forward.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 133.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_walk_left.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 171.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_aim_walk_right.fbx": {
+   "frames": 40,
+   "secs": 1.33,
+   "travel_cm": 183.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_block.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 11.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_death_backward_01.fbx": {
+   "frames": 94,
+   "secs": 3.13,
+   "travel_cm": 125.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_death_forward_01.fbx": {
+   "frames": 96,
+   "secs": 3.2,
+   "travel_cm": 137.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_disarm_bow.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 12.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_dive_forward.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 346.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_dodge_backward.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 210.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_dodge_forward.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 206.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_dodge_left.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 179.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_dodge_right.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 184.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_draw_arrow.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 4.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_equip_bow.fbx": {
+   "frames": 28,
+   "secs": 0.93,
+   "travel_cm": 8.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_idle_01.fbx": {
+   "frames": 154,
+   "secs": 5.13,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_idle_02_looking.fbx": {
+   "frames": 97,
+   "secs": 3.23,
+   "travel_cm": 4.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_idle_03_examine.fbx": {
+   "frames": 154,
+   "secs": 5.13,
+   "travel_cm": 3.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_melee_kick.fbx": {
+   "frames": 44,
+   "secs": 1.47,
+   "travel_cm": 47.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_melee_punch.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 6.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_react_small_from_front.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 13.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_react_small_from_headshot.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 6.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_run_back.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 185.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_run_forward.fbx": {
+   "frames": 27,
+   "secs": 0.9,
+   "travel_cm": 301.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_run_forward_stop.fbx": {
+   "frames": 28,
+   "secs": 0.93,
+   "travel_cm": 54.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_run_left.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 205.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_run_right.fbx": {
+   "frames": 24,
+   "secs": 0.8,
+   "travel_cm": 238.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_turn_90_left.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 24.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_turn_90_right.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 16.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_walk_back.fbx": {
+   "frames": 45,
+   "secs": 1.5,
+   "travel_cm": 133.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_walk_forward.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 133.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_walk_left.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 171.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/standing_walk_right.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 183.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Longbow_Pack/unarmed_idle_01.fbx": {
+   "frames": 154,
+   "secs": 5.13,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/crouch_idle.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 0.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/crouch_to_standing_idle.fbx": {
+   "frames": 20,
+   "secs": 0.67,
+   "travel_cm": 1.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_block_idle.fbx": {
+   "frames": 56,
+   "secs": 1.87,
+   "travel_cm": 1.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_block_react_large.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 7.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_disarm_over_shoulder.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 25.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_disarm_underarm.fbx": {
+   "frames": 52,
+   "secs": 1.73,
+   "travel_cm": 10.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_idle.fbx": {
+   "frames": 56,
+   "secs": 1.87,
+   "travel_cm": 1.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_idle_looking_ver_1.fbx": {
+   "frames": 339,
+   "secs": 11.3,
+   "travel_cm": 13.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_idle_looking_ver_2.fbx": {
+   "frames": 236,
+   "secs": 7.87,
+   "travel_cm": 5.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_jump.fbx": {
+   "frames": 58,
+   "secs": 1.93,
+   "travel_cm": 21.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_360_high.fbx": {
+   "frames": 96,
+   "secs": 3.2,
+   "travel_cm": 53.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_360_low.fbx": {
+   "frames": 76,
+   "secs": 2.53,
+   "travel_cm": 35.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_backhand.fbx": {
+   "frames": 96,
+   "secs": 3.2,
+   "travel_cm": 77.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_downward.fbx": {
+   "frames": 69,
+   "secs": 2.3,
+   "travel_cm": 18.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_horizontal.fbx": {
+   "frames": 73,
+   "secs": 2.43,
+   "travel_cm": 17.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_kick_ver_1.fbx": {
+   "frames": 57,
+   "secs": 1.9,
+   "travel_cm": 41.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_attack_kick_ver_2.fbx": {
+   "frames": 43,
+   "secs": 1.43,
+   "travel_cm": 43.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_combo_attack_ver_1.fbx": {
+   "frames": 141,
+   "secs": 4.7,
+   "travel_cm": 160.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_combo_attack_ver_2.fbx": {
+   "frames": 127,
+   "secs": 4.23,
+   "travel_cm": 54.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_combo_attack_ver_3.fbx": {
+   "frames": 83,
+   "secs": 2.77,
+   "travel_cm": 17.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_melee_run_jump_attack.fbx": {
+   "frames": 111,
+   "secs": 3.7,
+   "travel_cm": 412.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_react_large_from_left.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 14.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_react_large_from_right.fbx": {
+   "frames": 54,
+   "secs": 1.8,
+   "travel_cm": 9.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_react_large_gut.fbx": {
+   "frames": 49,
+   "secs": 1.63,
+   "travel_cm": 9.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_run_back.fbx": {
+   "frames": 25,
+   "secs": 0.83,
+   "travel_cm": 149.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_run_forward.fbx": {
+   "frames": 23,
+   "secs": 0.77,
+   "travel_cm": 178.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_taunt_battlecry.fbx": {
+   "frames": 86,
+   "secs": 2.87,
+   "travel_cm": 20.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_taunt_chest_thump.fbx": {
+   "frames": 86,
+   "secs": 2.87,
+   "travel_cm": 13.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_turn_left_90.fbx": {
+   "frames": 54,
+   "secs": 1.8,
+   "travel_cm": 24.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_turn_right_90.fbx": {
+   "frames": 50,
+   "secs": 1.67,
+   "travel_cm": 25.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_walk_back.fbx": {
+   "frames": 42,
+   "secs": 1.4,
+   "travel_cm": 124.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_walk_forward.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 133.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_walk_left.fbx": {
+   "frames": 38,
+   "secs": 1.27,
+   "travel_cm": 114.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/standing_walk_right.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 132.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_equip_over_shoulder.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 25.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_equip_underarm.fbx": {
+   "frames": 38,
+   "secs": 1.27,
+   "travel_cm": 5.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_idle.fbx": {
+   "frames": 58,
+   "secs": 1.93,
+   "travel_cm": 1.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_idle_looking_ver_1.fbx": {
+   "frames": 339,
+   "secs": 11.3,
+   "travel_cm": 13.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_idle_looking_ver_2.fbx": {
+   "frames": 236,
+   "secs": 7.87,
+   "travel_cm": 3.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_jump.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 15.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_jump_running.fbx": {
+   "frames": 43,
+   "secs": 1.43,
+   "travel_cm": 336.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_run_back.fbx": {
+   "frames": 24,
+   "secs": 0.8,
+   "travel_cm": 155.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_run_forward.fbx": {
+   "frames": 25,
+   "secs": 0.83,
+   "travel_cm": 209.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_turn_left_90.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 16.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_turn_right_90.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 14.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_walk_back.fbx": {
+   "frames": 40,
+   "secs": 1.33,
+   "travel_cm": 111.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Melee_Axe_Pack/unarmed_walk_forward.fbx": {
+   "frames": 42,
+   "secs": 1.4,
+   "travel_cm": 133.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/crouching_turn_90_left.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 20.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/crouching_turn_90_right.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 13.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_crouching_headshot_front.fbx": {
+   "frames": 58,
+   "secs": 1.93,
+   "travel_cm": 113.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_from_back_headshot.fbx": {
+   "frames": 112,
+   "secs": 3.73,
+   "travel_cm": 100.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_from_front_headshot.fbx": {
+   "frames": 86,
+   "secs": 2.87,
+   "travel_cm": 51.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_from_right.fbx": {
+   "frames": 100,
+   "secs": 3.33,
+   "travel_cm": 90.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_from_the_back.fbx": {
+   "frames": 90,
+   "secs": 3.0,
+   "travel_cm": 114.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/death_from_the_front.fbx": {
+   "frames": 104,
+   "secs": 3.47,
+   "travel_cm": 109.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/idle.fbx": {
+   "frames": 64,
+   "secs": 2.13,
+   "travel_cm": 0.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/idle_aiming.fbx": {
+   "frames": 64,
+   "secs": 2.13,
+   "travel_cm": 0.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/idle_crouching.fbx": {
+   "frames": 64,
+   "secs": 2.13,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/idle_crouching_aiming.fbx": {
+   "frames": 64,
+   "secs": 2.13,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/jump_down.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 4.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/jump_loop.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 0.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/jump_up.fbx": {
+   "frames": 17,
+   "secs": 0.57,
+   "travel_cm": 3.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_backward.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 232.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_backward_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 164.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_backward_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 164.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_forward.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 232.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_forward_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 164.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_forward_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 164.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 232.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/run_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 232.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_backward.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 348.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_backward_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 246.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_backward_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 246.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_forward.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 348.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_forward_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 246.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_forward_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 246.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_left.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 348.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/sprint_right.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 348.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/turn_90_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 16.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/turn_90_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 16.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_backward.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 185.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_backward_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 131.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_backward_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 131.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_backward.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 197.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_backward_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 139.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_backward_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 139.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_forward.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 197.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_forward_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 139.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_forward_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 139.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 197.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_crouching_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 197.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_forward.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 185.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_forward_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 131.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_forward_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 131.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_left.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 185.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Pro_Rifle_Pack/walk_right.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 185.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/running_crawl.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 144.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_attack.fbx": {
+   "frames": 80,
+   "secs": 2.67,
+   "travel_cm": 16.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_biting.fbx": {
+   "frames": 209,
+   "secs": 6.97,
+   "travel_cm": 75.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_biting_2.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 5.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_crawl.fbx": {
+   "frames": 155,
+   "secs": 5.17,
+   "travel_cm": 214.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_death.fbx": {
+   "frames": 90,
+   "secs": 3.0,
+   "travel_cm": 115.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_dying.fbx": {
+   "frames": 101,
+   "secs": 3.37,
+   "travel_cm": 124.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_idle.fbx": {
+   "frames": 131,
+   "secs": 4.37,
+   "travel_cm": 2.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_neck_bite.fbx": {
+   "frames": 126,
+   "secs": 4.2,
+   "travel_cm": 57.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_run.fbx": {
+   "frames": 25,
+   "secs": 0.83,
+   "travel_cm": 237.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_scream.fbx": {
+   "frames": 85,
+   "secs": 2.83,
+   "travel_cm": 11.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Scary_Zombie_Pack/zombie_walk.fbx": {
+   "frames": 122,
+   "secs": 4.07,
+   "travel_cm": 132.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sheath_sword_1.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 15.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sheath_sword_2.fbx": {
+   "frames": 26,
+   "secs": 0.87,
+   "travel_cm": 7.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_180_turn.fbx": {
+   "frames": 25,
+   "secs": 0.83,
+   "travel_cm": 50.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_180_turn_2.fbx": {
+   "frames": 26,
+   "secs": 0.87,
+   "travel_cm": 73.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_attack.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 355.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_attack_2.fbx": {
+   "frames": 40,
+   "secs": 1.33,
+   "travel_cm": 258.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_attack_3.fbx": {
+   "frames": 53,
+   "secs": 1.77,
+   "travel_cm": 233.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_attack_4.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 11.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_block.fbx": {
+   "frames": 18,
+   "secs": 0.6,
+   "travel_cm": 25.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_block_2.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 27.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_block_idle.fbx": {
+   "frames": 43,
+   "secs": 1.43,
+   "travel_cm": 0.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_casting.fbx": {
+   "frames": 90,
+   "secs": 3.0,
+   "travel_cm": 19.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_casting_2.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 5.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouch.fbx": {
+   "frames": 18,
+   "secs": 0.6,
+   "travel_cm": 26.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouch_block.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 29.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouch_block_2.fbx": {
+   "frames": 25,
+   "secs": 0.83,
+   "travel_cm": 2.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouch_block_idle.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 0.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouch_idle.fbx": {
+   "frames": 74,
+   "secs": 2.47,
+   "travel_cm": 0.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouching.fbx": {
+   "frames": 16,
+   "secs": 0.53,
+   "travel_cm": 26.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouching_2.fbx": {
+   "frames": 19,
+   "secs": 0.63,
+   "travel_cm": 29.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_crouching_3.fbx": {
+   "frames": 20,
+   "secs": 0.67,
+   "travel_cm": 5.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_death.fbx": {
+   "frames": 70,
+   "secs": 2.33,
+   "travel_cm": 120.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_death_2.fbx": {
+   "frames": 118,
+   "secs": 3.93,
+   "travel_cm": 111.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_idle.fbx": {
+   "frames": 111,
+   "secs": 3.7,
+   "travel_cm": 8.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_idle_2.fbx": {
+   "frames": 227,
+   "secs": 7.57,
+   "travel_cm": 9.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_idle_3.fbx": {
+   "frames": 261,
+   "secs": 8.7,
+   "travel_cm": 19.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_idle_4.fbx": {
+   "frames": 77,
+   "secs": 2.57,
+   "travel_cm": 0.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_impact.fbx": {
+   "frames": 24,
+   "secs": 0.8,
+   "travel_cm": 4.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_impact_2.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 6.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_impact_3.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 12.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_jump.fbx": {
+   "frames": 26,
+   "secs": 0.87,
+   "travel_cm": 251.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_jump_2.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 10.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_kick.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 53.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_power_up.fbx": {
+   "frames": 72,
+   "secs": 2.4,
+   "travel_cm": 13.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_run.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 278.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_run_2.fbx": {
+   "frames": 17,
+   "secs": 0.57,
+   "travel_cm": 224.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_slash.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 49.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_slash_2.fbx": {
+   "frames": 107,
+   "secs": 3.57,
+   "travel_cm": 238.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_slash_3.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 48.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_slash_4.fbx": {
+   "frames": 74,
+   "secs": 2.47,
+   "travel_cm": 99.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_slash_5.fbx": {
+   "frames": 42,
+   "secs": 1.4,
+   "travel_cm": 48.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_strafe.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 133.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_strafe_2.fbx": {
+   "frames": 40,
+   "secs": 1.33,
+   "travel_cm": 135.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_strafe_3.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 222.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_strafe_4.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 228.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_turn.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 29.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_turn_2.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 26.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_walk.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 158.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "Sword_and_Shield_Pack/sword_and_shield_walk_2.fbx": {
+   "frames": 39,
+   "secs": 1.3,
+   "travel_cm": 137.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "arm_gesture.fbx": {
+   "frames": 103,
+   "secs": 3.43,
+   "travel_cm": 2.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "attemptopening.fbx": {
+   "frames": 158,
+   "secs": 5.27,
+   "travel_cm": 4.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "bartending.fbx": {
+   "frames": 408,
+   "secs": 13.6,
+   "travel_cm": 33.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "bayonet_stab.fbx": {
+   "frames": 99,
+   "secs": 3.3,
+   "travel_cm": 44.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "block.fbx": {
+   "frames": 87,
+   "secs": 2.9,
+   "travel_cm": 12.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "center_block.fbx": {
+   "frames": 49,
+   "secs": 1.63,
+   "travel_cm": 11.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "cheering.fbx": {
+   "frames": 88,
+   "secs": 2.93,
+   "travel_cm": 8.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "cheering_while_sitting.fbx": {
+   "frames": 67,
+   "secs": 2.23,
+   "travel_cm": 3.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "clapping.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 0.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "climbing.fbx": {
+   "frames": 48,
+   "secs": 1.6,
+   "travel_cm": 21.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "climbing_down_wall.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 33.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "climbing_to_top.fbx": {
+   "frames": 121,
+   "secs": 4.03,
+   "travel_cm": 136.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "climbing_up_wall.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 33.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "closing.fbx": {
+   "frames": 186,
+   "secs": 6.2,
+   "travel_cm": 3.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "convulsing.fbx": {
+   "frames": 58,
+   "secs": 1.93,
+   "travel_cm": 2.9,
+   "in_place": true,
+   "has_mesh": true
+  },
+  "cross_punch.fbx": {
+   "frames": 61,
+   "secs": 2.03,
+   "travel_cm": 13.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "crouch_torch_walk_back.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 12.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "crouched_walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 141.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "crying.fbx": {
+   "frames": 189,
+   "secs": 6.3,
+   "travel_cm": 7.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "defeat.fbx": {
+   "frames": 144,
+   "secs": 4.8,
+   "travel_cm": 4.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "defeated2.fbx": {
+   "frames": 203,
+   "secs": 6.77,
+   "travel_cm": 19.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "drinking.fbx": {
+   "frames": 267,
+   "secs": 8.9,
+   "travel_cm": 2.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "dying.fbx": {
+   "frames": 174,
+   "secs": 5.8,
+   "travel_cm": 151.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "dying_backwards.fbx": {
+   "frames": 139,
+   "secs": 4.63,
+   "travel_cm": 96.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "elbow_punching.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 10.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "fallen_idle.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 1.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_laying_pose.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_laying_pose2.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_laying_pose3.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_sitting_pose.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_sitting_pose2.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_standing_pose.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_standing_pose2.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_standing_pose3.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_standing_pose4.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_standing_pose5.fbx": {
+   "frames": 2,
+   "secs": 0.07,
+   "travel_cm": 0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_stop_walking.fbx": {
+   "frames": 47,
+   "secs": 1.57,
+   "travel_cm": 144.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female/female_tough_walk.fbx": {
+   "frames": 80,
+   "secs": 2.67,
+   "travel_cm": 10.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/female_walk.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 5.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/idle.fbx": {
+   "frames": 500,
+   "secs": 16.67,
+   "travel_cm": 12.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/idle2.fbx": {
+   "frames": 251,
+   "secs": 8.37,
+   "travel_cm": 0.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/idle3.fbx": {
+   "frames": 301,
+   "secs": 10.03,
+   "travel_cm": 1.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/talking.fbx": {
+   "frames": 179,
+   "secs": 5.97,
+   "travel_cm": 6.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female/walking.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 5.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/jump.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 13.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/left_strafe.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 231.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/left_strafe_walk.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 174.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/left_turn.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 14.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/left_turn_2.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 16.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/right_strafe.fbx": {
+   "frames": 21,
+   "secs": 0.7,
+   "travel_cm": 231.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/right_strafe_walk.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 174.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/right_turn.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 11.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/right_turn_2.fbx": {
+   "frames": 36,
+   "secs": 1.2,
+   "travel_cm": 11.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/running.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 253.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "female_Female_Basic_Locomotion_Pack/walking.fbx": {
+   "frames": 30,
+   "secs": 1.0,
+   "travel_cm": 155.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "flying_back_death.fbx": {
+   "frames": 92,
+   "secs": 3.07,
+   "travel_cm": 146.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "getting_bit.fbx": {
+   "frames": 123,
+   "secs": 4.1,
+   "travel_cm": 183.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "hanging_idle.fbx": {
+   "frames": 71,
+   "secs": 2.37,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "hook_punch.fbx": {
+   "frames": 66,
+   "secs": 2.2,
+   "travel_cm": 20.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "idle2.fbx": {
+   "frames": 60,
+   "secs": 2.0,
+   "travel_cm": 0.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "injured_walking.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 4.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "kneeling_idle.fbx": {
+   "frames": 129,
+   "secs": 4.3,
+   "travel_cm": 0.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "laying_idle.fbx": {
+   "frames": 65,
+   "secs": 2.17,
+   "travel_cm": 0.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "left_turn.fbx": {
+   "frames": 29,
+   "secs": 0.97,
+   "travel_cm": 11.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "lifting.fbx": {
+   "frames": 217,
+   "secs": 7.23,
+   "travel_cm": 18.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "lookingfar.fbx": {
+   "frames": 147,
+   "secs": 4.9,
+   "travel_cm": 2.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "neutral_idle.fbx": {
+   "frames": 264,
+   "secs": 8.8,
+   "travel_cm": 2.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "old_man_idle.fbx": {
+   "frames": 366,
+   "secs": 12.2,
+   "travel_cm": 8.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "opening.fbx": {
+   "frames": 145,
+   "secs": 4.83,
+   "travel_cm": 4.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "orc_idle.fbx": {
+   "frames": 222,
+   "secs": 7.4,
+   "travel_cm": 5.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "orc_idle2.fbx": {
+   "frames": 161,
+   "secs": 5.37,
+   "travel_cm": 1.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "orc_walk.fbx": {
+   "frames": 35,
+   "secs": 1.17,
+   "travel_cm": 14.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "orc_walk2.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 12.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "picking_up.fbx": {
+   "frames": 288,
+   "secs": 9.6,
+   "travel_cm": 14.6,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "picking_up_object.fbx": {
+   "frames": 104,
+   "secs": 3.47,
+   "travel_cm": 6.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "pull_heavy_object.fbx": {
+   "frames": 34,
+   "secs": 1.13,
+   "travel_cm": 10.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "pull_heavy_object_start.fbx": {
+   "frames": 42,
+   "secs": 1.4,
+   "travel_cm": 40.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "pull_heavy_object_stop.fbx": {
+   "frames": 41,
+   "secs": 1.37,
+   "travel_cm": 47.8,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "pulling_a_rope.fbx": {
+   "frames": 443,
+   "secs": 14.77,
+   "travel_cm": 27.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "pulling_lever.fbx": {
+   "frames": 189,
+   "secs": 6.3,
+   "travel_cm": 6.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "punching.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 8.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "push.fbx": {
+   "frames": 52,
+   "secs": 1.73,
+   "travel_cm": 9.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "quick_formal_bow.fbx": {
+   "frames": 83,
+   "secs": 2.77,
+   "travel_cm": 4.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "quick_informal_bow.fbx": {
+   "frames": 83,
+   "secs": 2.77,
+   "travel_cm": 9.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "rallying.fbx": {
+   "frames": 187,
+   "secs": 6.23,
+   "travel_cm": 137.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "reaching_out.fbx": {
+   "frames": 121,
+   "secs": 4.03,
+   "travel_cm": 2.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "reacting.fbx": {
+   "frames": 111,
+   "secs": 3.7,
+   "travel_cm": 6.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "right_turn.fbx": {
+   "frames": 31,
+   "secs": 1.03,
+   "travel_cm": 16.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "running.fbx": {
+   "frames": 26,
+   "secs": 0.87,
+   "travel_cm": 2.2,
+   "in_place": true,
+   "has_mesh": true
+  },
+  "running2.fbx": {
+   "frames": 22,
+   "secs": 0.73,
+   "travel_cm": 2.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "seated_idle.fbx": {
+   "frames": 126,
+   "secs": 4.2,
+   "travel_cm": 0.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "shaking_hands_1.fbx": {
+   "frames": 132,
+   "secs": 4.4,
+   "travel_cm": 27.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "sit_to_stand.fbx": {
+   "frames": 69,
+   "secs": 2.3,
+   "travel_cm": 47.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "sitting.fbx": {
+   "frames": 121,
+   "secs": 4.03,
+   "travel_cm": 0.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "sitting_clap.fbx": {
+   "frames": 196,
+   "secs": 6.53,
+   "travel_cm": 0.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "sitting_drinking.fbx": {
+   "frames": 169,
+   "secs": 5.63,
+   "travel_cm": 0.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "sittingdown.fbx": {
+   "frames": 134,
+   "secs": 4.47,
+   "travel_cm": 48.2,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "sneak_walk.fbx": {
+   "frames": 28,
+   "secs": 0.93,
+   "travel_cm": 5.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "stabbing.fbx": {
+   "frames": 80,
+   "secs": 2.67,
+   "travel_cm": 23.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "stabbing2.fbx": {
+   "frames": 72,
+   "secs": 2.4,
+   "travel_cm": 16.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "stand_up.fbx": {
+   "frames": 146,
+   "secs": 4.87,
+   "travel_cm": 41.7,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "standing_greeting.fbx": {
+   "frames": 154,
+   "secs": 5.13,
+   "travel_cm": 2.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "standing_idle.fbx": {
+   "frames": 181,
+   "secs": 6.03,
+   "travel_cm": 1.1,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "standing_melee_attack_horizontal.fbx": {
+   "frames": 73,
+   "secs": 2.43,
+   "travel_cm": 17.3,
+   "in_place": false,
+   "has_mesh": true
+  },
+  "standing_torch_idle_01.fbx": {
+   "frames": 191,
+   "secs": 6.37,
+   "travel_cm": 1.5,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "standing_torch_idle_02.fbx": {
+   "frames": 281,
+   "secs": 9.37,
+   "travel_cm": 9.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "start_climbing_ladder.fbx": {
+   "frames": 62,
+   "secs": 2.07,
+   "travel_cm": 106.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "start_walking.fbx": {
+   "frames": 89,
+   "secs": 2.97,
+   "travel_cm": 190.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "stop_walking.fbx": {
+   "frames": 91,
+   "secs": 3.03,
+   "travel_cm": 119.3,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "surprised.fbx": {
+   "frames": 121,
+   "secs": 4.03,
+   "travel_cm": 2.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "sword_and_shield_slash.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 48.1,
+   "in_place": false,
+   "has_mesh": true
+  },
+  "sword_and_shield_slash2.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 49.8,
+   "in_place": false,
+   "has_mesh": true
+  },
+  "taking_punch.fbx": {
+   "frames": 171,
+   "secs": 5.7,
+   "travel_cm": 10.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "talking.fbx": {
+   "frames": 119,
+   "secs": 3.97,
+   "travel_cm": 12.4,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "terrified.fbx": {
+   "frames": 601,
+   "secs": 20.03,
+   "travel_cm": 25.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "throw_object.fbx": {
+   "frames": 147,
+   "secs": 4.9,
+   "travel_cm": 93.5,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "unarmed_grab_torch_from_floor.fbx": {
+   "frames": 116,
+   "secs": 3.87,
+   "travel_cm": 30.4,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "unarmed_grab_torch_from_wall.fbx": {
+   "frames": 139,
+   "secs": 4.63,
+   "travel_cm": 68.6,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "vampiric_bite.fbx": {
+   "frames": 92,
+   "secs": 3.07,
+   "travel_cm": 111.1,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "victory.fbx": {
+   "frames": 136,
+   "secs": 4.53,
+   "travel_cm": 9.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "victory_idle.fbx": {
+   "frames": 51,
+   "secs": 1.7,
+   "travel_cm": 8.2,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "walking.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 4.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "walking2.fbx": {
+   "frames": 43,
+   "secs": 1.43,
+   "travel_cm": 9.0,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "walking3.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 6.3,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "walking_backwards.fbx": {
+   "frames": 46,
+   "secs": 1.53,
+   "travel_cm": 12.8,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "walking_up_the_stairs.fbx": {
+   "frames": 37,
+   "secs": 1.23,
+   "travel_cm": 48.9,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "warrior_idle.fbx": {
+   "frames": 345,
+   "secs": 11.5,
+   "travel_cm": 3.9,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "yelling.fbx": {
+   "frames": 236,
+   "secs": 7.87,
+   "travel_cm": 9.7,
+   "in_place": true,
+   "has_mesh": false
+  },
+  "zombie_punching.fbx": {
+   "frames": 32,
+   "secs": 1.07,
+   "travel_cm": 19.0,
+   "in_place": false,
+   "has_mesh": false
+  },
+  "zombie_punching2.fbx": {
+   "frames": 116,
+   "secs": 3.87,
+   "travel_cm": 57.2,
+   "in_place": false,
+   "has_mesh": false
+  }
+ },
+ "duplicates": {
+  "Creature_Pack/left_turn_45.fbx": "Creature_NPC_Pack/left_turn_45.fbx",
+  "Creature_Pack/mutant_breathing_idle.fbx": "Creature_NPC_Pack/mutant_breathing_idle.fbx",
+  "Creature_Pack/mutant_dying.fbx": "Creature_NPC_Pack/mutant_dying.fbx",
+  "Creature_Pack/mutant_flexing_muscles.fbx": "Creature_NPC_Pack/mutant_flexing_muscles.fbx",
+  "Creature_Pack/mutant_idle_2.fbx": "Creature_NPC_Pack/mutant_idle.fbx",
+  "Creature_Pack/mutant_jumping.fbx": "Creature_NPC_Pack/mutant_jumping.fbx",
+  "Creature_Pack/mutant_left_turn_45.fbx": "Creature_NPC_Pack/mutant_left_turn_45.fbx",
+  "Creature_Pack/mutant_right_turn_45.fbx": "Creature_NPC_Pack/mutant_right_turn_45.fbx",
+  "Creature_Pack/mutant_right_turn_45_2.fbx": "Creature_NPC_Pack/mutant_right_turn_45_2.fbx",
+  "Creature_Pack/mutant_run.fbx": "Creature_NPC_Pack/mutant_run.fbx",
+  "Creature_Pack/mutant_swiping.fbx": "Creature_NPC_Pack/mutant_swiping.fbx",
+  "Creature_Pack/mutant_walking.fbx": "Creature_NPC_Pack/mutant_walking.fbx",
+  "Magic_Spell_Pack/standing_idle.fbx": "Magic_Locomotion_Pack/standing_idle.fbx",
+  "female_Female_Basic_Locomotion_Pack/idle.fbx": "female/idle2.fbx",
+  "female_Female_Locomotion_Pack/idle.fbx": "female/idle2.fbx",
+  "female_Female_Locomotion_Pack/jump.fbx": "female_Female_Basic_Locomotion_Pack/jump.fbx",
+  "female_Female_Locomotion_Pack/left_strafe.fbx": "female_Female_Basic_Locomotion_Pack/left_strafe.fbx",
+  "female_Female_Locomotion_Pack/left_strafe_walk.fbx": "female_Female_Basic_Locomotion_Pack/left_strafe_walk.fbx",
+  "female_Female_Locomotion_Pack/left_turn.fbx": "female_Female_Basic_Locomotion_Pack/left_turn.fbx",
+  "female_Female_Locomotion_Pack/right_strafe.fbx": "female_Female_Basic_Locomotion_Pack/right_strafe.fbx",
+  "female_Female_Locomotion_Pack/right_strafe_walk.fbx": "female_Female_Basic_Locomotion_Pack/right_strafe_walk.fbx",
+  "female_Female_Locomotion_Pack/right_turn.fbx": "female_Female_Basic_Locomotion_Pack/right_turn.fbx",
+  "female_Female_Locomotion_Pack/running.fbx": "female_Female_Basic_Locomotion_Pack/running.fbx",
+  "female_Female_Locomotion_Pack/walking.fbx": "female_Female_Basic_Locomotion_Pack/walking.fbx",
+  "head_nod_yes.fbx": "Gestures_Pack_Basic/head_nod_yes.fbx",
+  "idle.fbx": "Male_Locomotion_Pack/idle.fbx",
+  "injured_hurting_idle.fbx": "Male_Injured_Pack/injured_hurting_idle.fbx",
+  "injured_idle.fbx": "Male_Injured_Pack/injured_idle.fbx",
+  "shaking_head_no.fbx": "Gestures_Pack_Basic/shaking_head_no.fbx",
+  "sword_and_shield_idle.fbx": "Sword_and_Shield_Pack/sword_and_shield_idle.fbx",
+  "zombie_neck_bite.fbx": "Scary_Zombie_Pack/zombie_neck_bite.fbx"
+ }
+}

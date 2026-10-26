@@ -1,0 +1,544 @@
+{
+ "act": 5,
+ "arc": "",
+ "start": {
+  "location": "a5_asylum_library",
+  "protagonist": "seward",
+  "party": [
+   "seward",
+   "vanhelsing",
+   "arthur",
+   "quincey"
+  ],
+  "items": {
+   "crucifix": 1,
+   "host": 7,
+   "garlic_wreath": 1,
+   "stake": 1,
+   "hammer": 1,
+   "knife": 1,
+   "chloral": 1
+  },
+  "flags": [
+   "a5_act_start"
+  ]
+ },
+ "exit_to": "a6_varna_quay",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "a5_asylum_library",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_harker_lib",
+   "dialogue": "a5_harker_talk",
+   "path": [
+    "Mr. Harker, may I have your journal? Mrs. Harker will copy it."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_mina_lib1",
+   "dialogue": "a5_mina_talk1",
+   "path": [
+    "Mrs. Harker, I shall be glad of your help."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib1",
+   "dialogue": "a5_vh_talk1",
+   "path": [
+    "Professor, Mrs. Harker asks for your memorandum."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_arthur_lib",
+   "dialogue": "a5_arthur_talk",
+   "path": [
+    "Lord Godalming, might I have a length of rope?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_library",
+   "eid": "a5_inkstand"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_asylum_library",
+   "eid": "a5_cabinet",
+   "item": "a5_cabinet_key"
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_library",
+   "eid": "a5_decanter"
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_library",
+   "eid": "a5_carafe"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_renfield_cell",
+   "eid": "a5_renfield",
+   "dialogue": "a5_renfield_plea",
+   "path": [
+    "What is troubling you, Renfield?",
+    "[Give him the chloral]",
+    "Tell me again about the Master.",
+    "If he comes, will you call out?",
+    "Swear that you will not invite him."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_renfield_cell",
+   "eid": "a5_renfield_book"
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_grounds",
+   "eid": "a5_g_oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_grounds",
+   "eid": "a5_g_wood"
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_grounds",
+   "eid": "a5_g_cloth"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_mina_bedroom",
+   "eid": "a5_bedroom_window",
+   "item": "garlic_wreath"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_mina_bedroom",
+   "eid": "a5_bedroom_window",
+   "item": "crucifix"
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_typing_room",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a5_typing_room",
+   "eid": "a5_typewriter",
+   "item": "a5_cylinders"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_typing_room",
+   "eid": "a5_clue_board",
+   "dialogue": "a5_clue_board",
+   "path": [
+    "Why does Renfield know him?"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a5_typing_room",
+   "eid": "a5_typewriter",
+   "item": "a5_harker_journal"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_typing_room",
+   "eid": "a5_clue_board",
+   "dialogue": "a5_clue_board",
+   "path": [
+    "Where does the Count lie in London?"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a5_typing_room",
+   "eid": "a5_typewriter",
+   "item": "a5_whitby_cutting"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_typing_room",
+   "eid": "a5_clue_board",
+   "dialogue": "a5_clue_board",
+   "path": [
+    "How did he come from Transylvania?"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a5_typing_room",
+   "eid": "a5_typewriter",
+   "item": "a5_vh_memorandum"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_typing_room",
+   "eid": "a5_clue_board",
+   "dialogue": "a5_clue_board",
+   "path": [
+    "What can be done against him?",
+    "[Fit all the threads together]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_typing_room",
+   "eid": "a5_clue_board",
+   "dialogue": "a5_clue_board",
+   "path": [
+    "[Fit all the threads together]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a5_typing_room",
+   "eid": "a5_typewriter",
+   "item": "a5_renfield_notebook"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib2",
+   "dialogue": "a5_council",
+   "path": [
+    "Can he enter this house?",
+    "How can he be harmed?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib2",
+   "dialogue": "a5_council",
+   "path": [
+    "Why does he need the boxes of earth?",
+    "[Propose that Mrs. Harker be one of us]",
+    "Agreed. We keep no secrets from her."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_quincey_lib",
+   "dialogue": "a5_quincey_talk",
+   "path": [
+    "Quincey, I am told you carry the purse."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_harker_lib",
+   "dialogue": "a5_harker_talk",
+   "path": [
+    "The Carfax papers, Mr. Harker?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_carfax_grounds",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_carfax_grounds",
+   "eid": "a5_gatepost"
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_carfax_chapel",
+   "index": 0
+  },
+  {
+   "kind": "fight",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_rat_swarm",
+   "enc": "carfax_rats"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_box_s1",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_box_s2",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_box_s3",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_box_s4",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_box_s5",
+   "item": "host"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_carfax_chapel",
+   "eid": "a5_harker_chapel",
+   "dialogue": "a5_harker_chapel",
+   "path": [
+    "[Add up the stacks]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_london_street",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_carters_office",
+   "eid": "a5_smollet",
+   "dialogue": "a5_smollet_talk",
+   "path": [
+    "I am inquiring after fifty boxes of earth, consigned to Carfax.",
+    "[Slip him a sovereign]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_london_street",
+   "eid": "a5_urchin",
+   "dialogue": "a5_urchin_talk",
+   "path": [
+    "[Show Mr. Smollet's scrap of paper]",
+    "Potter's Court, off Bartel Street, Walworth: Corcoran's, number four."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_bloxam_yard",
+   "eid": "a5_bloxam",
+   "dialogue": "a5_bloxam_talk",
+   "path": [
+    "[Offer a sovereign]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_agent_office",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_agent_office",
+   "eid": "a5_agent_clerk",
+   "dialogue": "a5_agent_talk",
+   "path": [
+    "I am enquiring after 347 Piccadilly.",
+    "[Show Lord Godalming's letter of authority]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_clock",
+   "dialogue": "a5_night_prompt",
+   "path": [
+    "[Retire for the night. Let the Count come if he will.]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_renfield_cell",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_renfield_cell",
+   "eid": "a5_renfield_dying",
+   "dialogue": "a5_renfield_dying",
+   "path": [
+    "[Moisten his lips with water]",
+    "Who did this, Renfield?",
+    "Where? Which room?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_mina_bedroom",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_mina_bedroom",
+   "eid": "a5_count_bed",
+   "dialogue": "a5_attack_scene",
+   "path": [
+    "[Raise the crucifix and advance]",
+    "[Hold out the Sacred Host]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib4",
+   "dialogue": "a5_vh_talk4",
+   "path": [
+    "We need more of the Host."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_mina_lib3",
+   "dialogue": "a5_mina_talk3",
+   "path": [
+    "How do you feel, Mrs. Harker?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_piccadilly_house",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_piccadilly_house",
+   "eid": "a5_vh_pic",
+   "dialogue": "a5_vh_pic",
+   "path": [
+    "[Hang the garlic wreath on the front door]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a5_piccadilly_house",
+   "eid": "a5_hb_p1",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a5_piccadilly_house",
+   "eid": "a5_hb_p2",
+   "item": "host"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_piccadilly_house",
+   "eid": "a5_count_pic",
+   "dialogue": "a5_count_ambush",
+   "path": [
+    "[Rush him with the knife]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_bermondsey_house",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a5_bermondsey_house",
+   "eid": "a5_hb_b",
+   "item": "host"
+  },
+  {
+   "kind": "enter",
+   "loc": "a5_mile_end_house",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a5_mile_end_house",
+   "eid": "a5_hb_me",
+   "item": "host"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_bermondsey_house",
+   "eid": "a5_quincey_b",
+   "dialogue": "a5_quincey_b",
+   "path": [
+    "[Report: the houses are clean and the Count has fled]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib5",
+   "dialogue": "a5_vh_trance",
+   "path": [
+    "[Begin the sunrise trance]",
+    "[Wait for sunset]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib5",
+   "dialogue": "a5_vh_trance",
+   "path": [
+    "What does she mean, Professor?",
+    "He is aboard a ship. We must learn her name: wire Lloyd's."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a5_asylum_library",
+   "eid": "a5_mail_tray_full"
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib5",
+   "dialogue": "a5_vh_trance",
+   "path": [
+    "What does she mean, Professor?",
+    "The Czarina Catherine, bound for Varna."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_vh_lib6",
+   "dialogue": "a5_vh_plan",
+   "path": [
+    "[Agree to the plan]",
+    "[Check the kit]",
+    "Crucifix, Host, stake, hammer: all here."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a5_asylum_library",
+   "eid": "a5_mina_lib5",
+   "dialogue": "a5_mina_farewell",
+   "path": [
+    "Let them go. I shall wait, and watch the link."
+   ]
+  }
+ ]
+}

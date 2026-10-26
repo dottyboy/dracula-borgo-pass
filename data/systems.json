@@ -1,0 +1,1786 @@
+{
+ "levels": {
+  "xp": [
+   0,
+   30,
+   80,
+   150,
+   240,
+   350,
+   480,
+   630,
+   800,
+   1000
+  ],
+  "max": 10,
+  "growth": "per level above 1: hp +3, nerve +2, acc +1 every 2nd, eva +1 every 3rd, faith +1 every 4th, dmg +1 every 4th"
+ },
+ "equip": {
+  "tweed_travelling_coat": {
+   "slot": "armor",
+   "armor": 1,
+   "name": "Tweed travelling coat",
+   "desc": "Good English wool; it turns a glancing blow."
+  },
+  "buffalo_coat": {
+   "slot": "armor",
+   "armor": 2,
+   "name": "Buffalo coat",
+   "desc": "Prairie leather, thick as a door."
+  },
+  "captains_oilskin": {
+   "slot": "armor",
+   "armor": 2,
+   "nerve": 1,
+   "name": "Captain's oilskin",
+   "desc": "Stiff with salt; it has seen the Bay of Biscay."
+  },
+  "doctors_greatcoat": {
+   "slot": "armor",
+   "armor": 1,
+   "hp": 2,
+   "name": "Doctor's greatcoat",
+   "desc": "Pockets for everything a physician needs."
+  },
+  "lords_riding_coat": {
+   "slot": "armor",
+   "armor": 2,
+   "name": "Lord's riding coat",
+   "desc": "Cut by a good tailor, lined against the cold."
+  },
+  "black_frock_coat": {
+   "slot": "armor",
+   "armor": 1,
+   "faith": 1,
+   "name": "Black frock coat",
+   "desc": "A scholar's coat, much-washed, much-worn."
+  },
+  "travel_shawl": {
+   "slot": "armor",
+   "armor": 1,
+   "nerve": 2,
+   "name": "Travelling shawl",
+   "desc": "Warm and pinned with care."
+  },
+  "sword_cane": {
+   "slot": "weapon",
+   "weapon": "sword_cane",
+   "name": "Sword-cane",
+   "desc": "An elegant stick with eighteen inches of steel inside."
+  },
+  "kukri": {
+   "slot": "weapon",
+   "weapon": "kukri",
+   "name": "Kukri",
+   "desc": "A heavy curved knife from the East."
+  },
+  "winchester": {
+   "slot": "weapon",
+   "weapon": "winchester",
+   "name": "Winchester rifle",
+   "desc": "Lever action, sixteen shots, American."
+  },
+  "torch": {
+   "slot": "weapon",
+   "weapon": "torch",
+   "name": "Torch",
+   "desc": "Fire, which the Un-Dead fear."
+  },
+  "holy_knife": {
+   "slot": "weapon",
+   "weapon": "holy_knife",
+   "name": "Consecrated knife",
+   "desc": "Blessed steel."
+  },
+  "crucifix": {
+   "slot": "charm",
+   "faith": 2,
+   "nerve": 2,
+   "name": "Crucifix",
+   "desc": "A simple cross to hold on to."
+  },
+  "garlic_wreath": {
+   "slot": "charm",
+   "eva": 1,
+   "nerve": 1,
+   "name": "Garlic wreath",
+   "desc": "Worn about the neck: pungent and comforting."
+  },
+  "arthur_burden_signet": {
+   "slot": "charm",
+   "nerve": 2,
+   "hp": 2,
+   "name": "Godalming's signet",
+   "desc": "The weight of a name."
+  },
+  "demeter_voyage_keepsake": {
+   "slot": "charm",
+   "faith": 2,
+   "nerve": 2,
+   "name": "Captain's crucifix and rosary",
+   "desc": "Bound in a dead man's hands."
+  },
+  "dracula_voivode_signet": {
+   "slot": "charm",
+   "dmg": 1,
+   "nerve": 1,
+   "name": "Voivode's dragon signet",
+   "desc": "Old, cold, heavy."
+  },
+  "dracula_voivode_medal": {
+   "slot": "charm",
+   "acc": 2,
+   "nerve": 1,
+   "name": "Order of the Dragon medal",
+   "desc": "A dragon coiled upon itself."
+  },
+  "dracula_voivode_charm": {
+   "slot": "charm",
+   "eva": 2,
+   "hp": 2,
+   "name": "Wolf-tooth charm",
+   "desc": "Wolves do not like it."
+  },
+  "harker_road_sealed_journal": {
+   "slot": "charm",
+   "nerve": 2,
+   "acc": 1,
+   "name": "Sealed journal",
+   "desc": "Jonathan's shorthand, under Sister Agatha's seal."
+  },
+  "lucy_summer_pressed_letter": {
+   "slot": "charm",
+   "nerve": 3,
+   "name": "Pressed-flower letter",
+   "desc": "Lucy's last gift."
+  },
+  "mina_records_keepsake": {
+   "slot": "charm",
+   "nerve": 2,
+   "faith": 1,
+   "name": "Typewriter ribbon & notebook",
+   "desc": "Mina's patient work."
+  },
+  "renfield_mercy_keepsake": {
+   "slot": "charm",
+   "nerve": 3,
+   "name": "Notebook of lives",
+   "desc": "Renfield's tallies, forgiven."
+  },
+  "seward_asylum_cylinder": {
+   "slot": "charm",
+   "nerve": 2,
+   "hp": 1,
+   "name": "Phonograph cylinder",
+   "desc": "A doctor's own voice, steady."
+  },
+  "vanhelsing_lore_bag": {
+   "slot": "charm",
+   "faith": 2,
+   "hp": 1,
+   "name": "Professor's black bag",
+   "desc": "Wafers, wire and wisdom."
+  },
+  "quincey_hunt_sheath": {
+   "slot": "charm",
+   "acc": 2,
+   "dmg": 1,
+   "name": "Bowie sheath",
+   "desc": "Santa Fe's saddle leather."
+  }
+ },
+ "rules": {
+  "time_power": {
+   "day": 0.35,
+   "dusk": 0.8,
+   "night": 1.0,
+   "dawn": 0.6
+  },
+  "mundane_factor": 0.5,
+  "repel": {
+   "crucifix": 3,
+   "host": 4,
+   "garlic": 3,
+   "wild_rose": 3
+  },
+  "kill": [
+   "stake",
+   "beheading"
+  ],
+  "box_helpless_by_day": true,
+  "needs_invitation": true,
+  "running_water": "cannot cross unaided except at slack or full tide (puzzle/timing rule)",
+  "forms": [
+   "wolf",
+   "bat",
+   "mist"
+  ],
+  "nerve_zero_frozen_turns": 2,
+  "list": [
+   {
+    "id": "crucifix",
+    "text": "A crucifix halts a vampire's attack.",
+    "book": "ch.1-4,15-16,19 crucifix repels"
+   },
+   {
+    "id": "garlic",
+    "text": "Garlic repels the Un-Dead; garlic in the mouth when staked.",
+    "book": "ch.10,16,18 garlic flowers"
+   },
+   {
+    "id": "host",
+    "text": "The Sacred Wafer (Host) holds a vampire back and sterilises its earth.",
+    "book": "ch.18-23 Van Helsing's wafer"
+   },
+   {
+    "id": "wild_rose",
+    "text": "Wild rose on a coffin keeps the Un-Dead from leaving it.",
+    "book": "ch.18 wild rose"
+   },
+   {
+    "id": "invite",
+    "text": "A vampire cannot enter a home unless invited, of free will.",
+    "book": "ch.1-4,12,16"
+   },
+   {
+    "id": "daylight",
+    "text": "Powers wane by day; helpless in the box between sunrise and sunset.",
+    "book": "ch.18,23,25"
+   },
+   {
+    "id": "water",
+    "text": "Cannot cross running water unaided except at slack or full tide.",
+    "book": "ch.24-25"
+   },
+   {
+    "id": "no_reflection",
+    "text": "Casts no reflection (mirror, shaving glass).",
+    "book": "ch.2"
+   },
+   {
+    "id": "earth",
+    "text": "Must rest in boxes of his native earth; needs the earth to be unsterilised.",
+    "book": "ch.3,18,22-23"
+   },
+   {
+    "id": "stake",
+    "text": "Staking through the heart and beheading destroys a vampire.",
+    "book": "ch.16,18"
+   },
+   {
+    "id": "command",
+    "text": "Commands wolves, rats, bats and moths; mist form.",
+    "book": "ch.1,3,7-8,21"
+   },
+   {
+    "id": "strength",
+    "text": "Strength of many men; hypnotic gaze; blood-bond with victims.",
+    "book": "ch.2-3,21,23"
+   },
+   {
+    "id": "bullet",
+    "text": "Sacred bullet and kukri/bowie blade can wound him (final chase).",
+    "book": "ch.27"
+   }
+  ]
+ },
+ "weapons": {
+  "fists": {
+   "name": "Fists",
+   "dmg": [
+    1,
+    2
+   ],
+   "acc": 0,
+   "ranged": false,
+   "users": [
+    "any"
+   ]
+  },
+  "pocket_knife": {
+   "name": "Pocket knife",
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 5,
+   "users": [
+    "any"
+   ]
+  },
+  "kukri": {
+   "name": "Kukri",
+   "dmg": [
+    5,
+    7
+   ],
+   "acc": 5,
+   "users": [
+    "harker"
+   ],
+   "uses_item": "kukri",
+   "book": "Harker's kukri, ch.27"
+  },
+  "bowie": {
+   "name": "Bowie knife",
+   "dmg": [
+    4,
+    6
+   ],
+   "acc": 8,
+   "users": [
+    "quincey"
+   ],
+   "book": "Quincey's bowie knife, ch.27"
+  },
+  "winchester": {
+   "name": "Winchester rifle",
+   "dmg": [
+    6,
+    9
+   ],
+   "acc": 5,
+   "ranged": true,
+   "ammo": "bullet",
+   "uses_item": "winchester",
+   "users": [
+    "quincey",
+    "arthur",
+    "seward",
+    "harker"
+   ],
+   "book": "Winchester, ch.27"
+  },
+  "revolver": {
+   "name": "Revolver",
+   "dmg": [
+    4,
+    6
+   ],
+   "acc": 0,
+   "ranged": true,
+   "ammo": "bullet",
+   "users": [
+    "seward",
+    "quincey",
+    "arthur",
+    "harker"
+   ]
+  },
+  "talon": {
+   "name": "Bare hands (inhuman strength)",
+   "dmg": [
+    6,
+    10
+   ],
+   "acc": 5,
+   "users": [
+    "dracula"
+   ],
+   "extra": true
+  },
+  "club": {
+   "name": "Hammer",
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 0,
+   "users": [
+    "any"
+   ]
+  },
+  "torch": {
+   "name": "Torch",
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 0,
+   "fire": true,
+   "users": [
+    "any"
+   ],
+   "extra": true,
+   "uses_item": "torch",
+   "consume": true,
+   "book": "Fire and wood as defence, ch.18"
+  },
+  "holy_knife": {
+   "name": "Consecrated knife",
+   "dmg": [
+    4,
+    6
+   ],
+   "acc": 8,
+   "holy": true,
+   "users": [
+    "any"
+   ],
+   "extra": true,
+   "uses_item": "holy_knife"
+  },
+  "sword_cane": {
+   "name": "Sword-cane",
+   "dmg": [
+    5,
+    7
+   ],
+   "acc": 6,
+   "users": [
+    "arthur",
+    "quincey",
+    "harker",
+    "seward",
+    "vanhelsing"
+   ],
+   "uses_item": "sword_cane"
+  }
+ },
+ "items": {
+  "crucifix": {
+   "name": "Crucifix",
+   "kind": "ward",
+   "ward": "crucifix",
+   "reusable": true
+  },
+  "host": {
+   "name": "Sacred Wafer",
+   "kind": "ward",
+   "ward": "host",
+   "book": "Van Helsing, ch.18-23"
+  },
+  "garlic_wreath": {
+   "name": "Garlic wreath",
+   "kind": "ward",
+   "ward": "garlic",
+   "crafted": true
+  },
+  "wild_rose": {
+   "name": "Wild rose sprig",
+   "kind": "ward",
+   "ward": "wild_rose"
+  },
+  "garlic": {
+   "name": "Garlic flowers",
+   "kind": "ingredient"
+  },
+  "brandy": {
+   "name": "Brandy",
+   "kind": "heal",
+   "hp": 6,
+   "nerve": 4,
+   "book": "brandy revives, throughout"
+  },
+  "bandage": {
+   "name": "Bandage",
+   "kind": "heal",
+   "hp": 8,
+   "nerve": 0
+  },
+  "chloral": {
+   "name": "Chloral draught",
+   "kind": "sedative",
+   "turns": 3,
+   "book": "Seward's chloral/morphia, ch.10-12"
+  },
+  "holy_water": {
+   "name": "Holy water",
+   "kind": "holy_water",
+   "extra": true
+  },
+  "stake": {
+   "name": "Stake",
+   "kind": "finisher",
+   "book": "ch.16"
+  },
+  "hammer": {
+   "name": "Hammer",
+   "kind": "tool"
+  },
+  "bullet": {
+   "name": "Bullets",
+   "kind": "ammo"
+  },
+  "sacred_bullet": {
+   "name": "Sacred bullet",
+   "kind": "ammo",
+   "holy": true,
+   "book": "Van Helsing's sacred bullet, ch.18"
+  },
+  "torch": {
+   "name": "Torch",
+   "kind": "weapon_item",
+   "extra": true
+  },
+  "holy_knife": {
+   "name": "Consecrated knife",
+   "kind": "weapon_item",
+   "extra": true
+  },
+  "kukri": {
+   "name": "Kukri",
+   "kind": "weapon_item"
+  },
+  "winchester": {
+   "name": "Winchester rifle",
+   "kind": "weapon_item"
+  },
+  "cloth": {
+   "name": "Cloth",
+   "kind": "ingredient"
+  },
+  "rope": {
+   "name": "Rope",
+   "kind": "ingredient"
+  },
+  "wood": {
+   "name": "Ash wood",
+   "kind": "ingredient"
+  },
+  "oil": {
+   "name": "Lamp oil",
+   "kind": "ingredient"
+  },
+  "water": {
+   "name": "Water",
+   "kind": "ingredient"
+  },
+  "knife": {
+   "name": "Knife",
+   "kind": "ingredient"
+  },
+  "silver": {
+   "name": "Silver coin",
+   "kind": "ingredient"
+  },
+  "tweed_travelling_coat": {
+   "name": "Tweed travelling coat",
+   "kind": "equip"
+  },
+  "buffalo_coat": {
+   "name": "Buffalo coat",
+   "kind": "equip"
+  },
+  "captains_oilskin": {
+   "name": "Captain's oilskin",
+   "kind": "equip"
+  },
+  "doctors_greatcoat": {
+   "name": "Doctor's greatcoat",
+   "kind": "equip"
+  },
+  "lords_riding_coat": {
+   "name": "Lord's riding coat",
+   "kind": "equip"
+  },
+  "black_frock_coat": {
+   "name": "Black frock coat",
+   "kind": "equip"
+  },
+  "travel_shawl": {
+   "name": "Travelling shawl",
+   "kind": "equip"
+  },
+  "sword_cane": {
+   "name": "Sword-cane",
+   "kind": "equip"
+  },
+  "arthur_burden_signet": {
+   "name": "Godalming's signet",
+   "kind": "equip"
+  },
+  "demeter_voyage_keepsake": {
+   "name": "Captain's crucifix and rosary",
+   "kind": "equip"
+  },
+  "dracula_voivode_signet": {
+   "name": "Voivode's dragon signet",
+   "kind": "equip"
+  },
+  "dracula_voivode_medal": {
+   "name": "Order of the Dragon medal",
+   "kind": "equip"
+  },
+  "dracula_voivode_charm": {
+   "name": "Wolf-tooth charm",
+   "kind": "equip"
+  },
+  "harker_road_sealed_journal": {
+   "name": "Sealed journal",
+   "kind": "equip"
+  },
+  "lucy_summer_pressed_letter": {
+   "name": "Pressed-flower letter",
+   "kind": "equip"
+  },
+  "mina_records_keepsake": {
+   "name": "Typewriter ribbon & notebook",
+   "kind": "equip"
+  },
+  "renfield_mercy_keepsake": {
+   "name": "Notebook of lives",
+   "kind": "equip"
+  },
+  "seward_asylum_cylinder": {
+   "name": "Phonograph cylinder",
+   "kind": "equip"
+  },
+  "vanhelsing_lore_bag": {
+   "name": "Professor's black bag",
+   "kind": "equip"
+  },
+  "quincey_hunt_sheath": {
+   "name": "Bowie sheath",
+   "kind": "equip"
+  }
+ },
+ "party": {
+  "harker": {
+   "model": "human_harker",
+   "variant": "harker",
+   "name": "Jonathan Harker",
+   "portrait": "harker",
+   "hp": 27,
+   "nerve": 20,
+   "spd": 5,
+   "acc": 72,
+   "eva": 8,
+   "faith": 2,
+   "weapon": "pocket_knife",
+   "skills": [
+    "insight",
+    "brace"
+   ],
+   "blurb": "Solicitor. Notes everything in shorthand; survived the castle."
+  },
+  "mina": {
+   "model": "human_mina",
+   "variant": "mina",
+   "name": "Mina Harker",
+   "portrait": "mina",
+   "hp": 18,
+   "nerve": 28,
+   "spd": 6,
+   "acc": 65,
+   "eva": 10,
+   "faith": 5,
+   "weapon": "fists",
+   "skills": [
+    "steady",
+    "insight"
+   ],
+   "blurb": "Schoolmistress. Typewriter, timetables, and the bond that sees through the Count's eyes."
+  },
+  "vanhelsing": {
+   "model": "human_vanhelsing",
+   "variant": "vh",
+   "name": "Prof. Van Helsing",
+   "portrait": "vanhelsing",
+   "hp": 22,
+   "nerve": 32,
+   "spd": 4,
+   "acc": 70,
+   "eva": 6,
+   "faith": 9,
+   "weapon": "club",
+   "skills": [
+    "holy_circle",
+    "insight",
+    "brace"
+   ],
+   "blurb": "Doctor, lawyer, metaphysician. Knows the rites."
+  },
+  "seward": {
+   "model": "human_seward",
+   "variant": "doctor",
+   "name": "Dr. John Seward",
+   "portrait": "seward",
+   "hp": 24,
+   "nerve": 22,
+   "spd": 5,
+   "acc": 70,
+   "eva": 6,
+   "faith": 4,
+   "weapon": "revolver",
+   "skills": [
+    "sedate",
+    "transfuse"
+   ],
+   "blurb": "Asylum physician; chloral, morphia and the transfusion needle."
+  },
+  "quincey": {
+   "model": "human_quincey",
+   "variant": "texan",
+   "name": "Quincey Morris",
+   "portrait": "quincey",
+   "hp": 30,
+   "nerve": 24,
+   "spd": 7,
+   "acc": 80,
+   "eva": 10,
+   "faith": 3,
+   "weapon": "bowie",
+   "skills": [
+    "steady_shot",
+    "brace"
+   ],
+   "blurb": "Texan. Winchester and bowie knife."
+  },
+  "arthur": {
+   "model": "human_arthur",
+   "variant": "lord",
+   "name": "Arthur Holmwood",
+   "portrait": "arthur",
+   "hp": 30,
+   "nerve": 22,
+   "spd": 5,
+   "acc": 72,
+   "eva": 7,
+   "faith": 4,
+   "weapon": "club",
+   "skills": [
+    "rally",
+    "stake_strike"
+   ],
+   "blurb": "Lord Godalming. Drove the stake home for Lucy."
+  },
+  "lucy": {
+   "model": "human_lucy",
+   "variant": "lucy",
+   "name": "Lucy Westenra",
+   "portrait": "lucy",
+   "hp": 16,
+   "nerve": 22,
+   "spd": 6,
+   "acc": 62,
+   "eva": 12,
+   "faith": 5,
+   "weapon": "fists",
+   "skills": [
+    "steady",
+    "brace"
+   ],
+   "playable_only": true,
+   "blurb": "A bright girl with three suitors and a sleeping habit."
+  },
+  "renfield": {
+   "model": "human_renfield",
+   "variant": "asylum",
+   "name": "R. M. Renfield",
+   "portrait": "renfield",
+   "hp": 24,
+   "nerve": 14,
+   "spd": 6,
+   "acc": 66,
+   "eva": 10,
+   "faith": 0,
+   "weapon": "fists",
+   "skills": [
+    "brace"
+   ],
+   "playable_only": true,
+   "blurb": "Zoophagous patient. Sees much that others do not."
+  },
+  "dracula": {
+   "model": "human_dracula",
+   "variant": "young",
+   "name": "The Voivode",
+   "portrait": "dracula_young",
+   "hp": 60,
+   "nerve": 40,
+   "spd": 8,
+   "acc": 85,
+   "eva": 15,
+   "faith": 0,
+   "weapon": "talon",
+   "skills": [
+    "brace",
+    "insight"
+   ],
+   "playable_only": true,
+   "blurb": "Before the legend: a prince of the Carpathians."
+  },
+  "captain": {
+   "model": "human_captain",
+   "variant": "captain",
+   "name": "Captain of the Demeter",
+   "portrait": "captain",
+   "hp": 28,
+   "nerve": 24,
+   "spd": 5,
+   "acc": 70,
+   "eva": 8,
+   "faith": 3,
+   "weapon": "club",
+   "skills": [
+    "brace",
+    "steady"
+   ],
+   "playable_only": true,
+   "blurb": "A Russian master who lashed himself to the wheel."
+  }
+ },
+ "skills": {
+  "insight": {
+   "name": "Insight",
+   "target": "none",
+   "text": "Study the enemy: party hits more often for 3 turns, weaknesses shown.",
+   "turns": 3
+  },
+  "brace": {
+   "name": "Brace",
+   "target": "none",
+   "text": "Take a defensive stance and steady your nerve (+4).",
+   "nerve": 4
+  },
+  "steady": {
+   "name": "Steady",
+   "target": "ally",
+   "text": "Restore an ally's nerve (+10).",
+   "nerve": 10
+  },
+  "holy_circle": {
+   "name": "Holy circle",
+   "target": "none",
+   "text": "Ring of Host crumbs: vampire blows are blunted by 70% and their gaze fails for 3 turns. Costs 1 Host.",
+   "cost": {
+    "host": 1
+   },
+   "turns": 3
+  },
+  "sedate": {
+   "name": "Sedate",
+   "target": "enemy",
+   "text": "Chloral: a living enemy falls asleep for 3 turns. Costs 1 chloral.",
+   "cost": {
+    "chloral": 1
+   }
+  },
+  "transfuse": {
+   "name": "Transfuse",
+   "target": "ally",
+   "text": "Give blood: ally +12 HP, you lose 4 HP.",
+   "hp": 12,
+   "self_hp": 4
+  },
+  "steady_shot": {
+   "name": "Steady shot",
+   "target": "enemy",
+   "text": "Aimed rifle shot, +25% accuracy, double damage. Needs a ranged weapon & ammo.",
+   "ranged_only": true
+  },
+  "rally": {
+   "name": "Rally",
+   "target": "none",
+   "text": "All allies +3 nerve and +10% accuracy for 3 turns.",
+   "nerve": 3,
+   "turns": 3
+  },
+  "stake_strike": {
+   "name": "Stake & hammer",
+   "target": "enemy",
+   "text": "Drive the stake: destroys an undead below 35% HP, or one that is helpless.",
+   "needs": [
+    "stake",
+    "hammer"
+   ]
+  }
+ },
+ "enemies": {
+  "wolf": {
+   "name": "Wolf",
+   "model": "wolf",
+   "hp": 9,
+   "spd": 6,
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 68,
+   "eva": 12,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.4,
+   "nerve_hit": 1,
+   "book": "Wolves of the Borgo pass, ch.1,3,27"
+  },
+  "wolf_alpha": {
+   "name": "Great wolf",
+   "model": "wolf_big",
+   "hp": 18,
+   "spd": 6,
+   "dmg": [
+    4,
+    7
+   ],
+   "acc": 72,
+   "eva": 10,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.25,
+   "nerve_hit": 2
+  },
+  "rat": {
+   "name": "Rat",
+   "model": "bat",
+   "hp": 3,
+   "spd": 7,
+   "dmg": [
+    1,
+    2
+   ],
+   "acc": 65,
+   "eva": 15,
+   "tags": [
+    "beast",
+    "swarm"
+   ],
+   "flee_at": 0.0,
+   "nerve_hit": 1,
+   "book": "Rats of Carfax, ch.18-19"
+  },
+  "bat": {
+   "name": "Bat",
+   "model": "bat",
+   "hp": 5,
+   "spd": 8,
+   "dmg": [
+    1,
+    3
+   ],
+   "acc": 62,
+   "eva": 35,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.5,
+   "nerve_hit": 2,
+   "book": "Bat at the window, ch.8,21"
+  },
+  "szgany": {
+   "name": "Szgany rider",
+   "model": "human_peasant_m",
+   "hp": 16,
+   "spd": 6,
+   "dmg": [
+    3,
+    6
+   ],
+   "acc": 70,
+   "eva": 8,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.3,
+   "book": "Szgany escort of the box, ch.27"
+  },
+  "carrier": {
+   "name": "Slovak carrier",
+   "model": "human_peasant_m",
+   "hp": 14,
+   "spd": 4,
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 62,
+   "eva": 5,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.5,
+   "book": "Slovaks carrying the boxes, ch.4,26"
+  },
+  "bride": {
+   "name": "Weird sister",
+   "model": "human_bride",
+   "hp": 28,
+   "spd": 6,
+   "dmg": [
+    4,
+    6
+   ],
+   "acc": 75,
+   "eva": 12,
+   "tags": [
+    "vampire",
+    "undead"
+   ],
+   "nerve_hit": 3,
+   "abilities": [
+    "charm",
+    "bite"
+   ],
+   "book": "The three women, ch.3,27"
+  },
+  "lucy": {
+   "name": "Lucy (the Bloofer Lady)",
+   "model": "human_lucy",
+   "hp": 46,
+   "spd": 6,
+   "dmg": [
+    5,
+    7
+   ],
+   "acc": 76,
+   "eva": 12,
+   "tags": [
+    "vampire",
+    "undead"
+   ],
+   "nerve_hit": 3,
+   "abilities": [
+    "charm",
+    "bite"
+   ],
+   "book": "Lucy in the tomb, ch.16"
+  },
+  "renfield": {
+   "name": "Renfield (frenzied)",
+   "model": "human_renfield",
+   "hp": 22,
+   "spd": 6,
+   "dmg": [
+    4,
+    7
+   ],
+   "acc": 70,
+   "eva": 10,
+   "tags": [
+    "human",
+    "mad"
+   ],
+   "subdue": true,
+   "book": "Renfield's strength, ch.21"
+  },
+  "dracula": {
+   "name": "Count Dracula",
+   "model": "human_dracula",
+   "hp": 170,
+   "spd": 7,
+   "dmg": [
+    7,
+    11
+   ],
+   "acc": 82,
+   "eva": 15,
+   "tags": [
+    "vampire",
+    "undead",
+    "boss"
+   ],
+   "nerve_hit": 4,
+   "abilities": [
+    "charm",
+    "bite",
+    "wolves",
+    "mist"
+   ],
+   "retreat_at": 0.3,
+   "book": "Dracula; ch.3,21,23,27"
+  },
+  "a2_dog": {
+   "name": "The huge dog",
+   "model": "wolf_big",
+   "hp": 20,
+   "spd": 6,
+   "dmg": [
+    3,
+    6
+   ],
+   "acc": 70,
+   "eva": 10,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.35,
+   "nerve_hit": 2,
+   "book": "ch.7 the immense dog that leapt from the Demeter"
+  },
+  "a3_berserker": {
+   "name": "Berserker",
+   "model": "wolf_big",
+   "hp": 24,
+   "spd": 6,
+   "dmg": [
+    4,
+    7
+   ],
+   "acc": 72,
+   "eva": 10,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.2,
+   "nerve_hit": 2,
+   "book": "the escaped wolf of the Zoological Gardens, ch.11"
+  },
+  "a5_thrall": {
+   "name": "Hired thrall",
+   "model": "human_peasant_m",
+   "hp": 14,
+   "spd": 5,
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 62,
+   "eva": 5,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.4,
+   "book": "The Count's hired men, ch.22"
+  },
+  "arthur_burden_poacher": {
+   "name": "Poacher",
+   "model": "human_peasant_m",
+   "hp": 11,
+   "spd": 5,
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 62,
+   "eva": 6,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.4,
+   "book": "the Home Wood poachers (invented)"
+  },
+  "arthur_burden_lean_wolf": {
+   "name": "Starved wolf",
+   "model": "wolf",
+   "hp": 9,
+   "spd": 6,
+   "dmg": [
+    3,
+    4
+   ],
+   "acc": 66,
+   "eva": 12,
+   "tags": [
+    "beast"
+   ],
+   "flee_at": 0.4,
+   "nerve_hit": 1,
+   "book": "the escaped wolf of the Home Wood (invented)"
+  },
+  "demeter_voyage_shade": {
+   "name": "The tall thin figure",
+   "model": "human_dracula",
+   "hp": 24,
+   "spd": 6,
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 66,
+   "eva": 14,
+   "tags": [
+    "vampire",
+    "undead"
+   ],
+   "nerve_hit": 3,
+   "abilities": [
+    "bite"
+   ],
+   "book": "the stranger aboard the Demeter (ch.7)"
+  },
+  "dracula_voivode_akinji": {
+   "name": "Akinji raider",
+   "model": "human_peasant_m",
+   "hp": 14,
+   "spd": 6,
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 62,
+   "eva": 10,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.3,
+   "book": "Turkish light horse on the Danube border (Ch.3, invented)"
+  },
+  "dracula_voivode_akinji_captain": {
+   "name": "Akinji captain",
+   "model": "human_peasant_m",
+   "hp": 26,
+   "spd": 6,
+   "dmg": [
+    4,
+    7
+   ],
+   "acc": 68,
+   "eva": 10,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.2,
+   "book": "Turkish raid captain (invented)"
+  },
+  "quincey_hunt_rustler": {
+   "name": "Horse thief",
+   "model": "human_peasant_m",
+   "hp": 13,
+   "spd": 6,
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 66,
+   "eva": 8,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.3,
+   "book": "Dunning's gang (arc)"
+  },
+  "quincey_hunt_dunning": {
+   "name": "Black Jack Dunning",
+   "model": "human_peasant_m",
+   "hp": 20,
+   "spd": 6,
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 70,
+   "eva": 8,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.2,
+   "book": "Dunning's gang (arc)"
+  },
+  "renfield_mercy_blunt": {
+   "name": "Blunt, night attendant",
+   "model": "human_peasant_m",
+   "hp": 14,
+   "spd": 5,
+   "dmg": [
+    2,
+    4
+   ],
+   "acc": 62,
+   "eva": 5,
+   "tags": [
+    "human"
+   ],
+   "flee_at": 0.4,
+   "book": "a night attendant at Purfleet (invented)"
+  },
+  "vanhelsing_lore_revenant": {
+   "name": "Katharina Lindner",
+   "model": "human_lucy",
+   "hp": 20,
+   "spd": 5,
+   "dmg": [
+    3,
+    5
+   ],
+   "acc": 66,
+   "eva": 10,
+   "tags": [
+    "vampire",
+    "undead"
+   ],
+   "nerve_hit": 2,
+   "abilities": [
+    "charm",
+    "bite"
+   ],
+   "book": "the Styrian churchyard (invented)"
+  }
+ },
+ "encounters": {
+  "borgo_wolves": {
+   "name": "Wolves at the pass",
+   "time": "night",
+   "enemies": [
+    "wolf",
+    "wolf"
+   ],
+   "flee_ok": true,
+   "loot": {
+    "cloth": 1
+   },
+   "intro": "The howling is close. Yellow eyes in the dark.",
+   "win": "The wolves slink back into the trees.",
+   "location": "borgo_pass"
+  },
+  "szgany_cart": {
+   "name": "The Szgany cart",
+   "time": "dusk",
+   "enemies": [
+    "szgany",
+    "szgany",
+    "carrier"
+   ],
+   "flee_ok": true,
+   "loot": {
+    "bullet": 4
+   },
+   "intro": "The Szgany close round the leiter-wagon with the box.",
+   "win": "The Szgany scatter.",
+   "location": ""
+  },
+  "brides_wing": {
+   "name": "The three sisters",
+   "time": "night",
+   "enemies": [
+    "bride",
+    "bride",
+    "bride"
+   ],
+   "flee_ok": false,
+   "survive": 6,
+   "intro": "'He is young and strong; there are kisses for us all.'",
+   "win": "They fall back, hissing, into the shadows.",
+   "dawn_text": "A cock crows somewhere far off. The three shapes thin and vanish.",
+   "location": "old_wing"
+  },
+  "brides_tombs": {
+   "name": "The sisters' tombs",
+   "time": "day",
+   "enemies": [
+    "bride",
+    "bride",
+    "bride"
+   ],
+   "flee_ok": true,
+   "in_boxes": true,
+   "intro": "By day they lie in their tombs, lovely and still. Now is the time.",
+   "win": "The three sisters are at peace.",
+   "location": ""
+  },
+  "lucy_tomb": {
+   "name": "Lucy in the tomb",
+   "time": "dusk",
+   "enemies": [
+    "lucy"
+   ],
+   "flee_ok": false,
+   "loot": {
+    "holy_water": 1
+   },
+   "intro": "She comes toward us with a wanton smile.",
+   "win": "At last the poor soul is at rest.",
+   "location": ""
+  },
+  "carfax_rats": {
+   "name": "Rats of Carfax",
+   "time": "dusk",
+   "enemies": [
+    "rat",
+    "rat",
+    "rat",
+    "rat",
+    "rat"
+   ],
+   "flee_ok": true,
+   "intro": "Thousands of rats, with eyes like coals.",
+   "win": "The rats scatter before the lamps.",
+   "location": ""
+  },
+  "renfield_frenzy": {
+   "name": "Renfield",
+   "time": "night",
+   "enemies": [
+    "renfield"
+   ],
+   "flee_ok": true,
+   "intro": "He springs, with the strength of a madman.",
+   "win": "He lies quiet at last.",
+   "location": ""
+  },
+  "dracula_chase": {
+   "name": "The Count at sunset",
+   "time": "dusk",
+   "enemies": [
+    "dracula",
+    "szgany",
+    "szgany"
+   ],
+   "flee_ok": false,
+   "intro": "The sun is nearly down. The lid of the box is lifted.",
+   "win": "The Count crumbles to dust.",
+   "location": ""
+  },
+  "a2_dog_pier": {
+   "name": "The dog under the pier",
+   "time": "dawn",
+   "enemies": [
+    "a2_dog"
+   ],
+   "flee_ok": true,
+   "intro": "It crouches, hackles up, in the shadow of the pier. It has been fed on something, and not dog-biscuit.",
+   "win": "The dog yelps and slinks away up the cliff, tail between its legs.",
+   "location": "a2_harbour"
+  },
+  "a3_berserker_night": {
+   "name": "The wolf in Lucy's room",
+   "time": "night",
+   "enemies": [
+    "a3_berserker"
+   ],
+   "flee_ok": false,
+   "intro": "The window bursts inward. A great grey wolf lands on the carpet, between us and the bed.",
+   "win": "The wolf yelps, and is gone through the glass into the dark.",
+   "location": "a3_lucy_bedroom"
+  },
+  "a3_renfield_struggle": {
+   "name": "Renfield in his cell",
+   "time": "night",
+   "enemies": [
+    "renfield"
+   ],
+   "flee_ok": true,
+   "intro": "Renfield flings himself at me with a madman's strength, snarling about lives and masters.",
+   "win": "Hennessey and I pin him until he is quiet.",
+   "location": "a3_renfield_cell"
+  },
+  "a4_lucy_vigil": {
+   "name": "The Bloofer Lady at the tomb",
+   "time": "night",
+   "enemies": [
+    "lucy"
+   ],
+   "flee_ok": false,
+   "survive": 5,
+   "intro": "'Come to me, Arthur. My arms are hungry for you.' The golden crucifix is raised, but the child is still in her arms.",
+   "win": "She shrinks from the cross, hissing, and will not pass it.",
+   "dawn_text": "The first grey light touches the yews. She breaks away with a snarl and is gone toward the vault.",
+   "location": ""
+  },
+  "a5_picc_ambush": {
+   "name": "The Count at the door",
+   "time": "dusk",
+   "enemies": [
+    "a5_thrall",
+    "a5_thrall",
+    "bat"
+   ],
+   "flee_ok": true,
+   "intro": "The door bursts. The Count is there, a hired ruffian at each shoulder and a bat at his collar. 'Stand aside!'",
+   "win": "The hirelings fall. The Count has leapt through the gap like a cat through rats.",
+   "location": ""
+  },
+  "a6_wolf_pack": {
+   "name": "Wolves on the bank road",
+   "time": "dusk",
+   "enemies": [
+    "wolf",
+    "wolf",
+    "wolf_alpha"
+   ],
+   "flee_ok": true,
+   "intro": "The howling swells behind us. Yellow eyes show between the pines as the snow begins to fall.",
+   "win": "The great wolf breaks off, and the pack melts into the dark. The horses stop trembling.",
+   "location": "a6_bistritz_trail"
+  },
+  "arthur_burden_poachers": {
+   "name": "Poachers in the Home Wood",
+   "time": "night",
+   "enemies": [
+    "arthur_burden_poacher",
+    "arthur_burden_poacher",
+    "arthur_burden_lean_wolf"
+   ],
+   "flee_ok": true,
+   "intro": "A shutter drops and a lantern blazes. Two men and a starved wolf come out of the bracken. 'It's the new Lord,' one of them says, and then, to the beast, 'Get him.'",
+   "win": "The wolf bolts. The men cry for quarter and I give it. The tenants will hear of this by dawn.",
+   "location": "arthur_burden_wood"
+  },
+  "demeter_voyage_dark_blessed": {
+   "name": "The dark in the hold",
+   "time": "night",
+   "enemies": [
+    "bat",
+    "demeter_voyage_shade"
+   ],
+   "flee_ok": false,
+   "survive": 5,
+   "intro": "The earth in box thirteen is grey and cold. Something that has lost its bed is looking for another. A lantern swings, and the boxes shift on their lashings.",
+   "win": "I keep the cross between us and the dark. It does not like it.",
+   "dawn_text": "A grey line at the hatch. The thing among the boxes is gone, and the bat with it.",
+   "location": "demeter_voyage_hold"
+  },
+  "demeter_voyage_dark_burned": {
+   "name": "The dark in the hold",
+   "time": "night",
+   "enemies": [
+    "bat",
+    "bat",
+    "bat",
+    "demeter_voyage_shade"
+   ],
+   "flee_ok": false,
+   "survive": 5,
+   "intro": "The smoke is rolling; the earth is smouldering in box thirteen. The dark is full of wings and a tall shape that is not afraid of fire, only of me.",
+   "win": "I hold the cross against them, while the smoke thins.",
+   "dawn_text": "A grey line at the hatch. The wings are gone, the shape is gone, and I am alone with the burned box.",
+   "location": "demeter_voyage_hold"
+  },
+  "dracula_voivode_raid": {
+   "name": "The night raid at the Reed Ford",
+   "time": "night",
+   "enemies": [
+    "dracula_voivode_akinji",
+    "dracula_voivode_akinji",
+    "dracula_voivode_akinji_captain"
+   ],
+   "flee_ok": false,
+   "intro": "They come out of the reeds in the dark, wet and silent, with knives in their teeth. I draw my father's hammer. There are three of them and there is one of me, and I find, with some alarm, that this makes me happier than I have been in weeks.",
+   "win": "The last of them goes into the river and does not come up. Across the water a horn sounds the retreat. I am shaking, and the dawn is just beginning.",
+   "location": "dracula_voivode_ford"
+  },
+  "dracula_voivode_wolves": {
+   "name": "Wolves on the mountain road",
+   "time": "dusk",
+   "enemies": [
+    "wolf",
+    "wolf",
+    "wolf_alpha"
+   ],
+   "flee_ok": true,
+   "intro": "The wolves have followed the cart for three days. Tonight the great one steps forward and stands in the road. I am a prince, and I have been told that wolves are my people's emblem. Let us see.",
+   "win": "The alpha limps off. The others look at me, once, with an expression I can only call respect.",
+   "location": "dracula_voivode_road"
+  },
+  "harker_road_wolves": {
+   "name": "Wolves on the path",
+   "time": "night",
+   "enemies": [
+    "wolf",
+    "wolf"
+   ],
+   "flee_ok": true,
+   "intro": "The grey shapes close from either side of the track. I have a poker, a spade and my courage, in that order.",
+   "win": "The wolves slink back into the gorse, one of them limping.",
+   "location": "harker_road_path"
+  },
+  "mina_records_dusk_bats": {
+   "name": "Bats at the Abbey",
+   "time": "dusk",
+   "enemies": [
+    "bat",
+    "bat"
+   ],
+   "flee_ok": true,
+   "intro": "Two bats wheel over the tombs and drop toward my hair. I have an umbrella, and rather more nerve than I knew.",
+   "win": "The bats fall back and are gone into the Abbey ruins.",
+   "location": "mina_records_east_cliff"
+  },
+  "quincey_hunt_wolves": {
+   "name": "Wolves at the ford",
+   "time": "dusk",
+   "enemies": [
+    "wolf",
+    "wolf"
+   ],
+   "flee_ok": true,
+   "intro": "Two grey wolves slide out of the reeds, lips drawn back. They are thin and desperate.",
+   "win": "The last wolf drops. The reeds go quiet.",
+   "location": "quincey_hunt_creek"
+  },
+  "quincey_hunt_rustlers": {
+   "name": "Dunning's gang",
+   "time": "dusk",
+   "enemies": [
+    "quincey_hunt_rustler",
+    "quincey_hunt_dunning"
+   ],
+   "flee_ok": true,
+   "intro": "Dunning's hand slides from his belt. 'Take him!' Boots scrape behind me; the camp is on its feet.",
+   "win": "Dunning goes down on his knees. The camp is quiet. Only the horses snort.",
+   "location": "quincey_hunt_thief_camp"
+  },
+  "quincey_hunt_bats": {
+   "name": "Bats at the lines",
+   "time": "night",
+   "enemies": [
+    "bat",
+    "bat",
+    "bat"
+   ],
+   "flee_ok": false,
+   "intro": "Three dark shapes, wings like torn umbrellas, drop out of the moon. I fire from the hip.",
+   "win": "The last of them veers out of the lantern-light and is gone. The silence afterward is worse than the noise.",
+   "location": "quincey_hunt_pampas_night"
+  },
+  "renfield_mercy_scuffle": {
+   "name": "Scuffle with the night-man",
+   "time": "night",
+   "enemies": [
+    "renfield_mercy_blunt"
+   ],
+   "flee_ok": true,
+   "intro": "The lantern swings round. 'You! Back to your bed!' Blunt's stick comes up. I am a thin man of fifty-nine with a madman's strength, and I know exactly how that story ends.",
+   "win": "He goes down against the wall, winded, and not hurt past a bruise. I step over him and I am not proud.",
+   "location": "renfield_mercy_garden"
+  },
+  "seward_asylum_frenzy": {
+   "name": "Renfield at the garden wall",
+   "time": "night",
+   "enemies": [
+    "renfield"
+   ],
+   "flee_ok": true,
+   "intro": "He springs at me from the shadow of the wall, with a madman's strength, snarling about lives and masters.",
+   "win": "Hennessey and I pin him until he is quiet.",
+   "location": "seward_asylum_garden"
+  },
+  "vanhelsing_lore_vigil": {
+   "name": "The vigil at Kirchdorf",
+   "time": "night",
+   "enemies": [
+    "vanhelsing_lore_revenant",
+    "wolf"
+   ],
+   "flee_ok": true,
+   "intro": "The snow does not crunch beneath her. She stands at the edge of the circle, smiling the smile of a girl of nineteen, and behind her in the dark a great grey wolf comes to heel like a dog. 'You are very far from home, Herr Doktor,' she says in a village dialect seventy years out of date.",
+   "win": "She falls, and does not rise. The wolf is gone. In the snow, there is only a girl in a grey dress, and no more than nineteen.",
+   "location": "vanhelsing_lore_churchyard"
+  }
+ },
+ "recipes": {
+  "garlic_wreath": {
+   "name": "Garlic wreath",
+   "needs": {
+    "garlic": 2,
+    "rope": 1
+   },
+   "makes": {
+    "garlic_wreath": 1
+   },
+   "unlock": "",
+   "text": "Garlic flowers bound in a ring: a ward for a room, a window, or a throat.",
+   "book": "Van Helsing's garlic wreaths, ch.10"
+  },
+  "torch": {
+   "name": "Torch",
+   "needs": {
+    "wood": 1,
+    "cloth": 1,
+    "oil": 1
+   },
+   "makes": {
+    "torch": 1
+   },
+   "unlock": "",
+   "extra": true,
+   "text": "A brand for the dark and for fire, which the Un-Dead fear.",
+   "book": "fire and wood, ch.18"
+  },
+  "stake": {
+   "name": "Sharpened stake",
+   "needs": {
+    "wood": 1
+   },
+   "tools": [
+    "knife"
+   ],
+   "makes": {
+    "stake": 1
+   },
+   "unlock": "",
+   "text": "Ash wood, a good point.",
+   "book": "ch.16"
+  },
+  "holy_water": {
+   "name": "Holy water",
+   "needs": {
+    "water": 1,
+    "host": 1
+   },
+   "makes": {
+    "holy_water": 1
+   },
+   "unlock": "flag:rites",
+   "extra": true,
+   "text": "A crumb of the Host in clean water. Van Helsing will have it blessed."
+  },
+  "sacred_bullet": {
+   "name": "Sacred bullets",
+   "needs": {
+    "bullet": 2,
+    "host": 1
+   },
+   "makes": {
+    "sacred_bullet": 2
+   },
+   "unlock": "flag:rites",
+   "text": "Bullets touched with the Host.",
+   "book": "Van Helsing's sacred bullet, ch.18",
+   "crafter_bonus": {
+    "quincey": 1
+   }
+  },
+  "holy_knife": {
+   "name": "Consecrated knife",
+   "needs": {
+    "knife": 1,
+    "host": 1
+   },
+   "makes": {
+    "holy_knife": 1
+   },
+   "unlock": "flag:rites",
+   "extra": true,
+   "text": "A blade the Un-Dead cannot shrug off."
+  },
+  "chloral": {
+   "name": "Chloral draught",
+   "needs": {
+    "water": 1
+   },
+   "makes": {
+    "chloral": 1
+   },
+   "unlock": "flag:medicine",
+   "extra": true,
+   "text": "Seward measures chloral into a glass.",
+   "book": "chloral, ch.10-12",
+   "crafter_bonus": {
+    "seward": 1
+   }
+  },
+  "wild_rose_wreath": {
+   "name": "Wild-rose wreath",
+   "needs": {
+    "wild_rose": 2,
+    "rope": 1
+   },
+   "makes": {
+    "wild_rose": 2
+   },
+   "unlock": "flag:rites",
+   "extra": true,
+   "text": "Wild rose, woven for a lid.",
+   "book": "wild rose on the box, ch.18"
+  },
+  "a4_host_putty": {
+   "name": "Host-putty",
+   "needs": {
+    "host": 1,
+    "a4_putty": 1,
+    "cloth": 1
+   },
+   "makes": {
+    "a4_host_putty": 1
+   },
+   "unlock": "flag:rites",
+   "text": "The Host crumbled into soft putty, rolled in a clean napkin: a seal for every crack in the vault door."
+  }
+ },
+ "start_party": [
+  "harker"
+ ]
+}

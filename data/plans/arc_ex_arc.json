@@ -1,0 +1,25 @@
+{
+ "act": "ex_arc",
+ "arc": "ex_arc",
+ "start": {
+  "location": "ex_arc_room",
+  "protagonist": "mina",
+  "party": [
+   "mina"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "talk",
+   "loc": "ex_arc_room",
+   "eid": "ex_arc_desk",
+   "dialogue": "ex_arc_finish",
+   "path": [
+    "[Finish this story]"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "stone_blocks": {
+  "albedo": "textures/stone_blocks_albedo.png",
+  "normal": "textures/stone_blocks_normal.png",
+  "roughness": 0.92,
+  "world": 2.0
+ },
+ "stone_moss": {
+  "albedo": "textures/stone_moss_albedo.png",
+  "normal": "textures/stone_moss_normal.png",
+  "roughness": 0.92,
+  "world": 2.0
+ },
+ "stone_rough": {
+  "albedo": "textures/stone_rough_albedo.png",
+  "normal": "textures/stone_rough_normal.png",
+  "roughness": 0.95
+ },
+ "cobble": {
+  "albedo": "textures/cobble_albedo.png",
+  "normal": "textures/cobble_normal.png",
+  "roughness": 0.9,
+  "world": 2.0
+ },
+ "wood_planks": {
+  "albedo": "textures/wood_planks_albedo.png",
+  "normal": "textures/wood_planks_normal.png",
+  "roughness": 0.8,
+  "world": 2.0
+ },
+ "plaster": {
+  "albedo": "textures/plaster_albedo.png",
+  "normal": "textures/plaster_normal.png",
+  "roughness": 0.95
+ },
+ "cloth": {
+  "albedo": "textures/cloth_albedo.png",
+  "normal": "textures/cloth_normal.png",
+  "roughness": 0.95
+ },
+ "wool": {
+  "albedo": "textures/wool_albedo.png",
+  "normal": "textures/wool_normal.png",
+  "roughness": 1.0
+ },
+ "velvet": {
+  "albedo": "textures/velvet_albedo.png",
+  "normal": "textures/velvet_normal.png",
+  "roughness": 0.7
+ },
+ "leather": {
+  "albedo": "textures/leather_albedo.png",
+  "normal": "textures/leather_normal.png",
+  "roughness": 0.6
+ },
+ "iron": {
+  "albedo": "textures/iron_albedo.png",
+  "normal": "textures/iron_normal.png",
+  "roughness": 0.5,
+  "metallic": 0.9
+ },
+ "gold": {
+  "albedo": "textures/gold_albedo.png",
+  "normal": "textures/gold_normal.png",
+  "roughness": 0.35,
+  "metallic": 1.0
+ },
+ "glass": {
+  "albedo": "textures/glass_albedo.png",
+  "normal": "textures/glass_normal.png",
+  "roughness": 0.1,
+  "alpha": 0.55
+ },
+ "wax": {
+  "albedo": "textures/wax_albedo.png",
+  "normal": "textures/wax_normal.png",
+  "roughness": 0.4
+ },
+ "flame": {
+  "albedo": "textures/flame_albedo.png",
+  "normal": "textures/flame_normal.png",
+  "roughness": 1.0,
+  "emission": 1.6
+ },
+ "parchment": {
+  "albedo": "textures/parchment_albedo.png",
+  "normal": "textures/parchment_normal.png",
+  "roughness": 0.9
+ },
+ "dirt": {
+  "albedo": "textures/dirt_albedo.png",
+  "normal": "textures/dirt_normal.png",
+  "roughness": 1.0,
+  "world": 3.0
+ },
+ "bark": {
+  "albedo": "textures/bark_albedo.png",
+  "normal": "textures/bark_normal.png",
+  "roughness": 1.0
+ },
+ "foliage": {
+  "albedo": "textures/foliage_albedo.png",
+  "normal": "textures/foliage_normal.png",
+  "roughness": 1.0
+ },
+ "grass": {
+  "albedo": "textures/grass_albedo.png",
+  "normal": "textures/grass_normal.png",
+  "roughness": 1.0,
+  "world": 4.0
+ },
+ "snow": {
+  "albedo": "textures/snow_albedo.png",
+  "normal": "textures/snow_normal.png",
+  "roughness": 0.85
+ },
+ "fur": {
+  "albedo": "textures/fur_albedo.png",
+  "normal": "textures/fur_normal.png",
+  "roughness": 1.0
+ },
+ "hair": {
+  "albedo": "textures/hair_albedo.png",
+  "normal": "textures/hair_normal.png",
+  "roughness": 0.6
+ },
+ "skin": {
+  "albedo": "textures/skin_albedo.png",
+  "normal": "textures/skin_normal.png",
+  "roughness": 0.7
+ },
+ "flat": {
+  "albedo": "textures/flat_albedo.png",
+  "normal": "textures/flat_normal.png",
+  "roughness": 0.8
+ }
+}

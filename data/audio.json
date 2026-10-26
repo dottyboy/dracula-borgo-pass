@@ -1,0 +1,224 @@
+{
+ "amb_wind": {
+  "file": "assets/audio/amb_wind.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -6
+ },
+ "amb_snow": {
+  "file": "assets/audio/amb_snow.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -6
+ },
+ "amb_day": {
+  "file": "assets/audio/amb_day.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -8
+ },
+ "amb_sea": {
+  "file": "assets/audio/amb_sea.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -6
+ },
+ "amb_fire": {
+  "file": "assets/audio/amb_fire.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -6
+ },
+ "amb_crypt": {
+  "file": "assets/audio/amb_crypt.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -6
+ },
+ "amb_storm": {
+  "file": "assets/audio/amb_storm.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -5
+ },
+ "amb_asylum": {
+  "file": "assets/audio/amb_asylum.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -8
+ },
+ "amb_city": {
+  "file": "assets/audio/amb_city.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -8
+ },
+ "amb_interior": {
+  "file": "assets/audio/amb_interior.ogg",
+  "kind": "ambience",
+  "loop": true,
+  "db": -9
+ },
+ "mus_title": {
+  "file": "assets/audio/mus_title.ogg",
+  "kind": "music",
+  "loop": true,
+  "db": -8
+ },
+ "mus_explore": {
+  "file": "assets/audio/mus_explore.ogg",
+  "kind": "music",
+  "loop": true,
+  "db": -10
+ },
+ "mus_dread": {
+  "file": "assets/audio/mus_dread.ogg",
+  "kind": "music",
+  "loop": true,
+  "db": -10
+ },
+ "mus_combat": {
+  "file": "assets/audio/mus_combat.ogg",
+  "kind": "music",
+  "loop": true,
+  "db": -9
+ },
+ "mus_sad": {
+  "file": "assets/audio/mus_sad.ogg",
+  "kind": "music",
+  "loop": true,
+  "db": -9
+ },
+ "sfx_click": {
+  "file": "assets/audio/sfx_click.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -10
+ },
+ "sfx_pickup": {
+  "file": "assets/audio/sfx_pickup.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_door": {
+  "file": "assets/audio/sfx_door.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_door_locked": {
+  "file": "assets/audio/sfx_door_locked.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_step": {
+  "file": "assets/audio/sfx_step.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -16
+ },
+ "sfx_hit": {
+  "file": "assets/audio/sfx_hit.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -4
+ },
+ "sfx_miss": {
+  "file": "assets/audio/sfx_miss.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -8
+ },
+ "sfx_hurt": {
+  "file": "assets/audio/sfx_hurt.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -5
+ },
+ "sfx_bite": {
+  "file": "assets/audio/sfx_bite.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -5
+ },
+ "sfx_howl": {
+  "file": "assets/audio/sfx_howl.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_bat": {
+  "file": "assets/audio/sfx_bat.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -8
+ },
+ "sfx_bell": {
+  "file": "assets/audio/sfx_bell.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_heartbeat": {
+  "file": "assets/audio/sfx_heartbeat.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -8
+ },
+ "sfx_page": {
+  "file": "assets/audio/sfx_page.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -8
+ },
+ "sfx_flame": {
+  "file": "assets/audio/sfx_flame.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -8
+ },
+ "sfx_holy": {
+  "file": "assets/audio/sfx_holy.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_repel": {
+  "file": "assets/audio/sfx_repel.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_victory": {
+  "file": "assets/audio/sfx_victory.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -5
+ },
+ "sfx_defeat": {
+  "file": "assets/audio/sfx_defeat.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -5
+ },
+ "sfx_craft": {
+  "file": "assets/audio/sfx_craft.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_card": {
+  "file": "assets/audio/sfx_card.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -6
+ },
+ "sfx_levelup": {
+  "file": "assets/audio/sfx_levelup.ogg",
+  "kind": "sfx",
+  "loop": false,
+  "db": -5
+ }
+}

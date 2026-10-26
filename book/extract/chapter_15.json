@@ -1,0 +1,100 @@
+{
+ "chapter": 15,
+ "narrator": "Dr. Seward (diary); Van Helsing (note)",
+ "dates": "26 - 29 September (morning)",
+ "summary": "Seward angrily rejects Van Helsing's claim, but they visit the injured child at North Hospital under Dr. Vincent, dine at Jack Straw's Castle and at night enter the Westenra tomb at Kingstead. Van Helsing cuts open Lucy's lead coffin with a turnscrew and fret-saw and shows it empty. They watch the churchyard; a white figure appears and Van Helsing recovers an unharmed child. The next afternoon Lucy lies in her coffin, redder and more beautiful, with sharper teeth; Van Helsing explains she is Un-Dead and must be beheaded, mouthed with garlic and staked, but delays to fetch Arthur. He leaves a note for Seward with instructions, and spends the night sealing the tomb with garlic and a crucifix. Seward doubts again, then on 29 September Van Helsing persuades Arthur and Quincey to join him.",
+ "scenes": [
+  {"id":"c15_s01","title":"The accusation","location":"Seward's study","time":"26 September, evening","characters":["Seward","Van Helsing"],"summary":"Seward slams the table; Van Helsing proposes to prove it and produces the tomb key.","mood":"anger turning to dread","key_quote":"Dare you come with me?"},
+  {"id":"c15_s02","title":"North Hospital","location":"North Hospital ward","time":"Late afternoon","characters":["Seward","Van Helsing","Dr. Vincent","injured child"],"summary":"Dr. Vincent shows the throat punctures and suggests a rat, bat or escaped wolf; the child asks to go play with the bloofer lady.","mood":"clinical, uneasy","key_quote":"he said he wanted to play with the ‘bloofer lady.’"},
+  {"id":"c15_s03","title":"Dinner at Jack Straw's Castle","location":"Jack Straw's Castle inn, Hampstead","time":"Dusk to ten o'clock","characters":["Seward","Van Helsing"],"summary":"They dine among noisy bicyclists, then walk through the dark with scattered lamps.","mood":"normality before the horror","key_quote":"We dined at “Jack Straw’s Castle”"},
+  {"id":"c15_s04","title":"Opening the coffin","location":"Westenra tomb, Kingstead churchyard","time":"Night 26/27 September","characters":["Seward","Van Helsing"],"summary":"They climb the wall; Van Helsing opens the falling-lock door, lights a candle, unscrews the coffin lid, saws the lead casing, and shows an empty coffin.","mood":"gruesome, claustrophobic","key_quote":"The coffin was empty."},
+  {"id":"c15_s05","title":"The vigil and the child","location":"Churchyard, yew trees and junipers","time":"12:00 to dawn","characters":["Seward","Van Helsing","white figure","child"],"summary":"Seward hides behind a yew; a white streak glides between yews, a dark mass moves; Van Helsing catches a tiny child. They leave it for a policeman on the Heath.","mood":"cold vigil, spectral","key_quote":"Are you satisfied now?"},
+  {"id":"c15_s06","title":"The sleeping Un-Dead","location":"Westenra tomb","time":"2 pm, 27 September","characters":["Seward","Van Helsing"],"summary":"After the noon funeral and sexton's lock-up, they find Lucy in her coffin, more radiant, lips red, canines sharp. Van Helsing explains the Un-Dead and tells of the cure but delays.","mood":"horror, conviction","key_quote":"Are you convinced now?"},
+  {"id":"c15_s07","title":"The note in the portmanteau","location":"Berkeley Hotel (note, undelivered)","time":"27 September","characters":["Van Helsing","Seward"],"summary":"Van Helsing leaves instructions in case he is killed: find the great Un-Dead and cut off his head and burn or stake his heart.","mood":"foreboding","key_quote":"cut off his head and burn his heart or drive a stake through it"},
+  {"id":"c15_s08","title":"Seward doubts again","location":"Seward's room","time":"28 September","characters":["Seward"],"summary":"Next morning Seward is again sceptical and wonders if Van Helsing is mad.","mood":"doubt","key_quote":"Is it possible that the Professor can have done it himself?"},
+  {"id":"c15_s09","title":"Persuading Arthur and Quincey","location":"Van Helsing's room, Berkeley Hotel","time":"29 September, before ten","characters":["Van Helsing","Arthur","Quincey Morris","Seward"],"summary":"Van Helsing asks them to enter the tomb and open the coffin; Arthur is furious but finally agrees to go and wait.","mood":"confrontation, honour","key_quote":"But, I beseech you, do not go forth in anger with me."}
+ ],
+ "locations": [
+  {"name":"Westenra tomb, Kingstead churchyard","kind":"outdoor","description":"Marble vault with a creaky door; inside time-discoloured stone, dust-encrusted mortar, rusty dank iron, tarnished brass, clouded silver-plating on coffins, dead withered flowers, spiders and beetles. Lucy's coffin is wood with a lead casing.","features":["creaky door with falling (not spring) lock","coffin plates","lead casing","dead flowers","spiders and beetles","other coffins to hold candles"],"atmosphere":"miserable, sordid, decayed; mean-looking in sunshine","lighting_time":"candle at night, sunlight by day","quote":"the effect was more miserable and sordid than could have been imagined."},
+  {"name":"Kingstead churchyard","kind":"outdoor","description":"Low walled churchyard with yew trees, junipers marking the church path, alder clump, railed-off tombs, headstones.","features":["yew trees","juniper path","headstones","railed tombs","alder-trees","churchyard wall"],"atmosphere":"lonely, cold, dark","lighting_time":"overcast night","quote":"I took up my place behind a yew-tree"},
+  {"name":"North Hospital ward","kind":"indoor","description":"Ward where the child recovers.","features":["bandage","bed"],"atmosphere":"clinical","lighting_time":"late afternoon","quote":"Dr. Vincent took the bandage from its throat"},
+  {"name":"Jack Straw's Castle","kind":"indoor","description":"Hampstead inn crowded with bicyclists.","features":["tables","crowd"],"atmosphere":"genial noise","lighting_time":"evening","quote":"a little crowd of bicyclists and others who were genially noisy"},
+  {"name":"Hampstead Heath edge near the Spaniards","kind":"outdoor","description":"Pathway where the child is left for a policeman; the Spaniards where a cab is found.","features":["path","policeman's lantern"],"atmosphere":"night","lighting_time":"pre-dawn","quote":"At the edge of Hampstead Heath we heard a policeman’s heavy tramp"},
+  {"name":"Berkeley Hotel","kind":"indoor","description":"Hotel where Van Helsing lodges and meets Arthur and Quincey.","features":["portmanteau","room"],"atmosphere":"conspiratorial","lighting_time":"evening","quote":"to the Berkeley Hotel at ten of the clock"}
+ ],
+ "characters": [
+  {"name":"Abraham Van Helsing","role":"vampire hunter","appearance":"","clothing":"","personality":"patient, methodical, grave","speech_style":"broken English","notable_lines":["Madness were easy to bear compared with truth like this.","I shall cut off her head and fill her mouth with garlic, and I shall drive a stake through her body."],"abilities":["picks tomb locks with a key","metalwork with fret-saw","lore of the Un-Dead","carries Host"]},
+  {"name":"Dr. John Seward","role":"narrator","appearance":"","clothing":"","personality":"argumentative, logical, then horrified","speech_style":"","notable_lines":["That is good logic, so far as it goes."],"abilities":[]},
+  {"name":"Dr. Vincent","role":"North Hospital physician","appearance":"","clothing":"","personality":"helpful, theorises bat or wolf","speech_style":"","notable_lines":[],"abilities":[]},
+  {"name":"Arthur Holmwood (Lord Godalming)","role":"Lucy's fiance","appearance":"","clothing":"","personality":"proud, indignant, then yielding","speech_style":"","notable_lines":["I don’t quite like to ‘buy a pig in a poke’"],"abilities":[]},
+  {"name":"Quincey Morris","role":"American friend","appearance":"","clothing":"","personality":"laconic, trusting","speech_style":"Texan-tinged","notable_lines":["I swear he’s honest; and that’s good enough for me."],"abilities":[]},
+  {"name":"Lucy Westenra (Un-Dead)","role":"vampire","appearance":"more radiant, redder lips, delicate bloom on cheeks, sharper canines","clothing":"white death-robe/lawn","personality":"malign beneath beauty (not shown here)","speech_style":"","notable_lines":[],"abilities":["leaves tomb by night","bites children"]},
+  {"name":"The sexton","role":"churchyard keeper","appearance":"","clothing":"","personality":"routine","speech_style":"","notable_lines":[],"abilities":["locks the gate"]},
+  {"name":"The policeman","role":"Hampstead patrol","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":[]}
+ ],
+ "objects": [
+  {"name":"Key to the Westenra tomb","category":"key","description":"Key that locks the tomb, taken from the coffin-man for Arthur.","function_in_story":"Opens the door for Van Helsing's proofs.","location_or_owner":"Van Helsing","quote":"This is the key that lock the tomb."},
+  {"name":"Matchbox and candle","category":"tool","description":"Candle stub with sperm wax dripping onto the coffin plates.","function_in_story":"Lights the tomb.","location_or_owner":"Van Helsing's bag","quote":"a matchbox and a piece of candle"},
+  {"name":"Turnscrew","category":"tool","description":"Screwdriver for coffin lid and for stabbing lead.","function_in_story":"Unscrew the lid, pierce the lead.","location_or_owner":"Van Helsing's bag","quote":"he took out a turnscrew."},
+  {"name":"Tiny fret-saw","category":"tool","description":"Fine saw for the lead casing.","function_in_story":"Cuts a flap in the lead coffin.","location_or_owner":"Van Helsing's bag","quote":"a tiny fret-saw"},
+  {"name":"Lead-lined coffin","category":"container","description":"Wood coffin with lead casing, flange bent back.","function_in_story":"Shows Lucy missing then present.","location_or_owner":"Westenra tomb","quote":"showing the casing of lead beneath"},
+  {"name":"Bag (Van Helsing's black bag)","category":"container","description":"Small black bag carrying tools.","function_in_story":"Holds kit.","location_or_owner":"Van Helsing","quote":"fumbling in his bag"},
+  {"name":"Garlic and crucifix seals","category":"ward","description":"Fixed on the tomb door to prevent Lucy leaving.","function_in_story":"Keeps Lucy inside on 27/28 September.","location_or_owner":"tomb door","quote":"I shall fix some things she like not—garlic and a crucifix"},
+  {"name":"Portmanteau note","category":"document","description":"Undelivered letter to Seward.","function_in_story":"Instructions in case Van Helsing dies.","location_or_owner":"Berkeley Hotel","quote":"I write this in case anything should happen."},
+  {"name":"Hospital bandage","category":"medicine","description":"Bandage over the child's throat punctures.","function_in_story":"Evidence.","location_or_owner":"North Hospital","quote":"Dr. Vincent took the bandage from its throat"},
+  {"name":"Dark yew trees","category":"other","description":"Cover for the vigil.","function_in_story":"Hide positions.","location_or_owner":"churchyard","quote":"behind a yew-tree"},
+  {"name":"Policeman's lantern","category":"tool","description":"Used to find the child.","function_in_story":"Signals rescue.","location_or_owner":"policeman","quote":"he flashed his lantern to and fro."}
+ ],
+ "creatures": [
+  {"name":"Lucy Westenra, Un-Dead","description":"A corpse unchanged for a week, rosier than in life, with sharpened teeth; travels at night as a white figure.","behaviour":"Leaves her coffin at sundown and lures children, returns before dawn; sleeping face shows no malice because she was bitten in a trance.","weaknesses":["garlic","crucifix","stake through the heart","beheading","mouth filled with garlic"],"quote":"The lips were red, nay redder than before"},
+  {"name":"The dark mass (Van Helsing's side)","description":"Mass moving toward the white streak - Van Helsing hurrying.","behaviour":"intercepts the child","weaknesses":[],"quote":"a dark mass moved from the Professor’s side of the ground"},
+  {"name":"The Count (mentioned)","description":"The master who may seek Lucy's tomb for shelter, with strength of twenty men and ability to summon a wolf.","behaviour":"cunning","weaknesses":["can be killed by beheading and burning the heart or staking"],"quote":"He have always the strength in his hand of twenty men"}
+ ],
+ "vampire_lore": [
+  {"rule":"The Un-Dead look more beautiful than the dead.","kind":"detection","detail":"Lucy in coffin: red lips, bloom, sharper teeth.","quote":"The lips were red, nay redder than before"},
+  {"rule":"Sharp canines are used to bite.","kind":"detection","detail":"Van Helsing shows the canine teeth.","quote":"they are even sharper than before"},
+  {"rule":"The Un-Dead can only move at sundown and must return.","kind":"limitation","detail":"Van Helsing spent time before sundown and guarded.","quote":"for at sundown the Un-Dead can move"},
+  {"rule":"Lucy was bitten while in a trance.","kind":"limitation","detail":"The vampire takes blood best during sleep-walking; she died in trance.","quote":"in trance could he best come to take more blood"},
+  {"rule":"Kill: behead, garlic mouth, stake.","kind":"ritual","detail":"Van Helsing's plan; kill Un-Dead in sleep.","quote":"I shall cut off her head and fill her mouth with garlic, and I shall drive a stake through her body."},
+  {"rule":"Garlic and crucifix keep Un-Dead from leaving; they may fail against one trying to enter.","kind":"weakness","detail":"Van Helsing: desperate Un-Dead find the line of least resistance.","quote":"these are only to prevent her coming out"},
+  {"rule":"Master vampire strength of twenty men; can summon a wolf.","kind":"power","detail":"From Harker's journals.","quote":"He can summon his wolf and I know not what."},
+  {"rule":"Master vampire slain by beheading plus burning heart or stake.","kind":"ritual","detail":"Instruction to Seward.","quote":"cut off his head and burn his heart or drive a stake through it"},
+  {"rule":"Vampire must be at 'home' in coffin during sleep.","kind":"limitation","detail":"The Un-Dead sleep at home, face shows what they are.","quote":"when the Un-Dead sleep at home"}
+ ],
+ "puzzles": [
+  {"name":"The empty coffin","setup":"Seward doubts Van Helsing; the coffin lid is unscrewed and a lead liner cut open.","obstacle":"Cut through lead without damaging; avoid gas.","book_solution":"Turnscrew punctures lead, fret-saw cuts two feet and across, flap bent back.","items_used":["turnscrew","fret-saw","candle"],"game_idea":"A timed lockpicking-style puzzle: cut through coffin liner without wasting candle or alerting the sexton.","quote":"he sawed down a couple of feet along one side of the lead coffin"},
+  {"name":"Falling lock vs spring lock","setup":"Entering the tomb at night.","obstacle":"Spring lock would trap them.","book_solution":"Van Helsing checks lock type before closing the door.","items_used":["tomb key"],"game_idea":"Inspect the lock mechanism before entering or risk being trapped.","quote":"the lock was a falling, and not a spring, one."},
+  {"name":"Hospital to churchyard timing","setup":"Sunset catches them.","obstacle":"Must be in position before midnight.","book_solution":"Dine, then walk by lamps.","items_used":[],"game_idea":"Route-planning through dark Hampstead avoiding patrols.","quote":"patrol of horse police"},
+  {"name":"Disposing of the child","setup":"Rescued child; police station would demand statements.","obstacle":"Avoid legal explanation.","book_solution":"Leave child on Heath path and watch until policeman finds it.","items_used":[],"game_idea":"Stealth hand-off: drop the child within a patrol's route and slip away unseen.","quote":"we would then seek our way home as quickly as we could."},
+  {"name":"The tomb door seal","setup":"Keep Lucy inside.","obstacle":"Make an effective seal.","book_solution":"Garlic and crucifix on the clamps.","items_used":["garlic","crucifix"],"game_idea":"Choose which wards to place on each exit of a tomb.","quote":"I shall fix some things she like not"}
+ ],
+ "combat": [
+  {"name":"Vigil in Kingstead churchyard","participants":["Seward","Van Helsing","Lucy (white figure)"],"enemy_types":["Un-Dead Lucy (not yet fought)"],"weapons_used":["watchful positions","lantern/candle"],"tactics":"Split the watch on opposite sides of the churchyard; intercept the white figure that carries a child.","outcome":"Child saved, Lucy escapes unseen into her tomb.","game_idea":"Stealth encounter with two player-controlled hiders; success = child saved unharmed before dawn.","quote":"Suddenly, as I turned round, I thought I saw something like a white streak"}
+ ],
+ "crafting": [
+  {"result":"Sealed tomb door (garlic and crucifix)","ingredients":["garlic","crucifix","clamps of the doors"],"method":"Lay garlic over the door clamps and fix a crucifix","purpose":"Keeps Lucy from leaving the tomb","quote":"I had laid over the clamps of those doors garlic"}
+ ],
+ "dialogue_samples": [
+  {"speaker":"Van Helsing","line":"Madness were easy to bear compared with truth like this.","context":"calming Seward"},
+  {"speaker":"Seward","line":"I am satisfied that Lucy’s body is not in that coffin; but that only proves one thing.","context":"empty coffin"},
+  {"speaker":"Van Helsing","line":"Are you convinced now?","context":"Lucy's body returned"},
+  {"speaker":"Quincey","line":"I swear he’s honest; and that’s good enough for me.","context":"trusting Van Helsing"}
+ ],
+ "asset_candidates": [
+  {"name":"Westenra tomb interior","type":"architecture","visual_description":"Narrow stone vault with several coffins on shelves, rusty iron, tarnished brass plates, clouded silver-plating, dust-covered mortar, dead flowers, spiderwebs.","priority":1},
+  {"name":"Lead-lined coffin with cut flap","type":"prop","visual_description":"Wooden coffin with a lead casing; a two-foot rectangular flap bent back; white candle-wax drips on plates.","priority":1},
+  {"name":"Van Helsing's tool bag","type":"prop","visual_description":"Small black Gladstone-style bag containing turnscrew, fret-saw, candle and matches.","priority":2},
+  {"name":"Fret-saw and turnscrew","type":"prop","visual_description":"Fine-toothed hand fret saw; flat-blade screwdriver.","priority":2},
+  {"name":"Kingstead churchyard","type":"architecture","visual_description":"Low wall, yew trees, junipers along a path, headstones and railed tombs under overcast sky.","priority":1},
+  {"name":"Lucy in coffin (Un-Dead)","type":"character","visual_description":"Pale-skinned woman in white lawn robe, red lips, flushed cheeks, elongated canine teeth.","priority":1},
+  {"name":"Jack Straw's Castle inn","type":"architecture","visual_description":"Hampstead tavern with lit windows and bicycles outside.","priority":3},
+  {"name":"Berkeley Hotel room","type":"architecture","visual_description":"Victorian hotel room with portmanteau.","priority":3}
+ ],
+ "quest_hooks": [
+  "Prove the vampire: open the coffin, collect evidence, convince Seward.",
+  "Stealth night vigil in the churchyard; save the child.",
+  "Seal the tomb with wards and decide which ward to place.",
+  "Persuade Arthur and Quincey to trust Van Helsing with a dialogue choice.",
+  "Avoid police and the law while carrying out unlawful tomb work."
+ ]
+}

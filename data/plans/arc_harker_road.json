@@ -1,0 +1,437 @@
+{
+ "act": "harker_road",
+ "arc": "harker_road",
+ "start": {
+  "location": "harker_road_close",
+  "protagonist": "harker",
+  "party": [
+   "harker"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "harker_road_close",
+   "index": 0
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_lodging",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_lodging",
+   "eid": "harker_road_l_trunk",
+   "dialogue": "harker_road_trunk",
+   "path": [
+    "1874."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_lodging",
+   "eid": "harker_road_l_bed",
+   "dialogue": "harker_road_dream0",
+   "path": [
+    "(Get up.)"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_lodging",
+   "eid": "harker_road_l_diary"
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_school",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_school",
+   "eid": "harker_road_mina",
+   "dialogue": "harker_road_mina_school",
+   "path": [
+    "Mina, I have something of my mother's to give you.",
+    "There. I feel taller already.",
+    "Mina, will you wait for me?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_school",
+   "eid": "harker_road_mina",
+   "dialogue": "harker_road_mina_school",
+   "path": [
+    "I am going to Transylvania, Mina. A month, perhaps more.",
+    "I promise.",
+    "I am going to Transylvania, Mina. A month, perhaps more.",
+    "I promise."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_office",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_office",
+   "eid": "harker_road_hawkins",
+   "dialogue": "harker_road_hawkins",
+   "path": [
+    "Tell me again about the Count's commission."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_office",
+   "eid": "harker_road_o_copybook",
+   "dialogue": "harker_road_copybook",
+   "path": [
+    "The seventh: Carfax."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_office",
+   "eid": "harker_road_o_letters"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_office",
+   "eid": "harker_road_pell",
+   "dialogue": "harker_road_pell",
+   "path": [
+    "Mr. Hawkins wants the Transylvanian surveys. Here are the Count's letters."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_office",
+   "eid": "harker_road_o_pen"
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_archive",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_archive",
+   "eid": "harker_road_a_stool"
+  },
+  {
+   "kind": "use",
+   "loc": "harker_road_archive",
+   "eid": "harker_road_a_box",
+   "item": "harker_road_box_key"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_office",
+   "eid": "harker_road_hawkins",
+   "dialogue": "harker_road_hawkins",
+   "path": [
+    "I have the surveys, sir. Let me tell you which house will suit the Count.",
+    "Carfax at Purfleet: old, walled, with a chapel, a pond and only a madhouse for neighbour.",
+    "Then I must go and see him in person, sir."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_close",
+   "eid": "harker_road_c_cab",
+   "dialogue": "harker_road_cabman",
+   "path": [
+    "To the station - for the London train and the Museum."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_museum",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_museum",
+   "eid": "harker_road_m_slips"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_museum",
+   "eid": "harker_road_librarian",
+   "dialogue": "harker_road_librarian",
+   "path": [
+    "Press-mark K.7: Geography and Ethnology of the Carpathians."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_lodging",
+   "eid": "harker_road_dunmore",
+   "dialogue": "harker_road_dunmore",
+   "path": [
+    "I shall pack tonight."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_close",
+   "eid": "harker_road_c_cab",
+   "dialogue": "harker_road_cabman",
+   "path": [
+    "To the station - and then, God willing, the East."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_wall",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_wall",
+   "eid": "harker_road_w_sill",
+   "dialogue": "harker_road_wall_think",
+   "path": [
+    "Try the handholds, starting with the ivy.",
+    "The iron ring.",
+    "The loose stone."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_wall",
+   "eid": "harker_road_w_sill",
+   "dialogue": "harker_road_wall_think",
+   "path": [
+    "(Climbed.) Continue to the window."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_count_room",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_count_room",
+   "eid": "harker_road_r_gold"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_count_room",
+   "eid": "harker_road_r_poker"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_count_room",
+   "eid": "harker_road_r_keys"
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_vault",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_vault",
+   "eid": "harker_road_v_box",
+   "dialogue": "harker_road_box",
+   "path": [
+    "Search his pockets for the key."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "harker_road_vault",
+   "eid": "harker_road_v_bar",
+   "item": "harker_road_poker"
+  },
+  {
+   "kind": "use",
+   "loc": "harker_road_vault",
+   "eid": "harker_road_v_bar",
+   "item": "harker_road_vault_key"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_vault",
+   "eid": "harker_road_v_shovel"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_vault",
+   "eid": "harker_road_v_box",
+   "dialogue": "harker_road_box",
+   "path": [
+    "Strike him with the spade."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_path",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_path",
+   "eid": "harker_road_szgany_woman",
+   "dialogue": "harker_road_szgany_woman",
+   "path": [
+    "Can you sell me food?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_path",
+   "eid": "harker_road_p_wood"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_path",
+   "eid": "harker_road_p_gap",
+   "dialogue": "harker_road_bridge",
+   "path": [
+    "Lay the plank across and cross."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_ward",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_bed",
+   "dialogue": "harker_road_dream",
+   "path": [
+    "(Wake. Cross myself.)"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_agatha",
+   "dialogue": "harker_road_agatha",
+   "path": [
+    "My name is Jonathan Harker. I am an English solicitor."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_doctor",
+   "dialogue": "harker_road_doctor",
+   "path": [
+    "May I write to England?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_pen"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_effects"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_paper"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_desk",
+   "dialogue": "harker_road_write_mina",
+   "path": [
+    "'I am safe, in Buda-Pesth, in the care of the Sisters. I am ill, but mending. I love you.'"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_d_bed",
+   "dialogue": "harker_road_dream",
+   "path": [
+    "(Sleep on.)"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_mina_ward",
+   "dialogue": "harker_road_mina_ward",
+   "path": [
+    "Mina, I have something to ask.",
+    "Will you marry me, here, as soon as you are rested?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "harker_road_chapel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_chapel",
+   "eid": "harker_road_h_altar",
+   "dialogue": "harker_road_altar",
+   "path": [
+    "Write a letter to my parents."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_road_chapel",
+   "eid": "harker_road_h_candles"
+  },
+  {
+   "kind": "use",
+   "loc": "harker_road_chapel",
+   "eid": "harker_road_h_virgin",
+   "item": "harker_road_parents_letter"
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_agatha",
+   "dialogue": "harker_road_agatha",
+   "path": [
+    "Sister, I want to seal my diary. I do not want to know what is in it.",
+    "Do it for me. I cannot bear to touch it.",
+    "Because I do not know whether it was a dream, or whether I went mad. I will not know unless some solemn duty come upon me."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_ward",
+   "eid": "harker_road_mina_ward",
+   "dialogue": "harker_road_mina_ward",
+   "path": [
+    "Mina, I have my diary. I cannot read it. Will you keep it?",
+    "Mina, a Sister says the chaplain can marry us tomorrow."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "harker_road_chapel",
+   "eid": "harker_road_mina_chapel",
+   "dialogue": "harker_road_wedding",
+   "path": [
+    "(Take Mina's hand and answer.)",
+    "I will.",
+    "[Finish this story]"
+   ]
+  }
+ ]
+}

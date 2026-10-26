@@ -1,0 +1,78 @@
+{
+ "entrance": {
+  "name": "Shifted slab",
+  "look": "The lid of the railed tomb has been shifted a hand's breadth, and under it a stair of old stone leads down. Someone has been here, and recently, with a crowbar.",
+  "pos": [
+   4.2,
+   -5.8
+  ],
+  "back_pos": [
+   4.2,
+   -4.6
+  ],
+  "rot": 0,
+  "asset": "stairs",
+  "variant": "stone_tomb"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a4_j_catacombs"
+    },
+    {
+     "say": "Lead, and damp, and a long gallery of the patient dead. I do not need Lucy's tomb to know what I am looking for."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "entrance",
+   "dx": 1.8,
+   "id": "kc_candles",
+   "asset": "candelabra",
+   "variant": "default",
+   "name": "Candle stumps",
+   "radius": 0.3,
+   "interact": {
+    "look": "Candle stumps, newer than the tomb. A hunter's light, or a thief's."
+   }
+  },
+  {
+   "at": "room:0",
+   "id": "kc_lead",
+   "asset": "coffin",
+   "variant": "pale",
+   "name": "Lead-lined coffin",
+   "radius": 0.3,
+   "interact": {
+    "look": "Sealed, soldered, undisturbed. I put my ear to it, and feel foolish, and do it again."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "kc_cross",
+   "asset": "crucifix",
+   "variant": "default",
+   "name": "Iron crucifix",
+   "radius": 0.3,
+   "interact": {
+    "look": "An iron cross over a niche, black with a century of damp.",
+    "take": "crucifix",
+    "take_text": "I lift the iron cross from its nail. It is not silver, but it was hung by someone who believed, and that counts for more than metal."
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "kc_niche",
+   "asset": "tomb",
+   "variant": "stone_tomb",
+   "name": "Row of niches",
+   "radius": 0.3,
+   "interact": {
+    "look": "Niches, thirty or forty, each with its name and its dates. Most are only dead."
+   }
+  }
+ ]
+}

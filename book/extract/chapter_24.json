@@ -1,0 +1,102 @@
+{
+ "chapter": 24,
+ "narrator": "Van Helsing (phonograph), Jonathan Harker, Mina Harker, Dr. Seward",
+ "dates": "4 October - 6 October",
+ "summary": "Van Helsing records a message for Harker: the Count has fled to Transylvania by ship. The party consults Lloyd's and finds the sailing ship Czarina Catherine, which left Doolittle's Wharf for Varna. Dockhands describe the pale man in black and straw hat who loaded a large box and called fog up around the ship. Van Helsing explains the Count's persistence and why pursuit is necessary. Mina sees her own forehead scar in a mirror and knows she is still unclean. Seward and Van Helsing realise Mina is changing and may be mentally linked to the Count, so she is excluded from councils. They plan to leave for Varna by 17 October at latest, adding Winchesters. Mina makes Jonathan promise not to tell her the plans, then reveals at dawn on 6 October that she must go along because the Count will summon her. Van Helsing decides to put a wild-rose branch on the box aboard the ship. Harker makes his will; sunset approaches and Mina calls him.",
+ "scenes": [
+  {"id":"c24_s01","title":"Van Helsing's phonograph message","location":"Seward's house (phonograph)","time":"4 October","characters":["Van Helsing","Harker"],"summary":"Message left for Harker: the Count has returned toward his Castle; stay with Mina.","mood":"consoling","key_quote":"He, our enemy, have gone away; he have gone back to his Castle in Transylvania."},
+  {"id":"c24_s02","title":"Harker and Mina reread the diaries","location":"Seward's house","time":"4 October, around 3 pm","characters":["Harker","Mina"],"summary":"The scar on Mina's forehead prevents any disbelief.","mood":"quiet dread","key_quote":"Whilst that lasts, there can be no disbelief."},
+  {"id":"c24_s03","title":"Search at Lloyd's and Doolittle's Wharf","location":"Lloyd's, Doolittle's Wharf office","time":"4 October (reported 5 October)","characters":["Van Helsing","Godalming","Quincey","Dock foreman","Dockhands"],"summary":"Lloyd's list shows a single Black Sea ship leaving on the tide; at the wharf a bribe loosens the foreman's tongue.","mood":"detective-like, comic","key_quote":"only one Black-Sea-bound ship go out with the tide. She is the Czarina Catherine"},
+  {"id":"c24_s04","title":"The Count loads his box (reported)","location":"Doolittle's Wharf, gang-plank","time":"Afternoon about 5 pm, 4 October","characters":["Count Dracula","Captain","Mate","Dockhands"],"summary":"The thin man in straw hat arranges passage, drives a cart with a great box, lifts it down himself, argues with the captain, then returns at full tide as fog covers the ship.","mood":"uncanny comedy","key_quote":"A thin mist began to creep up from the river, and it grew, and grew; till soon a dense fog enveloped the ship and all around her."},
+  {"id":"c24_s05","title":"Report meeting","location":"Seward's study","time":"5 October, 5 pm","characters":["Van Helsing","Godalming","Seward","Quincey","Harker","Mina"],"summary":"Van Helsing reports, explains Ristics the agent at Varna, argues the necessity of pursuit and compares the Count to a man-eater.","mood":"resolve","key_quote":"This that we hunt from our village is a tiger, too, a man-eater, and he never cease to prowl."},
+  {"id":"c24_s06","title":"Mina's mirror","location":"Mina's room","time":"5 October night","characters":["Mina"],"summary":"Feeling peace, Mina sees the red mark in the mirror and knows she is still unclean.","mood":"bitter","key_quote":"I caught sight in the mirror of the red mark upon my forehead; and I knew that I was still unclean."},
+  {"id":"c24_s07","title":"Van Helsing and Seward decide to exclude Mina","location":"Seward's study","time":"5 October morning","characters":["Van Helsing","Seward"],"summary":"They see vampire traits in Mina - sharper teeth, hard eyes, silences - and decide she must be kept out of plans.","mood":"anguished","key_quote":"Madam Mina, our poor, dear Madam Mina is changing."},
+  {"id":"c24_s08","title":"Plan of Campaign","location":"Seward's study","time":"5 October morning","characters":["Van Helsing","Seward","Godalming","Quincey","Harker"],"summary":"Overland journey to Varna in three days against a voyage of three weeks; leave by 17th at latest; add Winchesters.","mood":"tactical","key_quote":"we must leave here on 17th at latest."},
+  {"id":"c24_s09","title":"Mina's promise","location":"Harkers' room","time":"5 October evening","characters":["Mina","Harker"],"summary":"Mina makes Jonathan promise not to tell her the plans; a door shuts between them.","mood":"painful","key_quote":"I felt that from that instant a door had been shut between us."},
+  {"id":"c24_s10","title":"Mina insists on going","location":"Harkers' room","time":"6 October dawn","characters":["Mina","Van Helsing","Harker"],"summary":"At sunrise, while she can speak freely, she says the Count's will compels her and she is safer with the party.","mood":"solemn","key_quote":"I know that when the Count wills me I must go."},
+  {"id":"c24_s11","title":"The wild-rose plan and wills","location":"Van Helsing's room, then Harkers' room","time":"6 October","characters":["Van Helsing","Quincey","Seward","Godalming","Harker"],"summary":"Van Helsing proposes to board the ship, place a wild-rose branch on the box and open it when unseen; Quincey will not wait. Harker makes his will.","mood":"resolve","key_quote":"we shall place a branch of the wild rose on it. This we shall fasten, for when it is there none can emerge"}
+ ],
+ "locations": [
+  {"name":"Lloyd's","kind":"indoor","description":"Shipping register where all sailings, even small ships, are recorded.","features":["shipping lists"],"atmosphere":"bureaucratic","lighting_time":"day","quote":"where are note of all ships that sail, however so small."},
+  {"name":"Doolittle's Wharf","kind":"outdoor","description":"Thames wharf with a very small wooden office, gang-plank, truck for cargo; rough hot dockhands.","features":["wooden office","gang-plank","truck","cart","river"],"atmosphere":"rough, fog-bound","lighting_time":"afternoon to full tide","quote":"a man in an office of wood so small that the man look bigger than the office."},
+  {"name":"The Czarina Catherine","kind":"vehicle","description":"A sailing ship bound for Varna and then up the Danube.","features":["gang-plank","hold","deck","sails"],"atmosphere":"fog-wrapped","lighting_time":"afternoon, ebb tide","quote":"She is the Czarina Catherine, and she sail from Doolittle’s Wharf for Varna"},
+  {"name":"Seward's study","kind":"indoor","description":"Meeting room where reports and plans are made.","features":["table","phonograph"],"atmosphere":"conspiratorial","lighting_time":"morning","quote":"We are to meet here in my study in half an hour"},
+  {"name":"Harkers' room","kind":"indoor","description":"Bedroom with a mirror in which Mina sees her scar.","features":["bed","mirror","window blind"],"atmosphere":"intimate, charged at sunrise and sunset","lighting_time":"sunrise and sunset","quote":"She had fallen back on her pillow asleep; she did not even wake when I had pulled up the blind"},
+  {"name":"Varna (planned)","kind":"outdoor","description":"Black Sea port, unfamiliar to all of the party, where the box will be landed to agent Ristics.","features":["port"],"atmosphere":"unknown","lighting_time":"","quote":"The box we seek is to be landed in Varna, and to be given to an agent, one Ristics"}
+ ],
+ "characters": [
+  {"name":"Van Helsing","role":"leader","appearance":"","clothing":"","personality":"passionate, painfully caring","speech_style":"","notable_lines":["Omne ignotum pro magnifico"],"abilities":["research, planning"]},
+  {"name":"Mina Harker","role":"marked seer","appearance":"sharper teeth, hard eyes at times, red scar","clothing":"","personality":"selfless, cheerful in company","speech_style":"","notable_lines":["You must take me with you. I am safer with you, and you shall be safer, too."],"abilities":["can be hypnotised to report on the Count","is summoned by the Count"]},
+  {"name":"Count Dracula","role":"fugitive","appearance":"tall thin pale man with high nose, very white teeth, burning eyes","clothing":"all black except a straw hat","personality":"polite, ironic","speech_style":"bows and thanks the captain","notable_lines":[],"abilities":["fog at command","lifts a great box alone"]},
+  {"name":"Captain of the Czarina Catherine","role":"ship captain","appearance":"red-faced","clothing":"","personality":"swears in many tongues","speech_style":"polyglot cursing","notable_lines":[],"abilities":[]},
+  {"name":"Wharf foreman","role":"informant","appearance":"red-faced, loud","clothing":"","personality":"good fellow when bribed","speech_style":"swearing","notable_lines":[],"abilities":[]},
+  {"name":"Ristics","role":"agent at Varna","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":["receives the box with credentials"]},
+  {"name":"Quincey Morris","role":"gunman","appearance":"","clothing":"","personality":"fearless","speech_style":"laconic","notable_lines":["I shall not wait for any opportunity. When I see the box I shall open it and destroy the monster"],"abilities":["Winchester repeater","bribes the foreman"]},
+  {"name":"Lord Godalming","role":"party member","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":["suggests Lloyd's"]},
+  {"name":"Dr. Seward","role":"narrator","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":[]},
+  {"name":"Jonathan Harker","role":"husband","appearance":"","clothing":"","personality":"torn","speech_style":"","notable_lines":["I promise!"],"abilities":[]}
+ ],
+ "objects": [
+  {"name":"Phonograph and cylinder","category":"other","description":"Van Helsing's spoken message.","function_in_story":"Carries the message to Harker.","location_or_owner":"Seward's study","quote":"THIS to Jonathan Harker."},
+  {"name":"Lloyd's shipping list","category":"document","description":"Register of all ships.","function_in_story":"Identifies the Czarina Catherine.","location_or_owner":"Lloyd's","quote":"where are note of all ships that sail"},
+  {"name":"Bribe in rolled notes","category":"other","description":"Crackling notes rolled up and tucked in a small hidden bag.","function_in_story":"Makes the foreman cooperative.","location_or_owner":"Quincey","quote":"when Quincey give him something from his pocket which crackle as he roll it up"},
+  {"name":"Great box (earth-box)","category":"container","description":"Last earth-box carted to the ship and placed in the hold.","function_in_story":"The Count's last resting place for the voyage.","location_or_owner":"Czarina Catherine","quote":"himself driving cart on which a great box; this he himself lift down"},
+  {"name":"Straw hat","category":"clothing","description":"Unfashionable hat on the Count.","function_in_story":"Identifier for dockhands.","location_or_owner":"Count Dracula","quote":"he have a hat of straw which suit not him or the time."},
+  {"name":"Invoices and ship papers","category":"document","description":"Show the box is consigned to Ristics at Varna.","function_in_story":"Reveals destination.","location_or_owner":"Ship's owner","quote":"who have shown us invoices and all papers that can be."},
+  {"name":"Winchester repeating rifles","category":"weapon","description":"Quincey's chosen repeaters, effective against wolf packs.","function_in_story":"Added to the party's arms.","location_or_owner":"Quincey / party","quote":"I propose that we add Winchesters to our armament."},
+  {"name":"Wild rose branch","category":"ward","description":"A branch of wild rose.","function_in_story":"Placed on the box to prevent the vampire emerging.","location_or_owner":"planned","quote":"we shall place a branch of the wild rose on it."},
+  {"name":"Mirror","category":"furniture","description":"Mirror reflecting Mina's forehead scar.","function_in_story":"Reminds her she is unclean.","location_or_owner":"Harkers' room","quote":"I caught sight in the mirror of the red mark upon my forehead"},
+  {"name":"Jonathan's will","category":"document","description":"Will leaving everything to Mina, remainder to the friends.","function_in_story":"Preparation for death.","location_or_owner":"Harker","quote":"my will is made, and all complete."},
+  {"name":"Travel tickets","category":"document","description":"Tickets for the journey arranged by Van Helsing.","function_in_story":"Departure.","location_or_owner":"Van Helsing","quote":"I shall have all tickets and so forth for our journey."}
+ ],
+ "creatures": [
+  {"name":"Fog around the ship","description":"Dense local fog that rises from the river and encloses only the Czarina Catherine and the wharf.","behaviour":"Called by the Count to delay departure to full tide and hide him.","weaknesses":[],"quote":"a dense fog enveloped the ship and all around her."},
+  {"name":"Wolves of the Carpathians (anticipated)","description":"Wolf packs expected on arrival.","behaviour":"Hunting packs, as at Tobolsk.","weaknesses":["repeating rifles"],"quote":"the Count comes from a wolf country"}
+ ],
+ "vampire_lore": [
+  {"rule":"The Count seeks to return to his castle and uses ships","kind":"limitation","detail":"He needs earth-box and sea passage, cannot cross water except as ship reaches land at full or slack tide.","quote":"for there are waters between us which he do not want to pass"},
+  {"rule":"Wild rose on the box prevents emerging","kind":"weakness","detail":"A fastened wild-rose branch keeps him in, per superstition.","quote":"when it is there none can emerge; so at least says the superstition."},
+  {"rule":"Best time to attack is in the box between sunrise and sunset","kind":"weakness","detail":"In the box by day he can make no struggle.","quote":"Our best hope is to come on him when in the box between sunrise and sunset"},
+  {"rule":"Weather control: fog at his command","kind":"power","detail":"Could shorten the voyage by about two days.","quote":"our enemy is on the sea, with the fog at his command"},
+  {"rule":"Vampire's baptism of blood causes transformation and mental link","kind":"transformation","detail":"Mina grows sharper teeth and hard eyes, falls silent; may be compelled to disclose what she knows.","quote":"I can see the characteristics of the vampire coming in her face."},
+  {"rule":"The Count can summon victims mentally","kind":"power","detail":"When he wills, Mina must go, even by guile.","quote":"I know that when the Count wills me I must go."},
+  {"rule":"Sunrise and sunset open a window of clarity for Mina","kind":"detection","detail":"She can speak freely only as the sun rises; uneasiness at sunset.","quote":"I can tell you now, whilst the sun is coming up; I may not be able again."},
+  {"rule":"A sacred wafer scar remains while the vampire lives","kind":"detection","detail":"The red scar stays on Mina's forehead.","quote":"Whilst that lasts, there can be no disbelief."},
+  {"rule":"The Count's power derives from his homeland's occult geology","kind":"power","detail":"Caverns, fissures, volcanic springs and gases, magnetic or electric forces.","quote":"There are deep caverns and fissures that reach none know whither."},
+  {"rule":"He cannot pass running water except at tide","kind":"limitation","detail":"Safe to rest while he is on the sea.","quote":"he be not in the same land with us."}
+ ],
+ "puzzles": [
+  {"name":"Find the ship","setup":"Count believed to have left London by ship at night.","obstacle":"Dozens of vessels leave the Port of London.","book_solution":"Deduce Black Sea route, sailing ship, check Lloyd's for one ship leaving with the tide, then interview dockhands.","items_used":["Lloyd's list","bribe"],"game_idea":"Investigation hub: filter shipping list by route, rig and tide time, then question NPCs with bribe options.","quote":"only one Black-Sea-bound ship go out with the tide."},
+  {"name":"Travel schedule","setup":"Ship takes about three weeks, overland takes three days.","obstacle":"Arrive at Varna before the ship.","book_solution":"Subtract two days for supernatural weather, add one day for delays, leave by 17 October latest.","items_used":[],"game_idea":"Logistics puzzle with route and day counter.","quote":"we must leave here on 17th at latest."},
+  {"name":"Keeping Mina from the Count's mind","setup":"Mina may be compelled to speak what she knows.","obstacle":"Excluding her from planning without breaking her trust.","book_solution":"Mina herself asks to be excluded and extracts Jonathan's promise.","items_used":[],"game_idea":"Information-control mechanic: certain NPCs must not receive plan flags.","quote":"Promise me that you will not tell me anything of the plans formed for the campaign against the Count."},
+  {"name":"Sealing the box on the ship","setup":"Box in the hold of a crewed ship.","obstacle":"Crew, daylight, secrecy.","book_solution":"Board, identify box, fasten a wild rose branch, then open when none are near.","items_used":["wild rose branch"],"game_idea":"Stealth boarding mission with crew patrols.","quote":"We shall at the first board that ship; then, when we have identified the box, we shall place a branch of the wild rose on it."}
+ ],
+ "combat": [],
+ "crafting": [],
+ "dialogue_samples": [
+  {"speaker":"Van Helsing","line":"Madam Mina, our poor, dear Madam Mina is changing.","context":"Private talk with Seward."},
+  {"speaker":"Quincey Morris","line":"I understand that the Count comes from a wolf country, and it may be that he shall get there before us.","context":"Proposing Winchesters."},
+  {"speaker":"Mina","line":"Promise me that you will not tell me anything of the plans formed for the campaign against the Count.","context":"Pointing to her scar."},
+  {"speaker":"Van Helsing","line":"Aha! your simile of the tiger good, for me, and I shall adopt him.","context":"Explaining why the Count will not retreat."},
+  {"speaker":"Captain","line":"he doesn’t want no Frenchmen","context":"Reported by the dockhands, in the captain's swearing."}
+ ],
+ "asset_candidates": [
+  {"name":"Czarina Catherine","type":"vehicle","visual_description":"Small wooden three-masted sailing ship, 19th-century, with hold and gang-plank.","priority":1},
+  {"name":"Doolittle's Wharf office","type":"architecture","visual_description":"Tiny wooden shack at the quay with a door and hatch, truck and gang-plank nearby.","priority":2},
+  {"name":"Thames fog bank","type":"effect","visual_description":"Dense river fog enveloping just one ship and the quay.","priority":1},
+  {"name":"Cart with great box","type":"vehicle","visual_description":"Hired horse cart carrying a large wooden crate.","priority":2},
+  {"name":"Wild rose branch","type":"prop","visual_description":"Thorny stem with pink-white five-petal blossoms and hips.","priority":1},
+  {"name":"Winchester rifle","type":"prop","visual_description":"Lever-action repeater with brass receiver.","priority":2},
+  {"name":"Straw hat and black suit Count","type":"character","visual_description":"Tall thin pale man in black with a straw boater.","priority":2},
+  {"name":"Red scar mirror effect","type":"effect","visual_description":"Bandage-less red burn mark on the forehead reflected in a mirror.","priority":3}
+ ],
+ "quest_hooks": [
+  "Identify the Count's ship through Lloyd's and the wharf",
+  "Bribe the dockhands for descriptions",
+  "Prepare and equip the party for Varna: Winchesters, tickets, affairs in order",
+  "Reach Varna before the Czarina Catherine",
+  "Find a wild rose branch for the box",
+  "Manage what Mina is told to protect the plan",
+  "Board the ship and locate the box"
+ ]
+}

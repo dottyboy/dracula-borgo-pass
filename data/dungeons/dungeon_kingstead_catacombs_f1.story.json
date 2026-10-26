@@ -1,0 +1,54 @@
+{
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a4_j_lower"
+    },
+    {
+     "say": "The air is colder here, and still. The oldest coffins lie heaped like driftwood."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "far:0",
+   "id": "kl_prised",
+   "asset": "coffin",
+   "variant": "dark",
+   "name": "Prised coffin",
+   "rot": 90,
+   "radius": 0.3,
+   "interact": {
+    "look": "The lid has been forced from within. The splinters point outward, and the earth inside is fresh."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "kl_stake",
+   "asset": "stake",
+   "variant": "default",
+   "name": "An old stake",
+   "radius": 0.3,
+   "interact": {
+    "look": "A stake of ash, black to the grain at the point.",
+    "take": "stake",
+    "take_text": "The point is stained to the grain. Whoever drove it here was too slow, or too weak, or too late. I take it, and I will not be any of those."
+   }
+  },
+  {
+   "at": "exit",
+   "dz": -1.0,
+   "id": "kl_ossuary",
+   "asset": "door",
+   "variant": "dark",
+   "name": "Sealed ossuary door",
+   "rot": 180,
+   "radius": 0.3,
+   "interact": {
+    "look": "Walled in long ago with new mortar over old. From the other side, if I hold my breath, there is a sound like a slow, patient scratching."
+   }
+  }
+ ]
+}

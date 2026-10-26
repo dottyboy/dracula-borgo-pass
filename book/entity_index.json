@@ -1,0 +1,895 @@
+{
+ "golden_krone": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_01": 1
+  },
+  "total": 1,
+  "quotes": [
+   "Count Dracula had directed me to go to the Golden Krone Hotel, which I found, to my great delight, to be thoroughly old-fashioned, for of course I wanted to see all I could of the ways of the country."
+  ]
+ },
+ "borgo_pass": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_01": 2,
+   "chapter_04": 1,
+   "chapter_26": 3,
+   "chapter_27": 2
+  },
+  "total": 8,
+  "quotes": [
+   "Being practically on the frontier—for the Borgo Pass leads from it into Bukovina—it has had a very stormy existence, and it certainly shows marks of it.",
+   "At the Borgo Pass my carriage will await you and will bring you to me.",
+   "Then the mountains seemed to come nearer to us on each side and to frown down upon us; we were entering on the Borgo Pass."
+  ]
+ },
+ "castle_courtyard": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_02": 6,
+   "chapter_03": 2,
+   "chapter_04": 5
+  },
+  "total": 14,
+  "quotes": [
+   "Suddenly, I became conscious of the fact that the driver was in the act of pulling up the horses in the courtyard of a vast ruined castle, from whose tall black windows came no ray of light, and whose broken battlements showed a jagged line against the moonlit sky.",
+   "In the gloom the courtyard looked of considerable size, and as several dark ways led from it under great round arches, it perhaps seemed bigger than it really is.",
+   "Then he took out my traps, and placed them on the ground beside me as I stood close to a great door, old and studded with large iron nails, and set in a projecting doorway of massive stone."
+  ]
+ },
+ "great_hall": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_01": 2,
+   "chapter_02": 6,
+   "chapter_03": 12,
+   "chapter_04": 23,
+   "chapter_05": 10,
+   "chapter_06": 9,
+   "chapter_07": 12,
+   "chapter_08": 16,
+   "chapter_09": 22,
+   "chapter_10": 29,
+   "chapter_11": 9,
+   "chapter_12": 11,
+   "chapter_13": 27,
+   "chapter_14": 25,
+   "chapter_15": 30,
+   "chapter_16": 19,
+   "chapter_17": 15,
+   "chapter_18": 14,
+   "chapter_19": 17,
+   "chapter_20": 8,
+   "chapter_21": 17,
+   "chapter_22": 26,
+   "chapter_23": 17,
+   "chapter_24": 36,
+   "chapter_25": 25,
+   "chapter_26": 19,
+   "chapter_27": 8
+  },
+  "total": 464,
+  "quotes": [
+   "I shall enter here some of my notes, as they may refresh my memory when I talk over my travels with Mina.",
+   "I shall never forget the last glimpse which I had of the inn-yard and its crowd of picturesque figures, all crossing themselves, as they stood round the wide archway, with its background of rich foliage of oleander and orange trees in green tubs clustered in the centre of the yard.",
+   "He shall be ready to attend on you when you will during his stay, and shall take your instructions in all matters.”  The Count himself came forward and took off the cover of a dish, and I fell to at once on an excellent roast chicken."
+  ]
+ },
+ "harker_room": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_02": 9,
+   "chapter_12": 1,
+   "chapter_17": 1,
+   "chapter_18": 1,
+   "chapter_24": 1
+  },
+  "total": 13,
+  "quotes": [
+   "It was a welcome sight; for here was a great bedroom well lighted and warmed with another log fire,—also added to but lately, for the top logs were fresh—which sent a hollow roar up the wide chimney.",
+   "Your bedroom is all ready, and to-morrow you shall sleep as late as you will.",
+   "I have to be away till the afternoon; so sleep well and dream well!” With a courteous bow, he opened for me himself the door to the octagonal room, and I entered my bedroom...."
+  ]
+ },
+ "library": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_02": 4,
+   "chapter_03": 1,
+   "chapter_04": 2,
+   "chapter_17": 1
+  },
+  "total": 9,
+  "quotes": [
+   "Having had some time at my disposal when in London, I had visited the British Museum, and made search among the books and maps in the library regarding Transylvania; it had struck me that some foreknowledge of the country could hardly fail to have some importance in dealing with a nobleman of that country.",
+   "There was absolutely nothing in the room, book, newspaper, or even writing materials; so I opened another door in the room and found a sort of library.",
+   "In the library I found, to my great delight, a vast number of English books, whole shelves full of them, and bound volumes of magazines and newspapers."
+  ]
+ },
+ "old_wing": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_03": 1
+  },
+  "total": 1,
+  "quotes": [
+   "You will, I hope, find all things as you wish.” At the door he turned, and after a moment’s pause said:—  “Let me advise you, my dear young friend—nay, let me warn you with all seriousness, that should you leave these rooms you will not by any chance go to sleep in any other part of the castle."
+  ]
+ },
+ "chapel_crypt": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_02": 2,
+   "chapter_04": 2,
+   "chapter_07": 1,
+   "chapter_08": 2,
+   "chapter_09": 1,
+   "chapter_13": 1,
+   "chapter_17": 3,
+   "chapter_18": 1,
+   "chapter_19": 3,
+   "chapter_22": 4,
+   "chapter_27": 2
+  },
+  "total": 22,
+  "quotes": [
+   "It looks like part of a keep, and is close to an old chapel or church.",
+   "I rejoice also that there is a chapel of old times.",
+   "At last I pulled open a heavy door which stood ajar, and found myself in an old, ruined chapel, which had evidently been used as a graveyard."
+  ]
+ },
+ "whitby_churchyard": {
+  "kind": "locations",
+  "chapter_hits": {
+   "chapter_02": 1,
+   "chapter_03": 1,
+   "chapter_06": 7,
+   "chapter_07": 14,
+   "chapter_08": 7,
+   "chapter_09": 4,
+   "chapter_11": 1,
+   "chapter_13": 4,
+   "chapter_14": 1,
+   "chapter_15": 11,
+   "chapter_16": 2,
+   "chapter_17": 10,
+   "chapter_18": 4,
+   "chapter_19": 3,
+   "chapter_21": 1,
+   "chapter_26": 2
+  },
+  "total": 73,
+  "quotes": [
+   "On looking at it I found in certain places little rings marked, and on examining these I noticed that one was near London on the east side, manifestly where his new estate was situated; the other two were Exeter, and Whitby on the Yorkshire coast.",
+   "7, The Crescent, Whitby, another to Herr Leutner, Varna; the third was to Coutts & Co., London, and the fourth to Herren Klopstock & Billreuth, bankers, Buda-Pesth.",
+   "Whitby.—Lucy met me at the station, looking sweeter and lovelier than ever, and we drove up to the house at the Crescent in which they have rooms."
+  ]
+ },
+ "harker": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 4,
+   "chapter_02": 9,
+   "chapter_03": 4,
+   "chapter_04": 4,
+   "chapter_05": 7,
+   "chapter_06": 10,
+   "chapter_07": 1,
+   "chapter_08": 11,
+   "chapter_09": 9,
+   "chapter_12": 14,
+   "chapter_13": 18,
+   "chapter_14": 35,
+   "chapter_15": 2,
+   "chapter_17": 30,
+   "chapter_18": 28,
+   "chapter_19": 23,
+   "chapter_20": 12,
+   "chapter_21": 19,
+   "chapter_22": 6,
+   "chapter_23": 26,
+   "chapter_24": 21,
+   "chapter_25": 28,
+   "chapter_26": 32,
+   "chapter_27": 28
+  },
+  "total": 381,
+  "quotes": [
+   "D R A C U L A  D R A C U L A  CHAPTER I  JONATHAN HARKER’S JOURNAL  (Kept in shorthand.)  3 May.",
+   "When I came close she bowed and said, “The Herr Englishman?” “Yes,” I said, “Jonathan Harker.” She smiled, and gave some message to an elderly man in white shirt-sleeves, who had followed her to the door.",
+   "CHAPTER II  JONATHAN HARKER’S JOURNAL—continued  CHAPTER II  JONATHAN HARKER’S JOURNAL—continued  5 May.—I must have been asleep, for certainly if I had been fully awake I must have noticed the approach of such a remarkable place."
+  ]
+ },
+ "dracula": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 22,
+   "chapter_02": 31,
+   "chapter_03": 32,
+   "chapter_04": 38,
+   "chapter_05": 3,
+   "chapter_06": 5,
+   "chapter_07": 2,
+   "chapter_08": 2,
+   "chapter_09": 1,
+   "chapter_10": 2,
+   "chapter_11": 3,
+   "chapter_12": 3,
+   "chapter_13": 2,
+   "chapter_14": 6,
+   "chapter_15": 4,
+   "chapter_16": 2,
+   "chapter_17": 10,
+   "chapter_18": 7,
+   "chapter_19": 8,
+   "chapter_20": 11,
+   "chapter_21": 9,
+   "chapter_22": 15,
+   "chapter_23": 9,
+   "chapter_24": 16,
+   "chapter_25": 16,
+   "chapter_26": 26,
+   "chapter_27": 10
+  },
+  "total": 295,
+  "quotes": [
+   "Having had some time at my disposal when in London, I had visited the British Museum, and made search among the books and maps in the library regarding Transylvania; it had struck me that some foreknowledge of the country could hardly fail to have some importance in dealing with a nobleman of that country.",
+   "I find that the district he named is in the extreme east of the country, just on the borders of three states, Transylvania, Moldavia and Bukovina, in the midst of the Carpathian mountains; one of the wildest and least known portions of Europe.",
+   "I was not able to light on any map or work giving the exact locality of the Castle Dracula, as there are no maps of this country as yet to compare with our own Ordnance Survey maps; but I found that Bistritz, the post town named by Count Dracula, is a fairly well-known place."
+  ]
+ },
+ "mina": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 4,
+   "chapter_02": 2,
+   "chapter_03": 3,
+   "chapter_04": 7,
+   "chapter_05": 19,
+   "chapter_06": 3,
+   "chapter_07": 3,
+   "chapter_08": 5,
+   "chapter_09": 10,
+   "chapter_11": 1,
+   "chapter_12": 4,
+   "chapter_13": 3,
+   "chapter_14": 24,
+   "chapter_15": 1,
+   "chapter_17": 7,
+   "chapter_18": 7,
+   "chapter_19": 8,
+   "chapter_20": 5,
+   "chapter_21": 9,
+   "chapter_22": 22,
+   "chapter_23": 22,
+   "chapter_24": 32,
+   "chapter_25": 19,
+   "chapter_26": 20,
+   "chapter_27": 31
+  },
+  "total": 271,
+  "quotes": [
+   "(Mem., get recipe for Mina.) I asked the waiter, and he said it was called “paprika hendl,” and that, as it was a national dish, I should be able to get it anywhere along the Carpathians.",
+   "I shall enter here some of my notes, as they may refresh my memory when I talk over my travels with Mina.",
+   "If this book should ever reach Mina before I do, let it bring my good-bye."
+  ]
+ },
+ "lucy": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_05": 8,
+   "chapter_06": 20,
+   "chapter_07": 6,
+   "chapter_08": 43,
+   "chapter_09": 17,
+   "chapter_10": 34,
+   "chapter_11": 11,
+   "chapter_12": 45,
+   "chapter_13": 16,
+   "chapter_14": 25,
+   "chapter_15": 16,
+   "chapter_16": 16,
+   "chapter_17": 22,
+   "chapter_18": 5,
+   "chapter_19": 3,
+   "chapter_21": 1,
+   "chapter_22": 1,
+   "chapter_23": 2,
+   "chapter_24": 3,
+   "chapter_25": 4,
+   "chapter_27": 1
+  },
+  "total": 299,
+  "quotes": [
+   "CHAPTER V  CHAPTER V  Letter from Miss Mina Murray to Miss Lucy Westenra.",
+   "“My dearest Lucy,—  “Forgive my long delay in writing, but I have been simply overwhelmed with work.",
+   "I hear rumours, and especially of a tall, handsome, curly-haired man???”  Letter, Lucy Westenra to Mina Murray."
+  ]
+ },
+ "vanhelsing": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_09": 10,
+   "chapter_10": 26,
+   "chapter_11": 15,
+   "chapter_12": 33,
+   "chapter_13": 13,
+   "chapter_14": 16,
+   "chapter_15": 23,
+   "chapter_16": 22,
+   "chapter_17": 4,
+   "chapter_18": 12,
+   "chapter_19": 7,
+   "chapter_20": 5,
+   "chapter_21": 23,
+   "chapter_22": 13,
+   "chapter_23": 12,
+   "chapter_24": 20,
+   "chapter_25": 19,
+   "chapter_26": 17,
+   "chapter_27": 9
+  },
+  "total": 299,
+  "quotes": [
+   "I am in doubt, and so have done the best thing I know of; I have written to my old friend and master, Professor Van Helsing, of Amsterdam, who knows as much about obscure diseases as any one in the world.",
+   "Van Helsing would, I know, do anything for me for a personal reason, so, no matter on what ground he comes, we must accept his wishes.",
+   "“Yours always, “John Seward.”  Letter, Abraham Van Helsing, M."
+  ]
+ },
+ "seward": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_05": 4,
+   "chapter_06": 1,
+   "chapter_08": 1,
+   "chapter_09": 11,
+   "chapter_10": 7,
+   "chapter_11": 5,
+   "chapter_12": 7,
+   "chapter_13": 3,
+   "chapter_14": 4,
+   "chapter_15": 4,
+   "chapter_16": 3,
+   "chapter_17": 16,
+   "chapter_18": 19,
+   "chapter_19": 9,
+   "chapter_20": 6,
+   "chapter_21": 4,
+   "chapter_22": 5,
+   "chapter_23": 4,
+   "chapter_24": 5,
+   "chapter_25": 5,
+   "chapter_26": 8,
+   "chapter_27": 6
+  },
+  "total": 137,
+  "quotes": [
+   "John Seward, the lunatic-asylum man, with the strong jaw and the good forehead.",
+   "Seward; so I said, as lightly as I could, that I did not know anything of hitching, and that I wasn’t broken to harness at all yet.",
+   "There will only be one other, our old pal at the Korea, Jack Seward."
+  ]
+ },
+ "renfield": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_05": 1,
+   "chapter_06": 4,
+   "chapter_08": 4,
+   "chapter_09": 2,
+   "chapter_12": 2,
+   "chapter_14": 1,
+   "chapter_17": 4,
+   "chapter_18": 7,
+   "chapter_19": 4,
+   "chapter_20": 8,
+   "chapter_21": 8,
+   "chapter_22": 3
+  },
+  "total": 48,
+  "quotes": [
+   "Renfield, ætat 59.—Sanguine temperament; great physical strength; morbidly excitable; periods of gloom, ending in some fixed idea which I cannot make out.",
+   "5 June.—The case of Renfield grows more interesting the more I get to understand the man.",
+   "20 July.—Visited Renfield very early, before the attendant went his rounds."
+  ]
+ },
+ "quincey": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_05": 12,
+   "chapter_12": 15,
+   "chapter_13": 4,
+   "chapter_14": 3,
+   "chapter_15": 7,
+   "chapter_16": 13,
+   "chapter_17": 5,
+   "chapter_18": 16,
+   "chapter_19": 4,
+   "chapter_20": 4,
+   "chapter_21": 11,
+   "chapter_22": 11,
+   "chapter_23": 16,
+   "chapter_24": 10,
+   "chapter_25": 9,
+   "chapter_26": 11,
+   "chapter_27": 9
+  },
+  "total": 160,
+  "quotes": [
+   "Morris telling us his stories, and Arthur never told any, and yet—— My dear, I am somewhat previous.",
+   "Morris doesn’t always speak slang—that is to say, he never does so to strangers or before them, for he is really well educated and has exquisite manners—but he found out that it amused me to hear him talk American slang, and whenever I was present, and there was no one to be shocked, he said such funny things.",
+   "Morris sat down beside me and looked as happy and jolly as he could, but I could see all the same that he was very nervous."
+  ]
+ },
+ "arthur": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_05": 12,
+   "chapter_06": 5,
+   "chapter_08": 5,
+   "chapter_09": 15,
+   "chapter_10": 22,
+   "chapter_11": 2,
+   "chapter_12": 19,
+   "chapter_13": 20,
+   "chapter_14": 4,
+   "chapter_15": 15,
+   "chapter_16": 34,
+   "chapter_18": 1,
+   "chapter_19": 1,
+   "chapter_20": 2,
+   "chapter_21": 2,
+   "chapter_22": 1,
+   "chapter_23": 4,
+   "chapter_25": 1
+  },
+  "total": 165,
+  "quotes": [
+   "Holmwood introduced him to me, and he called here to see us, and often comes now.",
+   "That is slang again, but never mind; Arthur says that every day.",
+   "You will tell him, because I would, if I were in your place, certainly tell Arthur."
+  ]
+ },
+ "brides": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_02": 1,
+   "chapter_03": 3,
+   "chapter_04": 1,
+   "chapter_09": 2,
+   "chapter_12": 1,
+   "chapter_16": 4,
+   "chapter_17": 1,
+   "chapter_18": 1,
+   "chapter_27": 5
+  },
+  "total": 19,
+  "quotes": [
+   "I seek not gaiety nor mirth, not the bright voluptuousness of much sunshine and sparkling waters which please the young and gay.",
+   "In the moonlight opposite me were three young women, ladies by their dress and manner.",
+   "All three had brilliant white teeth that shone like pearls against the ruby of their voluptuous lips."
+  ]
+ },
+ "innkeeper": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_26": 1
+  },
+  "total": 2,
+  "quotes": [
+   "“Your friend, “Dracula.”  4 May.—I found that my landlord had got a letter from the Count, directing him to secure the best place on the coach for me; but on making inquiries as to details he seemed somewhat reticent, and pretended that he could not understand my German.",
+   "This was corroborated by his landlord, who had received by messenger the key of the house together with the rent due, in English money."
+  ]
+ },
+ "szgany": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 4,
+   "chapter_04": 17,
+   "chapter_26": 12,
+   "chapter_27": 3
+  },
+  "total": 36,
+  "quotes": [
+   "The strangest figures we saw were the Slovaks, who were more barbarian than the rest, with their big cow-boy hats, great baggy dirty-white trousers, white linen shirts, and enormous heavy leather belts, nearly a foot wide, all studded over with brass nails.",
+   "I must say they were not cheering to me, for amongst them were “Ordog”—Satan, “pokol”—hell, “stregoica”—witch, “vrolok” and “vlkoslak”—both of which mean the same thing, one being Slovak and the other Servian for something that is either were-wolf or vampire.",
+   "Here and there we passed Cszeks and Slovaks, all in picturesque attire, but I noticed that goitre was painfully prevalent."
+  ]
+ },
+ "coachman": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 32,
+   "chapter_02": 4,
+   "chapter_03": 1,
+   "chapter_16": 1,
+   "chapter_22": 1,
+   "chapter_27": 1
+  },
+  "total": 40,
+  "quotes": [
+   "When I got on the coach the driver had not taken his seat, and I saw him talking with the landlady.",
+   "Then our driver, whose wide linen drawers covered the whole front of the box-seat—“gotza” they call them—cracked his big whip over his four small horses, which ran abreast, and we set off on our journey.",
+   "I could not understand then what the haste meant, but the driver was evidently bent on losing no time in reaching Borgo Prund."
+  ]
+ },
+ "wolves": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 11,
+   "chapter_02": 2,
+   "chapter_03": 3,
+   "chapter_04": 5,
+   "chapter_08": 1,
+   "chapter_11": 28,
+   "chapter_15": 2,
+   "chapter_18": 3,
+   "chapter_19": 2,
+   "chapter_24": 2,
+   "chapter_26": 5,
+   "chapter_27": 11
+  },
+  "total": 75,
+  "quotes": [
+   "I must say they were not cheering to me, for amongst them were “Ordog”—Satan, “pokol”—hell, “stregoica”—witch, “vrolok” and “vlkoslak”—both of which mean the same thing, one being Slovak and the other Servian for something that is either were-wolf or vampire.",
+   "The baying of the wolves sounded nearer and nearer, as though they were closing round on us from every side.",
+   "I did not know what to do, the less as the howling of the wolves grew closer; but while I wondered the driver suddenly appeared again, and without a word took his seat, and we resumed our journey."
+  ]
+ },
+ "bats": {
+  "kind": "characters",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_02": 1,
+   "chapter_03": 3,
+   "chapter_04": 1,
+   "chapter_06": 2,
+   "chapter_07": 2,
+   "chapter_08": 2,
+   "chapter_09": 2,
+   "chapter_11": 2,
+   "chapter_12": 6,
+   "chapter_14": 4,
+   "chapter_15": 1,
+   "chapter_17": 2,
+   "chapter_18": 4,
+   "chapter_21": 1,
+   "chapter_23": 1,
+   "chapter_24": 1,
+   "chapter_25": 2,
+   "chapter_26": 1,
+   "chapter_27": 4
+  },
+  "total": 43,
+  "quotes": [
+   "Suddenly, I became conscious of the fact that the driver was in the act of pulling up the horses in the courtyard of a vast ruined castle, from whose tall black windows came no ray of light, and whose broken battlements showed a jagged line against the moonlit sky.",
+   "Moreover, the walls of my castle are broken; the shadows are many, and the wind breathes cold through the broken battlements and casements.",
+   "In his speaking of things and people, and especially of battles, he spoke as if he had been present at them all."
+  ]
+ },
+ "crucifix": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 4,
+   "chapter_02": 1,
+   "chapter_03": 3,
+   "chapter_07": 2,
+   "chapter_13": 2,
+   "chapter_15": 1,
+   "chapter_16": 2,
+   "chapter_18": 2,
+   "chapter_19": 1,
+   "chapter_21": 2,
+   "chapter_23": 1
+  },
+  "total": 21,
+  "quotes": [
+   "She then rose and dried her eyes, and taking a crucifix from her neck offered it to me.",
+   "She saw, I suppose, the doubt in my face, for she put the rosary round my neck, and said, “For your mother’s sake,” and went out of the room.",
+   "I am writing up this part of the diary whilst I am waiting for the coach, which is, of course, late; and the crucifix is still round my neck."
+  ]
+ },
+ "garlic": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_03": 1,
+   "chapter_10": 4,
+   "chapter_11": 2,
+   "chapter_12": 3,
+   "chapter_13": 2,
+   "chapter_15": 2,
+   "chapter_16": 3,
+   "chapter_18": 1,
+   "chapter_19": 1,
+   "chapter_27": 2
+  },
+  "total": 21,
+  "quotes": [
+   "What meant the giving of the crucifix, of the garlic, of the wild rose, of the mountain ash?",
+   "Why, these flowers are only common garlic.”  To my surprise, Van Helsing rose up and said with all his sternness, his iron jaw set and his bushy eyebrows meeting:—  “No trifling with me!",
+   "Come with me, friend John, and you shall help me deck the room with my garlic, which is all the way from Haarlem, where my friend Vanderpool raise herb in his glass-houses all the year."
+  ]
+ },
+ "stake": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_02": 1,
+   "chapter_03": 1,
+   "chapter_05": 1,
+   "chapter_06": 1,
+   "chapter_12": 2,
+   "chapter_15": 7,
+   "chapter_16": 8,
+   "chapter_18": 1,
+   "chapter_19": 1,
+   "chapter_21": 1,
+   "chapter_23": 1,
+   "chapter_25": 4,
+   "chapter_27": 2
+  },
+  "total": 31,
+  "quotes": [
+   "Having answered the Count’s salutation, I turned to the glass again to see how I had been mistaken.",
+   "In any case I could not mistake the hands which I had had so many opportunities of studying.",
+   "Then he said that he had spoken in a light manner, and he hoped that if he had made a mistake in doing so on so grave, so momentous, an occasion for him, I would forgive him."
+  ]
+ },
+ "key": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_02": 2,
+   "chapter_03": 2,
+   "chapter_04": 14,
+   "chapter_06": 2,
+   "chapter_08": 8,
+   "chapter_15": 7,
+   "chapter_16": 1,
+   "chapter_19": 7,
+   "chapter_20": 4,
+   "chapter_22": 7,
+   "chapter_23": 1,
+   "chapter_26": 1,
+   "chapter_27": 1
+  },
+  "total": 57,
+  "quotes": [
+   "A key was turned with the loud grating noise of long disuse, and the great door swung back.",
+   "I could not enter it, as I had not the key of the door leading to it from the house, but I have taken with my kodak views of it from various points.",
+   "I found I could pull back the bolts easily enough and unhook the great chains; but the door was locked, and the key was gone!"
+  ]
+ },
+ "candles": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_13": 1,
+   "chapter_15": 5,
+   "chapter_16": 1
+  },
+  "total": 7,
+  "quotes": [
+   "The end of the winding-sheet was laid over the face; when the Professor bent over and turned it gently back, we both started at the beauty before us, the tall wax candles showing a sufficient light to note it well.",
+   "Then he fumbled in his bag, and taking out a matchbox and a piece of candle, proceeded to make a light.",
+   "Holding his candle so that he could read the coffin plates, and so holding it that the sperm dropped in white patches which congealed as they touched the metal, he made assurance of Lucy’s coffin."
+  ]
+ },
+ "coffin": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_04": 1,
+   "chapter_07": 2,
+   "chapter_12": 1,
+   "chapter_13": 6,
+   "chapter_15": 14,
+   "chapter_16": 14,
+   "chapter_18": 5,
+   "chapter_22": 1,
+   "chapter_25": 1,
+   "chapter_26": 1
+  },
+  "total": 46,
+  "quotes": [
+   "Into two of these I went, but saw nothing except fragments of old coffins and piles of dust; in the third, however, I made a discovery.",
+   "On 6 July we finished taking in cargo, silver sand and boxes of earth.",
+   "Every boat in the harbour seemed to be there, and the coffin was carried by captains all the way from Tate Hill Pier up to the churchyard."
+  ]
+ },
+ "mirror": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_02": 2,
+   "chapter_18": 1,
+   "chapter_24": 1
+  },
+  "total": 4,
+  "quotes": [
+   "He throws no shadow; he make in the mirror no reflect, as again Jonathan observe.",
+   "My surmise was not finished, could not be; for I caught sight in the mirror of the red mark upon my forehead; and I knew that I was still unclean."
+  ]
+ },
+ "diary": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 2,
+   "chapter_02": 2,
+   "chapter_03": 6,
+   "chapter_04": 4,
+   "chapter_05": 6,
+   "chapter_06": 4,
+   "chapter_07": 2,
+   "chapter_08": 9,
+   "chapter_09": 3,
+   "chapter_10": 4,
+   "chapter_11": 5,
+   "chapter_12": 3,
+   "chapter_13": 6,
+   "chapter_14": 20,
+   "chapter_15": 3,
+   "chapter_16": 2,
+   "chapter_17": 28,
+   "chapter_18": 7,
+   "chapter_19": 7,
+   "chapter_20": 6,
+   "chapter_21": 3,
+   "chapter_22": 3,
+   "chapter_23": 3,
+   "chapter_24": 7,
+   "chapter_25": 7,
+   "chapter_26": 11,
+   "chapter_27": 9
+  },
+  "total": 172,
+  "quotes": [
+   "D R A C U L A  D R A C U L A  CHAPTER I  JONATHAN HARKER’S JOURNAL  (Kept in shorthand.)  3 May.",
+   "I am writing up this part of the diary whilst I am waiting for the coach, which is, of course, late; and the crucifix is still round my neck.",
+   "CHAPTER II  JONATHAN HARKER’S JOURNAL—continued  CHAPTER II  JONATHAN HARKER’S JOURNAL—continued  5 May.—I must have been asleep, for certainly if I had been fully awake I must have noticed the approach of such a remarkable place."
+  ]
+ },
+ "lantern": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 7,
+   "chapter_02": 5,
+   "chapter_03": 2,
+   "chapter_04": 3,
+   "chapter_05": 1,
+   "chapter_07": 2,
+   "chapter_14": 1,
+   "chapter_15": 2,
+   "chapter_16": 8,
+   "chapter_19": 8,
+   "chapter_26": 1
+  },
+  "total": 40,
+  "quotes": [
+   "Each moment I expected to see the glare of lamps through the blackness; but all was dark.",
+   "The only light was the flickering rays of our own lamps, in which the steam from our hard-driven horses rose in a white cloud.",
+   "I could see from the flash of our lamps, as the rays fell on them, that the horses were coal-black and splendid animals."
+  ]
+ },
+ "blue_flame": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 2,
+   "chapter_02": 1,
+   "chapter_21": 1
+  },
+  "total": 4,
+  "quotes": [
+   "Suddenly, away on our left, I saw a faint flickering blue flame.",
+   "He went rapidly to where the blue flame arose—it must have been very faint, for it did not seem to illumine the place around it at all—and gathering a few stones, formed them into some device.",
+   "Then for a time there were no blue flames, and we sped onwards through the gloom, with the howling of the wolves around us, as though they were following in a moving circle."
+  ]
+ },
+ "carriage": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 10,
+   "chapter_02": 1,
+   "chapter_04": 1,
+   "chapter_11": 1,
+   "chapter_12": 1,
+   "chapter_13": 2,
+   "chapter_14": 1,
+   "chapter_18": 1,
+   "chapter_22": 2,
+   "chapter_26": 6,
+   "chapter_27": 3
+  },
+  "total": 29,
+  "quotes": [
+   "At the Borgo Pass my carriage will await you and will bring you to me.",
+   "I was already thinking what I had best do, when the driver, looking at his watch, said to the others something which I could hardly hear, it was spoken so quietly and in so low a tone; I thought it was “An hour less than the time.” Then turning to me, he said in German worse than my own:—  “There is no carriage here.",
+   "Then, amongst a chorus of screams from the peasants and a universal crossing of themselves, a calèche, with four horses, drove up behind us, overtook us, and drew up beside the coach."
+  ]
+ },
+ "bookshelf": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_02": 10,
+   "chapter_03": 4,
+   "chapter_10": 1,
+   "chapter_11": 1,
+   "chapter_13": 1
+  },
+  "total": 18,
+  "quotes": [
+   "Having had some time at my disposal when in London, I had visited the British Museum, and made search among the books and maps in the library regarding Transylvania; it had struck me that some foreknowledge of the country could hardly fail to have some importance in dealing with a nobleman of that country.",
+   "In the library I found, to my great delight, a vast number of English books, whole shelves full of them, and bound volumes of magazines and newspapers.",
+   "The books were of the most varied kind—history, geography, politics, political economy, botany, geology, law—all relating to England and English life and customs and manners."
+  ]
+ },
+ "fireplace": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 2,
+   "chapter_02": 8,
+   "chapter_03": 1,
+   "chapter_04": 1,
+   "chapter_05": 3,
+   "chapter_10": 3,
+   "chapter_12": 4,
+   "chapter_14": 1,
+   "chapter_16": 4,
+   "chapter_18": 2,
+   "chapter_19": 4,
+   "chapter_20": 2,
+   "chapter_21": 2,
+   "chapter_23": 2,
+   "chapter_24": 1,
+   "chapter_26": 2,
+   "chapter_27": 13
+  },
+  "total": 55,
+  "quotes": [
+   "Fifty years ago a series of great fires took place, which made terrible havoc on five separate occasions.",
+   "I dined on what they called “robber steak”—bits of bacon, onion, and beef, seasoned with red pepper, and strung on sticks and roasted over the fire, in the simple style of the London cat’s meat!",
+   "At the end of this he threw open a heavy door, and I rejoiced to see within a well-lit room in which a table was spread for supper, and on whose mighty hearth a great fire of logs, freshly replenished, flamed and flared."
+  ]
+ },
+ "wine": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_01": 1,
+   "chapter_02": 1,
+   "chapter_05": 1,
+   "chapter_10": 2,
+   "chapter_11": 1,
+   "chapter_12": 1,
+   "chapter_21": 1,
+   "chapter_27": 1
+  },
+  "total": 9,
+  "quotes": [
+   "The wine was Golden Mediasch, which produces a queer sting on the tongue, which is, however, not disagreeable.",
+   "This, with some cheese and a salad and a bottle of old Tokay, of which I had two glasses, was my supper.",
+   "He’s coming, too, and we both want to mingle our weeps over the wine-cup, and to drink a health with all our hearts to the happiest man in all the wide world, who has won the noblest heart that God has made and the best worth winning."
+  ]
+ },
+ "razor": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_02": 1
+  },
+  "total": 1,
+  "quotes": [
+   "I laid down the razor, turning as I did so half round to look for some sticking plaster."
+  ]
+ },
+ "gravestone": {
+  "kind": "props",
+  "chapter_hits": {
+   "chapter_06": 5,
+   "chapter_07": 2
+  },
+  "total": 7,
+  "quotes": [
+   "Between it and the town there is another church, the parish one, round which is a big graveyard, all full of tombstones.",
+   "Why, it’s them that, not content with printin’ lies on paper an’ preachin’ them out of pulpits, does want to be cuttin’ them on the tombstones.",
+   "Surely these tombstones are not all wrong?”  “Yabblins!"
+  ]
+ }
+}

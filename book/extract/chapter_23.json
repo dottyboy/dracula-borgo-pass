@@ -1,0 +1,618 @@
+{
+ "chapter": 23,
+ "narrator": "Dr. Seward (diary), then Jonathan Harker (journal)",
+ "dates": "3 October (afternoon) to 4 October (morning)",
+ "summary": "Waiting at Piccadilly, Van Helsing explains the Count's history and his experiments in moving his own boxes. A telegram from Mina warns that the Count has hurried south from Carfax. Godalming and Quincey return, having destroyed twelve boxes at Bermondsey and Mile End. They ambush the Count when he enters with a key; Harker slashes at him with his kukri, cutting his coat and spilling banknotes and gold; the Count is repelled by crucifix and Wafer and leaps through the window. He escapes via the stable, leaving a sneering threat. Van Helsing burns his remaining effects and keeps the deeds. Back at the asylum Mina asks the men to pity the Count. During the night Mina asks Van Helsing to hypnotise her before dawn, and in trance she hears water, a chain and a capstan, revealing the Count is aboard a ship. Van Helsing deduces escape and warns that, because of the mark, time favours the immortal Count.",
+ "scenes": [
+  {
+   "id": "c23_s01",
+   "title": "Van Helsing on the Count's nature",
+   "location": "Piccadilly house",
+   "time": "3 October, about 12:45-1:20 pm",
+   "characters": [
+    "Van Helsing",
+    "Harker",
+    "Seward"
+   ],
+   "summary": "Van Helsing explains the Count was soldier, statesman and alchemist, a child-brain growing, now experimenting, including moving boxes himself.",
+   "mood": "analytical",
+   "key_quote": "He dared even to attend the Scholomance, and there was no branch of knowledge of his time that he did not essay."
+  },
+  {
+   "id": "c23_s02",
+   "title": "Mina's telegram",
+   "location": "Piccadilly hall door",
+   "time": "1:20 pm",
+   "characters": [
+    "Telegraph boy",
+    "Van Helsing",
+    "Harker",
+    "Seward"
+   ],
+   "summary": "Telegraph boy delivers a warning that the Count left Carfax at 12:45 for the south.",
+   "mood": "alert",
+   "key_quote": "Look out for D. He has just now, 12:45, come from Carfax hurriedly and hastened towards the South."
+  },
+  {
+   "id": "c23_s03",
+   "title": "Godalming and Quincey return",
+   "location": "Piccadilly hall",
+   "time": "About 1:50 pm",
+   "characters": [
+    "Godalming",
+    "Quincey",
+    "Van Helsing",
+    "Seward"
+   ],
+   "summary": "Both lairs found, six boxes in each destroyed.",
+   "mood": "relief",
+   "key_quote": "We found both places; six boxes in each and we destroyed them all!"
+  },
+  {
+   "id": "c23_s04",
+   "title": "The ambush",
+   "location": "Piccadilly dining-room",
+   "time": "Mid-afternoon",
+   "characters": [
+    "Count Dracula",
+    "Harker",
+    "Seward",
+    "Van Helsing",
+    "Godalming",
+    "Quincey"
+   ],
+   "summary": "Quincey positions the party; the Count bounds in, Harker's kukri cuts his coat spilling money, crucifix and Wafer drive him back, he dives through the window and escapes via the stable.",
+   "mood": "explosive action",
+   "key_quote": "There was something so panther-like in the movement—something so unhuman"
+  },
+  {
+   "id": "c23_s05",
+   "title": "The Count's threat",
+   "location": "Stable door beyond the yard",
+   "time": "Mid-afternoon",
+   "characters": [
+    "Count Dracula",
+    "party"
+   ],
+   "summary": "He taunts them and bolts the stable door behind him, vanishing.",
+   "mood": "menace",
+   "key_quote": "My revenge is just begun! I spread it over centuries, and time is on my side."
+  },
+  {
+   "id": "c23_s06",
+   "title": "Clearing the house",
+   "location": "Piccadilly dining-room",
+   "time": "Late afternoon",
+   "characters": [
+    "Van Helsing",
+    "Seward",
+    "Godalming",
+    "Quincey"
+   ],
+   "summary": "Van Helsing pockets the remaining money, takes the title deeds and burns the rest in the fireplace.",
+   "mood": "cold calculation",
+   "key_quote": "swept the remaining things into the open fireplace, where he set fire to them with a match."
+  },
+  {
+   "id": "c23_s07",
+   "title": "Mina's plea for pity",
+   "location": "Seward's house",
+   "time": "Evening, 3 October",
+   "characters": [
+    "Mina",
+    "Harker",
+    "Van Helsing",
+    "Seward",
+    "Godalming",
+    "Quincey"
+   ],
+   "summary": "Over supper Mina asks them to be pitiful to the Count's soul; Jonathan, in rage, wishes his soul in hell; she rebukes him tenderly.",
+   "mood": "emotional, tender",
+   "key_quote": "it is not a work of hate. That poor soul who has wrought all this misery is the saddest case of all."
+  },
+  {
+   "id": "c23_s08",
+   "title": "Night watch",
+   "location": "Corridor outside the Harkers' room",
+   "time": "3-4 October, night",
+   "characters": [
+    "Quincey",
+    "Seward",
+    "Godalming",
+    "Harker",
+    "Mina"
+   ],
+   "summary": "Van Helsing fixes the room and places a bell; the men take watches, Quincey lying on a mattress outside the door.",
+   "mood": "quiet vigilance",
+   "key_quote": "One of us will be here all night. We don’t mean to take any chances!"
+  },
+  {
+   "id": "c23_s09",
+   "title": "Hypnotic trance",
+   "location": "The Harkers' room",
+   "time": "Pre-dawn to sunrise, 4 October",
+   "characters": [
+    "Mina",
+    "Van Helsing",
+    "Harker",
+    "Seward",
+    "Godalming",
+    "Quincey"
+   ],
+   "summary": "Mina asks to be hypnotised. In trance at sunrise she reports darkness, lapping water, men stamping overhead, a chain and capstan; she is on a ship.",
+   "mood": "eerie",
+   "key_quote": "The lapping of water. It is gurgling by, and little waves leap. I can hear them on the outside."
+  },
+  {
+   "id": "c23_s10",
+   "title": "The deduction",
+   "location": "The Harkers' room, then breakfast",
+   "time": "Sunrise, 4 October",
+   "characters": [
+    "Van Helsing",
+    "Mina",
+    "party"
+   ],
+   "summary": "Van Helsing concludes the Count has taken his last box aboard a ship; he warns Mina that the Count can wait centuries while she is mortal.",
+   "mood": "urgent",
+   "key_quote": "he can live for centuries, and you are but mortal woman."
+  }
+ ],
+ "locations": [
+  {
+   "name": "Piccadilly house dining-room",
+   "kind": "indoor",
+   "description": "Back room with a window onto a stone-flagged yard and an open fireplace; door to the hall and one to the front room.",
+   "features": [
+    "window onto yard",
+    "open fireplace",
+    "hall door",
+    "door to front room",
+    "table with effects"
+   ],
+   "atmosphere": "ambush room",
+   "lighting_time": "afternoon",
+   "quote": "Van Helsing, Harker, and I were just behind the door"
+  },
+  {
+   "name": "Flagged yard and stable",
+   "kind": "outdoor",
+   "description": "Narrow stone-flagged yard below the window with steps and a stable door with a rusty bolt; leads to a mews.",
+   "features": [
+    "steps",
+    "stable door with rusty bolt",
+    "mews"
+   ],
+   "atmosphere": "enclosed",
+   "lighting_time": "afternoon",
+   "quote": "he, rushing up the steps, crossed the flagged yard, and pushed open the stable door."
+  },
+  {
+   "name": "Seward's house sitting room",
+   "kind": "indoor",
+   "description": "Room where supper is held and Mina's plea is spoken.",
+   "features": [
+    "table",
+    "hall"
+   ],
+   "atmosphere": "communal sorrow",
+   "lighting_time": "evening",
+   "quote": "We had a sort of perfunctory supper together"
+  },
+  {
+   "name": "The Harkers' room (watch)",
+   "kind": "indoor",
+   "description": "Room prepared by Van Helsing against the Vampire, with a bell and a gas flame lowered to a speck; dawn windows like sharp oblongs.",
+   "features": [
+    "bell",
+    "gas flame",
+    "window blind",
+    "mattress in corridor"
+   ],
+   "atmosphere": "hushed",
+   "lighting_time": "grey dawn to red sunrise",
+   "quote": "the grey of the coming dawn was making the windows into sharp oblongs"
+  }
+ ],
+ "characters": [
+  {
+   "name": "Count Dracula",
+   "role": "antagonist",
+   "appearance": "waxen hue turning greenish-yellow, burning eyes, red scar, long pointed eye-teeth",
+   "clothing": "coat with bank-notes and gold in pockets",
+   "personality": "cunning, arrogant, fearful of being cornered",
+   "speech_style": "contemptuous",
+   "notable_lines": [
+    "You think to baffle me, you—with your pale faces all in a row, like sheep in a butcher’s."
+   ],
+   "abilities": [
+    "panther-like leap",
+    "unhurt after crashing through a window",
+    "inhuman speed"
+   ]
+  },
+  {
+   "name": "Van Helsing",
+   "role": "leader",
+   "appearance": "",
+   "clothing": "",
+   "personality": "patient, shrewd",
+   "speech_style": "",
+   "notable_lines": [
+    "To-day is our day, and we must go sure, if slow, and lose no chance."
+   ],
+   "abilities": [
+    "lore of vampires",
+    "hypnotism",
+    "research into the Count's life"
+   ]
+  },
+  {
+   "name": "Jonathan Harker",
+   "role": "fighter",
+   "appearance": "hair white, haggard face, burning eyes",
+   "clothing": "",
+   "personality": "consumed by hatred, then repentant",
+   "speech_style": "",
+   "notable_lines": [
+    "I would sell my soul to do it!"
+   ],
+   "abilities": [
+    "kukri knife"
+   ]
+  },
+  {
+   "name": "Quincey Morris",
+   "role": "tactician",
+   "appearance": "",
+   "clothing": "",
+   "personality": "natural leader of hunts",
+   "speech_style": "",
+   "notable_lines": [],
+   "abilities": [
+    "plans attack positions"
+   ]
+  },
+  {
+   "name": "Arthur Godalming",
+   "role": "fighter",
+   "appearance": "",
+   "clothing": "",
+   "personality": "",
+   "speech_style": "",
+   "notable_lines": [],
+   "abilities": []
+  },
+  {
+   "name": "Mina Harker",
+   "role": "seer under hypnosis",
+   "appearance": "red scar on forehead, radiant in youth",
+   "clothing": "",
+   "personality": "merciful, brave",
+   "speech_style": "",
+   "notable_lines": [
+    "I want you to hypnotise me!"
+   ],
+   "abilities": [
+    "perceives through the Count's senses in trance"
+   ]
+  },
+  {
+   "name": "Dr. Seward",
+   "role": "narrator",
+   "appearance": "",
+   "clothing": "",
+   "personality": "",
+   "speech_style": "",
+   "notable_lines": [],
+   "abilities": []
+  },
+  {
+   "name": "Telegraph boy",
+   "role": "messenger",
+   "appearance": "",
+   "clothing": "",
+   "personality": "",
+   "speech_style": "",
+   "notable_lines": [],
+   "abilities": []
+  }
+ ],
+ "objects": [
+  {
+   "name": "Mina's telegram",
+   "category": "document",
+   "description": "Despatch warning of the Count's movement south.",
+   "function_in_story": "Sets the ambush timing.",
+   "location_or_owner": "Van Helsing",
+   "quote": "Look out for D. He has just now, 12:45, come from Carfax hurriedly and hastened towards the South."
+  },
+  {
+   "name": "Kukri knife",
+   "category": "weapon",
+   "description": "Harker's great curved Gurkha knife.",
+   "function_in_story": "Nearly cuts through the Count's heart; slashes his coat.",
+   "location_or_owner": "Jonathan Harker",
+   "quote": "he had ready his great Kukri knife and made a fierce and sudden cut at him."
+  },
+  {
+   "name": "Crucifix and Wafer (left hand)",
+   "category": "ward",
+   "description": "Held in the left hand while the weapon is in the right.",
+   "function_in_story": "Forces the Count to cower.",
+   "location_or_owner": "Seward, Van Helsing, party",
+   "quote": "the spiritual in the left hand, the mortal in the right."
+  },
+  {
+   "name": "Bank-notes and gold sovereigns",
+   "category": "other",
+   "description": "Bundle of notes and stream of gold spilling from the Count's coat.",
+   "function_in_story": "The Count grabs a handful as escape money.",
+   "location_or_owner": "Count Dracula",
+   "quote": "a bundle of bank-notes and a stream of gold fell out."
+  },
+  {
+   "name": "Key in the hall lock",
+   "category": "key",
+   "description": "The Count's own key to the Piccadilly house.",
+   "function_in_story": "Signals his arrival.",
+   "location_or_owner": "Count Dracula",
+   "quote": "we all could hear a key softly inserted in the lock of the hall door."
+  },
+  {
+   "name": "Pocket-book",
+   "category": "document",
+   "description": "Van Helsing's pocket-book with notes of the tide.",
+   "function_in_story": "Computes the Count's likely route.",
+   "location_or_owner": "Van Helsing",
+   "quote": "who had been consulting his pocket-book."
+  },
+  {
+   "name": "Bell",
+   "category": "tool",
+   "description": "Bell placed by Van Helsing at the Harkers' bedside.",
+   "function_in_story": "Alarm.",
+   "location_or_owner": "Harkers' room",
+   "quote": "Van Helsing had placed at hand a bell which either of them was to sound in case of any emergency."
+  },
+  {
+   "name": "Hall door",
+   "category": "furniture",
+   "description": "Piccadilly hall door with a double-knock telegraph rap and latch.",
+   "function_in_story": "Ambush site.",
+   "location_or_owner": "Piccadilly house",
+   "quote": "the double postman’s knock of the telegraph boy."
+  },
+  {
+   "name": "Title-deeds bundle",
+   "category": "document",
+   "description": "Taken by Van Helsing.",
+   "function_in_story": "Evidence retained.",
+   "location_or_owner": "Van Helsing",
+   "quote": "took the title-deeds in the bundle as Harker had left them"
+  },
+  {
+   "name": "Room-fixings against the Vampire",
+   "category": "ward",
+   "description": "Unspecified protective items placed in the room.",
+   "function_in_story": "Protect the sleepers.",
+   "location_or_owner": "Harkers' room",
+   "quote": "the Professor fixed up the room against any coming of the Vampire"
+  }
+ ],
+ "creatures": [
+  {
+   "name": "Count Dracula (in material form)",
+   "description": "Solid, agile body that can leap like a panther.",
+   "behaviour": "Cautious entry, then flight rather than fight.",
+   "weaknesses": [
+    "Crucifix",
+    "Sacred Wafer",
+    "daylight limitation",
+    "kukri blade could cut his heart"
+   ],
+   "quote": "a horrible sort of snarl passed over his face, showing the eye-teeth long and pointed"
+  }
+ ],
+ "vampire_lore": [
+  {
+   "rule": "The Count in life was soldier, statesman and alchemist who attended the Scholomance",
+   "kind": "power",
+   "detail": "His brain survived death and grows; memory incomplete; child-brain.",
+   "quote": "in him the brain powers survived the physical death; though it would seem that memory was not all complete."
+  },
+  {
+   "rule": "A vampire must be invited the first time",
+   "kind": "limitation",
+   "detail": "After the first invitation he may come when and how he will.",
+   "quote": "must at the first make entry only when asked thereto by an inmate."
+  },
+  {
+   "rule": "The Count learns by experiment, moves boxes himself, scatters graves",
+   "kind": "power",
+   "detail": "Initially others moved them; now he moves alone and may bury them.",
+   "quote": "he try to move them all alone."
+  },
+  {
+   "rule": "By day before sunset the Count may not change form",
+   "kind": "limitation",
+   "detail": "Till sunset he is limited to man's powers.",
+   "quote": "till sunset he may not change."
+  },
+  {
+   "rule": "He can cross running water only at slack or full tide",
+   "kind": "limitation",
+   "detail": "Van Helsing deduces he crossed the river at slack tide; a ship must touch land at tide.",
+   "quote": "he could only do so at slack of tide"
+  },
+  {
+   "rule": "Holy symbols repel in a shared gesture",
+   "kind": "weakness",
+   "detail": "Holding Crucifix and Wafer sends a mighty power along the arm and makes him cower.",
+   "quote": "I felt a mighty power fly along my arm"
+  },
+  {
+   "rule": "A bitten victim sees through his senses in trance",
+   "kind": "detection",
+   "detail": "Under hypnosis Mina perceives the ship around the Count; strongest at sunrise.",
+   "quote": "I do not know. Sleep has no place it can call its own."
+  },
+  {
+   "rule": "Vampire is helpless at the moment of daylight transit",
+   "kind": "limitation",
+   "detail": "The Count is 'still' like death in his box aboard ship (Mina's trance) as the sun rises.",
+   "quote": "I am still—oh, so still. It is like death!"
+  },
+  {
+   "rule": "Blade can harm him",
+   "kind": "weakness",
+   "detail": "The kukri would have cut through his heart had he not leaped back; its effect is untested.",
+   "quote": "A second less and the trenchant blade had shorne through his heart."
+  }
+ ],
+ "puzzles": [
+  {
+   "name": "Predict the Count's arrival",
+   "setup": "Telegram says he left Carfax at 12:45 for the south.",
+   "obstacle": "When will he reach Piccadilly?",
+   "book_solution": "Van Helsing reasons he crossed at slack tide, visited Bermondsey then Mile End, so arrives later; Godalming and Quincey return first.",
+   "items_used": [
+    "telegram",
+    "pocket-book"
+   ],
+   "game_idea": "Deduction puzzle with a London map, tide table and timeline.",
+   "quote": "he went south from Carfax, that means he went to cross the river, and he could only do so at slack of tide"
+  },
+  {
+   "name": "Ambush positioning",
+   "setup": "The Count will enter by the hall door with a key.",
+   "obstacle": "Seat the party so he cannot get past.",
+   "book_solution": "Quincey places Van Helsing, Harker and Seward behind the door; Godalming behind and Quincey in front near the window.",
+   "items_used": [],
+   "game_idea": "Grid placement puzzle for an ambush.",
+   "quote": "Quincey Morris had always been the one to arrange the plan of action"
+  },
+  {
+   "name": "Hypnotic reading of the Count's surroundings",
+   "setup": "Mina in trance at sunrise answers questions.",
+   "obstacle": "Interpret sounds into location and vehicle.",
+   "book_solution": "Lapping water, tread overhead, chain, capstan imply a ship weighing anchor.",
+   "items_used": [
+    "hypnotic passes"
+   ],
+   "game_idea": "Audio-clue puzzle: identify the vessel type from ambient sounds.",
+   "quote": "The sound of men stamping overhead as they run about. There is the creaking of a chain, and the loud tinkle as the check of the capstan falls into the rachet."
+  },
+  {
+   "name": "Why did he take the money",
+   "setup": "Count grabs gold as he flees.",
+   "obstacle": "Infer his intention.",
+   "book_solution": "Van Helsing concludes he plans to escape by ship.",
+   "items_used": [
+    "gold sovereigns"
+   ],
+   "game_idea": "Evidence-board inference quest.",
+   "quote": "Why take that money?"
+  }
+ ],
+ "combat": [
+  {
+   "name": "Ambush at Piccadilly",
+   "participants": [
+    "Harker",
+    "Seward",
+    "Van Helsing",
+    "Godalming",
+    "Quincey",
+    "Count Dracula"
+   ],
+   "enemy_types": [
+    "Count Dracula (daytime, material form)"
+   ],
+   "weapons_used": [
+    "kukri",
+    "crucifix",
+    "Sacred Wafer"
+   ],
+   "tactics": "Party hidden behind door and window; Count leaps past the first line; Harker blocks the front-room door and slashes; holy symbols repel; Count dives through the window.",
+   "outcome": "Count escapes unhurt, his coat slit and money spilled.",
+   "game_idea": "Turn-based ambush: positioning phase then reaction attacks; the Count has a Flee action when Holy Resolve reaches a threshold; kukri strike has a chance to cut through unless he dodges.",
+   "quote": "A second less and the trenchant blade had shorne through his heart."
+  }
+ ],
+ "crafting": [],
+ "dialogue_samples": [
+  {
+   "speaker": "Count Dracula",
+   "line": "Your girls that you all love are mine already; and through them you and others shall yet be mine—my creatures, to do my bidding and to be my jackals when I want to feed.",
+   "context": "Taunting the party from the stable."
+  },
+  {
+   "speaker": "Van Helsing",
+   "line": "God does not purchase souls in this wise; and the Devil, though he may purchase, does not keep faith.",
+   "context": "Hushing Harker's wild words."
+  },
+  {
+   "speaker": "Van Helsing",
+   "line": "Where are you?",
+   "context": "Questioning entranced Mina; she answers: I do not know. Sleep has no place it can call its own."
+  },
+  {
+   "speaker": "Van Helsing",
+   "line": "Tally Ho!",
+   "context": "Announcing the hunt of the fleeing fox."
+  }
+ ],
+ "asset_candidates": [
+  {
+   "name": "Kukri knife",
+   "type": "prop",
+   "visual_description": "Curved inward-bent heavy blade, wooden handle, leather sheath.",
+   "priority": 1
+  },
+  {
+   "name": "Bank-notes and sovereigns pile",
+   "type": "prop",
+   "visual_description": "Fan of paper notes and gold coins scattered on floorboards.",
+   "priority": 3
+  },
+  {
+   "name": "Window shatter effect",
+   "type": "effect",
+   "visual_description": "Sash window panes bursting with glass shards falling to a stone-flagged yard.",
+   "priority": 2
+  },
+  {
+   "name": "Stable door with rusty bolt",
+   "type": "architecture",
+   "visual_description": "Plain stable door with a sliding iron bolt, at the top of a few steps.",
+   "priority": 2
+  },
+  {
+   "name": "Telegram form",
+   "type": "document",
+   "visual_description": "Telegraph slip with pasted ticker lines.",
+   "priority": 3
+  },
+  {
+   "name": "Dawn-lit bedroom with bell",
+   "type": "architecture",
+   "visual_description": "Bedroom with turned-down gaslight, brass hand-bell on bedside table.",
+   "priority": 2
+  },
+  {
+   "name": "Ship-interior ambient",
+   "type": "effect",
+   "visual_description": "Darkness, lapping water, creaking capstan chain for trance sequence.",
+   "priority": 2
+  }
+ ],
+ "quest_hooks": [
+  "Intercept the Count at the Piccadilly house",
+  "Destroy the boxes at Bermondsey and Mile End",
+  "Protect the Harkers' room through the night watch",
+  "Use hypnosis on Mina at dawn to locate the Count",
+  "Find which ship carries the last earth-box",
+  "Decide whether to grant the Count pity as Mina asks"
+ ]
+}

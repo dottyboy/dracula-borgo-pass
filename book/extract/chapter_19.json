@@ -1,0 +1,97 @@
+{
+"chapter": 19,
+"narrator": "Jonathan Harker, Dr. Seward, Mina Harker",
+"dates": "1 October - 2 October",
+"summary": "After Renfield's scene the party goes to Carfax at dawn. Godalming brings a silver dog whistle; Van Helsing equips each man with a silver crucifix, garlic wreath, revolver, knife, electric lamp and a piece of Sacred Wafer. Seward picks the lock with skeleton keys. In the chapel only twenty-nine of fifty earth boxes remain; the vault is thick with a foul odour and swarms with thousands of rats, which Godalming's three terriers drive off once carried over the threshold. The party finds nothing else and locks up. Van Helsing notes the Count's animals fear dogs. Twenty-one boxes are now accounted for as removed. Van Helsing is rebuffed by Renfield. Mina, kept in the dark, dreams of mist pouring in with red eyes and a livid face, and on 2 October takes a mild sleeping draught from Seward.",
+"scenes": [
+{"id":"c19_s01","title":"Silence after Renfield","location":"Seward's study","time":"1 October, 5 a.m.","characters":["Jonathan","Morris","Seward","Van Helsing","Godalming"],"summary":"The men debate whether Renfield was sane; Van Helsing chooses caution. Godalming fetches the silver whistle.","mood":"uneasy","key_quote":"That old place may be full of rats, and if so, I’ve got an antidote on call."},
+{"id":"c19_s02","title":"Arming on the porch","location":"Porch of Carfax","time":"1 October, pre-dawn, moonlight","characters":["Van Helsing","Jonathan","Seward","Godalming","Morris"],"summary":"Van Helsing lays out four sets of weapons and wards and distributes them.","mood":"ritual, tense","key_quote":"we need arms of many kinds. Our enemy is not merely spiritual."},
+{"id":"c19_s03","title":"Opening the door","location":"Carfax front door and hall","time":"pre-dawn","characters":["Seward","Van Helsing","Jonathan"],"summary":"Seward finds a skeleton key; rusty bolt clangs back. The party enters, Van Helsing crossing himself and saying 'In manus tuas, Domine!'. Dust shows hobnail prints and a table with a bunch of labelled keys.","mood":"dread","key_quote":"“In manus tuas, Domine!” he said, crossing himself as he passed over the threshold."},
+{"id":"c19_s04","title":"The chapel and the stench","location":"Carfax chapel","time":"night","characters":["Jonathan","Van Helsing","Godalming","Morris","Seward"],"summary":"Using Jonathan's map they find the iron-banded oak door; the foul air; only twenty-nine of fifty boxes remain. Godalming thinks he sees the Count's face in the passage, but it is shadows.","mood":"nauseating, frightened","key_quote":"it seemed as though corruption had become itself corrupt."},
+{"id":"c19_s05","title":"The rats and the terriers","location":"Chapel and its outer iron-bound oaken door","time":"pre-dawn","characters":["Godalming","three terriers","party"],"summary":"A phosphorescent mass of rats swarms. Godalming opens the outer door and blows the silver whistle; terriers come but halt howling at the threshold until carried in, then kill rats until the horde vanishes.","mood":"horror turning to relief","key_quote":"the place made look like a bank of earth set with fireflies."},
+{"id":"c19_s06","title":"Withdrawal at dawn","location":"Carfax grounds","time":"dawn","characters":["Van Helsing","party"],"summary":"The house is searched; nothing more. Van Helsing locks the hall door and keeps the key, observing that rats flee from small dogs.","mood":"satisfied","key_quote":"we have reason to be content with our first night’s work."},
+{"id":"c19_s07","title":"Van Helsing visits Renfield","location":"Renfield's room","time":"1 October, noon","characters":["Van Helsing","Renfield","Seward"],"summary":"Renfield sullenly insults Van Helsing and falls silent.","mood":"hostile","key_quote":"you are the old fool Van Helsing."},
+{"id":"c19_s08","title":"Mina's mist dream","location":"Mina's bedroom, Purfleet","time":"night of 30 Sept - 1 Oct","characters":["Mina"],"summary":"Mist creeps across the lawn and pours through the door joins; a pillar of cloud with two red eyes forms and a livid white face bends over her.","mood":"nightmare","key_quote":"The last conscious effort which imagination made was to show me a livid white face bending over me out of the mist."},
+{"id":"c19_s09","title":"Mina takes a sleeping draught","location":"Mina's room","time":"2 October, 10 p.m.","characters":["Mina","Seward","Renfield"],"summary":"Renfield kisses her hand and blesses her in the afternoon; Seward gives her a mild sleeping draught.","mood":"foreboding","key_quote":"I might want it."}
+],
+"locations": [
+{"name":"Carfax porch","kind":"outdoor","description":"Front porch of the old house, with a step on which supplies are sorted.","features":["porch step","lawn trees casting shadow"],"atmosphere":"moonlit, shadowed","lighting_time":"night moonlight","quote":"When we got to the porch the Professor opened his bag and took out a lot of things"},
+{"name":"Carfax hall","kind":"indoor","description":"Hall thick with dust inches deep, hobnail marks cracked in dust, webs like tattered rags, a table with a great bunch of time-yellowed labelled keys.","features":["dust-covered floor","footprints with hobnails","cobwebs","table","key bunch","rusty hinges","bolt"],"atmosphere":"stale, haunted","lighting_time":"dark, lamp-lit","quote":"The floor was seemingly inches deep, except where there were recent footsteps"},
+{"name":"Carfax chapel","kind":"indoor","description":"Reached through a low arched oaken door ribbed with iron bands; small, close, foul; holds the earth chests; vaulted door to a dark passage with solid walls and no hiding place.","features":["arched oak door with iron bands","earth chests","vaulted doorway","blind passage","outer iron-bound oaken door with huge bolts and lock"],"atmosphere":"fetid, earthy","lighting_time":"lamplight","quote":"a low, arched oaken door, ribbed with iron bands."},
+{"name":"Seward's lawn and mist","kind":"outdoor","description":"Lawn where a white mist creeps toward the house against the walls.","features":["grass","house wall"],"atmosphere":"silent, uncanny","lighting_time":"moonlit night","quote":"a thin streak of white mist, that crept with almost imperceptible slowness across the grass towards the house"},
+{"name":"Mina's bedroom","kind":"indoor","description":"Room above Renfield's, gaslight turned low, window closed, door with joinings.","features":["gas jet","window","door","bed"],"atmosphere":"dank and cold in the dream","lighting_time":"night","quote":"The gaslight which I had left lit for Jonathan, but turned down, came only like a tiny red spark through the fog"}
+],
+"characters": [
+{"name":"Jonathan Harker","role":"guide with map","appearance":"","clothing":"","personality":"glad Mina is spared","speech_style":"","notable_lines":[],"abilities":["knows Carfax plans"]},
+{"name":"Van Helsing","role":"leader","appearance":"","clothing":"","personality":"cheerful after the night's success","speech_style":"broken English with Latin prayer","notable_lines":["we must take no chance"],"abilities":["tactical insight"]},
+{"name":"Lord Godalming","role":"rat-handler","appearance":"","clothing":"","personality":"prepared","speech_style":"","notable_lines":["I’ve got an antidote on call."],"abilities":["terrier handling"]},
+{"name":"Dr. Seward","role":"lock-pick","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":["surgeon's dexterity with skeleton keys"]},
+{"name":"Quincey Morris","role":"scout","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":["Say, Jack, if that man wasn’t attempting a bluff, he is about the sanest lunatic I ever saw."],"abilities":[]},
+{"name":"Renfield","role":"patient","appearance":"sitting on a stool in the centre with elbows on knees","clothing":"","personality":"sullen to Van Helsing, gentle to Mina","speech_style":"","notable_lines":["Damn all thick-headed Dutchmen!"],"abilities":[]},
+{"name":"Mina Harker","role":"kept out","appearance":"paler than usual","clothing":"","personality":"hurt by exclusion, still keeps journal","speech_style":"","notable_lines":[],"abilities":[]}
+],
+"objects": [
+{"name":"Silver dog whistle","category":"tool","description":"Little silver whistle producing a low shrill call.","function_in_story":"Summons terriers to fight rats.","location_or_owner":"Lord Godalming","quote":"He held up a little silver whistle"},
+{"name":"Silver crucifix (personal)","category":"ward","description":"Little silver crucifix worn near the heart.","function_in_story":"Protection from the Count's touch.","location_or_owner":"each party member","quote":"Keep this near your heart"},
+{"name":"Garlic wreath","category":"ward","description":"Wreath of withered garlic blossoms worn round the neck.","function_in_story":"Ward against the vampire.","location_or_owner":"each party member","quote":"a wreath of withered garlic blossoms"},
+{"name":"Revolver","category":"weapon","description":"For mundane enemies.","function_in_story":"Standard firearm.","location_or_owner":"each party member","quote":"for other enemies more mundane, this revolver and this knife"},
+{"name":"Knife","category":"weapon","description":"Blade issued with the revolver.","function_in_story":"Close defence.","location_or_owner":"each party member","quote":"this revolver and this knife"},
+{"name":"Small electric lamps","category":"tool","description":"Tiny lamps fastened to the breast, casting crossing rays and large shadows.","function_in_story":"Hands-free light.","location_or_owner":"each party member","quote":"these so small electric lamps, which you can fasten to your breast"},
+{"name":"Sacred Wafer","category":"occult","description":"Portion of the Host in an envelope, not to be desecrated needlessly.","function_in_story":"Strongest ward, for the last.","location_or_owner":"each party member","quote":"a portion of Sacred Wafer, which he put in an envelope"},
+{"name":"Skeleton keys","category":"key","description":"Set of skeleton keys; one fits the hall door.","function_in_story":"Opens the lock without breaking in.","location_or_owner":"Dr. Seward","quote":"Dr. Seward tried one or two skeleton keys"},
+{"name":"Bunch of labelled keys","category":"key","description":"Great bunch of keys with time-yellowed labels, used recently (rents in the dust).","function_in_story":"Opens the chapel door.","location_or_owner":"Hall table in Carfax","quote":"a great bunch of keys, with a time-yellowed label on each"},
+{"name":"Map of Carfax","category":"document","description":"Small map copied from the file of the purchase correspondence.","function_in_story":"Guides the way to the chapel.","location_or_owner":"Van Helsing","quote":"a small map of the house, copied from the file of my original correspondence"},
+{"name":"Earth boxes","category":"container","description":"Bulky great earth chests; 29 remain of 50.","function_in_story":"The Count's refuges.","location_or_owner":"Carfax chapel","quote":"There were only twenty-nine left out of the fifty!"},
+{"name":"Van Helsing's bag","category":"container","description":"Bag containing the arms and wards.","function_in_story":"Supplies.","location_or_owner":"Van Helsing","quote":"the Professor opened his bag"},
+{"name":"Sleeping draught","category":"medicine","description":"Mild opiate made up by Seward for Mina.","function_in_story":"Gives sleep but dulls waking.","location_or_owner":"Mina","quote":"He very kindly made me up a sleeping draught"},
+{"name":"Chloral","category":"medicine","description":"Considered by Mina as a sleep aid.","function_in_story":"Mentioned only.","location_or_owner":"Seward","quote":"get them to give me a dose of chloral"}
+],
+"creatures": [
+{"name":"Rats of Carfax","description":"Thousands of rats with glittering baleful eyes, bodies dark, eyes shining like fireflies in lamplight.","behaviour":"Appear from corners in a phosphorescent swarm and multiply by the minute; summoned by the Count.","weaknesses":["terriers","not under the Count's spiritual power once dogs attack"],"quote":"The rats were multiplying in thousands, and we moved out."},
+{"name":"Terriers (3)","description":"Dogs of Lord Godalming that howl at the chapel threshold but fight when placed inside.","behaviour":"Kill rats by the score; frisk around once the evil leaves.","weaknesses":["fear the threshold until carried in"],"quote":"The instant his feet touched the ground he seemed to recover his courage"},
+{"name":"Mist (Count in dream)","description":"White mist entering through door joins forming a pillar with two red eyes.","behaviour":"Presses against walls and windows.","weaknesses":[],"quote":"a sort of pillar of cloud in the room"},
+{"name":"Shadow face illusion","description":"A glimpse of the Count's face in the dark passage, pale with red eyes and lips.","behaviour":"Only shadows.","weaknesses":[],"quote":"the high lights of the Count’s evil face, the ridge of the nose, the red eyes, the red lips, the awful pallor."}
+],
+"vampire_lore": [
+{"rule":"Animals obey him but are not immune to ordinary foes","kind":"limitation","detail":"Rats flee from small dogs; his spiritual power does not shield them.","quote":"the brute beasts which are to the Count’s command are yet themselves not amenable to his spiritual power"},
+{"rule":"Count can handle earth boxes himself","kind":"power","detail":"(Chapter 20 confirms); here boxes were taken out by the door where dust was disturbed.","quote":"the boxes which had been taken out had been brought this way."},
+{"rule":"Fog and mist as entry","kind":"transformation","detail":"Mist enters via the door joins; Mina's dream foreshadows his access.","quote":"pouring in, not through the window, but through the joinings of the door."},
+{"rule":"Lair's air is corrupt","kind":"detection","detail":"The stench of the Count's resting place is unbearable.","quote":"corruption had become itself corrupt."},
+{"rule":"Eyes glow red","kind":"detection","detail":"Two red eyes in the mist.","quote":"the fire divided, and seemed to shine on me through the fog like two red eyes"}
+],
+"puzzles": [
+{"name":"Lock and key","setup":"Locked hall door and chapel door.","obstacle":"Must enter without breaking the house.","book_solution":"Seward tries skeleton keys until the bolt yields; Jonathan finds the chapel key on the bunch on the hall table.","items_used":["skeleton keys","bunch of labelled keys","map"],"game_idea":"Lockpick minigame plus key-matching using the label hints and the map.","quote":"After a little play back and forward the bolt yielded, and, with a rusty clang, shot back."},
+{"name":"Find the way to the chapel","setup":"Dark dusty house with wrong turnings.","obstacle":"Navigation.","book_solution":"Jonathan recalls the layout and checks the map.","items_used":["map of Carfax"],"game_idea":"Maze navigation with a map and lamp.","quote":"after a few wrong turnings found myself opposite a low, arched oaken door"},
+{"name":"Count the boxes","setup":"Chapel with earth chests.","obstacle":"Finding how many are gone and where they went.","book_solution":"Count 29 left; disturbed dust shows route out of the outer door.","items_used":["electric lamps"],"game_idea":"Footprint-and-dust trail reading to deduce which boxes left and how.","quote":"the dust had been much disturbed: the boxes which had been taken out had been brought this way."},
+{"name":"Rat swarm","setup":"Thousands of rats in the chapel.","obstacle":"Dogs refuse to cross the threshold.","book_solution":"Carry each dog in so its feet touch the floor.","items_used":["silver whistle","terriers"],"game_idea":"Environmental puzzle: open the outer door, call dogs, and place them inside.","quote":"Lord Godalming lifted one of the dogs, and carrying him in, placed him on the floor."}
+],
+"combat": [
+{"name":"Rat swarm in the chapel","participants":["party","three terriers"],"enemy_types":["rats"],"weapons_used":["terriers","silver whistle"],"tactics":"Retreat, open the door, summon dogs, lift them over the threshold to attack.","outcome":"Rats vanish; no casualties.","game_idea":"Swarm encounter with morale: players must use the dogs as summons; swarm size grows each turn until countered.","quote":"They fled before him so fast that before he had shaken the life out of a score, the other dogs, who had by now been lifted in the same manner, had but small prey"}
+],
+"crafting": [],
+"dialogue_samples": [
+{"speaker":"Van Helsing","line":"In manus tuas, Domine!","context":"Crossing the threshold"},
+{"speaker":"Godalming","line":"I thought I saw a face, but it was only the shadows","context":"In the chapel"},
+{"speaker":"Van Helsing","line":"It has given us opportunity to cry ‘check’ in some ways in this chess game, which we play for the stake of human souls.","context":"After the raid"},
+{"speaker":"Renfield","line":"You are the old fool Van Helsing.","context":"Rebuffing him"}
+],
+"asset_candidates": [
+{"name":"Carfax hall","type":"architecture","visual_description":"Dust-laden hall with cobwebs like tattered rags and a key table","priority":1},
+{"name":"Carfax chapel","type":"architecture","visual_description":"Small vaulted stone chapel with low iron-banded oak door and rows of earth chests","priority":1},
+{"name":"Earth chest","type":"prop","visual_description":"Large dark timber box with iron fittings, heavy, filled with earth","priority":1},
+{"name":"Rat swarm","type":"creature","visual_description":"Mass of black rats with glinting eyes, bodies as moving dark floor","priority":1},
+{"name":"Terrier","type":"creature","visual_description":"Small wiry terrier","priority":2},
+{"name":"Silver whistle","type":"prop","visual_description":"Small tubular silver whistle on a chain","priority":2},
+{"name":"Electric breast lamp","type":"prop","visual_description":"Small battery lamp pinned to the chest with a cone beam","priority":2},
+{"name":"Hunter kit","type":"prop","visual_description":"Garlic blossom wreath, silver crucifix, envelope with Sacred Wafer, revolver and knife","priority":1},
+{"name":"Key ring with labels","type":"prop","visual_description":"Iron keys each with yellowed paper label","priority":2},
+{"name":"Mist pillar with red eyes","type":"effect","visual_description":"White swirling column through which two red points glow","priority":2}
+],
+"quest_hooks": [
+"Equip the four sets of wards and weapons.",
+"Open Carfax by key and map and count the boxes.",
+"Clear the chapel of rats with the terriers.",
+"Interpret Renfield's change of mood.",
+"Mina's dream warns of the Count's approach to the asylum."
+]
+}

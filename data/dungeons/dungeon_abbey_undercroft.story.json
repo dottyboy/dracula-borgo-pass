@@ -1,0 +1,98 @@
+{
+ "entrance": {
+  "name": "Sunken steps",
+  "look": "Behind the founder's slab a flight of worn steps has sunk below the grass, half hidden by briar. A cold draught climbs out of it.",
+  "pos": [
+   -1.8,
+   3.4
+  ],
+  "back_pos": [
+   -1.8,
+   2.2
+  ],
+  "rot": 90,
+  "asset": "stairs",
+  "variant": "stone_mossy"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a2_j_undercroft"
+    },
+    {
+     "say": "The sexton would not come down with me. He said the monks are sleeping, and I should let them."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "entrance",
+   "dx": 1.8,
+   "id": "abb_lantern",
+   "asset": "lantern",
+   "variant": "default",
+   "name": "Sexton's lantern",
+   "radius": 0.3,
+   "interact": {
+    "look": "A horn lantern with the candle burned down. The sexton must have left it for whoever is brave or foolish enough."
+   }
+  },
+  {
+   "at": "room:0",
+   "id": "abb_grave",
+   "asset": "tomb",
+   "variant": "stone_mossy",
+   "name": "A monk's grave",
+   "radius": 0.3,
+   "interact": {
+    "look": "The name is gone; a cross and a date remain. The lid has been moved by an inch, and put back."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "abb_lawn",
+   "asset": "rug",
+   "variant": "cream",
+   "name": "A rag of white lawn",
+   "radius": 0.3,
+   "interact": {
+    "look": "A strip of fine white lawn caught on a nail at the height of a woman's knee.",
+    "do": [
+     {
+      "say": "Torn from a nightdress, I think. The weave is Lucy's kind. I fold it small and say nothing, because there is nothing yet to say."
+     },
+     {
+      "xp": 20
+     }
+    ]
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "abb_host",
+   "asset": "chest",
+   "variant": "oak",
+   "name": "Abbey reliquary",
+   "radius": 0.3,
+   "interact": {
+    "look": "A small iron-bound reliquary, its lid unlatched.",
+    "take": "host",
+    "take_text": "Inside, a tarnished pyx and a crust of blessed bread, centuries dry. I take the Host. It is God's, and it is what we shall need."
+   }
+  },
+  {
+   "at": "far:0",
+   "id": "abb_bats",
+   "asset": "bat",
+   "variant": "brown",
+   "name": "Sleeping bats",
+   "scale": 0.6,
+   "radius": 0.3,
+   "interact": {
+    "look": "Bats hang from the vault in their dozens. Not one stirs. They sleep too well, as though something had put them to it."
+   }
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "chapter": 28,
+ "narrator": "Jonathan Harker",
+ "dates": "Seven years later",
+ "summary": "Epilogue Note. Seven years on, the survivors are happily settled; Mina and Jonathan's son is called Quincey after Quincey Morris, born on the day he died. They revisit Transylvania: every trace is gone, the castle stands in desolation. The record is almost all typescript, no authentic proof; Van Helsing says 'We want no proofs'.",
+ "scenes": [
+  {
+   "id": "c28_s01",
+   "title": "The journey back to Transylvania",
+   "location": "Castle Dracula (ruins)",
+   "time": "summer, seven years later",
+   "characters": [
+    "Jonathan Harker",
+    "Mina Harker"
+   ],
+   "summary": "Every trace of what had been is blotted out; the castle stands as before above a waste of desolation.",
+   "mood": "elegiac",
+   "key_quote": "Every trace of all that had been was blotted out."
+  },
+  {
+   "id": "c28_s02",
+   "title": "Van Helsing with the boy",
+   "location": "Harker home",
+   "time": "evening",
+   "characters": [
+    "Van Helsing",
+    "Jonathan Harker",
+    "Mina Harker",
+    "Little Quincey"
+   ],
+   "summary": "The papers are taken from the safe; Van Helsing declares no proofs are needed.",
+   "mood": "warm",
+   "key_quote": "We want no proofs. We ask none to believe us!"
+  }
+ ],
+ "locations": [],
+ "characters": [],
+ "objects": [
+  {
+   "name": "Safe with the papers",
+   "category": "container",
+   "description": "Safe where the record (typescript, notebooks, memorandum) was kept since their return.",
+   "function_in_story": "holds the only record",
+   "location_or_owner": "Harker home",
+   "quote": "I took the papers from the safe where they had been ever since our return so long ago."
+  }
+ ],
+ "creatures": [],
+ "vampire_lore": [],
+ "puzzles": [],
+ "combat": [],
+ "crafting": [],
+ "dialogue_samples": [
+  {
+   "speaker": "Van Helsing",
+   "line": "We want no proofs. We ask none to believe us!",
+   "context": "epilogue"
+  }
+ ],
+ "asset_candidates": [],
+ "quest_hooks": [
+  "Epilogue/credits scene: return to the ruined castle seven years later"
+ ]
+}

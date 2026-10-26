@@ -1,0 +1,98 @@
+{
+ "dracula_old": {
+  "prompt": "tall old man, aquiline face, long white moustache, completely clean-shaven otherwise, NO beard, clad in black from head to foot, pale cold skin, red-tinged lips. tall old man; strong aquiline face, high thin nose with arched nostrils, lofty domed forehead, scanty hair at temples, profuse elsewhere; massive eyebrows nearly meeting; cruel-looking fixed mouth under heavy moustache; sharp white protruding teeth; remarkably ruddy lips; pale pointed ears; broad strong chin; extraordinary pallor. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1000,
+  "type": "image/jpeg"
+ },
+ "harker": {
+  "prompt": "young English solicitor, clean-shaven, earnest, in a tweed travelling suit. travelling clothes; later a cloak and rug from the driver. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1000,
+  "type": "image/jpeg"
+ },
+ "dracula_young": {
+  "prompt": "tall thin man, beaky nose, black moustache and pointed beard, hard cruel sensual face, white teeth, in a black frock coat and top hat. tall, thin man, beaky nose, black moustache, pointed beard, hard cruel sensual face, big white pointed teeth, very red lips. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1002,
+  "type": "image/jpeg"
+ },
+ "mina": {
+  "prompt": "sweet-faced dainty young Victorian woman, dark hair, intelligent eyes, schoolmistress dress. throws on clothes; barefoot with mud on her feet; sweet-faced, dainty-looking girl; red-eyed from weeping; white nightdress. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1003,
+  "type": "image/jpeg"
+ },
+ "lucy": {
+  "prompt": "beautiful young English woman, golden hair, pale complexion, white nightgown. she studies her face in the glass; blushes and weeps easily; not interested in dress; more radiant, redder lips, delicate bloom on cheeks, sharper canines; white death-robe/lawn; dark-haired woman in grave-cerements, lips crimson with fresh blood, blood trickling over chin, sharp teeth, eyes full of hell-fire, voluptuous smile; white lawn death-robe stained with blood. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1004,
+  "type": "image/jpeg"
+ },
+ "lucy_undead": {
+  "prompt": "undead woman in grave-cerements, crimson lips, sharp canines, radiant unnatural beauty. more radiant, redder lips, delicate bloom on cheeks, sharper canines; white death-robe/lawn; dark-haired woman in grave-cerements, lips crimson with fresh blood, blood trickling over chin, sharp teeth, eyes full of hell-fire, voluptuous smile; white lawn death-robe stained with blood. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1005,
+  "type": "image/jpeg"
+ },
+ "vanhelsing": {
+  "prompt": "elderly Dutch professor, bushy eyebrows meeting over the nose, iron jaw, sharp kind eyes, small beard. bushy brows; wears a small gold crucifix inside his collar; carries a pocket-book; bushy eyebrows that meet over the nose, iron jaw, soft cat-like tread; furs bought at Veresti; older man; hoarse voice when moved. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1006,
+  "type": "image/jpeg"
+ },
+ "seward": {
+  "prompt": "young doctor, strong jaw, good forehead, asylum superintendent, tired eyes. strong jaw, good forehead; silk hat; pale after donating. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1007,
+  "type": "image/jpeg"
+ },
+ "renfield": {
+  "prompt": "lunatic patient in asylum clothing, wild eyes, great physical strength, feverish. great physical strength; strong, naked or in night-gear, wild; night-gear. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1008,
+  "type": "image/jpeg"
+ },
+ "quincey": {
+  "prompt": "young fresh-looking American from Texas, bowie knife at belt, wide-brimmed hat, friendly grin. young and fresh-looking despite many adventures; in pajamas; black. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1009,
+  "type": "image/jpeg"
+ },
+ "arthur": {
+  "prompt": "tall handsome young English lord, curly hair, noble bearing. tall, handsome, curly-haired; deep mourning black; stalwart manhood, shrunken by grief; mourning; big sorrowing man; heavy fur coat; in pajamas and slippers; pajamas; grows very pale at news of Galatz. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1010,
+  "type": "image/jpeg"
+ },
+ "brides": {
+  "prompt": "three beautiful pale vampire women, voluptuous lips, white teeth, swaying forms in white gowns, ruddy colour. swaying round forms, bright hard eyes, white teeth, ruddy colour, voluptuous lips; one fair, one dark, one lying in a high tomb; trailing garments in mist. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1011,
+  "type": "image/jpeg"
+ },
+ "innkeeper": {
+  "prompt": "Transylvanian innkeeper's wife in folk dress, worried, holding a crucifix. elderly man; white shirt-sleeves. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1012,
+  "type": "image/jpeg"
+ },
+ "szgany": {
+  "prompt": "Szgany horseman, black hair, proud look, bright coloured sash, centaur-like in the saddle. thousands in Hungary and Transylvania, almost outside law; splendid-looking fellow who sits his horse like a centaur; peasant dress. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1013,
+  "type": "image/jpeg"
+ },
+ "driver": {
+  "prompt": "tall driver with a long brown beard, great black hat hiding his face, very bright eyes glinting red. tall man, long brown beard, great black hat hiding the face, very bright eyes that seem red in lamplight, hard mouth, very red lips, sharp ivory-white teeth, grip of steel; great black hat, cloak. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1014,
+  "type": "image/jpeg"
+ },
+ "captain": {
+  "prompt": "weathered Russian sea captain, grey-streaked beard, oilskin coat, tired determined eyes, a crucifix and rosary wound in his hands, storm lamp light. hands cut to the bone by cords after two days dead; red-faced. dark gothic oil painting portrait, 1890s Victorian era, Bram Stoker's Dracula atmosphere, dramatic chiaroscuro candlelight, muted palette with deep reds, painterly, head and shoulders, no text, no watermark, no signature",
+  "model": "black-forest-labs/flux.1-schnell",
+  "seed": 1000,
+  "type": "image/jpeg"
+ }
+}

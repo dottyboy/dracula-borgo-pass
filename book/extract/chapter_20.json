@@ -1,0 +1,95 @@
+{
+"chapter": 20,
+"narrator": "Jonathan Harker and Dr. Seward",
+"dates": "1 October - 2 October",
+"summary": "Jonathan tracks the carriers: Thomas Snelling is drunk, but his boss Joseph Smollet gives destinations from a dog-eared notebook: six boxes to 197 Chicksand Street, Mile End New Town, and six to Jamaica Lane, Bermondsey, plus a tip about Sam Bloxam. Next day Jonathan decodes a phonetically spelled address, chases Bloxam through Walworth and Poplar to a cold storage building at Cross Angel Street, and learns nine boxes were carried to an empty house in Piccadilly by an old man with a white moustache of unnatural strength. He finds the house, learns from grooms and then Mitchell, Sons & Candy that the buyer is Count de Ville, who paid cash. Seward studies Renfield's talk of souls and life and deduces that the Count has visited him. The party plans to sterilise all earth between sunrise and sunset and prepares horses. Renfield is found lying in blood after a yell.",
+"scenes": [
+{"id":"c20_s01","title":"Snelling and Smollet","location":"Bethnal Green and Walworth","time":"1 October, evening","characters":["Jonathan","Thomas Snelling","Joseph Smollet"],"summary":"Snelling is drunk. Smollet checks his notebook: six boxes to 197 Chicksand Street, Mile End New Town, six to Jamaica Lane, Bermondsey. Hint of a further job by Sam Bloxam at Purfleet.","mood":"seedy, practical","key_quote":"there were, he said, six in the cartload which he took from Carfax and left at 197, Chicksand Street, Mile End New Town"},
+{"id":"c20_s02","title":"Phonetic address hunt","location":"Walworth, Potter's Court, Corcoran's lodging-house","time":"2 October, morning","characters":["Jonathan","the deputy"],"summary":"The scrap reads 'Sam Bloxam, Korkrans, 4, Poters Cort, Bartel Street, Walworth. Arsk for the depite.' Jonathan decodes the misspellings and tips the deputy.","mood":"comic, detective","key_quote":"phonetic spelling had again misled me"},
+{"id":"c20_s03","title":"Finding Bloxam at Poplar","location":"Cross Angel Street cold storage building","time":"2 October, midday","characters":["Jonathan","Sam Bloxam"],"summary":"Bloxam says he made two trips from Carfax to Piccadilly with nine boxes, helped by a strong thin old man with a white moustache who needed no key.","mood":"thrilling","key_quote":"he was the strongest chap I ever struck, an’ him a old feller, with a white moustache, one that thin you would think he couldn’t throw a shadder."},
+{"id":"c20_s04","title":"The Piccadilly house","location":"Piccadilly, near the Junior Constitutional and mews behind","time":"2 October, afternoon to dusk","characters":["Jonathan","grooms"],"summary":"Jonathan finds the dusty untenanted house with shutters up and a torn notice board; the grooms recall a 'For Sale' board from Mitchell, Sons & Candy.","mood":"watchful","key_quote":"The windows were encrusted with dust, and the shutters were up."},
+{"id":"c20_s05","title":"The house agents","location":"Mitchell, Sons & Candy, Sackville Street","time":"2 October, dusk","characters":["Jonathan","agent clerk"],"summary":"The suave agent refuses to name the buyer until Jonathan says he acts for Lord Godalming.","mood":"polite stonewalling","key_quote":"The affairs of their clients are absolutely safe in the hands of Mitchell, Sons, & Candy."},
+{"id":"c20_s06","title":"Council by the fire","location":"Seward's study","time":"2 October, night","characters":["Van Helsing","Morris","Godalming","Jonathan","Seward"],"summary":"Party debates how to break into Piccadilly and reads aloud Jonathan's diary; plan to wait for the agent's letter.","mood":"strategising","key_quote":"Say! how are we going to get into that house?"},
+{"id":"c20_s07","title":"Renfield on souls and life","location":"Renfield's room","time":"1 October","characters":["Seward","Renfield"],"summary":"Renfield disclaims wanting souls, stops at the word 'drink', fears the burden of souls; Seward deduces he expects a human life from the Count. Later Renfield sings and folds a scrap of paper into a notebook.","mood":"unsettling","key_quote":"Merciful God! the Count has been to him, and there is some new scheme of terror afoot!"},
+{"id":"c20_s08","title":"Agency letter","location":"Seward's house","time":"1-2 October","characters":["Mitchell, Sons & Candy","Godalming"],"summary":"The letter gives No. 347 Piccadilly, former owner executors of Archibald Winter-Suffield, purchaser Count de Ville paying cash.","mood":"revelatory","key_quote":"The purchaser is a foreign nobleman, Count de Ville"},
+{"id":"c20_s09","title":"Plan and Renfield's accident","location":"Seward's house, Renfield's room corridor","time":"2 October, night","characters":["Seward","attendant","Renfield","Godalming","Morris"],"summary":"Horses are readied; Van Helsing researches ancient medicine at the British Museum. A wild yell from Renfield; he is found face down in blood.","mood":"sudden dread","key_quote":"found him lying on his face on the floor, all covered with blood."}
+],
+"locations": [
+{"name":"Joseph Smollet's house, Walworth","kind":"indoor","description":"Modest workman's house; Smollet in shirtsleeves taking tea from a saucer, children present.","features":["tea saucer","notebook"],"atmosphere":"homely","lighting_time":"late afternoon","quote":"Mr. Joseph Smollet at home and in his shirtsleeves, taking a late tea out of a saucer."},
+{"name":"Corcoran's lodging-house, Potter's Court","kind":"indoor","description":"Doss-house in Walworth with a deputy at the door.","features":["door","deputy"],"atmosphere":"rough","lighting_time":"morning","quote":"Corcoran’s lodging-house"},
+{"name":"Cross Angel Street cold storage building","kind":"outdoor","description":"New 'cold storage' warehouse under construction in Poplar with gatekeeper and foreman.","features":["gate","building site"],"atmosphere":"workmen's noon","lighting_time":"midday","quote":"a new “cold storage” building"},
+{"name":"No. 347 Piccadilly","kind":"outdoor","description":"High stone-fronted house with a bow, high steps to the door, dusty windows and shutters, black framework, scaled paint, balcony with loose white-edged boards where a notice board was torn off; mews behind. Inside is a big empty hall.","features":["stone front with bow","high steps","shutters","balcony","torn notice-board uprights","mews at rear","big empty hall"],"atmosphere":"long untenanted","lighting_time":"dusk","quote":"It’s a ’igh ’un with a stone front with a bow on it, an’ ’igh steps up to the door."},
+{"name":"Mitchell, Sons & Candy office","kind":"indoor","description":"House agents in Sackville Street.","features":["office"],"atmosphere":"prim","lighting_time":"dusk","quote":"their office in Sackville Street"},
+{"name":"Renfield's room","kind":"indoor","description":"Room with observation trap, bed, stool in centre, scattered sugar and flies returning.","features":["observation trap","stool","sugar"],"atmosphere":"strange calm","lighting_time":"day/night","quote":"he had spread out his sugar as of old"},
+{"name":"Seward's study fireside","kind":"indoor","description":"Fireside gathering with smoke.","features":["fireplace"],"atmosphere":"tense","lighting_time":"night","quote":"all gathered round the fire in the study"}
+],
+"characters": [
+{"name":"Joseph Smollet","role":"carter, informant","appearance":"shirtsleeves; dog-eared notebook kept in seat of trousers","clothing":"shirtsleeves","personality":"decent, intelligent, reliable","speech_style":"Cockney","notable_lines":["Sam is a rare one when he starts on the booze."],"abilities":["records deliveries"]},
+{"name":"Thomas Snelling","role":"Smollet's assistant","appearance":"","clothing":"","personality":"drunk","speech_style":"","notable_lines":[],"abilities":[]},
+{"name":"Sam Bloxam","role":"carter who moved nine boxes to Piccadilly","appearance":"smart enough fellow, rough of speech","clothing":"","personality":"bought with tips","speech_style":"Cockney","notable_lines":["Curse me, but he was the strongest chap I ever struck"],"abilities":[]},
+{"name":"The old man (Count in disguise)","role":"Count, in mortal form","appearance":"old, white moustache, so thin he could hardly cast a shadow","clothing":"","personality":"throws a loafer down steps, pays shillings","speech_style":"","notable_lines":[],"abilities":["carries earth boxes like pounds of tea","arrives before the cart","opens doors without keys"]},
+{"name":"Agent at Mitchell, Sons & Candy","role":"clerk/manager","appearance":"","clothing":"","personality":"suave, prig","speech_style":"formal","notable_lines":["It is sold, sir."],"abilities":[]},
+{"name":"Renfield","role":"patient","appearance":"stubble on jaws white","clothing":"","personality":"superior, then childish","speech_style":"","notable_lines":["Life is all I want."],"abilities":[]},
+{"name":"Van Helsing","role":"leader","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":["Then shall we make our final coup, and hunt the wretch to his real death."],"abilities":[]},
+{"name":"Mina","role":"sidelined","appearance":"pale, eyes as though she had been crying","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":[]}
+],
+"objects": [
+{"name":"Smollet's dog-eared notebook","category":"document","description":"Pencil hieroglyphics of delivery destinations.","function_in_story":"Gives box addresses.","location_or_owner":"Smollet","quote":"a wonderful dog’s-eared notebook"},
+{"name":"Scrap with Bloxam's address","category":"document","description":"Dirty scrap, written in carpenter's pencil in phonetic spelling.","function_in_story":"Lead to Bloxam.","location_or_owner":"Jonathan","quote":"“Sam Bloxam, Korkrans, 4, Poters Cort, Bartel Street, Walworth. Arsk for the depite.”"},
+{"name":"Stamped addressed envelope","category":"document","description":"Bought with a penny for Smollet to post.","function_in_story":"Return channel.","location_or_owner":"Jonathan","quote":"I addressed the envelope and stamped it"},
+{"name":"Nine earth boxes (Piccadilly)","category":"container","description":"Main heavy; five in first load, four in second.","function_in_story":"Another lair.","location_or_owner":"347 Piccadilly hall","quote":"there was five in the first load an’ four in the second."},
+{"name":"Horse and dray","category":"vehicle","description":"Cart hired by Bloxam.","function_in_story":"Moves boxes.","location_or_owner":"Bloxam","quote":"with a horse and cart hired by him for this purpose"},
+{"name":"Torn notice-board uprights","category":"other","description":"Posts remain where the sale board was ripped off the balcony.","function_in_story":"Points to the house agent.","location_or_owner":"Piccadilly house","quote":"it had, however, been roughly torn away, the uprights which had supported it still remaining."},
+{"name":"Letter from Mitchell, Sons & Candy","category":"document","description":"Formal letter naming seller and buyer of No. 347.","function_in_story":"Reveals alias Count de Ville.","location_or_owner":"Lord Godalming","quote":"The purchaser is a foreign nobleman, Count de Ville"},
+{"name":"Count's key basket","category":"key","description":"Hoped-for set of keys to access houses.","function_in_story":"Alternative to burglary.","location_or_owner":"unknown","quote":"unless we can find the Count’s key basket."},
+{"name":"Seward's whistle","category":"tool","description":"Used to call attendants.","function_in_story":"Summons help during Renfield's outburst.","location_or_owner":"Seward","quote":"so I blew my whistle"},
+{"name":"Renfield's sugar and paper notebook","category":"other","description":"Sugar spread for flies; scrap folded into a notebook.","function_in_story":"Renfield resumes fly-catching.","location_or_owner":"Renfield","quote":"He had got a scrap of paper and was folding it into a note-book."},
+{"name":"Horses","category":"vehicle","description":"Kept ready for rapid response.","function_in_story":"Transport to strike at lairs.","location_or_owner":"Godalming and Morris","quote":"Godalming thinks that it will be well to have horses always in readiness"}
+],
+"creatures": [
+{"name":"The Count as old man","description":"Old man with white moustache, very thin, uncannily strong.","behaviour":"Waits at both houses, opens doors himself, helps load boxes, threatens loafers.","weaknesses":["daytime (stated in plan)"],"quote":"he took up ’is end o’ the boxes like they was pounds of tea"},
+{"name":"Renfield","description":"Zoophagous madman linked to the Count.","behaviour":"Fly-catching resumes; speaks of souls.","weaknesses":[],"quote":"Life is all I want."}
+],
+"vampire_lore": [
+{"rule":"Count can move earth boxes himself","kind":"power","detail":"He lifts them as if light and travels ahead of the carter.","quote":"the Count could, it was evident, handle the earth-boxes himself."},
+{"rule":"Count distributes lairs across London","kind":"power","detail":"Boxes sent east, south and Piccadilly; plan likely covers all quarters.","quote":"The north and west were surely never meant to be left out of his diabolical scheme"},
+{"rule":"Alias and cash purchase","kind":"detection","detail":"Uses the name Count de Ville, pays in notes.","quote":"paying the purchase money in notes ‘over the counter,’"},
+{"rule":"Sterilise earth between sunrise and sunset","kind":"ritual","detail":"Catch him at weakest without refuge.","quote":"We must sterilise all the imported earth between sunrise and sunset"},
+{"rule":"Renfield's cravings link to Count","kind":"detection","detail":"His changes follow the Count's doings; the Count has promised him a higher life.","quote":"His moods have so followed the doings of the Count"},
+{"rule":"Casts little shadow","kind":"detection","detail":"The thin old man could 'hardly throw a shadder'.","quote":"you would think he couldn’t throw a shadder."}
+],
+"puzzles": [
+{"name":"Decode the phonetic address","setup":"Misspelled directions 'Poters Cort', 'depite'.","obstacle":"Wrong names yield nothing.","book_solution":"Jonathan reads by sound: Potter's Court, Corcoran's, deputy.","items_used":["scrap of paper","tips"],"game_idea":"Word puzzle where the player re-spells phonetic Cockney clues to find places and people.","quote":"Mr. Smollet’s spelling misled me, as I asked for Poter’s Court instead of Potter’s Court."},
+{"name":"Identify the house","setup":"Bloxam forgot the number.","obstacle":"Locate from description.","book_solution":"Stone front with bow, high steps, near white church, beyond the Junior Constitutional; torn notice-board.","items_used":["description","mews grooms"],"game_idea":"Street-scene matching puzzle with facade clues.","quote":"it was only a few doors from a big white church or somethink of the kind, not long built."},
+{"name":"Extract the buyer's name","setup":"Agent refuses disclosure.","obstacle":"Professional confidentiality.","book_solution":"Invokes Lord Godalming's name and address.","items_used":["calling card"],"game_idea":"Social dialogue puzzle choosing credentials and tone.","quote":"These words put a different complexion on affairs."},
+{"name":"Get into Piccadilly","setup":"Unlike Carfax, no walled park.","obstacle":"Burglary in a public street.","book_solution":"Unsolved here; hope for key from agency.","items_used":["keys"],"game_idea":"Stealth/legitimacy puzzle: obtain key legitimately or enter at night unseen.","quote":"It will be a mighty different thing to commit burglary in Piccadilly, either by day or night."},
+{"name":"Decipher Renfield's behaviour","setup":"He avoids 'drink', fears souls.","obstacle":"Meaning is hidden.","book_solution":"Seward lists contradictions and deduces the Count visited.","items_used":["notes"],"game_idea":"Deduction board connecting statements to a conclusion.","quote":"Logically all these things point one way!"}
+],
+"combat": [],
+"crafting": [],
+"dialogue_samples": [
+{"speaker":"Smollet","line":"Look ’ere, guv’nor, there ain’t no sense in me a-keepin’ you ’ere.","context":"Promising to find Bloxam"},
+{"speaker":"Bloxam","line":"Curse me, but he was the strongest chap I ever struck","context":"Describing the old man"},
+{"speaker":"Agent","line":"It is sold, sir.","context":"Refusing to name the buyer"},
+{"speaker":"Renfield","line":"I don’t want any souls, indeed, indeed! I don’t.","context":"Cornered by Seward"},
+{"speaker":"Morris","line":"Say! how are we going to get into that house?","context":"At the council"}
+],
+"asset_candidates": [
+{"name":"No. 347 Piccadilly facade","type":"architecture","visual_description":"Tall Victorian stone house with bow front, high steps, shuttered dusty windows, scaled black ironwork, balcony with torn notice-board posts","priority":1},
+{"name":"Carter's dray with horse","type":"vehicle","visual_description":"Flat four-wheel dray cart with a draught horse, loaded with heavy boxes","priority":2},
+{"name":"Earth box","type":"prop","visual_description":"Large rough timber chest bound in iron","priority":1},
+{"name":"Cold storage building under construction","type":"architecture","visual_description":"New brick warehouse with scaffolding in Poplar","priority":3},
+{"name":"Smollet's notebook","type":"document","visual_description":"Dog-eared pocket notebook with thick smudged pencil scrawls","priority":2},
+{"name":"Bloxam's address scrap","type":"document","visual_description":"Dirty scrap with carpenter's-pencil capitals","priority":2},
+{"name":"Old man Count (disguise)","type":"character","visual_description":"Tall thin old man, white moustache, dark clothes, pale","priority":1},
+{"name":"Agent's letter","type":"document","visual_description":"Formal letterhead of Mitchell, Sons & Candy","priority":3},
+{"name":"Renfield's sugar and flies setup","type":"prop","visual_description":"Sugar spread on sill, lethargic autumn flies","priority":3}
+],
+"quest_hooks": [
+"Track the carriers: Snelling, Smollet, Bloxam.",
+"Locate 347 Piccadilly and learn the owner.",
+"Find or forge a key for Piccadilly.",
+"Visit lair addresses at Chicksand Street and Jamaica Lane to sterilise boxes.",
+"Interrogate Renfield about his visitor and discover what happened to him."
+]
+}

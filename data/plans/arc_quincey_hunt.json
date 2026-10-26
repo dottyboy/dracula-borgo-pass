@@ -1,0 +1,301 @@
+{
+ "act": "quincey_hunt",
+ "arc": "quincey_hunt",
+ "start": {
+  "location": "quincey_hunt_ranch",
+  "protagonist": "quincey",
+  "party": [
+   "quincey"
+  ],
+  "items": {
+   "knife": 1,
+   "winchester": 1
+  },
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "quincey_hunt_ranch",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_ranch",
+   "eid": "quincey_hunt_wash",
+   "dialogue": "quincey_hunt_wash",
+   "path": [
+    "Any sugar? She'll want something sweet.",
+    "Where do I start?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_ranch",
+   "eid": "quincey_hunt_wash",
+   "dialogue": "quincey_hunt_wash",
+   "path": [
+    "Who would dare?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_ranch",
+   "eid": "quincey_hunt_corral_rail"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_ranch",
+   "eid": "quincey_hunt_chest_tack"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_target"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_bench_load",
+   "item": "quincey_hunt_lead"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_bench_load",
+   "item": "quincey_hunt_slugs"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_shelf"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_bench_load",
+   "item": "quincey_hunt_powder"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_stall"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_stable",
+   "eid": "quincey_hunt_letter_table"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_prairie",
+   "eid": "quincey_hunt_hobbs",
+   "dialogue": "quincey_hunt_hobbs",
+   "path": [
+    "What about the creek?",
+    "Eleven, and my mare. Seen any riders?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_prairie",
+   "eid": "quincey_hunt_sign_shoes"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_prairie",
+   "eid": "quincey_hunt_sign_fire"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_prairie",
+   "eid": "quincey_hunt_sign_cloth"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_prairie",
+   "eid": "quincey_hunt_trails",
+   "dialogue": "quincey_hunt_trails",
+   "path": [
+    "East, down to the cottonwood bottoms."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_creek",
+   "eid": "quincey_hunt_snag",
+   "item": "rope"
+  },
+  {
+   "kind": "fight",
+   "loc": "quincey_hunt_creek",
+   "eid": "quincey_hunt_wolf1",
+   "enc": "quincey_hunt_wolves"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_creek",
+   "eid": "quincey_hunt_saddlebag"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_thief_camp",
+   "eid": "quincey_hunt_dunning",
+   "dialogue": "quincey_hunt_dunning",
+   "path": [
+    "[Show him Pike's spur]",
+    "Then I'll take her myself."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_thief_camp",
+   "eid": "quincey_hunt_santafe_camp",
+   "dialogue": "quincey_hunt_santafe_camp",
+   "path": [
+    "Whistle the three notes she knows."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_thief_camp",
+   "eid": "quincey_hunt_santafe_camp",
+   "item": "quincey_hunt_sugar"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_thief_camp",
+   "eid": "quincey_hunt_picket",
+   "item": "knife"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_thief_camp",
+   "eid": "quincey_hunt_santafe_camp",
+   "dialogue": "quincey_hunt_santafe_camp",
+   "path": [
+    "Ride her out of here, now."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_anselmo",
+   "dialogue": "quincey_hunt_anselmo",
+   "path": [
+    "The bats here are only bats.",
+    "What can a man do against a bat?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_seward",
+   "dialogue": "quincey_hunt_seward",
+   "path": [
+    "Have you any bandage to spare?",
+    "A little? That doesn't sound serious."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_campfire",
+   "dialogue": "quincey_hunt_tale",
+   "path": [
+    "Titicaca, and the boat that sank in a calm."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_woodpile"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_supply"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_camp",
+   "eid": "quincey_hunt_wagon"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_pampas_night",
+   "eid": "quincey_hunt_firepit",
+   "item": "wood"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_pampas_night",
+   "eid": "quincey_hunt_lamp_post",
+   "item": "quincey_hunt_lantern"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_pampas_night",
+   "eid": "quincey_hunt_lamp_post",
+   "item": "oil"
+  },
+  {
+   "kind": "use",
+   "loc": "quincey_hunt_pampas_night",
+   "eid": "quincey_hunt_santafe_night",
+   "item": "quincey_hunt_blanket"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_night",
+   "eid": "quincey_hunt_bedroll",
+   "dialogue": "quincey_hunt_watch",
+   "path": [
+    "Begin the vigil."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_santafe_dawn",
+   "dialogue": "quincey_hunt_santafe_dawn",
+   "path": [
+    "Sit with her."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_ring"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_earth"
+  },
+  {
+   "kind": "primary",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_print"
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_seward_dawn",
+   "dialogue": "quincey_hunt_seward_dawn",
+   "path": [
+    "This was no ordinary bat. I've read the ground."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "quincey_hunt_pampas_dawn",
+   "eid": "quincey_hunt_grave",
+   "dialogue": "quincey_hunt_final",
+   "path": [
+    "Lay the sheath on the grave, then take it up again."
+   ]
+  }
+ ]
+}

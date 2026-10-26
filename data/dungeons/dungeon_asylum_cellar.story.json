@@ -1,0 +1,101 @@
+{
+ "entrance": {
+  "name": "Cellar stair",
+  "look": "A trapdoor in the ward floor, kept locked by a hasp that someone has recently oiled.",
+  "pos": [
+   0.9,
+   3.0
+  ],
+  "back_pos": [
+   0.9,
+   1.8
+  ],
+  "rot": 0,
+  "asset": "stairs",
+  "variant": "stone_dark"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a3_j_cellar"
+    },
+    {
+     "say": "The stair smells of damp plaster and old carbolic. Somewhere a tap drips."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "entrance",
+   "dx": 1.8,
+   "id": "asy_bench",
+   "asset": "bench",
+   "variant": "oak",
+   "name": "Orderly's bench",
+   "radius": 0.3,
+   "interact": {
+    "look": "A bench where the night orderly sat and dozed. A cup of cold tea beside it, a week old."
+   }
+  },
+  {
+   "at": "room:0",
+   "id": "asy_cot",
+   "asset": "bed",
+   "variant": "black",
+   "name": "Restraint cot",
+   "radius": 0.3,
+   "interact": {
+    "look": "Straps worn through at the wrist. Whoever lay here fought for a very long time."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "asy_cases",
+   "asset": "bookshelf",
+   "variant": "oak",
+   "name": "Old case-books",
+   "radius": 0.3,
+   "interact": {
+    "look": "Case-books of the previous proprietors, in a dozen hands.",
+    "do": [
+     {
+      "say": "I find the entry by the smell of it, the ink gone brown. 'The madman eats lives to gain life. He spoke of a Master.' I close the book very carefully."
+     },
+     {
+      "journal": "a3_j_casebook"
+     },
+     {
+      "xp": 20
+     }
+    ]
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "asy_stock",
+   "asset": "chest",
+   "variant": "pale",
+   "name": "Dispensary stock",
+   "radius": 0.3,
+   "interact": {
+    "look": "A locked-looking chest that is not locked: the old dispensary stock.",
+    "take": "chloral",
+    "take_text": "A stoppered bottle of chloral, the old stock. I mark the debit in my ledger, out of habit."
+   }
+  },
+  {
+   "at": "far:0",
+   "id": "asy_door",
+   "asset": "door",
+   "variant": "dark",
+   "name": "Grated cell door",
+   "rot": 180,
+   "radius": 0.3,
+   "interact": {
+    "look": "Inside, scratched into the plaster by a hundred hands: 'HE IS COMING.' None of the hands, I am relieved to see, is Renfield's."
+   }
+  }
+ ]
+}

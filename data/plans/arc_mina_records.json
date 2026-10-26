@@ -1,0 +1,375 @@
+{
+ "act": "mina_records",
+ "arc": "mina_records",
+ "start": {
+  "location": "mina_records_schoolroom",
+  "protagonist": "mina",
+  "party": [
+   "mina"
+  ],
+  "items": {
+   "mina_records_notebook": 1
+  },
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "mina_records_schoolroom",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_edith",
+   "dialogue": "mina_records_edith_talk",
+   "path": [
+    "Who was in the schoolroom yesterday evening?",
+    "You are a great help, Edith."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_hallam",
+   "dialogue": "mina_records_hallam_talk",
+   "path": [
+    "I think I can find out who did it."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_s_blotter",
+   "dialogue": "mina_records_blotter",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_s_redink",
+   "dialogue": "mina_records_redink",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_s_cupboard",
+   "dialogue": "mina_records_cupboard",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_dora",
+   "dialogue": "mina_records_dora_talk",
+   "path": [
+    "Show me your hands, Dora.",
+    "Dora. The red smear on the cupboard lock, the letter on the blotter: I know it was you.",
+    "You must tell Miss Hallam yourself, Dora. I shall stand beside you."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_hallam",
+   "dialogue": "mina_records_hallam_talk",
+   "path": [
+    "Here is your Tennyson, Miss Hallam."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "mina_records_schoolroom",
+   "eid": "mina_records_s_pin"
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_dictation",
+   "dialogue": "mina_records_dictation",
+   "path": []
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_machine",
+   "item": "mina_records_hairpin"
+  },
+  {
+   "kind": "primary",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_oil"
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_machine",
+   "item": "oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_cupboard"
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_machine",
+   "item": "mina_records_ribbon"
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_typing_room",
+   "eid": "mina_records_t_machine",
+   "dialogue": "mina_records_typewriter",
+   "path": [
+    "Type the dictation sheet.",
+    "'... Carfax at Purfleet, with its chapel and twenty acres, the deeds to go by the post of the ninth instant.'",
+    "Post the typed page to Mr. Hawkins."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_exeter_rooms",
+   "eid": "mina_records_pym",
+   "dialogue": "mina_records_pym_talk",
+   "path": [
+    "Is there a reply from Mr. Hawkins's office?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_station",
+   "eid": "mina_records_pomfret",
+   "dialogue": "mina_records_pomfret_talk",
+   "path": [
+    "Mr. Hawkins's clerk writes that a registered letter for me has gone astray on this line."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_station",
+   "eid": "mina_records_st_bradshaw",
+   "dialogue": "mina_records_bradshaw",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_station",
+   "eid": "mina_records_pomfret",
+   "dialogue": "mina_records_pomfret_talk",
+   "path": [
+    "I think I know where the bag went.",
+    "The 10.50 express, non-stop to Taunton."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_station",
+   "eid": "mina_records_hobbs",
+   "dialogue": "mina_records_hobbs_talk",
+   "path": [
+    "Is there any answer from Taunton?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_station",
+   "eid": "mina_records_porter",
+   "dialogue": "mina_records_porter_talk",
+   "path": [
+    "Did you see the mail-bag go?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_exeter_rooms",
+   "eid": "mina_records_lucy_ex",
+   "dialogue": "mina_records_lucy_night",
+   "path": [
+    "Lucy, I have a strange dream. I want to tell someone.",
+    "Read the letter aloud."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_exeter_rooms",
+   "eid": "mina_records_lucy_ex",
+   "dialogue": "mina_records_lucy_night",
+   "path": [
+    "Lucy, tell me about the three men.",
+    "Good night, Lucy."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_exeter_rooms",
+   "eid": "mina_records_r_trunk",
+   "dialogue": "mina_records_trunk",
+   "path": [
+    "Pack, and take the morning train to Whitby."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "mina_records_whitby_rooms",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_whitby_rooms",
+   "eid": "mina_records_w_notes",
+   "dialogue": "mina_records_dreamnotes",
+   "path": []
+  },
+  {
+   "kind": "enter",
+   "loc": "mina_records_east_cliff",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_swales",
+   "dialogue": "mina_records_swales_talk",
+   "path": [
+    "They say the stones here lie, Mr. Swales."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_c_tomb1",
+   "dialogue": "mina_records_tomb1",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_c_tomb2",
+   "dialogue": "mina_records_tomb2",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_c_tomb3",
+   "dialogue": "mina_records_tomb3",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_swales",
+   "dialogue": "mina_records_swales_talk",
+   "path": [
+    "Which of these three tombs tells the biggest lie?",
+    "Hannah Brough: born 1785, died 1830, aged 43."
+   ]
+  },
+  {
+   "kind": "fight",
+   "loc": "mina_records_east_cliff",
+   "eid": "mina_records_bats",
+   "enc": "mina_records_dusk_bats"
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_coastguard",
+   "eid": "mina_records_g_tide",
+   "dialogue": "mina_records_tidetable",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_coastguard",
+   "eid": "mina_records_coastguard_n",
+   "dialogue": "mina_records_coastguard_talk",
+   "path": [
+    "A quarter past six, by my reckoning."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "mina_records_whitby_night",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_window",
+   "dialogue": "mina_records_n_window_talk",
+   "path": []
+  },
+  {
+   "kind": "primary",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_jug"
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_basin",
+   "item": "water"
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_bracket",
+   "item": "mina_records_plumb"
+  },
+  {
+   "kind": "primary",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_mantel"
+  },
+  {
+   "kind": "use",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_table",
+   "item": "mina_records_candle"
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_whitby_night",
+   "eid": "mina_records_n_chair",
+   "dialogue": "mina_records_trance",
+   "path": [
+    "Begin.",
+    "Listen to the water lapping in the basin.",
+    "Rock the chair so that the boards creak.",
+    "Watch the plumb turn in the candle-light."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "mina_records_dream",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_dream",
+   "eid": "mina_records_d_barrel1",
+   "dialogue": "mina_records_d_water",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_dream",
+   "eid": "mina_records_d_timber",
+   "dialogue": "mina_records_d_wood",
+   "path": []
+  },
+  {
+   "kind": "talk",
+   "loc": "mina_records_dream",
+   "eid": "mina_records_d_cord",
+   "dialogue": "mina_records_d_cord",
+   "path": [
+    "Follow the cord, and listen for what it is tied to."
+   ]
+  }
+ ]
+}

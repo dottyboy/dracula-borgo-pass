@@ -1,0 +1,144 @@
+{
+ "entrance": {
+  "name": "Low iron door",
+  "look": "A low iron-bound door in the chapel wall, black with age. The Count's keys might fit it.",
+  "go_cond": "has:vault_key",
+  "go_fail": "The door is locked. The keys on the Count's belt might fit it.",
+  "pos": [
+   5.75,
+   2.4
+  ],
+  "back_pos": [
+   4.6,
+   2.4
+  ],
+  "rot": -90,
+  "asset": "door",
+  "variant": "dark"
+ },
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a1_j_cat"
+    },
+    {
+     "say": "The stair is worn hollow. The cold comes up to meet me like a breath."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "entrance",
+   "dx": 1.6,
+   "dz": 0,
+   "id": "cat_candles",
+   "asset": "candelabra",
+   "variant": "default",
+   "name": "Candle stumps",
+   "radius": 0.3,
+   "interact": {
+    "look": "Candle stumps, burned down to the iron. Someone came here by light, once, and did not stay."
+   }
+  },
+  {
+   "at": "room:1",
+   "id": "cat_tomb",
+   "asset": "tomb",
+   "variant": "stone_tomb",
+   "name": "A boyar's tomb",
+   "radius": 1.0,
+   "interact": {
+    "look": "The slab is worn smooth by damp. A name begins with a D, and goes no further."
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "cat_coffin",
+   "asset": "coffin",
+   "variant": "oak",
+   "name": "Open coffin",
+   "rot": 90,
+   "radius": 1.0,
+   "interact": {
+    "look": "Empty, and lined with rotted velvet. The lid has been prised up, and not from outside."
+   }
+  },
+  {
+   "at": "room:3",
+   "dx": 1.2,
+   "id": "cat_cross",
+   "asset": "crucifix_big",
+   "variant": "silver",
+   "name": "Tarnished crucifix",
+   "radius": 0.3,
+   "interact": {
+    "look": "A cross hung here for the dead, its silver gone black with age. It would come away from the wall.",
+    "take": "silver",
+    "take_text": "I worked the crucifix loose from its nail. The silver is old, and soft, and still good for something."
+   }
+  },
+  {
+   "at": "far:0",
+   "id": "cat_gold",
+   "asset": "chest",
+   "variant": "oak",
+   "name": "Heaped gold",
+   "radius": 0.8,
+   "interact": {
+    "look": "A great heap of gold coin under a film of dust.",
+    "do": [
+     {
+      "say": "Roman, British, Austrian, Hungarian, Greek and Turkish coin, loose as gravel. None of it, I notice, is less than three hundred years old."
+     },
+     {
+      "journal": "a1_j_gold"
+     },
+     {
+      "xp": 25
+     }
+    ]
+   }
+  },
+  {
+   "at": "far:0",
+   "dx": -1.6,
+   "dz": 0.6,
+   "id": "cat_cup",
+   "asset": "goblet",
+   "variant": "default",
+   "name": "Golden cup",
+   "radius": 0.25,
+   "interact": {
+    "look": "A cup of old workmanship, crusted with dust and a few dull stones. I leave it where it lies; I want nothing of his."
+   }
+  },
+  {
+   "at": "exit",
+   "id": "cat_iron_door",
+   "asset": "door",
+   "variant": "dark",
+   "name": "Iron door",
+   "rot": 180,
+   "radius": 0.6,
+   "interact": {
+    "look": "Rusted shut. Beyond it I can hear wind, and under the wind something that might be breathing. Iron like that has to be struck.",
+    "use_item": {
+     "hammer": [
+      {
+       "say": "Three blows and the rust fell like dried blood. At the fourth the door groaned outward on a night full of wind."
+      },
+      {
+       "journal": "a1_j_cliff"
+      },
+      {
+       "xp": 15
+      }
+     ]
+    },
+    "use_fail": "It will not move. Something heavy might break the rust."
+   }
+  }
+ ]
+}

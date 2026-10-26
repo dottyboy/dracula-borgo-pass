@@ -1,0 +1,766 @@
+{
+ "act": 6,
+ "arc": "",
+ "start": {
+  "location": "a6_varna_quay",
+  "protagonist": "seward",
+  "party": [
+   "harker",
+   "mina",
+   "vanhelsing",
+   "seward",
+   "quincey",
+   "arthur"
+  ],
+  "items": {
+   "crucifix": 3,
+   "host": 8,
+   "garlic_wreath": 2,
+   "garlic": 2,
+   "stake": 4,
+   "hammer": 1,
+   "kukri": 1,
+   "winchester": 4,
+   "bullet": 24,
+   "sacred_bullet": 4,
+   "brandy": 2,
+   "bandage": 3,
+   "knife": 1,
+   "a6_purse": 1,
+   "a6_field_glasses": 1
+  },
+  "flags": []
+ },
+ "exit_to": "END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "a6_varna_quay",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_varna_quay",
+   "eid": "a6_harbourmaster_v",
+   "dialogue": "a6_harbourmaster_varna",
+   "path": [
+    "What ships go astray between the Straits and Varna?",
+    "When was she last heard of?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_varna_quay",
+   "eid": "a6_sailor_v",
+   "dialogue": "a6_sailor_varna",
+   "path": [
+    "Have a drop of brandy."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_varna_quay",
+   "eid": "a6_grindstone"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_varna_quay",
+   "eid": "a6_rope_chest"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_varna_quay",
+   "eid": "a6_slat_crate"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_varna_quay",
+   "eid": "a6_quay_lamp"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_hotel_odessa",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_vh_hotel",
+   "dialogue": "a6_vh_varna",
+   "path": [
+    "I am ready, Professor.",
+    "What do you hear, Madam Mina?",
+    "What else do you hear?",
+    "Do you feel anything beneath you?",
+    "I am ready, Professor.",
+    "What do you hear, Madam Mina?",
+    "What else do you hear?",
+    "Do you feel anything beneath you?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_quincey_hotel",
+   "dialogue": "a6_quincey_hotel",
+   "path": [
+    "Have you cartridges to spare?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_harker_hotel",
+   "dialogue": "a6_harker_kukri",
+   "path": [
+    "Is there a whetstone about?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_bradshaw"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_garlic_pile"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_harker_hotel",
+   "item": "a6_whetstone"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_lloyds_office",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_lloyds_office",
+   "eid": "a6_shipper_agent",
+   "dialogue": "a6_shipper_agent",
+   "path": [
+    "A friend of mine has had a thing stolen, and I think it is in that ship.",
+    "The owners will surely forgive some delay for the sake of a friend. Here is something for their trouble."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_lloyds_office",
+   "eid": "a6_lloyds_clerk",
+   "dialogue": "a6_lloyds_clerk",
+   "path": [
+    "What is the last entry for the Czarina Catherine?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_lloyds_office",
+   "eid": "a6_register"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_vh_hotel",
+   "dialogue": "a6_vh_varna",
+   "path": [
+    "What do the trances tell us, Professor?",
+    "He knows we are at Varna. He will not come where we wait; she may make for the Danube and Galatz, and we must watch the wires."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_porter",
+   "dialogue": "a6_porter_talk",
+   "path": [
+    "Any telegram for Lord Godalming?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_mina_hotel",
+   "dialogue": "a6_mina_hotel",
+   "path": [
+    "Mina, you know the railways. How do we reach Galatz?",
+    "Let me consult the Bradshaw. [Open it]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hotel_odessa",
+   "eid": "a6_mina_hotel",
+   "dialogue": "a6_mina_hotel",
+   "path": [
+    "You asked us for a promise, Mina.",
+    "I swear it, Mina."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_galatz_quay",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_quay",
+   "eid": "a6_harbourmaster_g",
+   "dialogue": "a6_harbourmaster_galatz",
+   "path": [
+    "Did anything leave the ship?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_galatz_quay",
+   "eid": "a6_g_cloth"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_galatz_quay",
+   "eid": "a6_g_oil"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_czarina_deck",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_czarina_deck",
+   "eid": "a6_donelson",
+   "dialogue": "a6_donelson",
+   "path": [
+    "Tell me about the voyage, Captain.",
+    "What of the box?",
+    "Show me the bill of lading."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_czarina_deck",
+   "eid": "a6_hatch"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_czarina_deck",
+   "eid": "a6_deck_cloth"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_czarina_deck",
+   "eid": "a6_deck_rope"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_quay",
+   "eid": "a6_ms_clerk",
+   "dialogue": "a6_ms_clerk",
+   "path": [
+    "I have the Captain's bill of lading. Who is the consignee?",
+    "I have the Captain's bill of lading. Who is the consignee?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_quay",
+   "eid": "a6_ms_clerk",
+   "dialogue": "a6_ms_clerk",
+   "path": [
+    "I have the Captain's bill of lading. Who is the consignee?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_hildesheim_office",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hildesheim_office",
+   "eid": "a6_hildesheim",
+   "dialogue": "a6_hildesheim",
+   "path": [
+    "I come from Messrs. Mackenzie & Steinkoff, with their letter.",
+    "A Slovak called Skinsky has the box. Can you confirm it, in writing?",
+    "Pay him from the purse."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hildesheim_office",
+   "eid": "a6_hildesheim",
+   "dialogue": "a6_hildesheim",
+   "path": [
+    "A Slovak called Skinsky has the box. Can you confirm it, in writing?",
+    "Pay him from the purse."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_hildesheim_office",
+   "eid": "a6_h_coin_dish"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_peters_churchyard",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_peters_churchyard",
+   "eid": "a6_skinsky_body"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_peters_churchyard",
+   "eid": "a6_priest",
+   "dialogue": "a6_priest",
+   "path": [
+    "The wound is too clean for a wolf, Father.",
+    "May I see the coat, Father?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_peters_churchyard",
+   "eid": "a6_graveyard_rose"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_galatz_hotel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_hotel",
+   "eid": "a6_dealer",
+   "dialogue": "a6_dealer",
+   "path": [
+    "Buy the launch, a lamp and a flag."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_hotel",
+   "eid": "a6_memo_desk",
+   "dialogue": "a6_mina_memorandum",
+   "path": [
+    "Begin the memorandum.",
+    "By water.",
+    "The Sereth, then a tributary to the mountains."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_galatz_hotel",
+   "eid": "a6_g_typescript"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_galatz_hotel",
+   "eid": "a6_g_map"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_galatz_hotel",
+   "eid": "a6_vh_council",
+   "dialogue": "a6_council",
+   "path": [
+    "We are ready. Let us set out."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_launch_deck",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_launch_deck",
+   "eid": "a6_boiler",
+   "item": "wood"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_launch_deck",
+   "eid": "a6_engine",
+   "item": "oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_launch_deck",
+   "eid": "a6_woodpile"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_launch_deck",
+   "eid": "a6_flagstaff",
+   "item": "a6_roumanian_flag"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_launch_deck",
+   "eid": "a6_lamp_mount",
+   "item": "a6_lamp"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_launch_deck",
+   "eid": "a6_boatman_a",
+   "dialogue": "a6_boatmen",
+   "path": [
+    "Have you seen a boat with a great box and Szgany at the oars?"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a6_launch_deck",
+   "eid": "a6_chart_table",
+   "item": "a6_map"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_rapids",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_rapids",
+   "eid": "a6_keel",
+   "item": "wood"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_rapids",
+   "eid": "a6_keel",
+   "item": "rope"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_rapids",
+   "eid": "a6_keel",
+   "item": "cloth"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_rapids",
+   "eid": "a6_farmer",
+   "dialogue": "a6_farmer",
+   "path": [
+    "Can you spare two horses and a saddle?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_bistritz_trail",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_bistritz_trail",
+   "eid": "a6_fundu_keeper",
+   "dialogue": "a6_fundu_keeper",
+   "path": [
+    "Have you a sledge?",
+    "What news from the river?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_bistritz_trail",
+   "eid": "a6_trail_post"
+  },
+  {
+   "kind": "fight",
+   "loc": "a6_bistritz_trail",
+   "eid": "a6_wolf_a",
+   "enc": "a6_wolf_pack"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_veresti_inn",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_veresti_inn",
+   "eid": "a6_vh_veresti",
+   "dialogue": "a6_vh_veresti",
+   "path": [
+    "Buy the carriage and horses."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_veresti_inn",
+   "eid": "a6_provisions_basket"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_veresti_inn",
+   "eid": "a6_furs_hook"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_veresti_inn",
+   "eid": "a6_garlic_string"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_veresti_inn",
+   "eid": "a6_letter_table"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_mountain_road",
+   "eid": "a6_vh_road",
+   "dialogue": "a6_vh_road",
+   "path": [
+    "Let me consult Jonathan's typescript."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_mountain_road",
+   "eid": "a6_road_villager",
+   "dialogue": "a6_road_villager",
+   "path": [
+    "Thank you for the garlic."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_mountain_road",
+   "eid": "a6_dog_rose"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_mountain_road",
+   "eid": "a6_road_wood"
+  },
+  {
+   "kind": "fight",
+   "loc": "a6_mountain_road",
+   "eid": "a6_road_wolf",
+   "enc": "borgo_wolves"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_holy_circle",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_holy_circle",
+   "eid": "a6_ring_site",
+   "item": "host"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_holy_circle",
+   "eid": "a6_mina_circle",
+   "dialogue": "a6_mina_circle",
+   "path": [
+    "Step into the ring, Mina."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "a6_holy_circle",
+   "eid": "a6_fire_site",
+   "item": "wood"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_holy_circle",
+   "eid": "a6_mina_circle",
+   "dialogue": "a6_mina_circle",
+   "path": [
+    "The night is coming. Let us wait."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_holy_circle",
+   "eid": "a6_sister_a",
+   "dialogue": "a6_sisters_tempt",
+   "path": [
+    "[Mina] I... can hear you."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_castle_gate",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_castle_gate",
+   "eid": "a6_chapel_door",
+   "item": "hammer"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_castle_chapel",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_castle_chapel",
+   "eid": "a6_crypt_door",
+   "item": "garlic_wreath"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_castle_chapel",
+   "eid": "a6_crypt_door",
+   "item": "crucifix"
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_castle_chapel",
+   "eid": "a6_altar_wood"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_brides_crypt",
+   "eid": "a6_tomb_1",
+   "dialogue": "a6_vh_fascination",
+   "path": [
+    "Think of Mina, waiting in the circle."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_brides_crypt",
+   "eid": "a6_crypt_stake"
+  },
+  {
+   "kind": "fight",
+   "loc": "a6_brides_crypt",
+   "eid": "a6_vault_sister_a",
+   "enc": "brides_tombs"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_castle_chapel",
+   "eid": "a6_counts_tomb",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_castle_gate",
+   "eid": "a6_main_gate",
+   "item": "host"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_hollow",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "a6_hollow",
+   "eid": "a6_hollow_ring",
+   "item": "host"
+  },
+  {
+   "kind": "use",
+   "loc": "a6_hollow",
+   "eid": "a6_lookout",
+   "item": "a6_field_glasses"
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_hollow",
+   "eid": "a6_mina_hollow",
+   "dialogue": "a6_mina_hollow",
+   "path": [
+    "They come. We shall see the end of it, Madam Mina."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_snow_plain",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_snow_plain",
+   "eid": "a6_arthur_plain",
+   "dialogue": "a6_arthur_plain",
+   "path": [
+    "Hold the right, Arthur. Cover the escort with the rifle."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_snow_plain",
+   "eid": "a6_seward_plain",
+   "dialogue": "a6_seward_plain",
+   "path": [
+    "Hold the left, Jack. Break the circle if you must."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_snow_plain",
+   "eid": "a6_quincey_plain",
+   "dialogue": "a6_quincey_plain",
+   "path": [
+    "We go together, Quincey. The kukri first, the bowie after."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_snow_plain",
+   "eid": "a6_ammo_crate"
+  },
+  {
+   "kind": "fight",
+   "loc": "a6_snow_plain",
+   "eid": "a6_szgany_a",
+   "enc": "szgany_cart"
+  },
+  {
+   "kind": "fight",
+   "loc": "a6_snow_plain",
+   "eid": "a6_box_open",
+   "enc": "dracula_chase"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_sunset_snow",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "a6_sunset_snow",
+   "eid": "a6_quincey_dying",
+   "dialogue": "a6_quincey_last",
+   "path": [
+    "[Mina] Take my hand."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_sunset_snow",
+   "eid": "a6_dust_heap"
+  },
+  {
+   "kind": "enter",
+   "loc": "a6_epilogue_study",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "a6_epilogue_study",
+   "eid": "a6_bundle"
+  }
+ ]
+}

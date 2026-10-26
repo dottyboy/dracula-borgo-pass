@@ -1,0 +1,786 @@
+{
+ "table": {
+  "slots": [
+   "wood"
+  ],
+  "parts": [
+   "table"
+  ]
+ },
+ "chest": {
+  "slots": [
+   "wood",
+   "iron",
+   "gold"
+  ],
+  "parts": [
+   "chest",
+   "lid"
+  ]
+ },
+ "bat": {
+  "slots": [
+   "fur",
+   "eyes",
+   "wing"
+  ],
+  "parts": [
+   "body",
+   "wing_l",
+   "wing_r"
+  ]
+ },
+ "wolf": {
+  "slots": [
+   "fur",
+   "dark",
+   "eyes"
+  ],
+  "parts": [
+   "body",
+   "head",
+   "leg_fl",
+   "leg_fr",
+   "leg_bl",
+   "leg_br"
+  ]
+ },
+ "human_harker": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "floor_4x4": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "floor"
+  ]
+ },
+ "wall_4": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "wall"
+  ]
+ },
+ "wall_door_4": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "wall"
+  ]
+ },
+ "wall_window_4": {
+  "slots": [
+   "stone",
+   "wood",
+   "iron",
+   "glass"
+  ],
+  "parts": [
+   "wall"
+  ]
+ },
+ "arch": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "arch"
+  ]
+ },
+ "column": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "column"
+  ]
+ },
+ "column_short": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "column"
+  ]
+ },
+ "stairs": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "stairs"
+  ]
+ },
+ "tower": {
+  "slots": [
+   "stone",
+   "roof",
+   "glass"
+  ],
+  "parts": [
+   "tower"
+  ]
+ },
+ "castle_keep": {
+  "slots": [
+   "stone",
+   "roof",
+   "glass",
+   "wood"
+  ],
+  "parts": [
+   "keep"
+  ]
+ },
+ "door": {
+  "slots": [
+   "wood",
+   "iron"
+  ],
+  "parts": [
+   "door"
+  ]
+ },
+ "door_big": {
+  "slots": [
+   "wood",
+   "iron"
+  ],
+  "parts": [
+   "door"
+  ]
+ },
+ "table_long": {
+  "slots": [
+   "wood"
+  ],
+  "parts": [
+   "table"
+  ]
+ },
+ "chair": {
+  "slots": [
+   "wood",
+   "cloth"
+  ],
+  "parts": [
+   "chair"
+  ]
+ },
+ "throne": {
+  "slots": [
+   "wood",
+   "cloth",
+   "iron"
+  ],
+  "parts": [
+   "throne"
+  ]
+ },
+ "bed": {
+  "slots": [
+   "wood",
+   "cloth",
+   "linen"
+  ],
+  "parts": [
+   "bed"
+  ]
+ },
+ "bed_simple": {
+  "slots": [
+   "wood",
+   "cloth",
+   "linen"
+  ],
+  "parts": [
+   "bed"
+  ]
+ },
+ "barrel": {
+  "slots": [
+   "wood",
+   "iron"
+  ],
+  "parts": [
+   "barrel"
+  ]
+ },
+ "candle": {
+  "slots": [
+   "wax",
+   "flame"
+  ],
+  "parts": [
+   "candle"
+  ]
+ },
+ "candelabra": {
+  "slots": [
+   "gold",
+   "wax",
+   "flame"
+  ],
+  "parts": [
+   "candelabra"
+  ]
+ },
+ "lantern": {
+  "slots": [
+   "iron",
+   "glass",
+   "flame"
+  ],
+  "parts": [
+   "lantern"
+  ]
+ },
+ "sconce": {
+  "slots": [
+   "iron",
+   "wax",
+   "flame"
+  ],
+  "parts": [
+   "sconce"
+  ]
+ },
+ "crucifix": {
+  "slots": [
+   "wood",
+   "gold"
+  ],
+  "parts": [
+   "crucifix"
+  ]
+ },
+ "crucifix_big": {
+  "slots": [
+   "wood",
+   "gold"
+  ],
+  "parts": [
+   "crucifix"
+  ]
+ },
+ "coffin": {
+  "slots": [
+   "wood",
+   "earth",
+   "gold"
+  ],
+  "parts": [
+   "coffin",
+   "lid"
+  ]
+ },
+ "tomb": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "tomb"
+  ]
+ },
+ "gravestone": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "gravestone"
+  ]
+ },
+ "gravestone_point": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "gravestone"
+  ]
+ },
+ "grave_cross": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "grave_cross"
+  ]
+ },
+ "book": {
+  "slots": [
+   "leather",
+   "paper"
+  ],
+  "parts": [
+   "book"
+  ]
+ },
+ "bookshelf": {
+  "slots": [
+   "wood",
+   "cloth",
+   "leather"
+  ],
+  "parts": [
+   "bookshelf"
+  ]
+ },
+ "fireplace": {
+  "slots": [
+   "stone",
+   "iron",
+   "wood"
+  ],
+  "parts": [
+   "fireplace"
+  ]
+ },
+ "mirror": {
+  "slots": [
+   "gold",
+   "glass"
+  ],
+  "parts": [
+   "mirror"
+  ]
+ },
+ "goblet": {
+  "slots": [
+   "gold",
+   "wine"
+  ],
+  "parts": [
+   "goblet"
+  ]
+ },
+ "bottle": {
+  "slots": [
+   "glass",
+   "wood"
+  ],
+  "parts": [
+   "bottle"
+  ]
+ },
+ "garlic": {
+  "slots": [
+   "plant",
+   "garlic"
+  ],
+  "parts": [
+   "garlic"
+  ]
+ },
+ "stake": {
+  "slots": [
+   "wood"
+  ],
+  "parts": [
+   "stake"
+  ]
+ },
+ "hammer": {
+  "slots": [
+   "wood",
+   "iron"
+  ],
+  "parts": [
+   "hammer"
+  ]
+ },
+ "key": {
+  "slots": [
+   "iron"
+  ],
+  "parts": [
+   "key"
+  ]
+ },
+ "rug": {
+  "slots": [
+   "cloth",
+   "trim"
+  ],
+  "parts": [
+   "rug"
+  ]
+ },
+ "bench": {
+  "slots": [
+   "wood"
+  ],
+  "parts": [
+   "bench"
+  ]
+ },
+ "bust": {
+  "slots": [
+   "stone"
+  ],
+  "parts": [
+   "bust"
+  ]
+ },
+ "pine": {
+  "slots": [
+   "bark",
+   "foliage"
+  ],
+  "parts": [
+   "pine"
+  ]
+ },
+ "pine_small": {
+  "slots": [
+   "bark",
+   "foliage"
+  ],
+  "parts": [
+   "pine"
+  ]
+ },
+ "deadtree": {
+  "slots": [
+   "bark"
+  ],
+  "parts": [
+   "deadtree"
+  ]
+ },
+ "rock": {
+  "slots": [
+   "rock"
+  ],
+  "parts": [
+   "rock"
+  ]
+ },
+ "rock_big": {
+  "slots": [
+   "rock"
+  ],
+  "parts": [
+   "rock"
+  ]
+ },
+ "fence": {
+  "slots": [
+   "iron"
+  ],
+  "parts": [
+   "fence"
+  ]
+ },
+ "carriage": {
+  "slots": [
+   "wood",
+   "leather",
+   "iron",
+   "flame",
+   "glass"
+  ],
+  "parts": [
+   "carriage"
+  ]
+ },
+ "signpost": {
+  "slots": [
+   "wood"
+  ],
+  "parts": [
+   "signpost"
+  ]
+ },
+ "inn_sign": {
+  "slots": [
+   "iron",
+   "wood",
+   "gold"
+  ],
+  "parts": [
+   "inn_sign"
+  ]
+ },
+ "moon": {
+  "slots": [
+   "glow"
+  ],
+  "parts": [
+   "moon"
+  ]
+ },
+ "wolf_big": {
+  "slots": [
+   "fur",
+   "dark",
+   "eyes"
+  ],
+  "parts": [
+   "body",
+   "head",
+   "leg_fl",
+   "leg_fr",
+   "leg_bl",
+   "leg_br"
+  ]
+ },
+ "human_dracula": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "cloak",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_mina": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_lucy": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_vanhelsing": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_seward": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_renfield": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_quincey": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_arthur": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_bride": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_peasant_m": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_peasant_f": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "eyes",
+   "mouth",
+   "hair",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ },
+ "human_coachman": {
+  "slots": [
+   "top",
+   "skin",
+   "accent",
+   "cloak",
+   "eyes",
+   "mouth",
+   "hair",
+   "bottom",
+   "shoes"
+  ],
+  "parts": [
+   "torso",
+   "head",
+   "arm_l",
+   "arm_r",
+   "leg_l",
+   "leg_r"
+  ]
+ }
+}

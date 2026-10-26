@@ -1,0 +1,61 @@
+{
+ "on_enter": [
+  {
+   "do": [
+    {
+     "journal": "a5_j_vault"
+    },
+    {
+     "say": "The air tastes of copper. Somewhere below, water drips, slowly, like a clock that has forgotten what it counts."
+    }
+   ]
+  }
+ ],
+ "props": [
+  {
+   "at": "room:1",
+   "id": "vlt_box",
+   "asset": "coffin",
+   "variant": "ebony",
+   "name": "Split earth-box",
+   "rot": 90,
+   "radius": 0.3,
+   "interact": {
+    "look": "An earth-box, split by frost or by a hand. Rats have nested in the spilt earth. It smells of the grave, and of something sweeter."
+   }
+  },
+  {
+   "at": "room:2",
+   "id": "vlt_rope",
+   "asset": "rope_coil",
+   "variant": "default",
+   "name": "Coil of old rope",
+   "radius": 0.3,
+   "interact": {
+    "look": "A coil of tarred rope, stiff but sound. The carters used it to lower boxes into the well-shaft.",
+    "take": "rope",
+    "take_text": "Sound rope, tarred and stiff. Whatever it was used to lower, it will serve to lower me."
+   }
+  },
+  {
+   "at": "exit",
+   "dz": -1.2,
+   "id": "vlt_well",
+   "asset": "column_short",
+   "variant": "stone_dark",
+   "name": "Brick-lined well shaft",
+   "radius": 0.3,
+   "interact": {
+    "look": "A brick-lined shaft, mouth rimmed with old mortar.",
+    "do": [
+     {
+      "say": "I drop a pebble. I count to nine before I hear it strike, and it does not splash. This was a well once. Now it is only a way for the cold to come up."
+     },
+     {
+      "xp": 25
+     }
+    ]
+   }
+  }
+ ]
+}

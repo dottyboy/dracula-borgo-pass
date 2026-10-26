@@ -1,0 +1,153 @@
+{
+ "act": 1,
+ "arc": "",
+ "start": {
+  "location": "golden_krone",
+  "protagonist": "harker",
+  "party": [
+   "harker"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "a2_whitby_lodging",
+ "plan": [
+  {
+   "kind": "talk",
+   "loc": "golden_krone",
+   "eid": "hostess",
+   "dialogue": "hostess",
+   "path": [
+    "What evil things?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "fire"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "chair1"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "chair2"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "barrel1"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "bottle1"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "lamp_i"
+  },
+  {
+   "kind": "primary",
+   "loc": "golden_krone",
+   "eid": "knife_i"
+  },
+  {
+   "kind": "talk",
+   "loc": "borgo_pass",
+   "eid": "driver",
+   "dialogue": "driver",
+   "path": [
+    "[Board the cal\u00e8che]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "castle_courtyard",
+   "eid": "gate_door"
+  },
+  {
+   "kind": "primary",
+   "loc": "castle_courtyard",
+   "eid": "lantern_c"
+  },
+  {
+   "kind": "talk",
+   "loc": "great_hall",
+   "eid": "count",
+   "dialogue": "count",
+   "path": [
+    "I am pleased to be here. I have the papers for Carfax."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "great_hall",
+   "eid": "throne_h"
+  },
+  {
+   "kind": "primary",
+   "loc": "great_hall",
+   "eid": "wine_h"
+  },
+  {
+   "kind": "primary",
+   "loc": "great_hall",
+   "eid": "garlic_h"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_room",
+   "eid": "mirror_r"
+  },
+  {
+   "kind": "primary",
+   "loc": "harker_room",
+   "eid": "diary_r"
+  },
+  {
+   "kind": "primary",
+   "loc": "library",
+   "eid": "shelf2"
+  },
+  {
+   "kind": "enter",
+   "loc": "old_wing",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "old_wing",
+   "eid": "garlic_o"
+  },
+  {
+   "kind": "use",
+   "loc": "harker_room",
+   "eid": "chest_r",
+   "item": "key"
+  },
+  {
+   "kind": "enter",
+   "loc": "chapel_crypt",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "chapel_crypt",
+   "eid": "coffin2"
+  },
+  {
+   "kind": "talk",
+   "loc": "chapel_crypt",
+   "eid": "goal",
+   "dialogue": "a1_vault_stairs",
+   "path": [
+    "[Descend with the Count's keys]"
+   ]
+  }
+ ]
+}

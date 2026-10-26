@@ -1,0 +1,339 @@
+{
+ "act": "dracula_voivode",
+ "arc": "dracula_voivode",
+ "start": {
+  "location": "dracula_voivode_hall",
+  "protagonist": "dracula",
+  "party": [
+   "dracula"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_hall",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_stanciu",
+   "dialogue": "dracula_voivode_stanciu_talk",
+   "path": [
+    "[Hold the council]",
+    "Close the gates. The army eats first, and the weak must bear it.",
+    "Tell me of the Order of the Dragon."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_barrel"
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_draft"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_chamber",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_chamber",
+   "eid": "dracula_voivode_chest",
+   "dialogue": "dracula_voivode_chest_lock",
+   "path": [
+    "1408.",
+    "[Take what is inside]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_chamber",
+   "eid": "dracula_voivode_ileana",
+   "dialogue": "dracula_voivode_ileana_talk",
+   "path": [
+    "I will come back.",
+    "What do you think of Radu?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_chamber",
+   "eid": "dracula_voivode_bed"
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_chamber",
+   "eid": "dracula_voivode_rack"
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_radu",
+   "dialogue": "dracula_voivode_radu_talk",
+   "path": [
+    "[Show the letter you found]",
+    "Take him to the cells. He will answer for treason."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_press",
+   "dialogue": "dracula_voivode_seal",
+   "path": [
+    "[Seal the draft order with my father's ring]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_hall",
+   "eid": "dracula_voivode_messenger",
+   "dialogue": "dracula_voivode_messenger_talk",
+   "path": [
+    "[Give him the sealed order]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_tower",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "dracula_voivode_tower",
+   "eid": "dracula_voivode_pyre_dry",
+   "item": "oil"
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_tower",
+   "eid": "dracula_voivode_torch_sconce"
+  },
+  {
+   "kind": "use",
+   "loc": "dracula_voivode_tower",
+   "eid": "dracula_voivode_pyre_wet",
+   "item": "torch"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_road",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_road",
+   "eid": "dracula_voivode_refugee",
+   "dialogue": "dracula_voivode_refugee_talk",
+   "path": [
+    "Take what you need from my pack."
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_road",
+   "eid": "dracula_voivode_prints"
+  },
+  {
+   "kind": "fight",
+   "loc": "dracula_voivode_road",
+   "eid": "dracula_voivode_wolves",
+   "enc": "dracula_voivode_wolves"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_camp",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_camp",
+   "eid": "dracula_voivode_prisoner",
+   "dialogue": "dracula_voivode_prisoner_talk",
+   "path": [
+    "[Threaten him with the boot and the iron]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_camp",
+   "eid": "dracula_voivode_mtable",
+   "dialogue": "dracula_voivode_map_lock",
+   "path": [
+    "The Reed Ford.",
+    "[Walk to the ford]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_ford",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_ford",
+   "eid": "dracula_voivode_standard"
+  },
+  {
+   "kind": "fight",
+   "loc": "dracula_voivode_ford",
+   "eid": "dracula_voivode_raider1",
+   "enc": "dracula_voivode_raid"
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_camp",
+   "eid": "dracula_voivode_hermit",
+   "dialogue": "dracula_voivode_hermit_talk",
+   "path": [
+    "What do you want of me?",
+    "[Go with him to the school]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_lake",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_lake",
+   "eid": "dracula_voivode_bones"
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_lake",
+   "eid": "dracula_voivode_ferryman",
+   "dialogue": "dracula_voivode_ferryman_talk",
+   "path": [
+    "[Pay the silver coin]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_school",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_school",
+   "eid": "dracula_voivode_vasile",
+   "dialogue": "dracula_voivode_vasile_talk",
+   "path": [
+    "[Lay a hand on the dagger and ask for the key]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_school",
+   "eid": "dracula_voivode_altar",
+   "dialogue": "dracula_voivode_altar_lock",
+   "path": [
+    "[Water first]",
+    "[Silver]",
+    "[Flame]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_school",
+   "eid": "dracula_voivode_master",
+   "dialogue": "dracula_voivode_master_talk",
+   "path": []
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_school",
+   "eid": "dracula_voivode_lectern"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_library",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_library",
+   "eid": "dracula_voivode_roll",
+   "dialogue": "dracula_voivode_roll_talk",
+   "path": [
+    "[Dip the quill and write Vasile Cernat in the last place]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "dracula_voivode_library",
+   "eid": "dracula_voivode_clavis"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_tithe",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_tithe",
+   "eid": "dracula_voivode_master2",
+   "dialogue": "dracula_voivode_tithe_talk",
+   "path": [
+    "[Listen]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_tomb",
+   "index": 0
+  },
+  {
+   "kind": "use",
+   "loc": "dracula_voivode_tomb",
+   "eid": "dracula_voivode_coffin",
+   "item": "dracula_voivode_warhammer"
+  },
+  {
+   "kind": "enter",
+   "loc": "dracula_voivode_chapel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_chapel",
+   "eid": "dracula_voivode_grave",
+   "dialogue": "dracula_voivode_grave_talk",
+   "path": [
+    "[Stay a moment]",
+    "[Take the ring]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_chapel",
+   "eid": "dracula_voivode_priest",
+   "dialogue": "dracula_voivode_priest_talk",
+   "path": [
+    "What of Ileana?",
+    "What of the Turks?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "dracula_voivode_chapel",
+   "eid": "dracula_voivode_altar",
+   "dialogue": "dracula_voivode_legend",
+   "path": [
+    "[Kneel by Ileana's tomb and wait for the sun, whatever it may do]",
+    "[Remember him]",
+    "[Remember it]",
+    "[Remember the vigil]"
+   ]
+  }
+ ]
+}

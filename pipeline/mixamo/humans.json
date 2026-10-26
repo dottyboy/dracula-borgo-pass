@@ -1,0 +1,108 @@
+{
+ "human_harker": {
+  "height": 1.78,
+  "sex": "m",
+  "hair": "short",
+  "garment": "coat"
+ },
+ "human_dracula": {
+  "height": 1.9,
+  "sex": "m",
+  "hair": "slick",
+  "beard": "moustache",
+  "garment": "coat",
+  "cloak": true,
+  "fangs": true
+ },
+ "human_mina": {
+  "height": 1.65,
+  "sex": "f",
+  "hair": "bun",
+  "garment": "dress"
+ },
+ "human_lucy": {
+  "height": 1.68,
+  "sex": "f",
+  "hair": "long",
+  "garment": "gown"
+ },
+ "human_vanhelsing": {
+  "height": 1.7,
+  "build": 1.05,
+  "sex": "m",
+  "hair": "short",
+  "beard": "pointed",
+  "garment": "coat"
+ },
+ "human_seward": {
+  "height": 1.8,
+  "sex": "m",
+  "hair": "short",
+  "beard": "moustache",
+  "garment": "coat"
+ },
+ "human_renfield": {
+  "height": 1.7,
+  "build": 0.85,
+  "sex": "m",
+  "hair": "short",
+  "garment": "frock"
+ },
+ "human_quincey": {
+  "height": 1.85,
+  "build": 1.1,
+  "sex": "m",
+  "hair": "short",
+  "beard": "pointed",
+  "garment": "coat",
+  "hat": "top"
+ },
+ "human_arthur": {
+  "height": 1.82,
+  "build": 1.05,
+  "sex": "m",
+  "hair": "short",
+  "garment": "coat"
+ },
+ "human_bride": {
+  "height": 1.72,
+  "build": 0.95,
+  "sex": "f",
+  "hair": "long",
+  "garment": "gown",
+  "fangs": true
+ },
+ "human_peasant_m": {
+  "height": 1.68,
+  "sex": "m",
+  "hair": "short",
+  "beard": "full",
+  "garment": "frock",
+  "hat": "fur"
+ },
+ "human_peasant_f": {
+  "height": 1.58,
+  "sex": "f",
+  "hair": "short",
+  "garment": "dress",
+  "hat": "shawl"
+ },
+ "human_captain": {
+  "height": 1.78,
+  "build": 1.1,
+  "sex": "m",
+  "hair": "short",
+  "beard": "full",
+  "garment": "coat",
+  "hat": "fur"
+ },
+ "human_coachman": {
+  "height": 1.85,
+  "build": 1.1,
+  "sex": "m",
+  "hair": "short",
+  "garment": "coat",
+  "cloak": true,
+  "hat": "top"
+ }
+}

@@ -1,0 +1,288 @@
+{
+ "act": "lucy_summer",
+ "arc": "lucy_summer",
+ "start": {
+  "location": "lucy_summer_room",
+  "protagonist": "lucy",
+  "party": [
+   "lucy"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_room",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_room",
+   "eid": "lucy_summer_hannah",
+   "dialogue": "lucy_summer_hannah_talk",
+   "path": [
+    "How do you arrange a vase properly, Hannah?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_room",
+   "eid": "lucy_summer_arthur_letter"
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_room",
+   "eid": "lucy_summer_ink"
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_parlour",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_card"
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_garden",
+   "index": 0
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_arbour"
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_lilies"
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_sundial"
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_seward_note"
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_stand",
+   "dialogue": "lucy_summer_arrange_talk",
+   "path": [
+    "[Arrange the flowers]",
+    "The lilies.",
+    "The wild rose.",
+    "The forget-me-nots, in a fringe at the front."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_mamma",
+   "dialogue": "lucy_summer_mamma_talk",
+   "path": [
+    "[Give her the bouquet]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_escritoire",
+   "item": "lucy_summer_escritoire_key"
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_seward",
+   "dialogue": "lucy_summer_seward_talk",
+   "path": [
+    "[Answer him]",
+    "Dr. Seward, I like you better than almost anyone, and I cannot marry you. I will not keep you hoping.",
+    "Always. You will be Jack to me as long as you like."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_quincey",
+   "dialogue": "lucy_summer_quincey_talk",
+   "path": [
+    "[Answer him]",
+    "No, Mr. Morris. I am sorry. I am proud you asked, and I should like us to be friends.",
+    "I shall whistle badly, Quincey, but I shall whistle."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_garden",
+   "eid": "lucy_summer_arthur",
+   "dialogue": "lucy_summer_arthur_talk",
+   "path": [
+    "[Answer him]",
+    "Yes, Arthur. Plainly, and you shall not have to ask a second time.",
+    "[Hold out my hand]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_writing",
+   "dialogue": "lucy_summer_letter_talk",
+   "path": [
+    "[Write to Mina]",
+    "The window: 'The roses are out, the lawn is cut, and the whole house smells of tea.'",
+    "The people: 'Mamma is well, the doctor has been twice, and Hannah has opinions about everything.'",
+    "The secret: Jack, Quincey, Arthur, and why can't one girl marry all three?",
+    "'My love, always, and come to Whitby if you can. I shall keep the other bed made up. - Lucy.'"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_parlour",
+   "eid": "lucy_summer_mamma",
+   "dialogue": "lucy_summer_mamma_talk",
+   "path": [
+    "Mamma, may we speak of Whitby?"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_lodging",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_lodging",
+   "eid": "lucy_summer_mamma",
+   "dialogue": "lucy_summer_mamma_whitby_talk",
+   "path": [
+    "I have lost Papa's letter?"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_lodging",
+   "eid": "lucy_summer_trunk"
+  },
+  {
+   "kind": "primary",
+   "loc": "lucy_summer_lodging",
+   "eid": "lucy_summer_slippers"
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_cliff",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_cliff",
+   "eid": "lucy_summer_mina",
+   "dialogue": "lucy_summer_mina_talk",
+   "path": [
+    "Mina, did I walk in my sleep last night?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_cliff",
+   "eid": "lucy_summer_swales",
+   "dialogue": "lucy_summer_swales_talk",
+   "path": [
+    "How many steps are there down to the town, Mr. Swales?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_lodging",
+   "eid": "lucy_summer_bed",
+   "dialogue": "lucy_summer_bed_talk",
+   "path": [
+    "[Go to sleep]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_cliff_night",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_cliff_night",
+   "eid": "lucy_summer_figure",
+   "dialogue": "lucy_summer_figure_talk",
+   "path": [
+    "[Hold Father's pressed-flower letter and say his name]",
+    "[Press Mina's letter to your chest and say her name]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_cliff_night",
+   "eid": "lucy_summer_figure",
+   "dialogue": "lucy_summer_figure_talk",
+   "path": [
+    "[Hold up Arthur's ring and say his name]",
+    "[Turn away. Walk.]"
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_steps",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_steps",
+   "eid": "lucy_summer_count",
+   "dialogue": "lucy_summer_count_talk",
+   "path": [
+    "One hundred and ninety-nine."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_steps",
+   "eid": "lucy_summer_mina",
+   "dialogue": "lucy_summer_mina_rescue_talk",
+   "path": [
+    "Take me home, Mina."
+   ]
+  },
+  {
+   "kind": "enter",
+   "loc": "lucy_summer_last_room",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_last_room",
+   "eid": "lucy_summer_desk",
+   "dialogue": "lucy_summer_last_desk_talk",
+   "path": [
+    "[Write to Arthur]",
+    "'Remember me in the garden, with the rose in my hair, and be the man I knew.'",
+    "[Write to Mina]",
+    "'Watch over Arthur for me; he does not know how to be alone.'"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "lucy_summer_last_room",
+   "eid": "lucy_summer_desk",
+   "dialogue": "lucy_summer_last_desk_talk",
+   "path": [
+    "[Decide where Papa's letter goes]",
+    "[Leave it for Arthur, with the ring]"
+   ]
+  }
+ ]
+}

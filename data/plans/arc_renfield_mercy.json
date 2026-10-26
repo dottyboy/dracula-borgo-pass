@@ -1,0 +1,204 @@
+{
+ "act": "renfield_mercy",
+ "arc": "renfield_mercy",
+ "start": {
+  "location": "renfield_mercy_cell",
+  "protagonist": "renfield",
+  "party": [
+   "renfield"
+  ],
+  "items": {},
+  "flags": []
+ },
+ "exit_to": "ARC_END",
+ "plan": [
+  {
+   "kind": "enter",
+   "loc": "renfield_mercy_cell",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_hodge_c",
+   "dialogue": "renfield_mercy_hodge_morning",
+   "path": [
+    "Let me out! Every hour you keep me here, a thousand lives go by and none of them are mine!"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_tray"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_board",
+   "item": "renfield_mercy_spoon"
+  },
+  {
+   "kind": "primary",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_jar"
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_ward",
+   "eid": "renfield_mercy_cupboard",
+   "dialogue": "renfield_mercy_cupboard",
+   "path": [
+    "[Dial 7-3-9]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_ward",
+   "eid": "renfield_mercy_hodge_w",
+   "dialogue": "renfield_mercy_hodge_day",
+   "path": [
+    "Where is the garden key kept?",
+    "Who is on the night round, Mr. Hodge?"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_ward",
+   "eid": "renfield_mercy_board",
+   "dialogue": "renfield_mercy_board",
+   "path": [
+    "[Copy the numbers into my head]"
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_ward",
+   "eid": "renfield_mercy_coat",
+   "item": "renfield_mercy_ledger"
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_study",
+   "eid": "renfield_mercy_seward",
+   "dialogue": "renfield_mercy_seward",
+   "path": [
+    "[Ask to be moved from this house]",
+    "[Offer the ledger of lives]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_study",
+   "eid": "renfield_mercy_desk",
+   "dialogue": "renfield_mercy_notes",
+   "path": [
+    "[Read on]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "renfield_mercy_study",
+   "eid": "renfield_mercy_shelf"
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_scullery",
+   "eid": "renfield_mercy_cook",
+   "dialogue": "renfield_mercy_cook",
+   "path": [
+    "...pie."
+   ]
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_scullery",
+   "eid": "renfield_mercy_web",
+   "item": "renfield_mercy_ledger"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_scullery",
+   "eid": "renfield_mercy_cat",
+   "item": "renfield_mercy_ledger"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_sill",
+   "item": "renfield_mercy_sugar"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_sill2",
+   "item": "renfield_mercy_jar"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_sill2",
+   "item": "renfield_mercy_ledger"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_scullery",
+   "eid": "renfield_mercy_web",
+   "item": "renfield_mercy_flies_jar"
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_cell",
+   "eid": "renfield_mercy_bed",
+   "dialogue": "renfield_mercy_cell_bed",
+   "path": [
+    "[Lie down and wait for night]"
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_ward",
+   "eid": "renfield_mercy_hodge_n",
+   "dialogue": "renfield_mercy_hodge_night",
+   "path": [
+    "A drop of something, Mr. Hodge, for your nerves. I could not drink it myself. You have been so kind."
+   ]
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_garden",
+   "eid": "renfield_mercy_butt",
+   "dialogue": "renfield_mercy_hide",
+   "path": [
+    "[Wait until he has stopped under the far lamp and bent over his pipe]"
+   ]
+  },
+  {
+   "kind": "primary",
+   "loc": "renfield_mercy_garden",
+   "eid": "renfield_mercy_sparrow"
+  },
+  {
+   "kind": "use",
+   "loc": "renfield_mercy_garden",
+   "eid": "renfield_mercy_shape",
+   "item": "renfield_mercy_ledger"
+  },
+  {
+   "kind": "enter",
+   "loc": "renfield_mercy_chapel",
+   "index": 0
+  },
+  {
+   "kind": "talk",
+   "loc": "renfield_mercy_chapel",
+   "eid": "renfield_mercy_altar",
+   "dialogue": "renfield_mercy_voice",
+   "path": [
+    "[Write something for Dr. Seward on the altar cloth]",
+    "[Offer the sparrow: 'Yes, Master. A life, as you taught me.']",
+    "[Close my hand around it]",
+    "[Go out into the night]"
+   ]
+  }
+ ]
+}

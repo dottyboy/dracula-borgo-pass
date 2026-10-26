@@ -1,0 +1,601 @@
+{
+ "chapter": 3,
+ "narrator": "Jonathan Harker (journal, continued)",
+ "dates": "8 May (continuing) - 16 May",
+ "summary": "Harker panics on realising he is a prisoner, then resolves to keep his fears hidden and his eyes open. He watches the Count make his bed and lay the table, and so deduces there are no servants and that the Count himself drove the calèche. The Count talks proudly of the Szekely and Dracula bloodline and its wars. On 12 May he questions Harker about business law and shipping through multiple solicitors, then makes him write letters saying he will stay a month, and warns him never to sleep outside his own rooms. Harker reads the sealed letters' addresses (Billington in Whitby, Leutner in Varna, Coutts & Co., Klopstock & Billreuth). That night he sees the Count crawl head-down down the castle wall like a lizard. On 15 May Harker forces a sagging door in the south wing, finds the old ladies' rooms, and, ignoring the warning, falls asleep there. He is visited by three vampire women; the fair one is about to bite his throat when the Count appears in fury, hurls her back and claims Harker as his own, then gives them a moving bag containing a child.",
+ "scenes": [
+  {
+   "id": "c03_s01",
+   "title": "Realising he is a prisoner",
+   "location": "Castle stairs and corridors",
+   "time": "8 May, day",
+   "characters": [
+    "Jonathan Harker"
+   ],
+   "summary": "Harker rushes about trying every door, then calms and decides to keep his knowledge secret and watch.",
+   "mood": "panic then cold resolve",
+   "key_quote": "I behaved much as a rat does in a trap."
+  },
+  {
+   "id": "c03_s02",
+   "title": "The Count does the housework",
+   "location": "Harker's bedroom and dining room",
+   "time": "8 May, evening",
+   "characters": [
+    "Jonathan Harker",
+    "Count Dracula"
+   ],
+   "summary": "Through a hinge-chink Harker watches the Count make the bed and lay the table, proving there are no servants and that the Count was the coachman. He recalls the wards given at Bistritz.",
+   "mood": "dawning horror",
+   "key_quote": "it must have been the Count himself who was the driver of the coach that brought me here"
+  },
+  {
+   "id": "c03_s03",
+   "title": "The Count tells his family history",
+   "location": "Library/dining room",
+   "time": "8 May, midnight",
+   "characters": [
+    "Jonathan Harker",
+    "Count Dracula"
+   ],
+   "summary": "Excited, the Count speaks as if he fought at every battle, tracing the Szekelys back to Attila and the Dracula voivode who beat the Turks; he pulls his moustache and grips things as if to crush them.",
+   "mood": "proud, intense",
+   "key_quote": "What devil or what witch was ever so great as Attila, whose blood is in these veins?"
+  },
+  {
+   "id": "c03_s04",
+   "title": "Legal questions and the letters",
+   "location": "Library",
+   "time": "11-12 May, evening",
+   "characters": [
+    "Jonathan Harker",
+    "Count Dracula"
+   ],
+   "summary": "The Count quizzes Harker on using several solicitors for banking and shipping to Newcastle, Durham, Harwich and Dover, then insists he stay a month and write reassuring letters on thin foreign paper.",
+   "mood": "controlling courtesy",
+   "key_quote": "write now, my young friend"
+  },
+  {
+   "id": "c03_s05",
+   "title": "Spying on the letters; the warning",
+   "location": "Library",
+   "time": "12 May, night",
+   "characters": [
+    "Jonathan Harker",
+    "Count Dracula"
+   ],
+   "summary": "Alone, Harker reads the addresses of four letters. The Count returns, stamps them, and warns him never to sleep in any other part of the castle.",
+   "mood": "menacing",
+   "key_quote": "there are bad dreams for those who sleep unwisely. Be warned!"
+  },
+  {
+   "id": "c03_s06",
+   "title": "The Count crawls down the wall",
+   "location": "South stone stair window; castle wall",
+   "time": "night, moonlit",
+   "characters": [
+    "Jonathan Harker",
+    "Count Dracula"
+   ],
+   "summary": "From a tall mullioned window Harker sees the Count emerge from his own window and crawl face-down down the sheer wall, cloak spread like wings, like a lizard.",
+   "mood": "horror",
+   "key_quote": "begin to crawl down the castle wall over that dreadful abyss, face down with his cloak spreading out around him like great wings"
+  },
+  {
+   "id": "c03_s07",
+   "title": "Exploring the castle; the great door",
+   "location": "Hall, stairs, passages, great door",
+   "time": "15 May, night",
+   "characters": [
+    "Jonathan Harker"
+   ],
+   "summary": "Harker sees the Count go out again, tests all doors (new locks), finds the hall door's bolts and chains easy but the door locked with key gone, and some small rooms of moth-eaten furniture.",
+   "mood": "tense search",
+   "key_quote": "the door was locked, and the key was gone!"
+  },
+  {
+   "id": "c03_s08",
+   "title": "The sunken door and the ladies' rooms",
+   "location": "South wing, one storey lower",
+   "time": "15 May, moonlit night",
+   "characters": [
+    "Jonathan Harker"
+   ],
+   "summary": "A seemingly locked door at the top of the stairs is only jammed, its fallen hinges resting on the floor; Harker forces it and enters a suite of south and west rooms with diamond-paned windows and comfortable old furniture.",
+   "mood": "quiet, melancholy",
+   "key_quote": "This was evidently the portion of the castle occupied by the ladies in bygone days"
+  },
+  {
+   "id": "c03_s09",
+   "title": "The three women",
+   "location": "The ladies' room, on a great couch",
+   "time": "night of 15-16 May",
+   "characters": [
+    "Jonathan Harker",
+    "Three vampire women",
+    "Count Dracula"
+   ],
+   "summary": "Harker sleeps against the warning. Three women with no shadows appear; the fair one kneels to bite his throat. The Count seizes her neck, flings her back, claims Harker and gives them a living bag. Harker faints.",
+   "mood": "seductive horror",
+   "key_quote": "This man belongs to me!"
+  }
+ ],
+ "locations": [
+  {
+   "name": "Castle stairs and corridors",
+   "kind": "indoor",
+   "description": "Stone stairs and passages with many locked doors; a stairway leading up to a south-looking window.",
+   "features": [
+    "stone stairs",
+    "locked doors with new locks",
+    "window with view south"
+   ],
+   "atmosphere": "oppressive, echoing",
+   "lighting_time": "lamp-lit at night",
+   "quote": "I rushed up and down the stairs, trying every door and peering out of every window I could find"
+  },
+  {
+   "name": "South-looking stairway window",
+   "kind": "indoor",
+   "description": "Tall, deep, stone-mullioned window, weather-worn, no casement; below and to the left is the Count's window; the castle wall falls to an abyss.",
+   "features": [
+    "stone mullions",
+    "no glass case",
+    "abyss below"
+   ],
+   "atmosphere": "vertiginous, moonlit",
+   "lighting_time": "soft yellow moonlight",
+   "quote": "The window at which I stood was tall and deep, stone-mullioned, and though weatherworn, was still complete"
+  },
+  {
+   "name": "Hall at the great door",
+   "kind": "indoor",
+   "description": "Entry hall; bolts easy to draw, chains unhooked, door locked with no key; small dusty rooms nearby with moth-eaten furniture.",
+   "features": [
+    "bolts",
+    "chains",
+    "locked door",
+    "small side rooms"
+   ],
+   "atmosphere": "dusty",
+   "lighting_time": "lamp",
+   "quote": "I found I could pull back the bolts easily enough and unhook the great chains; but the door was locked"
+  },
+  {
+   "name": "Sagging door at the top of the stairway",
+   "kind": "indoor",
+   "description": "A heavy door whose fallen hinges leave it resting on the floor; opened by forcing.",
+   "features": [
+    "dropped hinges",
+    "heavy door scraping the floor"
+   ],
+   "atmosphere": "hidden way",
+   "lighting_time": "",
+   "quote": "the hinges had fallen somewhat, and the heavy door rested on the floor"
+  },
+  {
+   "name": "The ladies' rooms (south wing)",
+   "kind": "indoor",
+   "description": "Suite one storey down and further right; end room windows face west and south over precipices; diamond panes, curtainless windows, dust, moth; comfortable furniture, a little oak table, a great couch.",
+   "features": [
+    "diamond-paned windows",
+    "little oak table",
+    "great couch",
+    "thick dust with Harker's footprints",
+    "precipice on three sides",
+    "view west to jagged mountains with mountain ash and thorn"
+   ],
+   "atmosphere": "quiet but dreadfully lonely",
+   "lighting_time": "brilliant yellow moonlight",
+   "quote": "the yellow moonlight, flooding in through the diamond panes, enabled one to see even colours"
+  },
+  {
+   "name": "Castle rock and precipice",
+   "kind": "outdoor",
+   "description": "Castle built on the corner of a great rock, impregnable on three sides, with large windows placed where sling, bow or culverin cannot reach.",
+   "features": [
+    "sheer precipice on three sides",
+    "great valley to the west",
+    "mountain fastnesses"
+   ],
+   "atmosphere": "impregnable",
+   "lighting_time": "moonlight",
+   "quote": "The castle was built on the corner of a great rock, so that on three sides it was quite impregnable"
+  }
+ ],
+ "characters": [
+  {
+   "name": "Count Dracula",
+   "role": "host and captor",
+   "appearance": "pulls his great white moustache; hands that grasp things as if to crush; in fury his face is deathly pale with lines like drawn wires, eyebrows like a heaving bar of white-hot metal, eyes lurid red",
+   "clothing": "cloak that spreads like wings when crawling",
+   "personality": "proud of his bloodline, devious, jealous of Harker",
+   "speech_style": "uses 'we' like a king; courteous threats",
+   "notable_lines": [
+    "How dare you touch him, any of you? ... This man belongs to me!",
+    "Yes, I too can love",
+    "Be warned!"
+   ],
+   "abilities": [
+    "climbs head-down down sheer wall like a lizard",
+    "commands the women with a gesture",
+    "immense strength"
+   ]
+  },
+  {
+   "name": "Three vampire women (the weird sisters)",
+   "role": "the Count's brides",
+   "appearance": "three young women who cast no shadow in moonlight; two dark with high aquiline noses and great piercing eyes that seem red; one fair with wavy golden hair and pale sapphire-blue eyes (Harker half-recognises her); brilliant white teeth, ruby voluptuous lips",
+   "clothing": "dress and manner of ladies",
+   "personality": "seductive, hungry, mocking",
+   "speech_style": "silvery laughter 'like water-glasses played by a cunning hand'",
+   "notable_lines": [
+    "Go on! You are first, and we shall follow; yours is the right to begin.",
+    "He is young and strong; there are kisses for us all.",
+    "You yourself never loved; you never love!",
+    "Are we to have nothing to-night?"
+   ],
+   "abilities": [
+    "cast no shadow",
+    "fade into moonbeams and pass out the window",
+    "hypnotic allure"
+   ]
+  },
+  {
+   "name": "Jonathan Harker",
+   "role": "prisoner and narrator",
+   "appearance": "",
+   "clothing": "",
+   "personality": "cautious, secretive, drawn to temptation",
+   "speech_style": "",
+   "notable_lines": [],
+   "abilities": [
+    "shorthand letters to Mina"
+   ]
+  }
+ ],
+ "objects": [
+  {
+   "name": "Crucifix over the bed head",
+   "category": "ward",
+   "description": "Placed over the head of Harker's bed.",
+   "function_in_story": "Gives comfort and freer rest.",
+   "location_or_owner": "Harker's bedroom",
+   "quote": "I have placed the crucifix over the head of my bed"
+  },
+  {
+   "name": "Writing paper and envelopes",
+   "category": "document",
+   "description": "Three sheets of thinnest foreign post and three envelopes given by the Count.",
+   "function_in_story": "Controlled correspondence.",
+   "location_or_owner": "Dracula to Harker",
+   "quote": "three sheets of note-paper and three envelopes. They were all of the thinnest foreign post"
+  },
+  {
+   "name": "The four letters",
+   "category": "document",
+   "description": "Addressed to Samuel F. Billington, No. 7, The Crescent, Whitby; Herr Leutner, Varna; Coutts & Co., London; Herren Klopstock & Billreuth, bankers, Buda-Pesth. Second and fourth unsealed.",
+   "function_in_story": "Reveals Dracula's logistics network.",
+   "location_or_owner": "Library table",
+   "quote": "directed to Samuel F. Billington, No. 7, The Crescent, Whitby, another to Herr Leutner, Varna"
+  },
+  {
+   "name": "Harker's diary in shorthand",
+   "category": "document",
+   "description": "His journal and pen kept in a pocket.",
+   "function_in_story": "Secret record.",
+   "location_or_owner": "Harker's pocket",
+   "quote": "I had fortunately replaced the book and pen in my pocket"
+  },
+  {
+   "name": "Lamp",
+   "category": "tool",
+   "description": "Lamp Harker takes to try all the doors; pale against moonlight.",
+   "function_in_story": "Exploration.",
+   "location_or_owner": "Harker",
+   "quote": "taking a lamp, tried all the doors"
+  },
+  {
+   "name": "Hall door key (missing)",
+   "category": "key",
+   "description": "Key to the great hall door, taken away; Harker suspects it is in the Count's room.",
+   "function_in_story": "Key escape item.",
+   "location_or_owner": "Probably the Count's room",
+   "quote": "That key must be in the Count’s room"
+  },
+  {
+   "name": "Small oak table",
+   "category": "furniture",
+   "description": "Little oak table where a lady might have written love-letters.",
+   "function_in_story": "Harker writes his diary.",
+   "location_or_owner": "Ladies' room",
+   "quote": "sitting at a little oak table where in old times possibly some fair lady sat to pen"
+  },
+  {
+   "name": "Great couch",
+   "category": "furniture",
+   "description": "Heavy couch Harker drags near the corner to look east and south.",
+   "function_in_story": "Where he sleeps against warning.",
+   "location_or_owner": "Ladies' room",
+   "quote": "I drew a great couch out of its place near the corner"
+  },
+  {
+   "name": "The bag",
+   "category": "container",
+   "description": "A bag thrown on the floor that moves with a living thing inside; a child's wail is heard when opened.",
+   "function_in_story": "Feeding the women with a child.",
+   "location_or_owner": "Dracula, then the women",
+   "quote": "the bag which he had thrown upon the floor, and which moved as though there were some living thing within it"
+  },
+  {
+   "name": "Garlic, wild rose, mountain ash",
+   "category": "ward",
+   "description": "Named as items the peasants gave Harker.",
+   "function_in_story": "Folk wards.",
+   "location_or_owner": "Harker",
+   "quote": "What meant the giving of the crucifix, of the garlic, of the wild rose, of the mountain ash?"
+  }
+ ],
+ "creatures": [
+  {
+   "name": "Three vampire women",
+   "description": "Beautiful women with no shadow, red-seeming eyes and pearl-white teeth; they lick lips and hover over the victim.",
+   "behaviour": "Approach a sleeper, argue over who goes first, prefer a throat bite; obey the Count's authority; take a child in a bag.",
+   "weaknesses": [
+    "defer to the Count's command"
+   ],
+   "quote": "though the moonlight was behind them, they threw no shadow on the floor"
+  },
+  {
+   "name": "Count Dracula as wall-crawler",
+   "description": "Crawls head-down down the sheer castle wall, fingers and toes gripping eroded stones.",
+   "behaviour": "Leaves the castle at night by his window, vanishes into a lower hole.",
+   "weaknesses": [],
+   "quote": "just as a lizard moves along a wall"
+  },
+  {
+   "name": "Child in the bag",
+   "description": "A smothered child heard wailing in the bag.",
+   "behaviour": "",
+   "weaknesses": [],
+   "quote": "a gasp and a low wail, as of a half-smothered child"
+  }
+ ],
+ "vampire_lore": [
+  {
+   "rule": "No shadow",
+   "kind": "detection",
+   "detail": "The three women cast no shadow in bright moonlight.",
+   "quote": "they threw no shadow on the floor"
+  },
+  {
+   "rule": "Bite at the throat; sweet breath tinged with blood",
+   "kind": "power",
+   "detail": "The fair woman's breath is honey-sweet with a bitter blood smell.",
+   "quote": "a bitter offensiveness, as one smells in blood"
+  },
+  {
+   "rule": "Seductive trance of the victim",
+   "kind": "power",
+   "detail": "Harker feels desire and awaits the kiss.",
+   "quote": "a wicked, burning desire that they would kiss me"
+  },
+  {
+   "rule": "Dematerialise into moonlight",
+   "kind": "transformation",
+   "detail": "They fade into the moonbeams and pass through the window.",
+   "quote": "They simply seemed to fade into the rays of the moonlight"
+  },
+  {
+   "rule": "Wall-crawling like a lizard",
+   "kind": "power",
+   "detail": "The Count descends sheer walls head-first.",
+   "quote": "just as a lizard moves along a wall"
+  },
+  {
+   "rule": "Sleeping outside the Count's rooms is dangerous",
+   "kind": "limitation",
+   "detail": "The Count warns Harker not to sleep elsewhere or there will be bad dreams (washing-hands gesture).",
+   "quote": "you will not by any chance go to sleep in any other part of the castle"
+  },
+  {
+   "rule": "Crucifix gives safety",
+   "kind": "weakness",
+   "detail": "Harker feels comfort and freer rest with it over his bed.",
+   "quote": "it is a comfort and a strength to me whenever I touch it"
+  },
+  {
+   "rule": "The Count rules the others",
+   "kind": "power",
+   "detail": "His gesture drives the women back as it did the wolves.",
+   "quote": "it was the same imperious gesture that I had seen used to the wolves"
+  },
+  {
+   "rule": "Vampires feed on infants",
+   "kind": "power",
+   "detail": "The women are given a bag with a living child.",
+   "quote": "Are we to have nothing to-night?"
+  },
+  {
+   "rule": "The Count's eyes glow red in anger",
+   "kind": "detection",
+   "detail": "Lurid hell-fire light behind them.",
+   "quote": "The red light in them was lurid, as if the flames of hell-fire blazed behind them."
+  },
+  {
+   "rule": "Active at night (nocturnal existence)",
+   "kind": "limitation",
+   "detail": "The Count's work is at night; Harker's own routine is being destroyed.",
+   "quote": "this nocturnal existence"
+  }
+ ],
+ "puzzles": [
+  {
+   "name": "Hinge-sagging door",
+   "setup": "A door at the top of the stairway seems locked.",
+   "obstacle": "It resists pressure.",
+   "book_solution": "Harker recognises the fallen hinges and forces it by repeated effort.",
+   "items_used": [],
+   "game_idea": "Physics puzzle: lift or wedge a sagging door to move it past its dropped hinges.",
+   "quote": "it was not really locked, but that the resistance came from the fact that the hinges had fallen somewhat"
+  },
+  {
+   "name": "Hall door with key missing",
+   "setup": "Bolts and chains easy but door locked.",
+   "obstacle": "Missing key.",
+   "book_solution": "Not solved; Harker infers the key is in the Count's room.",
+   "items_used": [
+    "lamp"
+   ],
+   "game_idea": "Multi-chapter key quest.",
+   "quote": "the door was locked, and the key was gone!"
+  },
+  {
+   "name": "Reading letters undetected",
+   "setup": "Count's letters left face down.",
+   "obstacle": "Count may return.",
+   "book_solution": "Read addresses and replace them as found when the door-handle moves.",
+   "items_used": [
+    "letters"
+   ],
+   "game_idea": "Stealth puzzle with a timer: read as many addresses as possible and restore state before the door opens.",
+   "quote": "I had just time to replace the letters as they had been"
+  },
+  {
+   "name": "Hidden writing",
+   "setup": "Count will read the letters.",
+   "obstacle": "Harker needs to warn people secretly.",
+   "book_solution": "Writes formal notes openly and uses shorthand for Mina.",
+   "items_used": [
+    "shorthand",
+    "thin foreign paper"
+   ],
+   "game_idea": "Cipher puzzle: communicate only via a code the villain cannot read.",
+   "quote": "to her I could write in shorthand, which would puzzle the Count"
+  },
+  {
+   "name": "Observing the wall-crawl",
+   "setup": "Watching the Count from the stair window.",
+   "obstacle": "Angle of sight; he vanishes into a hole.",
+   "book_solution": "Harker watches from behind the stone mullion, then tries leaning out.",
+   "items_used": [],
+   "game_idea": "Stealth observation: hide behind stonework to track the Count's route.",
+   "quote": "I drew back behind the stonework, and looked carefully out."
+  }
+ ],
+ "combat": [
+  {
+   "name": "Three women vs sleeping Harker",
+   "participants": [
+    "Three vampire women",
+    "Count Dracula",
+    "Jonathan Harker"
+   ],
+   "enemy_types": [
+    "vampire bride",
+    "vampire lord"
+   ],
+   "weapons_used": [],
+   "tactics": "Harker is passive/entranced; the Count intervenes by force.",
+   "outcome": "Harker is saved by the Count for his own purposes and faints.",
+   "game_idea": "Resist-the-charm scenario: each turn a willpower check against enthrallment; the Count appears as a scripted deus ex machina or player must use the crucifix.",
+   "quote": "I closed my eyes in a languorous ecstasy and waited"
+  }
+ ],
+ "crafting": [],
+ "dialogue_samples": [
+  {
+   "speaker": "Dracula",
+   "line": "We Szekelys have a right to be proud",
+   "context": "Telling family history"
+  },
+  {
+   "speaker": "Dracula",
+   "line": "Then write now, my young friend. Write to our friend and to any other",
+   "context": "Demanding letters"
+  },
+  {
+   "speaker": "Dracula",
+   "line": "should you leave these rooms you will not by any chance go to sleep in any other part of the castle",
+   "context": "Warning"
+  },
+  {
+   "speaker": "Vampire woman",
+   "line": "Go on! You are first, and we shall follow",
+   "context": "Before attempting the bite"
+  },
+  {
+   "speaker": "Fair vampire woman",
+   "line": "You yourself never loved; you never love!",
+   "context": "Reply to Dracula"
+  },
+  {
+   "speaker": "Dracula",
+   "line": "I promise you that when I am done with him you shall kiss him at your will.",
+   "context": "Dismissing the women"
+  }
+ ],
+ "asset_candidates": [
+  {
+   "name": "Stone-mullioned south window",
+   "type": "architecture",
+   "visual_description": "Tall, deep window with stone mullions, no glass, looking over moonlit abyss",
+   "priority": 1
+  },
+  {
+   "name": "Ladies' boudoir",
+   "type": "architecture",
+   "visual_description": "Dusty room with diamond-paned windows, oak writing table, great couch, moth-eaten hangings, thick dust",
+   "priority": 1
+  },
+  {
+   "name": "Vampire woman (fair)",
+   "type": "character",
+   "visual_description": "Pale woman, wavy gold hair, pale sapphire eyes, white pearl teeth, ruby lips, period gown, no shadow",
+   "priority": 1
+  },
+  {
+   "name": "Vampire woman (dark)",
+   "type": "character",
+   "visual_description": "Dark-haired woman with aquiline nose, deep dark eyes with red glint, same pale skin and dress",
+   "priority": 1
+  },
+  {
+   "name": "Squirming bag",
+   "type": "prop",
+   "visual_description": "Cloth sack that moves",
+   "priority": 3
+  },
+  {
+   "name": "Dracula wall-crawling pose",
+   "type": "character",
+   "visual_description": "Man face down on a sheer stone wall, cloak spread like wings, fingers and toes in gaps of eroded mortar",
+   "priority": 1
+  },
+  {
+   "name": "Sagging hinged door",
+   "type": "architecture",
+   "visual_description": "Heavy plank door whose hinges have dropped so it rests on the floor",
+   "priority": 2
+  },
+  {
+   "name": "Hall door with chains and bolts",
+   "type": "architecture",
+   "visual_description": "Massive door, chain hooks and bolts, keyhole",
+   "priority": 1
+  },
+  {
+   "name": "Four addressed letters",
+   "type": "document",
+   "visual_description": "Four envelopes of thin foreign post, addressed to Whitby, Varna, London, Buda-Pesth",
+   "priority": 3
+  }
+ ],
+ "quest_hooks": [
+  "Find the key to the hall door (probably in Dracula's room).",
+  "Do not sleep outside your own rooms: obey or disobey the warning.",
+  "Secretly write to Mina in shorthand; hide the letter.",
+  "Watch the Count's night routes from the south window.",
+  "Survive the encounter with the three women using willpower and the crucifix."
+ ]
+}

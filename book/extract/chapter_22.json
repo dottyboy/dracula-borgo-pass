@@ -1,0 +1,91 @@
+{
+ "chapter": 22,
+ "narrator": "Jonathan Harker (journal)",
+ "dates": "3 October (morning to 12:30 pm)",
+ "summary": "Harker records the morning after the attack. Renfield's death is to be certified as misadventure. The party resolves to keep nothing from Mina, who swears to live though she resolves to die if she endangers others. Van Helsing lays out the day's plan: the Count is bound to his material form until sunset, so the party will sterilise his earth-boxes at Carfax, then search the Piccadilly house, while Godalming and Quincey destroy the boxes at Bermondsey and Mile End. Before they leave, Van Helsing touches a piece of Sacred Wafer to Mina's forehead and it sears a red scar into her flesh. They swear a pledge, sterilise all boxes at Carfax by placing Host on the earth, then reach Piccadilly where a locksmith is hired and the door opened. Eight of nine boxes are found in the dining-room and sanctified. Title deeds, keys and toiletries are found, and Godalming and Quincey leave with the keys.",
+ "scenes": [
+  {"id":"c22_s01","title":"Council and Mina's resolve","location":"Seward's house, study","time":"3 October, 6 am onward","characters":["Harker","Mina","Van Helsing","Seward","Godalming","Quincey"],"summary":"The party decides Mina must be in full confidence. Mina vows she will die if she becomes a danger; Van Helsing forbids it.","mood":"solemn, desperate","key_quote":"You must not die. You must not die by any hand; but least of all by your own."},
+  {"id":"c22_s02","title":"Van Helsing's plan of the day","location":"Seward's study","time":"Morning","characters":["Van Helsing","Harker","Godalming","Quincey","Mina"],"summary":"Explains daylight limits the Count; arranges the locksmith ruse, cabs rather than a heraldic carriage and a split of forces.","mood":"strategic","key_quote":"He cannot melt into thin air nor disappear through cracks or chinks or crannies. If he go through a doorway, he must open the door like a mortal."},
+  {"id":"c22_s03","title":"The Wafer burns Mina","location":"Seward's house","time":"After breakfast, 3 October","characters":["Mina","Van Helsing","Harker"],"summary":"Van Helsing touches the Sacred Wafer to her forehead; it sears a mark like white-hot metal.","mood":"anguish","key_quote":"it had seared it—had burned into the flesh as though it had been a piece of white-hot metal."},
+  {"id":"c22_s04","title":"The oath","location":"Seward's house","time":"Morning","characters":["Van Helsing","Mina","Harker","Seward","Godalming","Quincey"],"summary":"All kneel, hold hands and swear to be true to each other and to raise the veil from Mina.","mood":"sacred, resolute","key_quote":"We men pledged ourselves to raise the veil of sorrow from the head of her whom, each in his own way, we loved"},
+  {"id":"c22_s05","title":"Sterilising Carfax","location":"Old chapel, Carfax","time":"Late morning","characters":["Van Helsing","Harker","Seward","Godalming","Quincey"],"summary":"With screwdriver and wrench Van Helsing opens each earth-box, lays a piece of Host on the soil and screws the lid down.","mood":"ritual, tense calm","key_quote":"Thus we defeat him with his own weapon, for we make it more holy still."},
+  {"id":"c22_s06","title":"Waiting in the Green Park","location":"Green Park opposite the Piccadilly house","time":"Around noon","characters":["Harker","Seward","Van Helsing"],"summary":"The trio smoke cigars on a bench while Godalming and Morris bring a locksmith.","mood":"nervous waiting","key_quote":"We sat down on a bench within good view, and began to smoke cigars so as to attract as little attention as possible."},
+  {"id":"c22_s07","title":"The locksmith","location":"Steps of the Piccadilly house","time":"Around noon","characters":["Godalming","Quincey","Locksmith","Policeman"],"summary":"A workman tries a selection of keys, opens the door, cuts a new key, is paid and leaves unnoticed.","mood":"comic tension","key_quote":"not a soul took the slightest notice of the whole transaction."},
+  {"id":"c22_s08","title":"Search of the Piccadilly house","location":"Piccadilly house, dining-room","time":"Early afternoon","characters":["Harker","Seward","Van Helsing","Godalming","Quincey"],"summary":"Eight of nine boxes found in the dining-room and sanctified; the Count's effects are examined; keys taken to Bermondsey and Mile End.","mood":"foul-smelling, methodical","key_quote":"Eight boxes only out of the nine, which we sought!"}
+ ],
+ "locations": [
+  {"name":"Old chapel at Carfax","kind":"indoor","description":"Neglected, dusty chapel in which the large earth-boxes sit.","features":["great earth-boxes","dust","musty earth"],"atmosphere":"prosaic neglect hiding terror","lighting_time":"morning","quote":"in the old chapel the great boxes looked just as we had seen them last."},
+  {"name":"Piccadilly house","kind":"indoor","description":"Deserted house among spruce neighbours with steps, a railing with spikes, a hall, a dining-room at the back and a stable at the rear across a stone-flagged yard.","features":["front steps","railing spikes","hall","dining-room","great dining-room table","shuttered window","narrow stone-flagged yard","blank-faced stable"],"atmosphere":"vile smell like Carfax chapel","lighting_time":"midday","quote":"looming up grim and silent in its deserted condition amongst its more lively and spruce-looking neighbours."},
+  {"name":"Green Park","kind":"outdoor","description":"Park near Arlington Street with benches in view of the house.","features":["bench"],"atmosphere":"public, leisurely","lighting_time":"midday","quote":"At the corner of Arlington Street our contingent got out and strolled into the Green Park."},
+  {"name":"Asylum grounds and station route","kind":"outdoor","description":"Lawn crossed on foot to reach the train; Mina's window visible from the lawn.","features":["lawn","asylum front","platform"],"atmosphere":"parting","lighting_time":"morning","quote":"in the window of my own room saw Mina."}
+ ],
+ "characters": [
+  {"name":"Mina Harker","role":"marked victim, record-keeper","appearance":"very pale, thin, lips drawn showing teeth somewhat prominent; red scar on forehead","clothing":"","personality":"brave, cheerful in front of others","speech_style":"earnest","notable_lines":["Because if I find in myself a sign of harm to any that I love, I shall die!","Unclean! Unclean! Even the Almighty shuns my polluted flesh!"],"abilities":["keeps the record"]},
+  {"name":"Abraham Van Helsing","role":"strategist","appearance":"","clothing":"carries a bag and a box of tools and Host","personality":"inspired, caring, clever","speech_style":"broken English with proverbs","notable_lines":["the quickest way home is the longest way"],"abilities":["knows the lore, plans ahead"]},
+  {"name":"Jonathan Harker","role":"narrator","appearance":"","clothing":"","personality":"desperate, impatient","speech_style":"","notable_lines":[],"abilities":["solicitor's knowledge"]},
+  {"name":"Lord Godalming","role":"party member with resources","appearance":"","clothing":"","personality":"practical","speech_style":"","notable_lines":["My title will make it all right with the locksmith, and with any policeman that may come along."],"abilities":["title and wealth, can wire for horses and carriages"]},
+  {"name":"Quincey Morris","role":"hunter","appearance":"","clothing":"","personality":"level-headed","speech_style":"American","notable_lines":["we ought to take cabs when we go south or east"],"abilities":[]},
+  {"name":"Locksmith","role":"hired tradesman","appearance":"thick-set working man","clothing":"coat, hangs it on the railing spike","personality":"leisurely","speech_style":"","notable_lines":[],"abilities":["picks locks, cuts a key"]},
+  {"name":"Policeman","role":"bystander","appearance":"","clothing":"","personality":"incurious","speech_style":"","notable_lines":[],"abilities":[]},
+  {"name":"Dr. Seward","role":"party member","appearance":"","clothing":"","personality":"","speech_style":"","notable_lines":[],"abilities":["certifies Renfield's death as misadventure"]}
+ ],
+ "objects": [
+  {"name":"Screwdriver and wrench","category":"tool","description":"Tools from Van Helsing's bag used to open and close the box lids.","function_in_story":"Open and screw down the earth-box lids.","location_or_owner":"Van Helsing","quote":"he took from his bag a screwdriver and a wrench, and very soon the top of one of the cases was thrown open."},
+  {"name":"Earth-boxes","category":"container","description":"Large wooden cases filled with sacred Transylvanian soil, nine in total.","function_in_story":"The Count's resting places; sterilised with Host.","location_or_owner":"Carfax chapel (more at Piccadilly, Bermondsey, Mile End)","quote":"The earth smelled musty and close"},
+  {"name":"Sacred Wafer / Host pieces","category":"ward","description":"Fragment of consecrated Host.","function_in_story":"Placed on earth in each box to sterilise it; burns Mina's forehead.","location_or_owner":"Van Helsing","quote":"in each was a portion of the Host."},
+  {"name":"Locksmith's tool basket","category":"tool","description":"Rush-woven basket with a selection of picks and a large bunch of keys.","function_in_story":"Opens the Piccadilly door.","location_or_owner":"Locksmith","quote":"a thick-set working man with his rush-woven basket of tools."},
+  {"name":"Title deeds bundle","category":"document","description":"Title deeds of the Piccadilly house plus purchase deeds for Mile End and Bermondsey, wrapped in thin paper.","function_in_story":"Reveals addresses of other lairs.","location_or_owner":"Piccadilly dining-room table","quote":"There were title deeds of the Piccadilly house in a great bundle"},
+  {"name":"Stationery set","category":"document","description":"Note-paper, envelopes, pens and ink under thin wrapping paper.","function_in_story":"Evidence of the Count's use of the house.","location_or_owner":"Piccadilly dining-room table","quote":"note-paper, envelopes, and pens and ink."},
+  {"name":"Toilet articles and basin","category":"other","description":"Clothes brush, hairbrush and comb, jug and basin with water reddened with blood.","function_in_story":"Signs the Count has been using the house.","location_or_owner":"Piccadilly dining-room","quote":"a jug and basin—the latter containing dirty water which was reddened as if with blood."},
+  {"name":"Bunch of keys","category":"key","description":"Little heap of keys of all sizes, belonging to the other houses.","function_in_story":"Used by Godalming and Morris to reach the other lairs.","location_or_owner":"Piccadilly dining-room table","quote":"a little heap of keys of all sorts and sizes, probably those belonging to the other houses."},
+  {"name":"Cigars","category":"other","description":"Cigars smoked as cover in the park.","function_in_story":"Camouflage while waiting.","location_or_owner":"Harker, Seward, Van Helsing","quote":"began to smoke cigars so as to attract as little attention as possible."},
+  {"name":"Cabs and four-wheeler","category":"vehicle","description":"Hansom or four-wheeler cabs used instead of a heraldic carriage.","function_in_story":"Inconspicuous travel across London.","location_or_owner":"hired","quote":"we saw a four-wheeler drive up."},
+  {"name":"Telegram to arrange horses and carriages","category":"document","description":"Godalming wires his people.","function_in_story":"Prepares conveyance but is rejected for conspicuousness.","location_or_owner":"Godalming","quote":"I shall wire to my people to have horses and carriages where they will be most convenient."}
+ ],
+ "creatures": [],
+ "vampire_lore": [
+  {"rule":"By day the vampire is confined to his earthly form","kind":"limitation","detail":"Until sunset he cannot melt into air or pass through cracks and must open doors like a mortal.","quote":"Until it sets to-night, that monster must retain whatever form he now has."},
+  {"rule":"Earth-boxes can be sterilised with the Host","kind":"weakness","detail":"A piece of Sacred Wafer on the soil makes the box useless to him.","quote":"We must sterilise this earth, so sacred of holy memories"},
+  {"rule":"A fed vampire sleeps late","kind":"limitation","detail":"After heavy feeding the Count sleeps late, giving the party a window.","quote":"last night he banqueted heavily, and will sleep late?"},
+  {"rule":"Sacred objects burn the marked","kind":"detection","detail":"The Wafer sears Mina's forehead, showing she is tainted.","quote":"it had seared it—had burned into the flesh as though it had been a piece of white-hot metal."},
+  {"rule":"The Count has many lairs and keeps documents","kind":"detection","detail":"He holds deeds, keys and paper at the central Piccadilly house.","quote":"The Count may have many houses which he has bought."},
+  {"rule":"Vampire's lair smells vile","kind":"detection","detail":"The Piccadilly house smells like the Carfax chapel.","quote":"It did indeed smell vilely—like the old chapel at Carfax"},
+  {"rule":"Vampire victims develop sharper teeth and thin","kind":"transformation","detail":"Mina's teeth show prominently; no sharpening yet.","quote":"As yet there was no sign of the teeth growing sharper"},
+  {"rule":"Vampirism spreads through love","kind":"transformation","detail":"Harker reflects that one vampire meant many through love.","quote":"the holiest love was the recruiting sergeant for their ghastly ranks."}
+ ],
+ "puzzles": [
+  {"name":"Entering the empty Piccadilly house","setup":"No key to a house that is legally someone else's.","obstacle":"Break-in would attract police.","book_solution":"Hire a locksmith in daylight, with a titled gentleman present, so the act looks legitimate. Van Helsing recounts the story of the thief who sold a whole house.","items_used":["locksmith's tool basket","cigars","cab"],"game_idea":"Social-stealth puzzle: pick the time of day, disguise and cover story to get past police and neighbours without alerting.","quote":"you go take the lock off a hundred empty house in this your London... and no one will interfere."},
+  {"name":"Sterilising the boxes","setup":"Nine earth-boxes in several lairs.","obstacle":"Open, sanctify and reseal without the Count noticing.","book_solution":"Open each lid with screwdriver/wrench, lay a piece of Host on the earth and re-screw, leaving boxes looking undisturbed.","items_used":["screwdriver","wrench","Sacred Wafer"],"game_idea":"Timed multi-lair crafting-and-action puzzle: carry enough Host for each box.","quote":"One by one we treated in the same way each of the great boxes, and left them as we had found them to all appearance"},
+  {"name":"Assigning forces","setup":"Three lair sites and a house to search.","obstacle":"Not enough men; Harker wants to guard Mina.","book_solution":"Split: two to Walworth/Mile End with cabs, three hold Piccadilly.","items_used":["cabs","telegram"],"game_idea":"Party-assignment planning screen.","quote":"the two doctors and I should remain there, whilst Lord Godalming and Quincey found the lairs at Walworth and Mile End"}
+ ],
+ "combat": [],
+ "crafting": [
+  {"result":"Sterilised earth-box","ingredients":["earth-box","piece of Sacred Wafer"],"method":"Unscrew lid, lay Host on soil, screw lid shut.","purpose":"Deny the Count a resting place.","quote":"Taking from his box a piece of the Sacred Wafer he laid it reverently on the earth, and then shutting down the lid began to screw it home"},
+  {"result":"Duplicate key for Piccadilly door","ingredients":["locksmith","key blank"],"method":"Locksmith fits a key to the lock while holding the door with his knees.","purpose":"Give the party access.","quote":"he held the door partly open, steadying it with his knees, whilst he fitted a key to the lock."}
+ ],
+ "dialogue_samples": [
+  {"speaker":"Van Helsing","line":"My child, there is such an one if it were for your good.","context":"Answering Mina's wish for death."},
+  {"speaker":"Van Helsing","line":"We must sterilise this earth, so sacred of holy memories, that he has brought from a far distant land for such fell use.","context":"At Carfax chapel."},
+  {"speaker":"Mina","line":"Unclean! Unclean! Even the Almighty shuns my polluted flesh!","context":"After the Wafer burns her."},
+  {"speaker":"Godalming","line":"The place smells so vilely","context":"Entering the Piccadilly house."}
+ ],
+ "asset_candidates": [
+  {"name":"Piccadilly dining-room","type":"architecture","visual_description":"Large Georgian dining-room with long table, eight crates ranged around, shuttered window to narrow stone yard and blank stable wall.","priority":1},
+  {"name":"Earth-box","type":"prop","visual_description":"Long rough wooden crate with screw-on lid, filled with dark soil, iron screws.","priority":1},
+  {"name":"Locksmith's rush basket","type":"prop","visual_description":"Woven rush basket with lock picks and a ring of keys.","priority":3},
+  {"name":"Bunch of keys","type":"prop","visual_description":"Heap of iron keys of various sizes on a ring.","priority":2},
+  {"name":"Title deeds bundle","type":"document","visual_description":"Thick bundle of parchment deeds tied and wrapped in thin tissue.","priority":2},
+  {"name":"Blood-tinged basin and jug","type":"prop","visual_description":"Earthenware jug and basin with pinkish red murky water.","priority":3},
+  {"name":"Carfax chapel interior","type":"architecture","visual_description":"Dusty stone chapel with stacked large earth-boxes.","priority":1},
+  {"name":"Four-wheeler cab","type":"vehicle","visual_description":"Victorian growler cab with box seat for the driver.","priority":3},
+  {"name":"Sacred Wafer scar effect","type":"effect","visual_description":"Red seared mark on forehead with smoke wisp upon contact.","priority":2}
+ ],
+ "quest_hooks": [
+  "Sterilise all nine earth-boxes before sunset",
+  "Gain entry to the Piccadilly house without attracting police",
+  "Search the Count's papers for addresses of other lairs",
+  "Decide on Mina's role and protect her",
+  "Travel by cab to Bermondsey and Mile End and destroy boxes",
+  "Cover up Renfield's death for the inquest"
+ ]
+}

@@ -65,6 +65,33 @@ cravat, no cape".
 **DraculaLondon**: "a vigorous man of about 50, iron-grey hair, small white moustache, dark grey tweed Victorian town suit,
 top hat in hand NOT held (hat on head), pale skin, red-tinged eyes". (Variant `london`.)
 
+## 2.1 Capes and cloaks (separate models, never part of the character)
+
+A cape is generated alone, hanging on an invisible body, so image-to-3D gives a clean cloth shape; in the game it is attached
+to the shoulders as cloth (chain bones). Generate a back view and a front view, one prompt each.
+
+```
+A long black Victorian opera cape with a high standing collar and a deep crimson silk lining, hanging straight down from the
+shoulders as if worn by an invisible tall man (no body, no head, no arms visible), seen from the FRONT, full length to the
+ankles, whole cape inside the frame, in front of a flat light-green background, photoshoot lighting from all angles,
+photorealistic, heavy velvet folds, intricate details.
+```
+Same text with "seen from the BACK" for the second image.
+
+| id | description (replace the cape part) |
+|---|---|
+| cape_dracula | long black velvet opera cape, high collar, crimson silk lining, silver clasp at the neck (the count) |
+| cape_dracula_tattered | the same cape, torn and ragged at the hem, dissolving into black fog at the bottom (vampire form) |
+| cloak_coachman | long hooded black wool travelling cloak, hood down, plain, dust on the hem |
+| cloak_traveller | dark green wool travelling cloak with a short shoulder cape, brass clasp |
+| cloak_sea | oilskin sailor's coat-cloak, glossy dark yellow-brown, hood down |
+| cloak_nun / shawl | black wool shawl draped over the shoulders, fringe at the edge |
+| cloak_lady | plum Victorian lady's mantle with fur collar, hip length |
+| cloak_peasant | coarse brown wool Carpathian cloak with a rope tie |
+
+Textures for capes: black velvet (nap, soft folds), crimson silk (sheen), oilskin (glossy coated canvas), coarse brown wool - see
+section 7.
+
 ## 3. Main cast
 
 Use CHARACTER_PREFIX + text + CHARACTER_SUFFIX. File name = id.
@@ -87,7 +114,40 @@ Use CHARACTER_PREFIX + text + CHARACTER_SUFFIX. File name = id.
 | bride2 | the same but long straight black hair, silvery-lilac gown |
 | bride3 | the same but long red-auburn hair, pale ivory gown |
 
+### 3.1 Requested extras
+
+**Szgany (Romani wagon people), five looks.** All with CHARACTER_PREFIX / CHARACTER_SUFFIX, no cape:
+| id | description |
+|---|---|
+| szgany_chief | Szgany chief, 55, grey-streaked black hair under a black fur hat, heavy black moustache, tanned weathered skin, dark red embroidered waistcoat over a white shirt, black sash, black trousers, high boots, gold hoop earring |
+| szgany_man_a | Szgany labourer, 30, black curly hair, stubble, rolled-sleeve cream shirt, brown leather waistcoat, brown trousers, boots, red neckerchief |
+| szgany_man_b | Szgany driver, 40, long black hair tied back, thick moustache, dark blue jacket with brass buttons, leather belt, grey trousers, boots, no hat |
+| szgany_youth | Szgany youth, 17, wiry, short black hair, clean-shaven, patched grey shirt, dark waistcoat, barefoot or in worn boots |
+| szgany_woman | Szgany woman, 35, long black braided hair, gold coin necklace, bright red blouse, dark green long skirt, colourful headscarf, boots |
+| szgany_elder | Szgany elder, 70, white hair and beard, deeply lined brown face, long dark coat, felt hat on head |
+
+**Renfield, two types (plus an optional third).**
+| id | description |
+|---|---|
+| renfield_patient | Renfield as an asylum patient: thin, sandy-grey dishevelled hair, wild bright eyes, cracked lips, creased off-white asylum shirt and trousers, bare feet or slippers, restless crooked posture relaxed into T-pose |
+| renfield_lucid | Renfield on a good day: combed grey-sandy hair, shaved, calm intelligent eyes, a tidy dark grey Victorian suit with waistcoat and white collar, polished black shoes |
+| renfield_restrained (optional) | Renfield in a white canvas restraining jacket with the sleeves loose at the sides (so the T-pose is possible), bare feet |
+
+**Van Helsing, younger.**
+| id | description |
+|---|---|
+| vanhelsing_young | Abraham Van Helsing at about 38, dark brown hair swept back, dark short beard trimmed to a point, intense bright eyes, lean, black Victorian frock coat, dark waistcoat, white shirt, black cravat, black trousers and boots, no spectacles |
+| vanhelsing_middle | Van Helsing at about 50, hair salt-and-pepper, short grey pointed beard, same clothes as the old version |
+
+**More main-cast looks for the arcs** (use the same prompt style; one line each): Lucy in a summer white day dress and straw hat
+on head; Mina in a dark travelling dress with a small hat on head; Arthur in mourning black; Quincey in a fringed frontier jacket;
+Seward in a white doctor's coat over his suit; Harker, weary after the castle, thin, in a torn travelling coat; Harker, white-haired
+as in London (Mina's diary: his hair turned white), same clothes as the travelling coat but neat.
+
 ## 4. Supporting characters (generic roles, reused many times)
+
+The complete list of every NPC variant in the game (84 variants, acts and arcs, with names and in-game descriptions) is generated
+in **`docs/ASSET_PROMPTS_CAST.md`** with ready-to-paste prompts. Use this section for the hand-written key roles.
 
 | id (model:variant) | description |
 |---|---|
@@ -195,3 +255,42 @@ wallpaper (damask green / burgundy), marble floor tiles (black and white), cliff
 * Keep prompts identical apart from the description so style and proportions stay consistent between characters.
 * After 3D: check back and side views before spending time on rigging; regenerate rather than repair bad backs or hands.
 * Save prompt, seed and tool name next to each file (`ai/SOURCES.md`).
+
+## 9. Skies, decals, signs and story art
+
+**Sky panoramas** (equirectangular 2:1, 4096 x 2048, seamless left-right edge; game files `assets/sky/<id>.png`)
+```
+Equirectangular 360 degree panorama, 2:1 aspect ratio, seamless horizontal wrap, <sky>, no ground, no buildings, no text,
+photorealistic, high dynamic range, moody Victorian gothic atmosphere.
+```
+| id | `<sky>` |
+|---|---|
+| day | pale blue English sky, scattered cumulus clouds, soft daylight haze at the horizon |
+| dusk | deep orange and purple dusk sky, long thin clouds, first stars |
+| night | clear dark blue Carpathian night, a bright full moon on the left, many stars, thin cloud |
+| snow | pale grey-white winter overcast, faint blue light |
+| storm | heavy black-grey storm clouds, lightning glow inside the clouds, rain veil, green-yellow tint |
+| fog | thick white-grey fog sky, almost no contrast (new) |
+
+**Decals** (square 1024, transparent or flat background, flat frontal view; game folder `assets/decals`)
+| id | prompt idea |
+|---|---|
+| cobweb | a dense old spider web across a corner, grey-white threads on a black background (use as alpha) |
+| painting_1/2/3 | a framed Victorian oil painting: (1) stern nobleman portrait, (2) stormy sea and ship, (3) Carpathian castle on a crag; full frame visible, flat frontal |
+| banner_black / banner_red | a hanging medieval banner with a dragon emblem, black and crimson, tattered edges |
+| stain_1/2 | dark old blood stain / water stain on stone, top-down, irregular edge |
+| shaft | a shaft of moonlight through a window, soft beam on black background |
+| more | cracked plaster, moss patch, soot mark above a candle, scratched wooden door, rust stain, handprints in dust |
+
+**Title and story art** (16:9, 3840 x 2160, no text so the game adds the type)
+* Title: "The Carpathian castle on a crag at night under a full moon, thin mist in the valley, a lone road, bats crossing the moon, gothic horror painting, photorealistic".
+* Chapter cards (one per act): Bistritz inn by candlelight; Whitby harbour at night with the Demeter wrecked on the shore; Hillingham garden at dusk with a pale figure in white; Hampstead heath at night with a mist; Carfax chapel interior; snowy Borgo Pass at sunset with a wagon.
+* Item icons (256 x 256, centred object, plain dark background, one image per item): see `items` in `data/world.json` (228 items; start with crucifix, host, garlic, stake, key, letters).
+
+## 10. Order of work (suggested)
+
+1. Dracula forms (no cape) + capes, Van Helsing, Renfield x2, Mina, Lucy, Harker, Seward, Quincey, Arthur (main cast, 3D + rig).
+2. The generic roles in section 4 (they appear everywhere): innkeeper, villager, Szgany, sailor, women, captain, coachman.
+3. Creatures (wolves, bat, horses), then props by frequency (table, chair, barrel, crate, candle, lantern, gravestone ...).
+4. Textures: stone_blocks, cobble, wood_planks, plaster first (largest screen area), then the rest.
+5. Skies and decals; then the generated NPC variants in `docs/ASSET_PROMPTS_CAST.md` (only those whose look differs a lot from a recoloured base model).

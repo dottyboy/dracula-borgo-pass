@@ -19,6 +19,7 @@ var _msg: Label
 var _msg_timer := 0.0
 var _inv: HBoxContainer
 var _inv_scroll: ScrollContainer
+var _inv_filter := ""            # item bar group filter ("" = all)
 var _dlg: PanelContainer
 var _dlg_speaker: Label
 var _dlg_text: Label
@@ -820,9 +821,23 @@ func _rebuild_inventory() -> void:
 	hint.text = "Items:" if Game.inventory.size() > 0 else "(no items)"
 	hint.add_theme_color_override("font_color", GOLD)
 	_inv.add_child(hint)
+	var present := {}
+	for id in Game.inventory:
+		present[Game.item_category(str(id))] = true
+	if present.size() > 1:
+		_inv.add_child(_chip("All", "", Color(0.85, 0.8, 0.6)))
+		for c in Game.CAT_ORDER:
+			if present.has(c):
+				_inv.add_child(_chip(Game.CAT_SHORT[c], c, Game.CAT_COLOR[c]))
+		var sep := VSeparator.new()
+		_inv.add_child(sep)
+	if _inv_filter != "" and not present.has(_inv_filter):
+		_inv_filter = ""
 	var last_cat := ""
 	for id in Game.sorted_inventory():
 		var cat := Game.item_category(str(id))
+		if _inv_filter != "" and cat != _inv_filter:
+			continue
 		if last_cat != "" and cat != last_cat:
 			var gap := Control.new()                  # a little air between groups
 			gap.custom_minimum_size = Vector2(10, 0)
@@ -851,6 +866,32 @@ func _rebuild_inventory() -> void:
 		_inv.add_child(b)
 		if Game.selected_item == id:
 			(func() -> void: _inv_scroll.ensure_control_visible(b)).call_deferred()
+
+
+## Group filter chip of the item bar ("" = everything).
+func _chip(text: String, cat: String, col: Color) -> Button:
+	var b := Button.new()
+	b.text = text
+	b.toggle_mode = true
+	b.button_pressed = (_inv_filter == cat)
+	b.focus_mode = Control.FOCUS_NONE
+	b.tooltip_text = "Show all items" if cat == "" else "Show only: " + str(Game.CAT_LABEL[cat])
+	var on := _item_box(col, 0.55)
+	on.border_width_bottom = 4
+	var off := _item_box(col, 0.0)
+	off.bg_color = Color(0.06, 0.04, 0.04, 0.9)
+	b.add_theme_stylebox_override("normal", off)
+	b.add_theme_stylebox_override("hover", _item_box(col, 0.22))
+	b.add_theme_stylebox_override("pressed", on)
+	b.add_theme_stylebox_override("hover_pressed", on)
+	b.add_theme_font_size_override("font_size", 14)
+	b.add_theme_color_override("font_color", col)
+	b.add_theme_color_override("font_pressed_color", Color.WHITE)
+	b.pressed.connect(func() -> void:
+		_inv_filter = cat
+		_inv_scroll.scroll_horizontal = 0
+		_rebuild_inventory.call_deferred())
+	return b
 
 
 ## Item button look: dark body, a coloured bar underneath (the item's group), tinted when hovered or selected.

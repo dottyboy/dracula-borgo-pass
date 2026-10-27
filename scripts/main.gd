@@ -744,6 +744,21 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 					hud._pie._page += 1
 					hud._pie._apply_page()
 				await get_tree().create_timer(0.3).timeout
+		if _args.has("invclick"):
+			## really press the chip with that group name and count what is left on the bar
+			var buttons := hud._inv.get_children().filter(func(c: Node) -> bool: return c is Button)
+			var before := buttons.size()
+			for bt in buttons:
+				if (bt as Button).text == str(_args.invclick):
+					(bt as Button).pressed.emit()
+			await get_tree().process_frame
+			await get_tree().process_frame
+			print("INVCLICK ", _args.invclick, ": buttons ", before, " -> ", hud._inv.get_children().filter(func(c: Node) -> bool: return c is Button).size(), " filter=", hud._inv_filter)
+		if _args.has("invfilter"):
+			hud._inv_filter = str(_args.invfilter)
+			hud._rebuild_inventory()
+			await get_tree().process_frame
+			await get_tree().process_frame
 		if _args.has("invscroll"):
 			hud._inv_scroll.scroll_horizontal = int(_args.invscroll)
 			await get_tree().process_frame

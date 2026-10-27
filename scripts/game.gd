@@ -465,6 +465,7 @@ func recruit(id: String) -> void:
 const CAT_ORDER := ["weapon", "holy", "heal", "craft", "key", "doc", "gear", "misc"]
 const CAT_COLOR := {"weapon": Color("#d9534f"), "holy": Color("#f0dc8a"), "heal": Color("#62b872"), "craft": Color("#e0903a"),
 	"key": Color("#5f95e0"), "doc": Color("#c2a9d8"), "gear": Color("#4db6ac"), "misc": Color("#9a9a9a")}
+const CAT_SHORT := {"weapon": "Arms", "holy": "Holy", "heal": "Med", "craft": "Craft", "key": "Keys", "doc": "Docs", "gear": "Gear", "misc": "Other"}
 const CAT_LABEL := {"weapon": "Weapon / ammunition", "holy": "Holy ward", "heal": "Medicine", "craft": "Crafting material or tool",
 	"key": "Key", "doc": "Document / book", "gear": "Clothing / keepsake", "misc": "Other"}
 var _cat_cache: Dictionary = {}

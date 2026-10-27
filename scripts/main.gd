@@ -744,6 +744,9 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 					hud._pie._page += 1
 					hud._pie._apply_page()
 				await get_tree().create_timer(0.3).timeout
+		if _args.has("invscroll"):
+			hud._inv_scroll.scroll_horizontal = int(_args.invscroll)
+			await get_tree().process_frame
 		if _args.has("hovertext"):
 			hud.set_hover(str(_args.hovertext).replace("_", " "))
 			await get_tree().process_frame

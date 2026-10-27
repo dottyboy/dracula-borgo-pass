@@ -18,6 +18,7 @@ var _hover: Label
 var _msg: Label
 var _msg_timer := 0.0
 var _inv: HBoxContainer
+var _inv_scroll: ScrollContainer
 var _dlg: PanelContainer
 var _dlg_speaker: Label
 var _dlg_text: Label
@@ -106,12 +107,28 @@ func _ready() -> void:
 
 	var bar := PanelContainer.new()
 	bar.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
-	bar.offset_top = -64
+	bar.offset_top = -72
 	bar.add_theme_stylebox_override("panel", _box(Color(0.05, 0.02, 0.03, 0.85), GOLD * Color(1, 1, 1, 0.6)))
 	root.add_child(bar)
+	# the item row scrolls sideways (mouse wheel over it, or the thin scrollbar) when there are more items than fit
+	_inv_scroll = ScrollContainer.new()
+	_inv_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	_inv_scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	_inv_scroll.custom_minimum_size = Vector2(0, 54)
+	_inv_scroll.get_h_scroll_bar().custom_minimum_size.y = 8
+	_inv_scroll.gui_input.connect(func(ev: InputEvent) -> void:
+		if ev is InputEventMouseButton and ev.pressed:
+			var step := 160
+			if ev.button_index == MOUSE_BUTTON_WHEEL_DOWN or ev.button_index == MOUSE_BUTTON_WHEEL_RIGHT:
+				_inv_scroll.scroll_horizontal += step
+				_inv_scroll.accept_event()
+			elif ev.button_index == MOUSE_BUTTON_WHEEL_UP or ev.button_index == MOUSE_BUTTON_WHEEL_LEFT:
+				_inv_scroll.scroll_horizontal = maxi(_inv_scroll.scroll_horizontal - step, 0)
+				_inv_scroll.accept_event())
+	bar.add_child(_inv_scroll)
 	_inv = HBoxContainer.new()
 	_inv.add_theme_constant_override("separation", 8)
-	bar.add_child(_inv)
+	_inv_scroll.add_child(_inv)
 
 	_dlg = PanelContainer.new()
 	_dlg.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
@@ -817,6 +834,8 @@ func _rebuild_inventory() -> void:
 				elif ev.button_index == MOUSE_BUTTON_RIGHT:
 					say(str(Game.item_def(id).desc)))
 		_inv.add_child(b)
+		if Game.selected_item == id:
+			(func() -> void: _inv_scroll.ensure_control_visible(b)).call_deferred()
 
 
 # -------------------------------------------------------------- dialogue ----

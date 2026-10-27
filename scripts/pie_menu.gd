@@ -7,8 +7,14 @@ signal cancelled
 
 const RING := 74.0
 const BTN := 36.0
+const PAGE := 6                  # more entries than this are split into pages (a "more" button cycles them)
 
 var _verbs: Array = []
+var _all: Array = []             # every entry when paged
+var _page := 0
+var _paged := false
+var _ring := RING
+var _title_lift := 0.0          # paged item rings put the names above the top button, so the title moves up
 var _center := Vector2.ZERO
 var _title := ""
 var _hover := -1
@@ -16,10 +22,15 @@ var _t := 0.0
 
 
 func open(pos: Vector2, title: String, verbs: Array) -> void:
-	_verbs = verbs
+	_all = verbs
+	_page = 0
 	_title = title
 	var vs := get_viewport_rect().size
-	_center = Vector2(clampf(pos.x, RING + BTN + 10, vs.x - RING - BTN - 10), clampf(pos.y, RING + BTN + 30, vs.y - RING - BTN - 60))
+	_paged = verbs.size() > PAGE + 1 and str(verbs[0].id).begins_with("item:")      # only item lists are paged, never the verbs
+	_ring = 100.0 if _paged else RING
+	_title_lift = 26.0 if (not verbs.is_empty() and str(verbs[0].id).begins_with("item:")) else 0.0
+	_center = Vector2(clampf(pos.x, _ring + BTN + 120, vs.x - _ring - BTN - 120), clampf(pos.y, _ring + BTN + 70, vs.y - _ring - BTN - 70))
+	_apply_page()
 	_hover = -1
 	_t = 0.0
 	visible = true
@@ -27,10 +38,21 @@ func open(pos: Vector2, title: String, verbs: Array) -> void:
 	queue_redraw()
 
 
+## Shows one page of entries; with more than a page's worth the last button is "more" (next page, wrapping around).
+func _apply_page() -> void:
+	if not _paged:
+		_verbs = _all
+		return
+	var pages := int(ceil(float(_all.size()) / float(PAGE)))
+	_page = _page % pages
+	_verbs = _all.slice(_page * PAGE, mini((_page + 1) * PAGE, _all.size()))
+	_verbs = _verbs + [{"id": "__more", "label": "More (%d/%d)" % [_page + 1, pages]}]
+
+
 func _pos_of(i: int) -> Vector2:
 	var n := _verbs.size()
 	var ang := PI + PI * i if n == 2 else -PI / 2.0 + TAU * i / float(n)
-	return _center + Vector2.from_angle(ang) * RING * minf(_t / 0.12, 1.0)
+	return _center + Vector2.from_angle(ang) * _ring * minf(_t / 0.12, 1.0)
 
 
 func _process(delta: float) -> void:
@@ -49,6 +71,12 @@ func _gui_input(ev: InputEvent) -> void:
 		if ev.button_index == MOUSE_BUTTON_LEFT:
 			for i in _verbs.size():
 				if _pos_of(i).distance_to(ev.position) < BTN + 4.0:
+					if str(_verbs[i].id) == "__more":
+						_page += 1
+						_apply_page()
+						_t = 0.12
+						accept_event()
+						return
 					close()
 					chosen.emit(str(_verbs[i].id))
 					return
@@ -68,8 +96,8 @@ func _draw() -> void:
 	var k := minf(_t / 0.12, 1.0)
 	draw_circle(_center, 9.0, Color(0.95, 0.8, 0.35, 0.9))
 	var tw := font.get_string_size(_title, HORIZONTAL_ALIGNMENT_LEFT, -1, 20).x
-	draw_rect(Rect2(_center + Vector2(-tw / 2.0 - 8, -RING - BTN - 34), Vector2(tw + 16, 28)), Color(0.07, 0.05, 0.04, 0.85))
-	draw_string(font, _center + Vector2(-tw / 2.0, -RING - BTN - 13), _title, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(0.96, 0.84, 0.5))
+	draw_rect(Rect2(_center + Vector2(-tw / 2.0 - 8, -_ring - BTN - _title_lift - 34), Vector2(tw + 16, 28)), Color(0.07, 0.05, 0.04, 0.85))
+	draw_string(font, _center + Vector2(-tw / 2.0, -_ring - BTN - _title_lift - 13), _title, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(0.96, 0.84, 0.5))
 	for i in _verbs.size():
 		var p := _pos_of(i)
 		var hot := i == _hover
@@ -78,8 +106,25 @@ func _draw() -> void:
 		draw_circle(p + Vector2(2, 3), r, Color(0, 0, 0, 0.45))
 		draw_circle(p, r, Color(0.14, 0.1, 0.07, 0.95))
 		draw_arc(p, r, 0, TAU, 32, Color(1.0, 0.85, 0.4) if hot else Color(0.7, 0.55, 0.28), 3.0, true)
-		_glyph(str(_verbs[i].id), p, r * 0.62, Color(1.0, 0.92, 0.6) if hot else Color(0.9, 0.78, 0.5))
-		if hot:
+		var vid := str(_verbs[i].id)
+		var gc := Color(1.0, 0.92, 0.6) if hot else Color(0.9, 0.78, 0.5)
+		if vid.begins_with("item:"):                      # items have no icons: their initial, and the name beside the button
+			var lab := str(_verbs[i].label)
+			var ini := lab.substr(0, 1).to_upper()
+			var iw := font.get_string_size(ini, HORIZONTAL_ALIGNMENT_LEFT, -1, 30).x
+			draw_string(font, p + Vector2(-iw / 2.0, 10.0), ini, HORIZONTAL_ALIGNMENT_LEFT, -1, 30, gc)
+			var dir := (p - _center).normalized() if p.distance_to(_center) > 1.0 else Vector2.DOWN
+			var lw2 := font.get_string_size(lab, HORIZONTAL_ALIGNMENT_LEFT, -1, 17).x
+			var lp := p + dir * (r + 8.0)
+			var tx := lp.x - (lw2 if dir.x < -0.25 else (lw2 / 2.0 if absf(dir.x) <= 0.25 else 0.0))
+			var ty := lp.y + (14.0 if dir.y > 0.5 else (0.0 if dir.y < -0.5 else 6.0))
+			draw_rect(Rect2(Vector2(tx - 4, ty - 17), Vector2(lw2 + 8, 24)), Color(0.07, 0.05, 0.04, 0.88))
+			draw_string(font, Vector2(tx, ty), lab, HORIZONTAL_ALIGNMENT_LEFT, -1, 17, Color(0.96, 0.84, 0.5) if hot else Color(0.85, 0.74, 0.5))
+		elif vid == "__more":
+			_glyph("go", p, r * 0.62, gc)
+		else:
+			_glyph(vid, p, r * 0.62, gc)
+		if hot and not vid.begins_with("item:"):
 			var lbl := str(_verbs[i].label)
 			var lw := font.get_string_size(lbl, HORIZONTAL_ALIGNMENT_LEFT, -1, 18).x
 			draw_rect(Rect2(p + Vector2(-lw / 2.0 - 6, r + 6), Vector2(lw + 12, 24)), Color(0.07, 0.05, 0.04, 0.9))

@@ -735,6 +735,15 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 		if _args.has("pie"):
 			loc._open_pie(str(_args.pie), Vector2(float(str(_args.get("px", "640"))), 330))
 			await get_tree().create_timer(0.4).timeout
+			if _args.has("piesub"):                  # the "use item on it" ring (page 1, or page 2 with --piepage=2)
+				hud._pie.close()
+				hud.modal = false
+				loc._on_pie_chosen(str(_args.pie), "item")
+				await get_tree().create_timer(0.3).timeout
+				if str(_args.get("piepage", "1")) == "2":
+					hud._pie._page += 1
+					hud._pie._apply_page()
+				await get_tree().create_timer(0.3).timeout
 		if _args.has("hovertext"):
 			hud.set_hover(str(_args.hovertext).replace("_", " "))
 			await get_tree().process_frame

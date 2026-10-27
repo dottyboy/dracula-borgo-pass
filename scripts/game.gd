@@ -469,6 +469,7 @@ const CAT_SHORT := {"weapon": "Arms", "holy": "Holy", "heal": "Med", "craft": "C
 const CAT_LABEL := {"weapon": "Weapon / ammunition", "holy": "Holy ward", "heal": "Medicine", "craft": "Crafting material or tool",
 	"key": "Key", "doc": "Document / book", "gear": "Clothing / keepsake", "misc": "Other"}
 var _cat_cache: Dictionary = {}
+var item_filter := ""            # item bar / use-item ring group filter ("" = everything)
 
 
 func item_category(id: String) -> String:

@@ -1174,8 +1174,12 @@ func _on_pie_chosen(eid: String, verb: String) -> void:
 	elif verb == "item":
 		var items: Array = []
 		for iid in Game.sorted_inventory():
-			items.append({"id": "item:" + str(iid), "label": Game.item_name(str(iid)), "color": Game.CAT_COLOR[Game.item_category(str(iid))]})
-		Game.pie_requested.emit(eid, _pie_pos, "Use on " + str(entities[eid].data.get("name", "")), items)
+			if Game.item_filter == "" or Game.item_category(str(iid)) == Game.item_filter:
+				items.append({"id": "item:" + str(iid), "label": Game.item_name(str(iid)), "color": Game.CAT_COLOR[Game.item_category(str(iid))]})
+		var ttl := "Use on " + str(entities[eid].data.get("name", ""))
+		if Game.item_filter != "":
+			ttl += "  [%s]" % Game.CAT_SHORT[Game.item_filter]
+		Game.pie_requested.emit(eid, _pie_pos, ttl, items)
 	elif verb.begins_with("item:"):
 		Game.selected_item = verb.substr(5)
 		Game.inventory_changed.emit()

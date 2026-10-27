@@ -732,6 +732,8 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 		await get_tree().create_timer(float(_args.get("wait", "1.2"))).timeout
 		for _i in int(_args.get("frames", "4")):
 			await get_tree().process_frame
+		if _args.has("invfilter"):
+			Game.item_filter = str(_args.invfilter)
 		if _args.has("pie"):
 			loc._open_pie(str(_args.pie), Vector2(float(str(_args.get("px", "640"))), 330))
 			await get_tree().create_timer(0.4).timeout
@@ -753,9 +755,9 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 					(bt as Button).pressed.emit()
 			await get_tree().process_frame
 			await get_tree().process_frame
-			print("INVCLICK ", _args.invclick, ": buttons ", before, " -> ", hud._inv.get_children().filter(func(c: Node) -> bool: return c is Button).size(), " filter=", hud._inv_filter)
+			print("INVCLICK ", _args.invclick, ": buttons ", before, " -> ", hud._inv.get_children().filter(func(c: Node) -> bool: return c is Button).size(), " filter=", Game.item_filter)
 		if _args.has("invfilter"):
-			hud._inv_filter = str(_args.invfilter)
+			Game.item_filter = str(_args.invfilter)
 			hud._rebuild_inventory()
 			await get_tree().process_frame
 			await get_tree().process_frame

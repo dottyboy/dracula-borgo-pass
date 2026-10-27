@@ -20,6 +20,7 @@ uniform float path_width = 0.9;
 uniform float shore = 0.0;         // 1 = sand and wet stones where the ground dips toward the sea
 
 varying vec3 wpos;
+varying float wup;                 // how upright the surface is (1 = flat ground)
 
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float noise(vec2 p) {
@@ -38,6 +39,7 @@ float seg_dist(vec2 p, vec2 a, vec2 b) {
 
 void vertex() {
 	wpos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
+	wup = normalize((MODEL_MATRIX * vec4(NORMAL, 0.0)).xyz).y;
 }
 
 void fragment() {
@@ -55,6 +57,13 @@ void fragment() {
 	g *= 0.82 + 0.36 * fbm(p * 0.35 + 3.0);
 	vec3 d = texture(dirt_tex, p * dirt_scale).rgb * dirt_tint.rgb;
 	vec3 col = mix(g, d, worn);
+	// steep slopes (cliffs, banks) show layered rock instead of grass
+	float rock = smoothstep(0.88, 0.66, wup);
+	if (rock > 0.0) {
+		float strata = fbm(vec2(p.x * 0.25 + p.y * 0.2, wpos.y * 2.4));
+		vec3 stone = mix(vec3(0.36, 0.33, 0.29), vec3(0.2, 0.19, 0.18), strata) * (0.85 + 0.3 * fbm(p * 1.9));
+		col = mix(col, stone, rock);
+	}
 	if (shore > 0.5) {
 		float sandy = smoothstep(-0.05, -0.55, wpos.y);
 		vec3 sand = mix(vec3(0.62, 0.55, 0.40), vec3(0.28, 0.27, 0.25), smoothstep(-0.5, -2.2, wpos.y)) * (0.9 + 0.2 * fbm(p * 1.3));

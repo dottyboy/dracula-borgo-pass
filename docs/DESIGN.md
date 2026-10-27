@@ -156,3 +156,11 @@ Mixamo files are git-ignored (licence); release builds embed them.
 `scripts/intro.gd` (`Intro`): 44 s sequence in its own SubViewport world - night sky, moonlit mist, castle keep on its crag, pines, bats, the skinned Count with swaying cape - under quotes from the novel
 (`BRAM STOKER`, "Listen to them...", "I am Dracula...", "For the dead travel fast."), then DRACULA / THE BORGO PASS and credits. Shown on a normal launch (no debug args); `--intro` forces, `--nointro` skips,
 `--introshots=<dir>` saves frames for docs and quits. Any click / Space / Enter / Esc skips.
+
+## 19. Land between the scenes, heights (2026-10-27)
+Region links now carry `{kind, gap, width}` (`Regions.DEF`): the scenes are spread so every link has its clear gap (road 12-24 m, park 22, forest 20, stairs 34) and a connecting strip of the requested width.
+`heights` per member + `Regions.height_at` give the ground level: flat inside a scene, a ramp along the strip ("stairs" climb in 0.3 m treads), smooth blend outside. Whitby: harbour 0 -> east cliff 9 m (stairs) -> abbey 10.5 m.
+The terrain mesh follows the heights (cliffs show layered rock by slope in `terrain.gdshader`), scenes are placed at their height, `Actor.height_fn` keeps the player (and action-mode enemies) on the ground, clicks aim at the real ground.
+`Dressing.dress_link` fills each strip: trees/park/forest/rocks by kind (tall things block), lamp posts and benches along the road, 2-3 clickable finds off the road (helper island `Location.build_loot_island`).
+The stair props that led nowhere (`a2_c_steps`, `a2_a_steps`) are removed in the region; the real stairs replace them. Buildings behind walls get land under them (`_terrain_rects`), the old town skyline is skipped in regions.
+Debug: `--regionview=x,y,z --look=x,y,z --vshot=png` (free camera), `--regiontest`, `--regionpie --eid=<id>`.

@@ -60,6 +60,8 @@ func _spawn(kind: String, p: Vector3) -> void:
 	loc.add_child(a)
 	a.setup(str(def.model), Assets.default_variant(str(def.model)))
 	a.clamp_fn = Callable(loc, "_clamp_region")
+	a.height_fn = Callable(loc, "height_at")
+	a.position.y = loc.height_at(Vector2(p.x, p.z))
 	a.blockers = loc._blockers
 	a.speed = 3.0 if kind.begins_with("wolf") else 2.4
 	loc._make_body(a, "", false)

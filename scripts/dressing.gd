@@ -561,7 +561,7 @@ static func _backdrop(loc: Location, rng: RandomNumberGenerator, w: float, d: fl
 	mmi.multimesh = mm
 	loc.add_child(mmi)
 	# town skyline behind the north edge
-	if theme in ["dock", "street", "tavern"]:
+	if theme in ["dock", "street", "tavern"] and loc.region == "":      # (a region has real land and houses of its own)
 		var count := 6
 		for i in count:
 			var asset := "house_wide" if rng.randf() < 0.5 else "house_row"
@@ -881,3 +881,100 @@ static func upgrade_buildings(data: Dictionary) -> void:
 			p.variant = "plaster_dirty_slate" if str(data.get("wall", "")) in ["plaster", "plaster_dirty"] else "stone_grey_slate"
 			p.scale = 1.0
 			p.radius = 3.5
+
+# ------------------------------------------------------------------ the land between the scenes of a region
+const LINK_MIX := {
+	"forest": [["pine", 0.38], ["pine_small", 0.16], ["yew", 0.1], ["deadtree", 0.05], ["bush", 0.1], ["fern", 0.14], ["rock", 0.04], ["log", 0.03]],
+	"park": [["oak", 0.22], ["bush", 0.2], ["flower_patch", 0.2], ["shrub", 0.14], ["yew", 0.06], ["pine_small", 0.06], ["rock", 0.04], ["stump", 0.04], ["log", 0.04]],
+	"road": [["oak", 0.14], ["pine", 0.12], ["bush", 0.26], ["shrub", 0.18], ["rock", 0.14], ["fern", 0.08], ["stump", 0.04], ["log", 0.04]],
+	"stairs": [["rock_big", 0.16], ["boulders", 0.1], ["shrub", 0.28], ["bush", 0.22], ["rock", 0.2], ["fern", 0.04]],
+}
+const LINK_TALL := ["pine", "pine_small", "oak", "yew", "deadtree", "rock_big", "boulders"]
+
+
+static func _link_pos(e: Dictionary, u: float, v: float) -> Vector2:
+	return Vector2(u, float(e.mid) + v) if int(e.axis) == 0 else Vector2(float(e.mid) + v, u)
+
+
+## Fills one connecting strip: trees / park / rocks by kind, lamp posts and benches along the road, and a few clickable finds.
+## Loot is returned as prop dictionaries for a helper island, blockers for the tall things.
+static func dress_link(loc: Location, rng: RandomNumberGenerator, e: Dictionary, rc: Rect2, loot_props: Array, blockers: Array, loot_base: int) -> int:
+	var lo := minf(float(e.ea), float(e.eb)) + 0.4
+	var hi := maxf(float(e.ea), float(e.eb)) - 0.4
+	var w: float = float(e.width)
+	var kind := str(e.kind)
+	var mix: Array = LINK_MIX.get(kind, LINK_MIX.road)
+	var dark := loc._sky_name() in ["night", "storm"]
+	var area := (hi - lo) * w
+	var density: float = {"forest": 0.085, "park": 0.05, "road": 0.032, "stairs": 0.03}.get(kind, 0.04)
+	var count := int(area * density)
+	var placed := 0
+	var tries := 0
+	while placed < count and tries < count * 12:
+		tries += 1
+		var u := rng.randf_range(lo, hi)
+		var v := rng.randf_range(-w / 2.0 + 0.6, w / 2.0 - 0.6)
+		var r := rng.randf()
+		var acc := 0.0
+		var model := "bush"
+		for pair in mix:
+			acc += float(pair[1])
+			if r <= acc:
+				model = str(pair[0])
+				break
+		var tall := LINK_TALL.has(model)
+		if absf(v) < (3.4 if tall else 2.2):
+			continue                                    # the road and its verge stay open
+		if not Assets.has_model(model):
+			continue
+		var p := _link_pos(e, u, v)
+		var variant := Assets.default_variant(model)
+		if dark and Assets.variants_of(model).has("dark"):
+			variant = "dark"
+		elif model == "flower_patch":
+			variant = ["white", "yellow", "purple", "red"][rng.randi() % 4]
+		var m := Assets.instantiate(model, variant)
+		var sc := rng.randf_range(0.8, 1.45) if tall else rng.randf_range(0.8, 1.3)
+		m.position = Vector3(p.x, loc.height_at(p), p.y)
+		m.rotation.y = rng.randf() * TAU
+		m.scale = Vector3.ONE * sc
+		loc.add_child(m)
+		if tall:
+			blockers.append({"pos": p, "r": (0.5 if model.begins_with("pine") or model == "oak" or model == "yew" else 0.7) * sc})
+		placed += 1
+	# lamp posts and benches along the road
+	if kind in ["road", "park", "stairs"] and Assets.has_model("lamp_post"):
+		var step := 11.0
+		var u := lo + 4.0
+		var side := 1.0
+		while u < hi - 3.0:
+			var p := _link_pos(e, u, side * 2.9)
+			var lp := Assets.instantiate("lamp_post", "default")
+			lp.position = Vector3(p.x, loc.height_at(p), p.y)
+			loc.add_child(lp)
+			if kind == "park" and Assets.has_model("bench") and rng.randf() < 0.7:
+				var bp := _link_pos(e, u + 3.0, -side * 3.2)
+				var b := Assets.instantiate("bench", "oak")
+				b.position = Vector3(bp.x, loc.height_at(bp), bp.y)
+				b.rotation.y = (0.0 if int(e.axis) == 0 else PI / 2.0) + (PI if side > 0 else 0.0)
+				loc.add_child(b)
+			u += step
+			side = -side
+	# finds by the roadside
+	var n_loot := 2 if kind == "stairs" else (3 if kind in ["forest", "park"] else 2)
+	for k in n_loot:
+		var u2 := rng.randf_range(lo + 3.0, hi - 3.0)
+		var v2 := (rng.randf_range(3.6, maxf(w / 2.0 - 0.8, 3.8))) * (1.0 if rng.randf() < 0.5 else -1.0)
+		var lp2 := _link_pos(e, u2, v2)
+		var spec: Array = LOOT["wild"][rng.randi() % LOOT["wild"].size()]
+		var item: String = LOOT_ITEMS["wild"][rng.randi() % LOOT_ITEMS["wild"].size()]
+		if not Assets.has_model(str(spec[0])):
+			continue
+		var variant2 := str(spec[1])
+		if not Assets.variants_of(str(spec[0])).has(variant2):
+			variant2 = Assets.default_variant(str(spec[0]))
+		loot_props.append({"id": "loot_%s_%d" % [loc.region, loot_base + k], "asset": str(spec[0]), "variant": variant2,
+			"pos": [lp2.x, loc.height_at(lp2), lp2.y], "rot": rng.randi() % 360, "scale": 1.0, "radius": 0.6, "name": str(spec[2]),
+			"interact": {"look": str(spec[3]), "take": item, "give_once": true, "take_amount": 2 if item in ["wood", "rope"] else 1,
+				"take_text": "Left by the roadside, half hidden: I find %s." % Game.item_name(item).to_lower()}})
+	return n_loot

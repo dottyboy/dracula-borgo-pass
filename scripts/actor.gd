@@ -19,6 +19,7 @@ var queue: Array = []             # further waypoints after `dest`
 var blockers: Array = []      # [{pos: Vector2, r: float}]
 var bounds := Rect2(-5, -5, 10, 10)
 var clamp_fn: Callable            # optional: keeps the actor inside an irregular walkable area
+var height_fn: Callable            # optional: ground height under (x, z) for scenes with slopes and steps
 var talking := false
 var dead := false
 var demo_walk := false       # gallery preview
@@ -221,6 +222,8 @@ func _process(delta: float) -> void:
 				walking = true
 	if demo_walk:
 		walking = true
+	if height_fn.is_valid():
+		position.y = lerpf(position.y, float(height_fn.call(Vector2(position.x, position.z))), minf(1.0, delta * 14.0))
 	rotation.y = lerp_angle(rotation.y, _yaw, minf(1.0, delta * 10.0))
 	_walk_blend = move_toward(_walk_blend, 1.0 if walking else 0.0, delta * 6.0)
 	if walking:

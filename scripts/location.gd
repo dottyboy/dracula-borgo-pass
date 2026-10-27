@@ -73,6 +73,7 @@ func build_region(rid: String, focus: String, from_loc: String) -> void:
 	region = rid
 	var R: Dictionary = Regions.DEF[rid]
 	var lay := Regions.layout(rid)
+	_lay = lay
 	members = lay.members
 	_land_rects = []
 	for m in members:
@@ -92,7 +93,6 @@ func build_region(rid: String, focus: String, from_loc: String) -> void:
 	room_d = lay.size.y
 	bounds = Rect2(-room_w / 2, -room_d / 2, room_w, room_d)
 	_environment()
-	_terrain(room_w, room_d, "grass")
 	# floor patches (cobbled quays etc.) per member
 	for m in members:
 		var md: Dictionary = Game.loc_data(m)
@@ -106,18 +106,26 @@ func build_region(rid: String, focus: String, from_loc: String) -> void:
 			hard.append(s)
 		if Dressing.theme_of(m, false) in ["dock", "street"] and Game.loc_data(m).get("walls", {}).has("north"):
 			hard.append("north")
-		_floor_patch(rc, fl, hard)
+		_floor_patch(rc, fl, hard, float(lay.heights.get(m, 0.0)))
 	var all_blockers: Array = []
 	var seg_extra: Array = []
 	for m in members:
 		var sub := Location.new()
 		var rc2: Rect2 = members[m]
 		add_child(sub)
-		sub.build_island(self, m, Vector3(rc2.get_center().x, 0, rc2.get_center().y), R.get("overrides", {}).get(m, {}))
+		sub.build_island(self, m, Vector3(rc2.get_center().x, float(lay.heights.get(m, 0.0)), rc2.get_center().y), R.get("overrides", {}).get(m, {}))
 		for eid in sub.entities:
 			entities[eid] = sub.entities[eid]
 		for b in sub._blockers:
 			all_blockers.append({"pos": (b.pos as Vector2) + rc2.get_center(), "r": b.r})
+	# land under every building that stands outside the scenes' own rectangles (house rows behind walls), then the ground itself
+	_terrain_rects = _land_rects.duplicate()
+	for sub in get_children():
+		if sub is Location and sub.host == self:
+			var off := Vector2(sub.position.x, sub.position.z)
+			for br in sub.get_meta("bldg_rects", []):
+				_terrain_rects.append(Rect2((br as Rect2).position + off, (br as Rect2).size).grow(1.2))
+	_terrain(room_w, room_d, "grass")
 	# keep the connecting strips passable: nothing may block inside them
 	var strips: Array = _land_rects.slice(members.size())
 	_blockers = all_blockers.filter(func(b: Dictionary) -> bool:
@@ -128,6 +136,7 @@ func build_region(rid: String, focus: String, from_loc: String) -> void:
 	_member = focus
 	var spp := region_spawn(focus, from_loc)
 	data.spawn = [spp.x, spp.z]
+	_build_links()
 	_region_camera()
 	_player(from_loc)
 	player.clamp_fn = Callable(self, "_clamp_region")
@@ -136,6 +145,33 @@ func build_region(rid: String, focus: String, from_loc: String) -> void:
 	apply_member_mood(focus, false)
 	if Game.meta.get("action_mode", false) and Game.in_arc == "":
 		add_child(ActionMode.new().setup(self))
+
+
+## The land between the scenes: vegetation by kind, lamp posts, benches and a few clickable finds.
+func _build_links() -> void:
+	var rng := RandomNumberGenerator.new()
+	rng.seed = hash("links:%s:%d" % [region, Game.seed_value])
+	var loot_props: Array = []
+	var extra_blockers: Array = []
+	var base := 0
+	for i in _lay.links.size():
+		base += Dressing.dress_link(self, rng, _lay.links[i], _lay.strips[i], loot_props, extra_blockers, base)
+	if not loot_props.is_empty():
+		var sub := Location.new()
+		add_child(sub)
+		sub.build_loot_island(self, loot_props)
+		for eid in sub.entities:
+			entities[eid] = sub.entities[eid]
+	_blockers.append_array(extra_blockers)
+
+
+## Helper island that only holds clickable finds (their positions are region coordinates).
+func build_loot_island(host_loc: Location, props: Array) -> void:
+	id = "links"
+	host = host_loc
+	data = {"props": props, "npcs": [], "cells": [1, 1]}
+	interior = false
+	_props()
 
 
 var _dungeon_cells: Dictionary = {}
@@ -241,7 +277,7 @@ func region_spawn(mid: String, from_loc: String) -> Vector3:
 	var md: Dictionary = Game.loc_data(mid)
 	var sp: Array = md.spawns.get(from_loc, md.spawn)
 	var c: Vector2 = (members[mid] as Rect2).get_center()
-	return Vector3(c.x + float(sp[0]), 0, c.y + float(sp[1]))
+	return Vector3(c.x + float(sp[0]), height_at(Vector2(c.x + float(sp[0]), c.y + float(sp[1]))), c.y + float(sp[1]))
 
 
 ## Route inside a merged region: through the connecting strips, never across the sea.
@@ -331,7 +367,7 @@ func _clamp_region(p: Vector3) -> Vector3:
 	return best
 
 
-func _floor_patch(rc: Rect2, variant: String, hard: Array = ["north", "south", "west", "east"]) -> void:
+func _floor_patch(rc: Rect2, variant: String, hard: Array = ["north", "south", "west", "east"], y0 := 0.0) -> void:
 	var spec: Dictionary = Assets.manifest.models["floor_4x4"].variants[variant]
 	var mat: StandardMaterial3D = Assets.material_for(spec.stone).duplicate()
 	mat.uv1_triplanar = true
@@ -404,7 +440,7 @@ func _floor_patch(rc: Rect2, variant: String, hard: Array = ["north", "south", "
 	var verts := PackedVector3Array()
 	var norms := PackedVector3Array()
 	for p in out:
-		verts.append(Vector3(p.x, 0.005, p.y))
+		verts.append(Vector3(p.x, 0.005 + y0, p.y))
 		norms.append(Vector3.UP)
 	var arr := []
 	arr.resize(Mesh.ARRAY_MAX)
@@ -660,12 +696,12 @@ func _terrain(w: float, d: float, variant: String) -> void:
 			if region != "":
 				# land around the members and the strips between them, ragged coast, then sea
 				var od := 1e9
-				for r in _land_rects:
+				for r in _terrain_rects:
 					var rc: Rect2 = r
 					od = minf(od, Vector2(maxf(maxf(rc.position.x - x, x - rc.end.x), 0.0), maxf(maxf(rc.position.y - z, z - rc.end.y), 0.0)).length())
 				var edge := 2.0 + noise.get_noise_2d(x * 2.1, z * 2.1) * 2.2
-				h = noise.get_noise_2d(x, z) * 0.18 * smoothstep(0.0, 4.0, od)
-				h -= smoothstep(edge, edge + 3.0, od) * 4.6
+				h = height_at(Vector2(x, z)) + noise.get_noise_2d(x, z) * 0.18 * smoothstep(0.0, 4.0, od)
+				h = lerpf(h, -4.6, smoothstep(edge, edge + 3.0, od))
 			elif cliff_mode:
 				# plateau that ends in a ragged cliff edge, then a sheer drop to the sea
 				var edge := 3.5 + noise.get_noise_2d(x * 2.3, z * 2.3) * 3.0 + 1.5
@@ -741,7 +777,7 @@ func _path_segments() -> Array:
 			var c := rc.get_center()
 			for p in md.get("props", []) + md.get("npcs", []):
 				var it: Dictionary = p.get("interact", {})
-				if (it.has("go") or it.has("talk")) and rs.size() < 46:
+				if (it.has("go") or it.has("talk")) and rs.size() < 43:
 					rs.append(Vector4(c.x + float(sp[0]), c.y + float(sp[1]), c.x + float(p.pos[0]), c.y + float(p.pos[2])))
 		for s in _land_rects.slice(members.size()):
 			var sr: Rect2 = s
@@ -1029,7 +1065,9 @@ func _update_walls() -> void:
 func _player(from_loc: String) -> void:
 	player = Actor.new()
 	var sp: Array = data.spawns.get(from_loc, data.spawn)
-	player.position = Vector3(sp[0], 0, sp[1])
+	player.position = Vector3(sp[0], height_at(Vector2(sp[0], sp[1])), sp[1])
+	if region != "":
+		player.height_fn = Callable(self, "height_at")
 	player.bounds = bounds
 	player.blockers = _blockers
 	add_child(player)
@@ -1165,6 +1203,12 @@ func _floor_point(pos: Vector2) -> Vector3:
 	var o := cam.project_ray_origin(pos)
 	var n := cam.project_ray_normal(pos)
 	var hit: Variant = Plane(Vector3.UP, 0).intersects_ray(o, n)
+	if hit != null and region != "" and not _lay.is_empty():
+		for _i in 3:                                  # ground is not flat in a region: re-aim at the height under the hit
+			var h2: Variant = Plane(Vector3.UP, height_at(Vector2(hit.x, hit.z))).intersects_ray(o, n)
+			if h2 == null:
+				break
+			hit = h2
 	return hit if hit != null else Vector3.INF
 
 
@@ -1254,6 +1298,11 @@ func _route(a: Vector2, b: Vector2) -> Array:
 	return path
 
 
+## Ground level of a region at a point of region space (flat everywhere else).
+func height_at(p: Vector2) -> float:
+	return Regions.height_at(_lay, p) if region != "" and not _lay.is_empty() and _lay.has("links") else 0.0
+
+
 func _flat_dist(a: Vector3, b: Vector3) -> float:
 	return Vector2(a.x - b.x, a.z - b.z).length()
 
@@ -1306,7 +1355,7 @@ func _process(delta: float) -> void:
 		return
 	_update_zone()
 	_edge_exit(delta)
-	if region != "" and player != null and cam != null:
+	if region != "" and player != null and cam != null and not debug_free_cam:
 		_track_member()
 		if id.begins_with("dungeon_"):
 			Dungeon.track(player.position, cam.position, delta)
@@ -1316,7 +1365,7 @@ func _process(delta: float) -> void:
 		_cam_base = _cam_look + _cam_off
 		cam.position = _cam_base
 		cam.look_at(_cam_look)
-	elif cam != null and _quality() >= 1:
+	elif cam != null and _quality() >= 1 and not debug_free_cam:
 		cam.position = _cam_base + Vector3(sin(_t * 0.17) * 0.16, sin(_t * 0.11) * 0.06, sin(_t * 0.13) * 0.1)
 		cam.look_at(_cam_look)
 	for f in _flickers:
@@ -1349,6 +1398,9 @@ func _process(delta: float) -> void:
 
 
 var _edge_wait := 1.0
+var _lay: Dictionary = {}
+var _terrain_rects: Array = []     # land rects plus building footprints (terrain only; walking uses _land_rects)
+var debug_free_cam := false    # tests / screenshots: leave the camera where it was put
 var _stuck_t := 0.0
 var _stuck_pos := Vector3.ZERO
 var dry_run := false         # tests: arriving does not trigger the entity's action

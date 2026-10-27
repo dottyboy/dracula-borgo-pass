@@ -533,13 +533,27 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 			print("BODYTEST ", eid, " ", en.data.get("variant", ""), ": ", info, " pick=", pick)
 		get_tree().quit()
 		return
+	if _args.has("regionview"):
+		## Whole-region overview screenshot: --regionview=<x,y,z camera position>
+		var cp := str(_args.regionview).split(",")
+		print("REGIONVIEW members ", loc.members, " strips ", loc._land_rects.slice(loc.members.size()), " player ", loc.player.position)
+		loc.debug_free_cam = true
+		loc.cam.fov = float(_args.get("fov", 55))
+		loc.cam.position = Vector3(float(cp[0]), float(cp[1]), float(cp[2]))
+		loc.cam.look_at(Vector3(float(cp[0]) * 0.3, 0, float(cp[2]) * 0.2 - 8.0) if not _args.has("look") else Vector3(float(str(_args.look).split(",")[0]), float(str(_args.look).split(",")[1]), float(str(_args.look).split(",")[2])))
+		await get_tree().create_timer(1.2).timeout
+		get_viewport().get_texture().get_image().save_png(str(_args.get("vshot", "/tmp/regionview.png")))
+		get_tree().quit()
+		return
 	if _args.has("regionpie"):
 		## Verb-ring choice in the current scene: take the first takeable entity through the pie signal and report.
 		Engine.time_scale = 6.0
 		hud.modal = false
 		print("REGIONPIE connected=", Game.pie_chosen.get_connections().size(), " region=", loc.region)
-		var target := ""
+		var target := str(_args.get("eid", ""))
 		for eid in loc.entities.keys():
+			if target != "":
+				break
 			if loc.entities[eid].data.get("interact", {}).has("take"):
 				target = str(eid)
 				break

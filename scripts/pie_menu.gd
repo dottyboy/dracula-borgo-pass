@@ -105,7 +105,10 @@ func _draw() -> void:
 		draw_line(_center, p, Color(0.95, 0.8, 0.35, 0.35), 2.0)
 		draw_circle(p + Vector2(2, 3), r, Color(0, 0, 0, 0.45))
 		draw_circle(p, r, Color(0.14, 0.1, 0.07, 0.95))
-		draw_arc(p, r, 0, TAU, 32, Color(1.0, 0.85, 0.4) if hot else Color(0.7, 0.55, 0.28), 3.0, true)
+		var ring_col := Color(1.0, 0.85, 0.4) if hot else Color(0.7, 0.55, 0.28)
+		if _verbs[i].has("color"):
+			ring_col = (_verbs[i].color as Color).lightened(0.25 if hot else 0.0)
+		draw_arc(p, r, 0, TAU, 32, ring_col, 4.0 if _verbs[i].has("color") else 3.0, true)
 		var vid := str(_verbs[i].id)
 		var gc := Color(1.0, 0.92, 0.6) if hot else Color(0.9, 0.78, 0.5)
 		if vid.begins_with("item:"):                      # items have no icons: their initial, and the name beside the button

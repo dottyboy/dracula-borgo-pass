@@ -461,6 +461,55 @@ func recruit(id: String) -> void:
 		party_changed.emit()
 
 
+## Item groups for sorting and colour coding the item bar and the use-item ring.
+const CAT_ORDER := ["weapon", "holy", "heal", "craft", "key", "doc", "gear", "misc"]
+const CAT_COLOR := {"weapon": Color("#d9534f"), "holy": Color("#f0dc8a"), "heal": Color("#62b872"), "craft": Color("#e0903a"),
+	"key": Color("#5f95e0"), "doc": Color("#c2a9d8"), "gear": Color("#4db6ac"), "misc": Color("#9a9a9a")}
+const CAT_LABEL := {"weapon": "Weapon / ammunition", "holy": "Holy ward", "heal": "Medicine", "craft": "Crafting material or tool",
+	"key": "Key", "doc": "Document / book", "gear": "Clothing / keepsake", "misc": "Other"}
+var _cat_cache: Dictionary = {}
+
+
+func item_category(id: String) -> String:
+	if _cat_cache.has(id):
+		return _cat_cache[id]
+	var cat := "misc"
+	var sk := str(systems.items.get(id, {}).get("kind", ""))
+	var crafting := false
+	for r in systems.recipes.values():
+		if r.get("needs", {}).has(id) or (r.get("tools", []) as Array).has(id):
+			crafting = true
+	var asset := str(item_def(id).get("asset", ""))
+	if sk in ["weapon_item", "ammo", "finisher"] or asset in ["stake"]:
+		cat = "weapon"
+	elif sk in ["ward", "holy_water"] or asset in ["crucifix"]:
+		cat = "holy"
+	elif sk in ["heal", "sedative"]:
+		cat = "heal"
+	elif sk in ["ingredient", "tool"] or crafting or asset in ["hammer", "candle", "lantern", "rope_coil"]:
+		cat = "craft"
+	elif sk == "equip":
+		cat = "gear"
+	elif asset == "key" or id.contains("key"):
+		cat = "key"
+	elif asset == "book":
+		cat = "doc"
+	_cat_cache[id] = cat
+	return cat
+
+
+## Inventory ids ordered by group, then name.
+func sorted_inventory() -> Array:
+	var ids: Array = inventory.duplicate()
+	ids.sort_custom(func(a: Variant, b: Variant) -> bool:
+		var ca := CAT_ORDER.find(item_category(str(a)))
+		var cb := CAT_ORDER.find(item_category(str(b)))
+		if ca != cb:
+			return ca < cb
+		return item_name(str(a)) < item_name(str(b)))
+	return ids
+
+
 func item_name(id: String) -> String:
 	if systems.items.has(id):
 		return str(systems.items[id].name)

@@ -820,12 +820,27 @@ func _rebuild_inventory() -> void:
 	hint.text = "Items:" if Game.inventory.size() > 0 else "(no items)"
 	hint.add_theme_color_override("font_color", GOLD)
 	_inv.add_child(hint)
-	for id in Game.inventory:
+	var last_cat := ""
+	for id in Game.sorted_inventory():
+		var cat := Game.item_category(str(id))
+		if last_cat != "" and cat != last_cat:
+			var gap := Control.new()                  # a little air between groups
+			gap.custom_minimum_size = Vector2(10, 0)
+			_inv.add_child(gap)
+		last_cat = cat
+		var col: Color = Game.CAT_COLOR[cat]
 		var b := Button.new()
 		b.text = Game.item_name(id) + (" x%d" % Game.count(id) if Game.count(id) > 1 else "")
 		b.toggle_mode = true
 		b.button_pressed = (Game.selected_item == id)
 		b.focus_mode = Control.FOCUS_NONE
+		b.tooltip_text = "%s\n%s" % [Game.item_name(id), Game.CAT_LABEL[cat]]
+		b.add_theme_stylebox_override("normal", _item_box(col, 0.0))
+		b.add_theme_stylebox_override("hover", _item_box(col, 0.18))
+		b.add_theme_stylebox_override("pressed", _item_box(col, 0.4))
+		b.add_theme_stylebox_override("hover_pressed", _item_box(col, 0.5))
+		b.add_theme_color_override("font_color", Color(0.92, 0.9, 0.85).lerp(col, 0.25))
+		b.add_theme_color_override("font_pressed_color", Color.WHITE)
 		b.gui_input.connect(func(ev: InputEvent) -> void:
 			if ev is InputEventMouseButton and ev.pressed:
 				if ev.button_index == MOUSE_BUTTON_LEFT:
@@ -836,6 +851,20 @@ func _rebuild_inventory() -> void:
 		_inv.add_child(b)
 		if Game.selected_item == id:
 			(func() -> void: _inv_scroll.ensure_control_visible(b)).call_deferred()
+
+
+## Item button look: dark body, a coloured bar underneath (the item's group), tinted when hovered or selected.
+func _item_box(col: Color, tint: float) -> StyleBoxFlat:
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0.1, 0.07, 0.07, 0.9).lerp(col, tint)
+	sb.border_width_bottom = 4
+	sb.border_color = col
+	sb.set_corner_radius_all(4)
+	sb.content_margin_left = 10
+	sb.content_margin_right = 10
+	sb.content_margin_top = 5
+	sb.content_margin_bottom = 3
+	return sb
 
 
 # -------------------------------------------------------------- dialogue ----

@@ -1173,8 +1173,8 @@ func _on_pie_chosen(eid: String, verb: String) -> void:
 		_approach(eid, "look")
 	elif verb == "item":
 		var items: Array = []
-		for iid in Game.inventory:
-			items.append({"id": "item:" + str(iid), "label": Game.item_name(str(iid))})
+		for iid in Game.sorted_inventory():
+			items.append({"id": "item:" + str(iid), "label": Game.item_name(str(iid)), "color": Game.CAT_COLOR[Game.item_category(str(iid))]})
 		Game.pie_requested.emit(eid, _pie_pos, "Use on " + str(entities[eid].data.get("name", "")), items)
 	elif verb.begins_with("item:"):
 		Game.selected_item = verb.substr(5)

@@ -19,7 +19,7 @@ Everything visual is generated from the book by the pipeline below - no hand-mad
 ## Play
     ~/Programi/godot4/Godot_v4.7.1-stable_linux.x86_64 --path .
 
-Left click on an object opens a Full Throttle style verb ring (Look, Take, Use, Use item, Talk, Go, Attack, Map outdoors); the ring can be turned off in the Esc menu, then left click acts directly. Right click: look. Click an inventory item to select it,
+Left click on an object opens a Full Throttle style verb ring (Look, Take, Use, Use item, Talk, Go, Attack, Map outdoors); the ring can be turned off in the Esc menu, then left click acts directly. Right click: look. The item bar is sorted and colour coded (red weapons and ammunition, gold holy wards, green medicine, orange crafting material and tools, blue keys, lilac documents, teal clothing, grey other; hover shows the group) and scrolls sideways with the mouse wheel. Click an inventory item to select it,
 then click something to use it (right click an item to examine it). Right click with an item selected deselects.
 
 ## Pipeline  (`python3 pipeline/build_assets.py [--force] [--only id ...]`)

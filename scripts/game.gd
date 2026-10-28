@@ -545,6 +545,101 @@ func craft(rid: String) -> bool:
 	return true
 
 
+## Objectives (data/objectives.json): per act number ("1".."6") or arc id, a checklist with a condition for "done" and three hints
+## of growing detail. H shows the next hint for the first open required objective; the journal's first page lists them all.
+var objectives: Dictionary = {}
+var hint_level: Dictionary = {}                 # objective id -> hints already shown
+var _last_act := "1"
+
+
+func objective_set() -> String:
+	if in_arc != "":
+		return in_arc
+	var rx := RegEx.create_from_string("^a(\\d)_")
+	var m := rx.search(current)
+	if m:
+		_last_act = m.get_string(1)
+	elif not current.begins_with("dungeon_") and not current.is_empty():
+		_last_act = "1"                          # Act I's places carry no prefix; side dungeons keep the act they were entered from
+	return _last_act
+
+
+## The visible objectives of the current act or arc: {id, text, done, required, hints}.
+func objective_list() -> Array:
+	if objectives.is_empty():
+		var f := FileAccess.open("res://data/objectives.json", FileAccess.READ)
+		if f != null:
+			var parsed: Variant = JSON.parse_string(f.get_as_text())
+			if parsed is Dictionary:
+				objectives = parsed
+	var out: Array = []
+	for o in objectives.get(objective_set(), []):
+		if not check(str(o.get("if", ""))):
+			continue
+		var d: Dictionary = (o as Dictionary).duplicate()
+		d["done"] = check(str(o.done))
+		d["required"] = bool(o.get("required", true))
+		out.append(d)
+	return out
+
+
+func objectives_bbcode() -> String:
+	var list := objective_list()
+	if list.is_empty():
+		return "[b]Objectives[/b]\n\nNothing is asked of you here. Look around, talk to people, and read the journal."
+	var done := 0
+	for o in list:
+		if o.done:
+			done += 1
+	var t := "[b]Objectives[/b]   %d of %d done   [i](H = hint)[/i]\n\n" % [done, list.size()]
+	var shown := 0
+	var first := true
+	for o in list:
+		if o.done:
+			continue
+		if shown >= 8:
+			break
+		shown += 1
+		var opt := "" if o.required else " [i](optional)[/i]"
+		t += "[ ]  %s%s\n" % [str(o.text), opt]
+		if first and o.required:
+			first = false
+			for i in int(hint_level.get(str(o.id), 0)):
+				t += "      [i]%s[/i]\n" % str((o.hints as Array)[i])
+	var more := list.size() - done - shown
+	if more > 0:
+		t += "\n[i]... and %d more[/i]\n" % more
+	if done > 0:
+		t += "\n[color=#8fbf6a]%d completed[/color]" % done
+	return t
+
+
+## The next hint for the first open required objective (vague, then where, then exactly what to do).
+func next_hint() -> String:
+	for o in objective_list():
+		if o.done or not o.required:
+			continue
+		var lv := int(hint_level.get(str(o.id), 0))
+		var hints: Array = o.hints
+		if lv < hints.size():
+			hint_level[str(o.id)] = lv + 1
+			return "Hint: " + str(hints[lv])
+		return "Hint: " + str(hints[hints.size() - 1])
+	for o in objective_list():
+		if not o.done and not o.required:
+			return "Hint (optional): " + str((o.hints as Array)[0])
+	return "Nothing left to do here but to see where the story goes."
+
+
+## Required objectives of the current set that are not done (used by the replay checks).
+func objectives_missing() -> Array:
+	var out: Array = []
+	for o in objective_list():
+		if o.required and not o.done:
+			out.append(str(o.id))
+	return out
+
+
 func check(cond: String) -> bool:
 	if cond == "":
 		return true

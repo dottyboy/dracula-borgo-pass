@@ -339,6 +339,8 @@ func replay(main: Node, plan_path: String, seed_value: int, defaults: bool) -> i
 	main._goto(str(st.location), "", true)
 	await settle_all()
 	print("replay act %s seed %d (%s): %d steps" % [plan.act, seed_value, "defaults" if defaults else "resolved", plan.plan.size()])
+	var granted: Array = []                          # journal entries written along the solution path (for pipeline/gen_objectives.py)
+	Game.journal_added.connect(func(jid: String) -> void: granted.append(jid))
 	var ended := [false]
 	Game.ending.connect(func(_t: String) -> void: ended[0] = true)
 	var n := 0
@@ -410,6 +412,16 @@ func replay(main: Node, plan_path: String, seed_value: int, defaults: bool) -> i
 			if r.has("set"):
 				ok(Game.flags.get(str(r.set), false), "reward flag %s set" % r.set)
 	ok(reached, "act exit reached (%s)" % exit_to)
+	print("REPLAYJOURNAL ", (arc_id if arc_id != "" else str(int(plan.act))), " ", ",".join(granted))
+	Game.objective_list()                            # loads data/objectives.json
+	var okey := str(int(plan.act)) if typeof(plan.act) == TYPE_FLOAT or typeof(plan.act) == TYPE_INT else str(plan.act)
+	if arc_id == "" and Game.objectives.has(okey):
+		var left: Array = []
+		for o in Game.objectives[okey]:
+			if bool(o.get("required", true)) and not Game.check(str(o.done)) and Game.check(str(o.get("if", ""))):
+				left.append(str(o.id))
+		ok(left.is_empty(), "all required objectives of %s done (left: %s)" % [okey, str(left)])
+		print("  objectives checked for ", okey, ": ", Game.objectives[okey].size(), " listed, missing ", left)
 	if not forced.is_empty():
 		print("  note: fights forced to victory in replay: ", forced)
 	print("REPLAY act %s: %s (%d failures)" % [plan.act, "PASS" if fails == 0 else "FAIL", fails])

@@ -261,7 +261,10 @@ func _ready() -> void:
 	_jtext.bbcode_enabled = true
 	jh.add_child(_jtext)
 	_jlist.item_selected.connect(func(i: int) -> void:
-		var e: Dictionary = Game.world.journal[str(Game.journal[i])]
+		if i == 0:
+			_jtext.text = Game.objectives_bbcode()
+			return
+		var e: Dictionary = Game.world.journal[str(Game.journal[i - 1])]
 		_jtext.text = "[b]%s[/b]\n[i]%s[/i]\n\n%s" % [e.title, e.get("source", ""), e.text])
 	_pp = PanelContainer.new()
 	_pp.set_anchors_preset(Control.PRESET_CENTER)
@@ -492,16 +495,21 @@ func _open_panel(which: String) -> void:
 		"journal":
 			_journal.visible = true
 			modal = true
-			_jlist.clear()
-			for id in Game.journal:
-				_jlist.add_item(str(Game.world.journal[id].title))
-			if _jlist.item_count > 0:
-				_jlist.select(_jlist.item_count - 1)
-				_jlist.item_selected.emit(_jlist.item_count - 1)
+			_fill_journal()
 		"craft":
 			_craft.visible = true
 			modal = true
 			_rebuild_craft()
+
+
+## The journal list: page 0 is the objectives checklist, then the entries in the order they were written.
+func _fill_journal() -> void:
+	_jlist.clear()
+	_jlist.add_item("Objectives")
+	for id in Game.journal:
+		_jlist.add_item(str(Game.world.journal[id].title))
+	_jlist.select(0)
+	_jlist.item_selected.emit(0)
 
 
 func toggle_party() -> void:
@@ -738,20 +746,19 @@ func _unhandled_key_input(ev: InputEvent) -> void:
 		elif not modal:
 			_menu.visible = true
 			modal = true
+	if ev.pressed and ev.keycode == KEY_H and not _title.visible and not _end.visible and not _card.visible and (not modal or _journal.visible):
+		if _journal.visible:
+			Game.next_hint()
+			_jtext.text = Game.objectives_bbcode()
+		else:
+			say(Game.next_hint())
 	if ev.pressed and ev.keycode == KEY_M and not _title.visible and not _end.visible and not _card.visible and (not modal or _chron.visible):
 		toggle_chronicle()
 	if ev.pressed and ev.keycode == KEY_J and not _title.visible and not _end.visible and not _card.visible and (not modal or _journal.visible):
 		_journal.visible = not _journal.visible
 		modal = _journal.visible
 		if _journal.visible:
-			_jlist.clear()
-			for id in Game.journal:
-				_jlist.add_item(str(Game.world.journal[id].title))
-			if _jlist.item_count > 0:
-				_jlist.select(_jlist.item_count - 1)
-				_jlist.item_selected.emit(_jlist.item_count - 1)
-			else:
-				_jtext.text = "Nothing written yet."
+			_fill_journal()
 	if ev.pressed and ev.keycode == KEY_C and not _title.visible and not _end.visible and (not modal or _craft.visible):
 		_craft.visible = not _craft.visible
 		modal = _craft.visible

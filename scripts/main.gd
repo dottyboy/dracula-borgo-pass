@@ -178,6 +178,19 @@ func _ready() -> void:
 	if _args.has("loc"):
 		hud._title.visible = false
 		_start()
+		if _args.has("hintshot"):
+			## --hintshot=<png>: opens the journal on the objectives page after two hints (for screenshots and a smoke test)
+			await get_tree().create_timer(1.5).timeout
+			var h1 := Game.next_hint()
+			var h2 := Game.next_hint()
+			print("HINT1: ", h1, " | HINT2: ", h2, " | open: ", Game.objectives_missing())
+			hud._journal.visible = true
+			hud.modal = true
+			hud._fill_journal()
+			await get_tree().create_timer(0.6).timeout
+			get_viewport().get_texture().get_image().save_png(str(_args.hintshot))
+			get_tree().quit()
+			return
 		if _args.has("fight"):
 			await get_tree().create_timer(1.6).timeout
 			_fight(str(_args.fight), "")

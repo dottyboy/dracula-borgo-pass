@@ -13,10 +13,9 @@ Everything visual is generated from the book by the pipeline below - no hand-mad
 * Generated places: crypts, cellars, catacombs and a ruined castle in several layouts per place chosen by the world seed - baked with the Game Level Architect Blender add-on, plus polygon dungeons (hexagon, octagon, ... rooms joined door to door) generated in Godot itself.
 * The schooner Demeter: a detailed ship model, moored in the harbour at Varna and used as the deck, bow and wheel of the voyage.
 
-![Opening titles](docs/img/title.png)
-
 | | |
 |---|---|
+| ![Opening titles](docs/img/title.png) | ![Opening quote](docs/img/intro_quote.png) |
 | ![Golden Krone inn](docs/img/inn.png) | ![Borgo Pass](docs/img/borgo_pass.png) |
 | ![Castle courtyard](docs/img/courtyard.png) | ![Whitby harbour](docs/img/whitby_region.png) |
 | ![Travel map](docs/img/travel_map.png) | ![Turn-based combat](docs/img/combat.png) |

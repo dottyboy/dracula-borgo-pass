@@ -677,190 +677,100 @@
  "arthur_burden": [
   {
    "id": "o_arthur_burden_j_blessing",
-   "text": "Talk to Lord Godalming",
+   "text": "Receive your father's blessing",
    "done": "journal:arthur_burden_j_blessing",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Your father has something to say before you go.",
     "Someone in The Lord's chamber, The Ring has something to say.",
     "Talk to Lord Godalming in The Lord's chamber, The Ring."
    ]
   },
   {
-   "id": "o_arthur_burden_j_office",
-   "text": "Visit The estate office",
-   "done": "journal:arthur_burden_j_office",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The estate office.",
-    "Go to The estate office."
-   ]
-  },
-  {
    "id": "o_arthur_burden_j_steward",
-   "text": "Talk to Mr. Wilkes, steward",
+   "text": "Hear the steward Wilkes confess",
    "done": "journal:arthur_burden_j_steward",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Something is wrong in the estate office.",
     "Someone in The estate office has something to say.",
     "Talk to Mr. Wilkes, steward in The estate office."
    ]
   },
   {
-   "id": "o_arthur_burden_j_hillingham",
-   "text": "Visit The garden at Hillingham",
-   "done": "journal:arthur_burden_j_hillingham",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The garden at Hillingham.",
-    "Go to The garden at Hillingham."
-   ]
-  },
-  {
-   "id": "o_arthur_burden_j_mrs",
-   "text": "Talk to Mrs. Westenra",
-   "done": "journal:arthur_burden_j_mrs",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The garden at Hillingham has something to say.",
-    "Talk to Mrs. Westenra in The garden at Hillingham."
-   ]
-  },
-  {
    "id": "o_arthur_burden_j_proposal",
-   "text": "Talk to Lucy Westenra",
+   "text": "Give Lucy the ring and the rose",
    "done": "journal:arthur_burden_j_proposal",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Lucy is waiting in the garden at Hillingham.",
     "Someone in The garden at Hillingham has something to say.",
     "Talk to Lucy Westenra in The garden at Hillingham."
    ]
   },
   {
-   "id": "o_arthur_burden_j_summer",
-   "text": "Visit The summer-house, Hillingham",
-   "done": "journal:arthur_burden_j_summer",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The summer-house, Hillingham.",
-    "Go to The summer-house, Hillingham."
-   ]
-  },
-  {
    "id": "o_arthur_burden_j_telegram_back",
-   "text": "Talk to Hillingham footman",
+   "text": "Receive the telegram at the summer-house",
    "done": "journal:arthur_burden_j_telegram_back",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "News is coming for you from home.",
     "Someone in The summer-house, Hillingham has something to say.",
     "Talk to Hillingham footman in The summer-house, Hillingham."
    ]
   },
   {
    "id": "o_arthur_burden_j_death",
-   "text": "Visit The hall, The Ring",
+   "text": "Return to the Ring: your father is dead",
    "done": "journal:arthur_burden_j_death",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "You are needed at home.",
     "It is in The hall, The Ring.",
     "Go to The hall, The Ring."
    ]
   },
   {
    "id": "o_arthur_burden_j_terms",
-   "text": "Talk to Mr. Crowle, banker",
-   "done": "journal:arthur_burden_j_terms&journal:arthur_burden_j_end_truth",
+   "text": "Hear Mr. Crowle's terms",
+   "done": "journal:arthur_burden_j_terms",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The banker has come to see you.",
     "Someone in The hall, The Ring has something to say.",
     "Talk to Mr. Crowle, banker in The hall, The Ring."
    ]
   },
   {
-   "id": "o_arthur_burden_j_chapel",
-   "text": "Visit The family chapel",
-   "done": "journal:arthur_burden_j_chapel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The family chapel.",
-    "Go to The family chapel."
-   ]
-  },
-  {
    "id": "o_arthur_burden_j_vault_open",
-   "text": "Talk to Vault door",
+   "text": "Open the door of the family vault",
    "done": "journal:arthur_burden_j_vault_open",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The family chapel holds the way to the vault.",
     "Someone in The family chapel has something to say.",
     "Talk to Vault door in The family chapel."
    ]
   },
   {
-   "id": "o_arthur_burden_j_vault",
-   "text": "Visit The Holmwood vault",
-   "done": "journal:arthur_burden_j_vault",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Holmwood vault.",
-    "Go to The Holmwood vault."
-   ]
-  },
-  {
-   "id": "o_arthur_burden_j_wood_in",
-   "text": "Visit The Home Wood, by night",
-   "done": "journal:arthur_burden_j_wood_in",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Home Wood, by night.",
-    "Go to The Home Wood, by night."
-   ]
-  },
-  {
-   "id": "o_arthur_burden_j_wood_out",
-   "text": "Find out: The Wood is clear",
-   "done": "journal:arthur_burden_j_wood_out",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'The Wood is clear' is about."
-   ]
-  },
-  {
-   "id": "o_arthur_burden_j_village",
-   "text": "Visit The village green",
-   "done": "journal:arthur_burden_j_village",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The village green.",
-    "Go to The village green."
-   ]
-  },
-  {
    "id": "o_arthur_burden_j_tenants",
-   "text": "Talk to Gideon Marsh, tenant farmer",
+   "text": "Hear the tenants' petition",
    "done": "journal:arthur_burden_j_tenants",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The tenants have a request.",
     "Someone in The village green has something to say.",
     "Talk to Gideon Marsh, tenant farmer in The village green."
    ]
   },
   {
    "id": "o_arthur_burden_j_muniment",
-   "text": "Visit The muniment room",
+   "text": "Search the muniment room",
    "done": "journal:arthur_burden_j_muniment",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The family papers are kept in the muniment room.",
     "It is in The muniment room.",
     "Go to The muniment room."
    ]
   },
   {
    "id": "o_arthur_burden_j_sickroom",
-   "text": "Visit The Lord's chamber, The Ring",
+   "text": "Return to your father's chamber",
    "done": "journal:arthur_burden_j_sickroom",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Where did it all begin?",
     "It is in The Lord's chamber, The Ring.",
     "Go to The Lord's chamber, The Ring."
    ]
@@ -869,190 +779,110 @@
  "demeter_voyage": [
   {
    "id": "o_demeter_voyage_j_cargo",
-   "text": "Talk to Mr. Hildesheim's clerk",
+   "text": "Check the bill of lading",
    "done": "journal:demeter_voyage_j_cargo",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The ship's papers must be put in order first.",
     "Someone in The quay, Varna has something to say.",
     "Talk to Mr. Hildesheim's clerk in The quay, Varna."
    ]
   },
   {
    "id": "o_demeter_voyage_j_cleared",
-   "text": "Talk to Customs officer",
+   "text": "Clear customs",
    "done": "journal:demeter_voyage_j_cleared",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The customs officer must pass the cargo.",
     "Someone in The quay, Varna has something to say.",
     "Talk to Customs officer in The quay, Varna."
    ]
   },
   {
    "id": "o_demeter_voyage_j_blessed",
-   "text": "Talk to Father Nikolai",
+   "text": "Receive the priest's blessing",
    "done": "journal:demeter_voyage_j_blessed",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A sailor does not leave without a blessing.",
     "Someone in The quay, Varna has something to say.",
     "Talk to Father Nikolai in The quay, Varna."
    ]
   },
   {
    "id": "o_demeter_voyage_j_sail",
-   "text": "Talk to Mr. Amramoff, first mate",
-   "done": "journal:demeter_voyage_j_sail&journal:demeter_voyage_j_mate",
+   "text": "Give the order to sail",
+   "done": "journal:demeter_voyage_j_sail",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The mate is waiting for your word.",
     "Someone in The quay, Varna has something to say.",
     "Talk to Mr. Amramoff, first mate in The quay, Varna."
    ]
   },
   {
-   "id": "o_demeter_voyage_j_fore",
-   "text": "Visit The forecastle",
-   "done": "journal:demeter_voyage_j_fore",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The forecastle.",
-    "Go to The forecastle."
-   ]
-  },
-  {
-   "id": "o_demeter_voyage_j_galley",
-   "text": "Visit The galley",
-   "done": "journal:demeter_voyage_j_galley",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The galley.",
-    "Go to The galley."
-   ]
-  },
-  {
-   "id": "o_demeter_voyage_j_bow",
-   "text": "Visit The bows",
-   "done": "journal:demeter_voyage_j_bow",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The bows.",
-    "Go to The bows."
-   ]
-  },
-  {
    "id": "o_demeter_voyage_j_cabin",
-   "text": "Visit The Captain's cabin",
+   "text": "Look into your cabin",
    "done": "journal:demeter_voyage_j_cabin",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Walk the ship from end to end.",
     "It is in The Captain's cabin.",
     "Go to The Captain's cabin."
    ]
   },
   {
    "id": "o_demeter_voyage_j_hold",
-   "text": "Visit The hold",
+   "text": "Go down into the hold",
    "done": "journal:demeter_voyage_j_hold",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The cargo lies below.",
     "It is in The hold.",
     "Go to The hold."
    ]
   },
   {
-   "id": "o_demeter_voyage_j_wheel",
-   "text": "Visit The wheel",
-   "done": "journal:demeter_voyage_j_wheel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The wheel.",
-    "Go to The wheel."
-   ]
-  },
-  {
    "id": "o_demeter_voyage_j_weather",
-   "text": "Talk to Sail-plan board",
+   "text": "Read the weather at the wheel",
    "done": "journal:demeter_voyage_j_weather",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The sky and the glass will tell you.",
     "Someone in The wheel has something to say.",
     "Talk to Sail-plan board in The wheel."
    ]
   },
   {
-   "id": "o_demeter_voyage_j_log1",
-   "text": "Talk to Log-desk",
-   "done": "journal:demeter_voyage_j_log1&journal:demeter_voyage_j_log2&journal:demeter_voyage_j_log3&journal:demeter_voyage_j_log4",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The Captain's cabin has something to say.",
-    "Talk to Log-desk in The Captain's cabin."
-   ]
-  },
-  {
-   "id": "o_demeter_voyage_j_petrofsky",
-   "text": "Talk to The cot: turn in",
-   "done": "journal:demeter_voyage_j_petrofsky&journal:demeter_voyage_j_dmitri&journal:demeter_voyage_j_storm&journal:demeter_voyage_j_cry",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The Captain's cabin has something to say.",
-    "Talk to The cot: turn in in The Captain's cabin."
-   ]
-  },
-  {
    "id": "o_demeter_voyage_j_olgaren",
-   "text": "Talk to Olgaren",
+   "text": "Question Olgaren about the tall thin man",
    "done": "journal:demeter_voyage_j_olgaren",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "One of the crew keeps his eyes down.",
     "Someone in Deck of the Demeter has something to say.",
     "Talk to Olgaren in Deck of the Demeter."
    ]
   },
   {
-   "id": "o_demeter_voyage_j_roster",
-   "text": "Talk to Watch-bill and crew roll",
-   "done": "journal:demeter_voyage_j_roster",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The Captain's cabin has something to say.",
-    "Talk to Watch-bill and crew roll in The Captain's cabin."
-   ]
-  },
-  {
    "id": "o_demeter_voyage_j_box",
-   "text": "Talk to Box thirteen, opened",
+   "text": "Open box thirteen",
    "done": "journal:demeter_voyage_j_box",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "One box in the hold is not like the rest.",
     "Someone in The hold has something to say.",
     "Talk to Box thirteen, opened in The hold."
    ]
   },
   {
-   "id": "o_demeter_voyage_j_dark",
-   "text": "Find out: The dark in the hold",
-   "done": "journal:demeter_voyage_j_dark",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'The dark in the hold' is about."
-   ]
-  },
-  {
    "id": "o_demeter_voyage_j_end",
-   "text": "Talk to The ship's wheel",
+   "text": "Lash yourself to the wheel",
    "done": "journal:demeter_voyage_j_end",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The last duty of a captain.",
     "Someone in The wheel has something to say.",
     "Talk to The ship's wheel in The wheel."
    ]
   },
   {
    "id": "o_demeter_voyage_j_varna",
-   "text": "Visit The quay, Varna",
+   "text": "Return to the quay at Varna",
    "done": "journal:demeter_voyage_j_varna",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The voyage began on a quay.",
     "It is in The quay, Varna.",
     "Go to The quay, Varna."
    ]
@@ -1061,532 +891,252 @@
  "dracula_voivode": [
   {
    "id": "o_dracula_voivode_j_council_closed",
-   "text": "Talk to Stanciu, the counsellor",
+   "text": "Hear the counsellor and close the gates",
    "done": "journal:dracula_voivode_j_council_closed",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The counsellor is waiting in the great hall.",
     "Someone in The great hall, the castle in the Carpathians has something to say.",
     "Talk to Stanciu, the counsellor in The great hall, the castle in the Carpathians."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_chamber",
-   "text": "Visit The Voivode's chamber",
-   "done": "journal:dracula_voivode_j_chamber",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Voivode's chamber.",
-    "Go to The Voivode's chamber."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_chest",
-   "text": "Talk to The Order chest",
+   "text": "Open the Order chest in your father's chamber",
    "done": "journal:dracula_voivode_j_chest",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Your father's chamber keeps a secret.",
     "Someone in The Voivode's chamber has something to say.",
     "Talk to The Order chest in The Voivode's chamber."
    ]
   },
   {
    "id": "o_dracula_voivode_j_radu_chained",
-   "text": "Talk to Radu, my brother",
+   "text": "See Radu in the cells",
    "done": "journal:dracula_voivode_j_radu_chained",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Your brother is held in the castle.",
     "Someone in The great hall, the castle in the Carpathians has something to say.",
     "Talk to Radu, my brother in The great hall, the castle in the Carpathians."
    ]
   },
   {
    "id": "o_dracula_voivode_j_sealed",
-   "text": "Talk to Seal-press and wax",
+   "text": "Seal the order",
    "done": "journal:dracula_voivode_j_sealed",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "An order is waiting to be sealed.",
     "Someone in The great hall, the castle in the Carpathians has something to say.",
     "Talk to Seal-press and wax in The great hall, the castle in the Carpathians."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_tower",
-   "text": "Visit The watch-tower",
-   "done": "journal:dracula_voivode_j_tower",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The watch-tower.",
-    "Go to The watch-tower."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_beacon",
-   "text": "Examine The beacon, soaked",
+   "text": "Light the beacon on the watch-tower",
    "done": "journal:dracula_voivode_j_beacon",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The ridge must be warned.",
     "Look around The watch-tower.",
     "Examine The beacon, soaked in The watch-tower."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_road",
-   "text": "Visit The mountain road",
-   "done": "journal:dracula_voivode_j_road",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The mountain road.",
-    "Go to The mountain road."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_refugee",
-   "text": "Talk to Grandmother on the cart",
+   "text": "Meet the grandmother on the mountain road",
    "done": "journal:dracula_voivode_j_refugee",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The road is full of refugees.",
     "Someone in The mountain road has something to say.",
     "Talk to Grandmother on the cart in The mountain road."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_camp",
-   "text": "Visit The army's camp",
-   "done": "journal:dracula_voivode_j_camp",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The army's camp.",
-    "Go to The army's camp."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_prisoner_broken",
-   "text": "Talk to The captured Akinji",
+   "text": "Question the captured Akinji",
    "done": "journal:dracula_voivode_j_prisoner_broken",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The camp holds a prisoner.",
     "Someone in The army's camp has something to say.",
     "Talk to The captured Akinji in The army's camp."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_map",
-   "text": "Talk to The map-table",
-   "done": "journal:dracula_voivode_j_map",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The army's camp has something to say.",
-    "Talk to The map-table in The army's camp."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_ford",
-   "text": "Visit The Reed Ford",
+   "text": "Raid the Reed Ford by night",
    "done": "journal:dracula_voivode_j_ford",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The army must cross the river.",
     "It is in The Reed Ford.",
     "Go to The Reed Ford."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_hermit",
-   "text": "Talk to The pale scholar",
-   "done": "journal:dracula_voivode_j_hermit",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The army's camp has something to say.",
-    "Talk to The pale scholar in The army's camp."
-   ]
-  },
-  {
-   "id": "o_dracula_voivode_j_lake",
-   "text": "Visit The shore of Lake Hermannstadt",
-   "done": "journal:dracula_voivode_j_lake",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The shore of Lake Hermannstadt.",
-    "Go to The shore of Lake Hermannstadt."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_school",
-   "text": "Visit The Scholomance, the lecture hall",
+   "text": "Enter the Scholomance",
    "done": "journal:dracula_voivode_j_school",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A school stands by the lake.",
     "It is in The Scholomance, the lecture hall.",
     "Go to The Scholomance, the lecture hall."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_vasile_cowed",
-   "text": "Talk to Vasile Cernat",
-   "done": "journal:dracula_voivode_j_vasile_cowed",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The Scholomance, the lecture hall has something to say.",
-    "Talk to Vasile Cernat in The Scholomance, the lecture hall."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_rite",
-   "text": "Talk to The rite-altar",
+   "text": "Take part in the rite of three",
    "done": "journal:dracula_voivode_j_rite",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The students gather at the altar.",
     "Someone in The Scholomance, the lecture hall has something to say.",
     "Talk to The rite-altar in The Scholomance, the lecture hall."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_library",
-   "text": "Visit The forbidden library",
-   "done": "journal:dracula_voivode_j_library",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The forbidden library.",
-    "Go to The forbidden library."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_forged",
-   "text": "Talk to The Roll of the School",
+   "text": "Find the tenth name in the forbidden library",
    "done": "journal:dracula_voivode_j_forged",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The School's roll is kept in the library.",
     "Someone in The forbidden library has something to say.",
     "Talk to The Roll of the School in The forbidden library."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_tithe",
-   "text": "Visit The tithe chamber",
-   "done": "journal:dracula_voivode_j_tithe",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The tithe chamber.",
-    "Go to The tithe chamber."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_tithe_vasile",
-   "text": "Talk to The Master of the tithe",
+   "text": "Face the Master of the tithe",
    "done": "journal:dracula_voivode_j_tithe_vasile",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The school exacts a price.",
     "Someone in The tithe chamber has something to say.",
     "Talk to The Master of the tithe in The tithe chamber."
    ]
   },
   {
-   "id": "o_dracula_voivode_j_tomb",
-   "text": "Visit The family crypt",
-   "done": "journal:dracula_voivode_j_tomb",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The family crypt.",
-    "Go to The family crypt."
-   ]
-  },
-  {
-   "id": "o_dracula_voivode_j_chapel",
-   "text": "Visit The castle chapel, by night",
-   "done": "journal:dracula_voivode_j_chapel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The castle chapel, by night.",
-    "Go to The castle chapel, by night."
-   ]
-  },
-  {
    "id": "o_dracula_voivode_j_end_vigil",
-   "text": "Talk to The altar",
+   "text": "Keep Ileana's vigil in the castle chapel",
    "done": "journal:dracula_voivode_j_end_vigil",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The night ends in the chapel.",
     "Someone in The castle chapel, by night has something to say.",
     "Talk to The altar in The castle chapel, by night."
-   ]
-  },
-  {
-   "id": "o_dracula_voivode_j_hall",
-   "text": "Visit The great hall, the castle in the Carpathians",
-   "done": "journal:dracula_voivode_j_hall",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The great hall, the castle in the Carpathians.",
-    "Go to The great hall, the castle in the Carpathians."
    ]
   }
  ],
  "harker_road": [
   {
-   "id": "o_harker_road_j_lodging",
-   "text": "Visit Jonathan's lodgings",
-   "done": "journal:harker_road_j_lodging",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Jonathan's lodgings.",
-    "Go to Jonathan's lodgings."
-   ]
-  },
-  {
    "id": "o_harker_road_j_trunk",
-   "text": "Talk to Father's trunk",
+   "text": "Open your father's trunk",
    "done": "journal:harker_road_j_trunk",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Something of your father's is among your things.",
     "Someone in Jonathan's lodgings has something to say.",
     "Talk to Father's trunk in Jonathan's lodgings."
    ]
   },
   {
-   "id": "o_harker_road_j_mina",
-   "text": "Visit The schoolroom",
-   "done": "journal:harker_road_j_mina",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The schoolroom.",
-    "Go to The schoolroom."
-   ]
-  },
-  {
    "id": "o_harker_road_j_engaged",
-   "text": "Talk to Mina Murray",
-   "done": "journal:harker_road_j_engaged&journal:harker_road_j_ribbon",
+   "text": "Meet Mina at the school",
+   "done": "journal:harker_road_j_engaged",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Mina is at the school.",
     "Someone in The schoolroom has something to say.",
     "Talk to Mina Murray in The schoolroom."
    ]
   },
   {
-   "id": "o_harker_road_j_commission",
-   "text": "Visit Hawkins & Harker, Solicitors",
-   "done": "journal:harker_road_j_commission",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Hawkins & Harker, Solicitors.",
-    "Go to Hawkins & Harker, Solicitors."
-   ]
-  },
-  {
    "id": "o_harker_road_j_task",
-   "text": "Talk to Mr. Peter Hawkins",
-   "done": "journal:harker_road_j_task&journal:harker_road_j_carfax&journal:harker_road_j_instr",
+   "text": "Hear Mr. Hawkins about the Count's wishes",
+   "done": "journal:harker_road_j_task",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Mr. Hawkins has a commission for you.",
     "Someone in Hawkins & Harker, Solicitors has something to say.",
     "Talk to Mr. Peter Hawkins in Hawkins & Harker, Solicitors."
    ]
   },
   {
    "id": "o_harker_road_j_letters",
-   "text": "Talk to Letter-press copy-book",
+   "text": "Read the Count's letters",
    "done": "journal:harker_road_j_letters",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The Count's letters are kept in the office.",
     "Someone in Hawkins & Harker, Solicitors has something to say.",
     "Talk to Letter-press copy-book in Hawkins & Harker, Solicitors."
    ]
   },
   {
-   "id": "o_harker_road_j_surveys",
-   "text": "Examine Locked deed-box",
-   "done": "journal:harker_road_j_surveys",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Look around The muniment room.",
-    "Examine Locked deed-box in The muniment room."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_museum_arrive",
-   "text": "Visit The Reading Room, British Museum",
-   "done": "journal:harker_road_j_museum_arrive",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Reading Room, British Museum.",
-    "Go to The Reading Room, British Museum."
-   ]
-  },
-  {
    "id": "o_harker_road_j_museum",
-   "text": "Talk to The Superintendent of the Reading Room",
+   "text": "Read up on Transylvania",
    "done": "journal:harker_road_j_museum",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The Reading Room has books on the country.",
     "Someone in The Reading Room, British Museum has something to say.",
     "Talk to The Superintendent of the Reading Room in The Reading Room, British Museum."
    ]
   },
   {
-   "id": "o_harker_road_j_packed",
-   "text": "Talk to Mrs. Dunmore",
-   "done": "journal:harker_road_j_packed",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Jonathan's lodgings has something to say.",
-    "Talk to Mrs. Dunmore in Jonathan's lodgings."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_wall",
-   "text": "Visit The castle wall, by night",
-   "done": "journal:harker_road_j_wall",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The castle wall, by night.",
-    "Go to The castle wall, by night."
-   ]
-  },
-  {
    "id": "o_harker_road_j_climb",
-   "text": "Talk to Jonathan's window-sill",
+   "text": "Climb down the castle wall",
    "done": "journal:harker_road_j_climb",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The window is the only way out.",
     "Someone in The castle wall, by night has something to say.",
     "Talk to Jonathan's window-sill in The castle wall, by night."
    ]
   },
   {
-   "id": "o_harker_road_j_gold",
-   "text": "Visit The Count's room",
-   "done": "journal:harker_road_j_gold",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Count's room.",
-    "Go to The Count's room."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_vault",
-   "text": "Visit The ruined chapel and its vault",
-   "done": "journal:harker_road_j_vault",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The ruined chapel and its vault.",
-    "Go to The ruined chapel and its vault."
-   ]
-  },
-  {
    "id": "o_harker_road_j_search",
-   "text": "Talk to Earth-box",
+   "text": "Search the earth-box in the vault",
    "done": "journal:harker_road_j_search",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "There is a box in the old chapel.",
     "Someone in The ruined chapel and its vault has something to say.",
     "Talk to Earth-box in The ruined chapel and its vault."
    ]
   },
   {
-   "id": "o_harker_road_j_path",
-   "text": "Visit The mountain path",
-   "done": "journal:harker_road_j_path",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The mountain path.",
-    "Go to The mountain path."
-   ]
-  },
-  {
    "id": "o_harker_road_j_szgany",
-   "text": "Talk to Szgany woman at the fire",
+   "text": "Meet the Szgany at their fire",
    "done": "journal:harker_road_j_szgany",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Someone is camped on the mountain path.",
     "Someone in The mountain path has something to say.",
     "Talk to Szgany woman at the fire in The mountain path."
    ]
   },
   {
-   "id": "o_harker_road_j_cross",
-   "text": "Talk to Broken footbridge",
-   "done": "journal:harker_road_j_cross",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The mountain path has something to say.",
-    "Talk to Broken footbridge in The mountain path."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_hospital",
-   "text": "Visit Hospital of St. Joseph and Ste. Mary, Buda-Pesth",
-   "done": "journal:harker_road_j_hospital",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Hospital of St. Joseph and Ste. Mary, Buda-Pesth.",
-    "Go to Hospital of St. Joseph and Ste. Mary, Buda-Pesth."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_dream",
-   "text": "Talk to My bed",
-   "done": "journal:harker_road_j_dream&journal:harker_road_j_mina_arrives",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Hospital of St. Joseph and Ste. Mary, Buda-Pesth has something to say.",
-    "Talk to My bed in Hospital of St. Joseph and Ste. Mary, Buda-Pesth."
-   ]
-  },
-  {
    "id": "o_harker_road_j_woke",
-   "text": "Talk to Sister Agatha",
-   "done": "journal:harker_road_j_woke&journal:harker_road_j_vow",
+   "text": "Wake in the hospital with Sister Agatha",
+   "done": "journal:harker_road_j_woke",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "You are among kind strangers.",
     "Someone in Hospital of St. Joseph and Ste. Mary, Buda-Pesth has something to say.",
     "Talk to Sister Agatha in Hospital of St. Joseph and Ste. Mary, Buda-Pesth."
    ]
   },
   {
    "id": "o_harker_road_j_letter",
-   "text": "Talk to Sister's writing-desk",
+   "text": "Write to Mina",
    "done": "journal:harker_road_j_letter",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "There is someone you must tell.",
     "Someone in Hospital of St. Joseph and Ste. Mary, Buda-Pesth has something to say.",
     "Talk to Sister's writing-desk in Hospital of St. Joseph and Ste. Mary, Buda-Pesth."
    ]
   },
   {
    "id": "o_harker_road_j_proposal",
-   "text": "Talk to Mina",
-   "done": "journal:harker_road_j_proposal&journal:harker_road_j_gave&journal:harker_road_j_wedding_day&journal:harker_road_j_wed&journal:harker_road_j_epilogue",
+   "text": "Make your proposal",
+   "done": "journal:harker_road_j_proposal",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "There is something you have to ask Mina.",
     "Someone in Hospital of St. Joseph and Ste. Mary, Buda-Pesth has something to say.",
     "Talk to Mina in Hospital of St. Joseph and Ste. Mary, Buda-Pesth."
    ]
   },
   {
-   "id": "o_harker_road_j_chapel",
-   "text": "Visit The hospital chapel",
-   "done": "journal:harker_road_j_chapel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The hospital chapel.",
-    "Go to The hospital chapel."
-   ]
-  },
-  {
-   "id": "o_harker_road_j_parents",
-   "text": "Examine Shrine of the Virgin",
-   "done": "journal:harker_road_j_parents",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Look around The hospital chapel.",
-    "Examine Shrine of the Virgin in The hospital chapel."
-   ]
-  },
-  {
    "id": "o_harker_road_j_morning",
-   "text": "Visit Cathedral Close, Exeter",
+   "text": "Walk out on a May morning in Exeter",
    "done": "journal:harker_road_j_morning",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The road ends where it began.",
     "It is in Cathedral Close, Exeter.",
     "Go to Cathedral Close, Exeter."
    ]
@@ -1594,181 +1144,101 @@
  ],
  "lucy_summer": [
   {
-   "id": "o_lucy_summer_j_parlour",
-   "text": "Visit The parlour, Hillingham",
-   "done": "journal:lucy_summer_j_parlour",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The parlour, Hillingham.",
-    "Go to The parlour, Hillingham."
-   ]
-  },
-  {
-   "id": "o_lucy_summer_j_garden",
-   "text": "Visit The garden, Hillingham",
-   "done": "journal:lucy_summer_j_garden",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The garden, Hillingham.",
-    "Go to The garden, Hillingham."
-   ]
-  },
-  {
    "id": "o_lucy_summer_j_flowers",
-   "text": "Talk to Mamma",
-   "done": "journal:lucy_summer_j_flowers&journal:lucy_summer_j_pack&journal:lucy_summer_j_lost",
+   "text": "Please Mamma with the flowers",
+   "done": "journal:lucy_summer_j_flowers",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Mamma is in the parlour.",
     "Someone in The parlour, Hillingham has something to say.",
     "Talk to Mamma in The parlour, Hillingham."
    ]
   },
   {
    "id": "o_lucy_summer_j_mina_letter",
-   "text": "Examine Escritoire",
+   "text": "Read Mina's letters",
    "done": "journal:lucy_summer_j_mina_letter",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Mina has written.",
     "Look around The parlour, Hillingham.",
     "Examine Escritoire in The parlour, Hillingham."
    ]
   },
   {
    "id": "o_lucy_summer_j_seward",
-   "text": "Talk to Dr. John Seward",
+   "text": "Meet Dr. Seward in the garden",
    "done": "journal:lucy_summer_j_seward",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A visitor is waiting in the garden.",
     "Someone in The garden, Hillingham has something to say.",
     "Talk to Dr. John Seward in The garden, Hillingham."
    ]
   },
   {
    "id": "o_lucy_summer_j_quincey",
-   "text": "Talk to Mr. Quincey Morris",
+   "text": "Meet Mr. Morris",
    "done": "journal:lucy_summer_j_quincey",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Another visitor has come.",
     "Someone in The garden, Hillingham has something to say.",
     "Talk to Mr. Quincey Morris in The garden, Hillingham."
    ]
   },
   {
    "id": "o_lucy_summer_j_arthur",
-   "text": "Talk to Mr. Arthur Holmwood",
+   "text": "Meet Arthur",
    "done": "journal:lucy_summer_j_arthur",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A third visitor has come.",
     "Someone in The garden, Hillingham has something to say.",
     "Talk to Mr. Arthur Holmwood in The garden, Hillingham."
    ]
   },
   {
-   "id": "o_lucy_summer_j_letter",
-   "text": "Talk to Writing-table",
-   "done": "journal:lucy_summer_j_letter",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The parlour, Hillingham has something to say.",
-    "Talk to Writing-table in The parlour, Hillingham."
-   ]
-  },
-  {
-   "id": "o_lucy_summer_j_whitby",
-   "text": "Visit Crescent lodgings, Whitby",
-   "done": "journal:lucy_summer_j_whitby",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Crescent lodgings, Whitby.",
-    "Go to Crescent lodgings, Whitby."
-   ]
-  },
-  {
-   "id": "o_lucy_summer_j_cliff",
-   "text": "Visit East Cliff, Whitby",
-   "done": "journal:lucy_summer_j_cliff",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in East Cliff, Whitby.",
-    "Go to East Cliff, Whitby."
-   ]
-  },
-  {
    "id": "o_lucy_summer_j_mina_walk",
-   "text": "Talk to Mina",
-   "done": "journal:lucy_summer_j_mina_walk&journal:lucy_summer_j_mina_rescue",
+   "text": "Walk with Mina on the East Cliff",
+   "done": "journal:lucy_summer_j_mina_walk",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Mina is on the cliff.",
     "Someone in East Cliff, Whitby has something to say.",
     "Talk to Mina in East Cliff, Whitby."
    ]
   },
   {
    "id": "o_lucy_summer_j_swales",
-   "text": "Talk to Mr. Swales",
+   "text": "Hear Mr. Swales about the steps",
    "done": "journal:lucy_summer_j_swales",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The old man on the cliff has a story.",
     "Someone in East Cliff, Whitby has something to say.",
     "Talk to Mr. Swales in East Cliff, Whitby."
    ]
   },
   {
-   "id": "o_lucy_summer_j_night",
-   "text": "Visit East Cliff, by night",
-   "done": "journal:lucy_summer_j_night",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in East Cliff, by night.",
-    "Go to East Cliff, by night."
-   ]
-  },
-  {
    "id": "o_lucy_summer_j_anchor_p",
-   "text": "Talk to A tall dark figure",
-   "done": "journal:lucy_summer_j_anchor_p&journal:lucy_summer_j_anchor_m&journal:lucy_summer_j_anchor_a&journal:lucy_summer_j_free",
+   "text": "Meet the tall dark figure on the East Cliff at night",
+   "done": "journal:lucy_summer_j_anchor_p",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The cliff is not empty at night.",
     "Someone in East Cliff, by night has something to say.",
     "Talk to A tall dark figure in East Cliff, by night."
    ]
   },
   {
-   "id": "o_lucy_summer_j_steps",
-   "text": "Visit The Abbey steps, by night",
-   "done": "journal:lucy_summer_j_steps",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Abbey steps, by night.",
-    "Go to The Abbey steps, by night."
-   ]
-  },
-  {
    "id": "o_lucy_summer_j_counted",
-   "text": "Talk to The steps",
+   "text": "Count the Abbey steps",
    "done": "journal:lucy_summer_j_counted",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The steps are worth counting.",
     "Someone in The Abbey steps, by night has something to say.",
     "Talk to The steps in The Abbey steps, by night."
    ]
   },
   {
-   "id": "o_lucy_summer_j_last",
-   "text": "Visit Lucy's room, Hillingham",
-   "done": "journal:lucy_summer_j_last&journal:lucy_summer_j_room",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Lucy's room, Hillingham.",
-    "Go to Lucy's room, Hillingham."
-   ]
-  },
-  {
    "id": "o_lucy_summer_j_a_remember",
-   "text": "Talk to My writing-desk",
-   "done": "journal:lucy_summer_j_a_remember&journal:lucy_summer_j_m_arthur&journal:lucy_summer_j_end_arthur",
+   "text": "Write your last note to Arthur",
+   "done": "journal:lucy_summer_j_a_remember",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "There is someone you must remember.",
     "Someone in Lucy's room, Hillingham has something to say.",
     "Talk to My writing-desk in Lucy's room, Hillingham."
    ]
@@ -1777,422 +1247,222 @@
  "mina_records": [
   {
    "id": "o_mina_records_j_edith",
-   "text": "Talk to Edith Marsh",
+   "text": "Hear Edith's gossip",
    "done": "journal:mina_records_j_edith",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A friend has news from the school.",
     "Someone in The schoolroom, Exeter has something to say.",
     "Talk to Edith Marsh in The schoolroom, Exeter."
    ]
   },
   {
    "id": "o_mina_records_j_task",
-   "text": "Talk to Miss Hallam",
-   "done": "journal:mina_records_j_task&journal:mina_records_j_key",
+   "text": "Accept Miss Hallam's bargain",
+   "done": "journal:mina_records_j_task",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Miss Hallam has a task for you.",
     "Someone in The schoolroom, Exeter has something to say.",
     "Talk to Miss Hallam in The schoolroom, Exeter."
    ]
   },
   {
    "id": "o_mina_records_j_blotter",
-   "text": "Talk to Blotter",
+   "text": "Read the blotter in the mirror",
    "done": "journal:mina_records_j_blotter",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Something has been blotted.",
     "Someone in The schoolroom, Exeter has something to say.",
     "Talk to Blotter in The schoolroom, Exeter."
    ]
   },
   {
-   "id": "o_mina_records_j_redink",
-   "text": "Talk to Red ink",
-   "done": "journal:mina_records_j_redink",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The schoolroom, Exeter has something to say.",
-    "Talk to Red ink in The schoolroom, Exeter."
-   ]
-  },
-  {
    "id": "o_mina_records_j_cupboard",
-   "text": "Talk to Prize cupboard",
+   "text": "Examine the prize cupboard",
    "done": "journal:mina_records_j_cupboard",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A cupboard in the schoolroom holds a clue.",
     "Someone in The schoolroom, Exeter has something to say.",
     "Talk to Prize cupboard in The schoolroom, Exeter."
    ]
   },
   {
-   "id": "o_mina_records_j_cuff",
-   "text": "Talk to Dora Pike",
-   "done": "journal:mina_records_j_cuff&journal:mina_records_j_book_found",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The schoolroom, Exeter has something to say.",
-    "Talk to Dora Pike in The schoolroom, Exeter."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_dictation",
-   "text": "Talk to Dictation sheet",
-   "done": "journal:mina_records_j_dictation",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The typewriting room has something to say.",
-    "Talk to Dictation sheet in The typewriting room."
-   ]
-  },
-  {
    "id": "o_mina_records_j_typed",
-   "text": "Talk to Remington typewriter",
+   "text": "Make the typewriter speak",
    "done": "journal:mina_records_j_typed",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The Remington can tell you something.",
     "Someone in The typewriting room has something to say.",
     "Talk to Remington typewriter in The typewriting room."
    ]
   },
   {
-   "id": "o_mina_records_j_reply",
-   "text": "Talk to Mrs. Pym",
-   "done": "journal:mina_records_j_reply",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in My rooms, Exeter has something to say.",
-    "Talk to Mrs. Pym in My rooms, Exeter."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_bradshaw2",
-   "text": "Talk to Mr. Pomfret, station-master",
-   "done": "journal:mina_records_j_bradshaw2&journal:mina_records_j_wire",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in St. David's station, Exeter has something to say.",
-    "Talk to Mr. Pomfret, station-master in St. David's station, Exeter."
-   ]
-  },
-  {
    "id": "o_mina_records_j_bradshaw",
-   "text": "Talk to Bradshaw's Guide (station copy)",
+   "text": "Check Bradshaw for the Bristol line",
    "done": "journal:mina_records_j_bradshaw",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The trains must be checked.",
     "Someone in St. David's station, Exeter has something to say.",
     "Talk to Bradshaw's Guide (station copy) in St. David's station, Exeter."
    ]
   },
   {
    "id": "o_mina_records_j_letter_found",
-   "text": "Talk to Hobbs, telegraph clerk",
+   "text": "Find Jonathan's letter at last",
    "done": "journal:mina_records_j_letter_found",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The telegraph clerk may have it.",
     "Someone in St. David's station, Exeter has something to say.",
     "Talk to Hobbs, telegraph clerk in St. David's station, Exeter."
    ]
   },
   {
-   "id": "o_mina_records_j_firstdream",
-   "text": "Talk to Lucy Westenra",
-   "done": "journal:mina_records_j_firstdream&journal:mina_records_j_letter&journal:mina_records_j_confide",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in My rooms, Exeter has something to say.",
-    "Talk to Lucy Westenra in My rooms, Exeter."
-   ]
-  },
-  {
    "id": "o_mina_records_j_whitby",
-   "text": "Visit The Crescent, Whitby",
+   "text": "Go to Whitby",
    "done": "journal:mina_records_j_whitby",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The seaside is next.",
     "It is in The Crescent, Whitby.",
     "Go to The Crescent, Whitby."
    ]
   },
   {
    "id": "o_mina_records_j_dreamorder",
-   "text": "Talk to Dream notes",
+   "text": "Put your dream in order: water, wood, swing",
    "done": "journal:mina_records_j_dreamorder",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Your notes hold a pattern.",
     "Someone in The Crescent, Whitby has something to say.",
     "Talk to Dream notes in The Crescent, Whitby."
    ]
   },
   {
-   "id": "o_mina_records_j_swales",
-   "text": "Talk to Mr. Swales",
-   "done": "journal:mina_records_j_swales&journal:mina_records_j_almanac",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in East Cliff churchyard, dusk has something to say.",
-    "Talk to Mr. Swales in East Cliff churchyard, dusk."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_tomb1",
-   "text": "Talk to Gravestone of Hannah Brough",
-   "done": "journal:mina_records_j_tomb1",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in East Cliff churchyard, dusk has something to say.",
-    "Talk to Gravestone of Hannah Brough in East Cliff churchyard, dusk."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_tomb2",
-   "text": "Talk to Gravestone of John Anson",
-   "done": "journal:mina_records_j_tomb2",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in East Cliff churchyard, dusk has something to say.",
-    "Talk to Gravestone of John Anson in East Cliff churchyard, dusk."
-   ]
-  },
-  {
    "id": "o_mina_records_j_tomb3",
-   "text": "Talk to Gravestone of Mary Dale",
+   "text": "Read the third gravestone at dusk",
    "done": "journal:mina_records_j_tomb3",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The old stones must be read in order.",
     "Someone in East Cliff churchyard, dusk has something to say.",
     "Talk to Gravestone of Mary Dale in East Cliff churchyard, dusk."
    ]
   },
   {
-   "id": "o_mina_records_j_bats",
-   "text": "Find out: Bats at the Abbey",
-   "done": "journal:mina_records_j_bats",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'Bats at the Abbey' is about."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_tide",
-   "text": "Talk to Tide-table",
-   "done": "journal:mina_records_j_tide",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The coastguard hut has something to say.",
-    "Talk to Tide-table in The coastguard hut."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_plumb",
-   "text": "Talk to The coastguard",
-   "done": "journal:mina_records_j_plumb",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The coastguard hut has something to say.",
-    "Talk to The coastguard in The coastguard hut."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_scare",
-   "text": "Visit Our bedroom, Whitby, at night",
-   "done": "journal:mina_records_j_scare",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Our bedroom, Whitby, at night.",
-    "Go to Our bedroom, Whitby, at night."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_window",
-   "text": "Talk to Window on the cliff",
-   "done": "journal:mina_records_j_window",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Our bedroom, Whitby, at night has something to say.",
-    "Talk to Window on the cliff in Our bedroom, Whitby, at night."
-   ]
-  },
-  {
    "id": "o_mina_records_j_trance",
-   "text": "Talk to Rocking-chair",
+   "text": "Make the first deliberate trance",
    "done": "journal:mina_records_j_trance",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The rocking-chair in your room.",
     "Someone in Our bedroom, Whitby, at night has something to say.",
     "Talk to Rocking-chair in Our bedroom, Whitby, at night."
    ]
   },
   {
-   "id": "o_mina_records_j_hold1",
-   "text": "Talk to Dripping barrel",
-   "done": "journal:mina_records_j_hold1",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The dark hold has something to say.",
-    "Talk to Dripping barrel in The dark hold."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_hold2",
-   "text": "Talk to Great timber",
-   "done": "journal:mina_records_j_hold2",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The dark hold has something to say.",
-    "Talk to Great timber in The dark hold."
-   ]
-  },
-  {
    "id": "o_mina_records_j_end",
-   "text": "Talk to The cord and the ladder",
+   "text": "Follow the thread in the dark hold",
    "done": "journal:mina_records_j_end",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The end of the dream is below.",
     "Someone in The dark hold has something to say.",
     "Talk to The cord and the ladder in The dark hold."
-   ]
-  },
-  {
-   "id": "o_mina_records_j_morning",
-   "text": "Visit The schoolroom, Exeter",
-   "done": "journal:mina_records_j_morning",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The schoolroom, Exeter.",
-    "Go to The schoolroom, Exeter."
    ]
   }
  ],
  "quincey_hunt": [
   {
    "id": "o_quincey_hunt_j_load",
-   "text": "Examine Loading bench",
+   "text": "Load the powder and lead",
    "done": "journal:quincey_hunt_j_load",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Get ready first.",
     "Look around The stable.",
     "Examine Loading bench in The stable."
    ]
   },
   {
    "id": "o_quincey_hunt_j_stolen",
-   "text": "Talk to Wash Tolliver",
+   "text": "Find out who took the horses",
    "done": "journal:quincey_hunt_j_stolen",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The remuda is gone.",
     "Someone in The Morris ranch, Brazos country, Texas has something to say.",
     "Talk to Wash Tolliver in The Morris ranch, Brazos country, Texas."
    ]
   },
   {
    "id": "o_quincey_hunt_j_hobbs",
-   "text": "Talk to Old Hobbs",
+   "text": "Take the old trapper's advice",
    "done": "journal:quincey_hunt_j_hobbs",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Old Hobbs knows the range.",
     "Someone in The open range has something to say.",
     "Talk to Old Hobbs in The open range."
    ]
   },
   {
    "id": "o_quincey_hunt_j_signs",
-   "text": "Talk to The three trails",
+   "text": "Read the signs of the three trails",
    "done": "journal:quincey_hunt_j_signs",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The trails will show which way they went.",
     "Someone in The open range has something to say.",
     "Talk to The three trails in The open range."
    ]
   },
   {
    "id": "o_quincey_hunt_j_creek",
-   "text": "Examine Leaning cottonwood snag",
+   "text": "Cross the creek at the snag",
    "done": "journal:quincey_hunt_j_creek",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The cottonwood bottoms hide a crossing.",
     "Look around The cottonwood bottoms.",
     "Examine Leaning cottonwood snag in The cottonwood bottoms."
    ]
   },
   {
-   "id": "o_quincey_hunt_j_wolves",
-   "text": "Find out: Wolves at the ford",
-   "done": "journal:quincey_hunt_j_wolves",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'Wolves at the ford' is about."
-   ]
-  },
-  {
-   "id": "o_quincey_hunt_j_fight",
-   "text": "Find out: Dunning's camp",
-   "done": "journal:quincey_hunt_j_fight",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'Dunning's camp' is about."
-   ]
-  },
-  {
    "id": "o_quincey_hunt_j_reunion",
-   "text": "Talk to Santa Fe",
-   "done": "journal:quincey_hunt_j_reunion&journal:quincey_hunt_j_grass",
+   "text": "Be reunited with Santa Fe",
+   "done": "journal:quincey_hunt_j_reunion",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Your horse is somewhere ahead.",
     "Someone in Dunning's camp has something to say.",
     "Talk to Santa Fe in Dunning's camp."
    ]
   },
   {
    "id": "o_quincey_hunt_j_anselmo",
-   "text": "Talk to Anselmo the gaucho",
+   "text": "Hear what Anselmo the gaucho knew",
    "done": "journal:quincey_hunt_j_anselmo",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A gaucho sits at a camp fire.",
     "Someone in Camp on the Pampas has something to say.",
     "Talk to Anselmo the gaucho in Camp on the Pampas."
    ]
   },
   {
    "id": "o_quincey_hunt_j_tale",
-   "text": "Talk to Camp fire",
+   "text": "Listen to the tale by the fire",
    "done": "journal:quincey_hunt_j_tale",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The camp fire has a story.",
     "Someone in Camp on the Pampas has something to say.",
     "Talk to Camp fire in Camp on the Pampas."
    ]
   },
   {
-   "id": "o_quincey_hunt_j_bats",
-   "text": "Find out: The vigil",
-   "done": "journal:quincey_hunt_j_bats",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'The vigil' is about."
-   ]
-  },
-  {
    "id": "o_quincey_hunt_j_mark",
-   "text": "Talk to Jack Seward",
+   "text": "Find the mark in the grass",
    "done": "journal:quincey_hunt_j_mark",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Dawn shows what the night left.",
     "Someone in The grass at dawn has something to say.",
     "Talk to Jack Seward in The grass at dawn."
    ]
   },
   {
    "id": "o_quincey_hunt_j_end",
-   "text": "Talk to Santa Fe's grave",
+   "text": "Bring Santa Fe home",
    "done": "journal:quincey_hunt_j_end",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The hunt ends where it began.",
     "Someone in The grass at dawn has something to say.",
     "Talk to Santa Fe's grave in The grass at dawn."
    ]
@@ -2201,150 +1471,110 @@
  "renfield_mercy": [
   {
    "id": "o_renfield_mercy_j_frenzy",
-   "text": "Talk to Attendant Hodge",
-   "done": "journal:renfield_mercy_j_frenzy&journal:renfield_mercy_j_hodge_key&journal:renfield_mercy_j_round",
+   "text": "Find out what upset Room 12",
+   "done": "journal:renfield_mercy_j_frenzy",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The attendant has something to say.",
     "Someone in Room 12, Purfleet has something to say.",
     "Talk to Attendant Hodge in Room 12, Purfleet."
    ]
   },
   {
    "id": "o_renfield_mercy_j_ledger",
-   "text": "Examine Loose floorboard",
+   "text": "Find the notebook of lives under the floorboard",
    "done": "journal:renfield_mercy_j_ledger",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Something is hidden in the room.",
     "Look around Room 12, Purfleet.",
     "Examine Loose floorboard in Room 12, Purfleet."
    ]
   },
   {
    "id": "o_renfield_mercy_j_sugar",
-   "text": "Talk to Locked linen-press",
+   "text": "Look into the sugar ration",
    "done": "journal:renfield_mercy_j_sugar",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The day-room keeps the stores.",
     "Someone in The day-room, Purfleet has something to say.",
     "Talk to Locked linen-press in The day-room, Purfleet."
    ]
   },
   {
    "id": "o_renfield_mercy_j_count",
-   "text": "Talk to Mr. Quill",
+   "text": "Learn what seven, three, nine mean",
    "done": "journal:renfield_mercy_j_count",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The numbers mean something.",
     "Someone in The day-room, Purfleet has something to say.",
     "Talk to Mr. Quill in The day-room, Purfleet."
    ]
   },
   {
    "id": "o_renfield_mercy_j_plea",
-   "text": "Talk to Dr. Seward",
+   "text": "Make your plea to Dr. Seward",
    "done": "journal:renfield_mercy_j_plea",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The doctor must be asked.",
     "Someone in Dr. Seward's study has something to say.",
     "Talk to Dr. Seward in Dr. Seward's study."
    ]
   },
   {
-   "id": "o_renfield_mercy_j_notes",
-   "text": "Talk to Dr. Seward's desk",
-   "done": "journal:renfield_mercy_j_notes",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Dr. Seward's study has something to say.",
-    "Talk to Dr. Seward's desk in Dr. Seward's study."
-   ]
-  },
-  {
    "id": "o_renfield_mercy_j_cook",
-   "text": "Talk to Mrs. Pargeter, the cook",
+   "text": "Hear Cook and the rhyme",
    "done": "journal:renfield_mercy_j_cook",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The cook knows an old rhyme.",
     "Someone in The scullery has something to say.",
     "Talk to Mrs. Pargeter, the cook in The scullery."
    ]
   },
   {
-   "id": "o_renfield_mercy_j_flies",
-   "text": "Examine Window sill",
-   "done": "journal:renfield_mercy_j_flies",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Look around Room 12, Purfleet.",
-    "Examine Window sill in Room 12, Purfleet."
-   ]
-  },
-  {
    "id": "o_renfield_mercy_j_key",
-   "text": "Examine Cobweb behind the range-end",
+   "text": "Find the spider's key",
    "done": "journal:renfield_mercy_j_key",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A key is hidden where nobody looks.",
     "Look around The scullery.",
     "Examine Cobweb behind the range-end in The scullery."
    ]
   },
   {
-   "id": "o_renfield_mercy_j_night",
-   "text": "Talk to The cot",
-   "done": "journal:renfield_mercy_j_night",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Room 12, Purfleet has something to say.",
-    "Talk to The cot in Room 12, Purfleet."
-   ]
-  },
-  {
    "id": "o_renfield_mercy_j_hodge",
-   "text": "Talk to Night-attendant Hodge",
+   "text": "Put the night attendant to sleep",
    "done": "journal:renfield_mercy_j_hodge",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Someone must not be watching.",
     "Someone in The day-room, Purfleet has something to say.",
     "Talk to Night-attendant Hodge in The day-room, Purfleet."
    ]
   },
   {
    "id": "o_renfield_mercy_j_garden",
-   "text": "Talk to Water-butt",
+   "text": "Slip out through the garden wicket",
    "done": "journal:renfield_mercy_j_garden",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The garden has a way out.",
     "Someone in The asylum garden, by night has something to say.",
     "Talk to Water-butt in The asylum garden, by night."
    ]
   },
   {
-   "id": "o_renfield_mercy_j_chapel",
-   "text": "Visit The chapel at Carfax",
-   "done": "journal:renfield_mercy_j_chapel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The chapel at Carfax.",
-    "Go to The chapel at Carfax."
-   ]
-  },
-  {
    "id": "o_renfield_mercy_j_warning",
-   "text": "Talk to The altar",
-   "done": "journal:renfield_mercy_j_warning&journal:renfield_mercy_j_end_loyal",
+   "text": "Leave your note for the doctor",
+   "done": "journal:renfield_mercy_j_warning",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Someone must be warned.",
     "Someone in The chapel at Carfax has something to say.",
     "Talk to The altar in The chapel at Carfax."
    ]
   },
   {
    "id": "o_renfield_mercy_j_wake",
-   "text": "Visit Room 12, Purfleet",
+   "text": "Wake again in Room 12",
    "done": "journal:renfield_mercy_j_wake",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The night is over.",
     "It is in Room 12, Purfleet.",
     "Go to Room 12, Purfleet."
    ]
@@ -2353,170 +1583,100 @@
  "seward_asylum": [
   {
    "id": "o_seward_asylum_j_hillingham",
-   "text": "Talk to Lucy's note",
+   "text": "Read Lucy's note",
    "done": "journal:seward_asylum_j_hillingham",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A note has arrived.",
     "Someone in Dr. Seward's study, Purfleet has something to say.",
     "Talk to Lucy's note in Dr. Seward's study, Purfleet."
    ]
   },
   {
    "id": "o_seward_asylum_j_debt",
-   "text": "Talk to Letters from Amsterdam",
-   "done": "journal:seward_asylum_j_debt&journal:seward_asylum_j_open_mind&journal:seward_asylum_j_dose",
+   "text": "Read the letters from Amsterdam",
+   "done": "journal:seward_asylum_j_debt",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Someone is owed a great debt.",
     "Someone in The records room has something to say.",
     "Talk to Letters from Amsterdam in The records room."
    ]
   },
   {
    "id": "o_seward_asylum_j_grief",
-   "text": "Talk to Phonograph",
-   "done": "journal:seward_asylum_j_grief&journal:seward_asylum_j_end",
+   "text": "Dictate your grief to the phonograph",
+   "done": "journal:seward_asylum_j_grief",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The phonograph is in your study.",
     "Someone in Dr. Seward's study, Purfleet has something to say.",
     "Talk to Phonograph in Dr. Seward's study, Purfleet."
    ]
   },
   {
-   "id": "o_seward_asylum_j_hennessey_mark",
-   "text": "Talk to Attendant Hennessey",
-   "done": "journal:seward_asylum_j_hennessey_mark&journal:seward_asylum_j_pym",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The patients' ward has something to say.",
-    "Talk to Attendant Hennessey in The patients' ward."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_vane",
-   "text": "Talk to Miss Vane",
+   "text": "Hear Miss Vane about her visitor",
    "done": "journal:seward_asylum_j_vane",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A patient has had a visitor.",
     "Someone in The patients' ward has something to say.",
     "Talk to Miss Vane in The patients' ward."
    ]
   },
   {
-   "id": "o_seward_asylum_j_clock",
-   "text": "Examine Ward clock",
-   "done": "journal:seward_asylum_j_clock",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Look around The patients' ward.",
-    "Examine Ward clock in The patients' ward."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_cell",
-   "text": "Visit Room 12",
+   "text": "Visit Renfield in Room 12",
    "done": "journal:seward_asylum_j_cell",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The most curious patient is in Room 12.",
     "It is in Room 12.",
     "Go to Room 12."
    ]
   },
   {
-   "id": "o_seward_asylum_j_cat",
-   "text": "Talk to Hennessey's diet ledger",
-   "done": "journal:seward_asylum_j_cat&journal:seward_asylum_j_sparrows&journal:seward_asylum_j_spiders&journal:seward_asylum_j_flies",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in Room 12 has something to say.",
-    "Talk to Hennessey's diet ledger in Room 12."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_theory",
-   "text": "Talk to R. M. Renfield",
+   "text": "Hear Renfield's theory",
    "done": "journal:seward_asylum_j_theory",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Renfield has a theory.",
     "Someone in Room 12 has something to say.",
     "Talk to R. M. Renfield in Room 12."
    ]
   },
   {
-   "id": "o_seward_asylum_j_greer",
-   "text": "Talk to Mr. Greer",
-   "done": "journal:seward_asylum_j_greer",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The asylum garden has something to say.",
-    "Talk to Mr. Greer in The asylum garden."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_draught",
-   "text": "Talk to Brass scales",
+   "text": "Weigh out the twenty-grain draught",
    "done": "journal:seward_asylum_j_draught",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The dispensary keeps the scales.",
     "Someone in The dispensary has something to say.",
     "Talk to Brass scales in The dispensary."
    ]
   },
   {
-   "id": "o_seward_asylum_j_night",
-   "text": "Visit The patients' ward",
-   "done": "journal:seward_asylum_j_night",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The patients' ward.",
-    "Go to The patients' ward."
-   ]
-  },
-  {
-   "id": "o_seward_asylum_j_renfield_night",
-   "text": "Talk to Renfield (frenzied)",
-   "done": "journal:seward_asylum_j_renfield_night",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Look for someone in The asylum garden.",
-    "Talk to Renfield (frenzied) in The asylum garden."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_slip",
-   "text": "Talk to Prescription slip",
+   "text": "Examine the forged prescription",
    "done": "journal:seward_asylum_j_slip",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Somebody has forged a slip.",
     "Someone in The dispensary has something to say.",
     "Talk to Prescription slip in The dispensary."
    ]
   },
   {
    "id": "o_seward_asylum_j_fire",
-   "text": "Examine Dispensary shelf, burning",
+   "text": "Put out the fire in the dispensary",
    "done": "journal:seward_asylum_j_fire",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Something is burning.",
     "Look around The dispensary.",
     "Examine Dispensary shelf, burning in The dispensary."
    ]
   },
   {
-   "id": "o_seward_asylum_j_pettit",
-   "text": "Talk to Pettit, the dispenser's boy",
-   "done": "journal:seward_asylum_j_pettit",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Someone in The patients' ward has something to say.",
-    "Talk to Pettit, the dispenser's boy in The patients' ward."
-   ]
-  },
-  {
    "id": "o_seward_asylum_j_sleepless",
-   "text": "Visit Dr. Seward's study, Purfleet",
+   "text": "Go back to your study, sleepless",
    "done": "journal:seward_asylum_j_sleepless",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Three nights without sleep.",
     "It is in Dr. Seward's study, Purfleet.",
     "Go to Dr. Seward's study, Purfleet."
    ]
@@ -2525,162 +1685,92 @@
  "vanhelsing_lore": [
   {
    "id": "o_vanhelsing_lore_j_latin",
-   "text": "Talk to Latin note",
+   "text": "Read the Latin note",
    "done": "journal:vanhelsing_lore_j_latin",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A note lies in the study.",
     "Someone in Van Helsing's study, Amsterdam has something to say.",
     "Talk to Latin note in Van Helsing's study, Amsterdam."
    ]
   },
   {
    "id": "o_vanhelsing_lore_j_letters",
-   "text": "Talk to Reading chair",
+   "text": "Read Arminius's letters",
    "done": "journal:vanhelsing_lore_j_letters",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The reading chair holds letters.",
     "Someone in Van Helsing's study, Amsterdam has something to say.",
     "Talk to Reading chair in Van Helsing's study, Amsterdam."
    ]
   },
   {
-   "id": "o_vanhelsing_lore_j_home",
-   "text": "Visit The house on the Herengracht",
-   "done": "journal:vanhelsing_lore_j_home",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The house on the Herengracht.",
-    "Go to The house on the Herengracht."
-   ]
-  },
-  {
    "id": "o_vanhelsing_lore_j_cross",
-   "text": "Talk to My wife",
+   "text": "Receive the silver cross from your wife",
    "done": "journal:vanhelsing_lore_j_cross",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "Someone at home has a gift.",
     "Someone in The house on the Herengracht has something to say.",
     "Talk to My wife in The house on the Herengracht."
    ]
   },
   {
-   "id": "o_vanhelsing_lore_j_street",
-   "text": "Visit The Herengracht, Amsterdam",
-   "done": "journal:vanhelsing_lore_j_street",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The Herengracht, Amsterdam.",
-    "Go to The Herengracht, Amsterdam."
-   ]
-  },
-  {
-   "id": "o_vanhelsing_lore_j_chapel",
-   "text": "Visit The chapel of St. Nicholas",
-   "done": "journal:vanhelsing_lore_j_chapel",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The chapel of St. Nicholas.",
-    "Go to The chapel of St. Nicholas."
-   ]
-  },
-  {
-   "id": "o_vanhelsing_lore_j_lecture",
-   "text": "Visit The lecture-room",
-   "done": "journal:vanhelsing_lore_j_lecture",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The lecture-room.",
-    "Go to The lecture-room."
-   ]
-  },
-  {
    "id": "o_vanhelsing_lore_j_debate",
-   "text": "Talk to Professor Verhoeven, the Dean",
+   "text": "Answer the Dean in the lecture-room",
    "done": "journal:vanhelsing_lore_j_debate",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The Dean has doubts.",
     "Someone in The lecture-room has something to say.",
     "Talk to Professor Verhoeven, the Dean in The lecture-room."
    ]
   },
   {
-   "id": "o_vanhelsing_lore_j_library",
-   "text": "Visit The University library",
-   "done": "journal:vanhelsing_lore_j_library",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in The University library.",
-    "Go to The University library."
-   ]
-  },
-  {
    "id": "o_vanhelsing_lore_j_rite",
-   "text": "Talk to Father Pieter",
+   "text": "Have the Host consecrated",
    "done": "journal:vanhelsing_lore_j_rite",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The chapel of St. Nicholas.",
     "Someone in The chapel of St. Nicholas has something to say.",
     "Talk to Father Pieter in The chapel of St. Nicholas."
    ]
   },
   {
    "id": "o_vanhelsing_lore_j_village",
-   "text": "Visit Kirchdorf, Styria",
+   "text": "Go to Kirchdorf in Styria",
    "done": "journal:vanhelsing_lore_j_village",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "A village far away needs help.",
     "It is in Kirchdorf, Styria.",
     "Go to Kirchdorf, Styria."
    ]
   },
   {
    "id": "o_vanhelsing_lore_j_pastor",
-   "text": "Talk to Pfarrer Albrecht",
+   "text": "Speak with Pfarrer Albrecht",
    "done": "journal:vanhelsing_lore_j_pastor",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The pastor knows the village.",
     "Someone in Kirchdorf, Styria has something to say.",
     "Talk to Pfarrer Albrecht in Kirchdorf, Styria."
    ]
   },
   {
    "id": "o_vanhelsing_lore_j_grave",
-   "text": "Talk to The sexton, Matthias",
+   "text": "Ask the sexton about Katharina Lindner",
    "done": "journal:vanhelsing_lore_j_grave",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The sexton keeps the graves.",
     "Someone in Kirchdorf, Styria has something to say.",
     "Talk to The sexton, Matthias in Kirchdorf, Styria."
    ]
   },
   {
-   "id": "o_vanhelsing_lore_j_vigil",
-   "text": "Find out: The vigil",
-   "done": "journal:vanhelsing_lore_j_vigil",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "Keep exploring and talking to people.",
-    "Look for what the journal entry 'The vigil' is about."
-   ]
-  },
-  {
    "id": "o_vanhelsing_lore_j_end",
-   "text": "Talk to Arminius's last letter",
+   "text": "Read what Arminius learned",
    "done": "journal:vanhelsing_lore_j_end",
    "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
+    "The last letter.",
     "Someone in Van Helsing's study, Amsterdam has something to say.",
     "Talk to Arminius's last letter in Van Helsing's study, Amsterdam."
-   ]
-  },
-  {
-   "id": "o_vanhelsing_lore_j_study",
-   "text": "Visit Van Helsing's study, Amsterdam",
-   "done": "journal:vanhelsing_lore_j_study",
-   "hints": [
-    "Try the places you have not been to yet, and talk to everyone.",
-    "It is in Van Helsing's study, Amsterdam.",
-    "Go to Van Helsing's study, Amsterdam."
    ]
   }
  ]

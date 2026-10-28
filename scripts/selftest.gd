@@ -415,6 +415,15 @@ func replay(main: Node, plan_path: String, seed_value: int, defaults: bool) -> i
 	print("REPLAYJOURNAL ", (arc_id if arc_id != "" else str(int(plan.act))), " ", ",".join(granted))
 	Game.objective_list()                            # loads data/objectives.json
 	var okey := str(int(plan.act)) if typeof(plan.act) == TYPE_FLOAT or typeof(plan.act) == TYPE_INT else str(plan.act)
+	if arc_id != "" and Game.objectives.has(arc_id):         # an arc's journal is gone after the arc ends: compare with what was written on the way
+		var missing: Array = []
+		for o in Game.objectives[arc_id]:
+			if not bool(o.get("required", true)):
+				continue
+			for part in str(o.done).split("&"):
+				if part.begins_with("journal:") and not granted.has(part.substr(8)):
+					missing.append(part.substr(8))
+		ok(missing.is_empty(), "all required objectives of arc %s were reached (missing: %s)" % [arc_id, str(missing)])
 	if arc_id == "" and Game.objectives.has(okey):
 		var left: Array = []
 		for o in Game.objectives[okey]:

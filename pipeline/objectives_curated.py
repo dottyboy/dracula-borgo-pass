@@ -84,6 +84,138 @@ CURATED = {
  ],
 }
 
+# personal arcs: (journal id without the "<arc>_j_" prefix, text, first hint)
+CURATED_ARCS = {
+ "arthur_burden": [
+  ("blessing", "Receive your father's blessing", "Your father has something to say before you go."),
+  ("steward", "Hear the steward Wilkes confess", "Something is wrong in the estate office."),
+  ("proposal", "Give Lucy the ring and the rose", "Lucy is waiting in the garden at Hillingham."),
+  ("telegram_back", "Receive the telegram at the summer-house", "News is coming for you from home."),
+  ("death", "Return to the Ring: your father is dead", "You are needed at home."),
+  ("terms", "Hear Mr. Crowle's terms", "The banker has come to see you."),
+  ("vault_open", "Open the door of the family vault", "The family chapel holds the way to the vault."),
+  ("tenants", "Hear the tenants' petition", "The tenants have a request."),
+  ("muniment", "Search the muniment room", "The family papers are kept in the muniment room."),
+  ("sickroom", "Return to your father's chamber", "Where did it all begin?"),
+ ],
+ "demeter_voyage": [
+  ("cargo", "Check the bill of lading", "The ship's papers must be put in order first."),
+  ("cleared", "Clear customs", "The customs officer must pass the cargo."),
+  ("blessed", "Receive the priest's blessing", "A sailor does not leave without a blessing."),
+  ("sail", "Give the order to sail", "The mate is waiting for your word."),
+  ("cabin", "Look into your cabin", "Walk the ship from end to end."),
+  ("hold", "Go down into the hold", "The cargo lies below."),
+  ("weather", "Read the weather at the wheel", "The sky and the glass will tell you."),
+  ("olgaren", "Question Olgaren about the tall thin man", "One of the crew keeps his eyes down."),
+  ("box", "Open box thirteen", "One box in the hold is not like the rest."),
+  ("end", "Lash yourself to the wheel", "The last duty of a captain."),
+  ("varna", "Return to the quay at Varna", "The voyage began on a quay."),
+ ],
+ "dracula_voivode": [
+  ("council_closed", "Hear the counsellor and close the gates", "The counsellor is waiting in the great hall."),
+  ("chest", "Open the Order chest in your father's chamber", "Your father's chamber keeps a secret."),
+  ("radu_chained", "See Radu in the cells", "Your brother is held in the castle."),
+  ("sealed", "Seal the order", "An order is waiting to be sealed."),
+  ("beacon", "Light the beacon on the watch-tower", "The ridge must be warned."),
+  ("refugee", "Meet the grandmother on the mountain road", "The road is full of refugees."),
+  ("prisoner_broken", "Question the captured Akinji", "The camp holds a prisoner."),
+  ("ford", "Raid the Reed Ford by night", "The army must cross the river."),
+  ("school", "Enter the Scholomance", "A school stands by the lake."),
+  ("rite", "Take part in the rite of three", "The students gather at the altar."),
+  ("forged", "Find the tenth name in the forbidden library", "The School's roll is kept in the library."),
+  ("tithe_vasile", "Face the Master of the tithe", "The school exacts a price."),
+  ("end_vigil", "Keep Ileana's vigil in the castle chapel", "The night ends in the chapel."),
+ ],
+ "harker_road": [
+  ("trunk", "Open your father's trunk", "Something of your father's is among your things."),
+  ("engaged", "Meet Mina at the school", "Mina is at the school."),
+  ("task", "Hear Mr. Hawkins about the Count's wishes", "Mr. Hawkins has a commission for you."),
+  ("letters", "Read the Count's letters", "The Count's letters are kept in the office."),
+  ("museum", "Read up on Transylvania", "The Reading Room has books on the country."),
+  ("climb", "Climb down the castle wall", "The window is the only way out."),
+  ("search", "Search the earth-box in the vault", "There is a box in the old chapel."),
+  ("szgany", "Meet the Szgany at their fire", "Someone is camped on the mountain path."),
+  ("woke", "Wake in the hospital with Sister Agatha", "You are among kind strangers."),
+  ("letter", "Write to Mina", "There is someone you must tell."),
+  ("proposal", "Make your proposal", "There is something you have to ask Mina."),
+  ("morning", "Walk out on a May morning in Exeter", "The road ends where it began."),
+ ],
+ "lucy_summer": [
+  ("flowers", "Please Mamma with the flowers", "Mamma is in the parlour."),
+  ("mina_letter", "Read Mina's letters", "Mina has written."),
+  ("seward", "Meet Dr. Seward in the garden", "A visitor is waiting in the garden."),
+  ("quincey", "Meet Mr. Morris", "Another visitor has come."),
+  ("arthur", "Meet Arthur", "A third visitor has come."),
+  ("mina_walk", "Walk with Mina on the East Cliff", "Mina is on the cliff."),
+  ("swales", "Hear Mr. Swales about the steps", "The old man on the cliff has a story."),
+  ("anchor_p", "Meet the tall dark figure on the East Cliff at night", "The cliff is not empty at night."),
+  ("counted", "Count the Abbey steps", "The steps are worth counting."),
+  ("a_remember", "Write your last note to Arthur", "There is someone you must remember."),
+ ],
+ "mina_records": [
+  ("edith", "Hear Edith's gossip", "A friend has news from the school."),
+  ("task", "Accept Miss Hallam's bargain", "Miss Hallam has a task for you."),
+  ("blotter", "Read the blotter in the mirror", "Something has been blotted."),
+  ("cupboard", "Examine the prize cupboard", "A cupboard in the schoolroom holds a clue."),
+  ("typed", "Make the typewriter speak", "The Remington can tell you something."),
+  ("bradshaw", "Check Bradshaw for the Bristol line", "The trains must be checked."),
+  ("letter_found", "Find Jonathan's letter at last", "The telegraph clerk may have it."),
+  ("whitby", "Go to Whitby", "The seaside is next."),
+  ("dreamorder", "Put your dream in order: water, wood, swing", "Your notes hold a pattern."),
+  ("tomb3", "Read the third gravestone at dusk", "The old stones must be read in order."),
+  ("trance", "Make the first deliberate trance", "The rocking-chair in your room."),
+  ("end", "Follow the thread in the dark hold", "The end of the dream is below."),
+ ],
+ "quincey_hunt": [
+  ("load", "Load the powder and lead", "Get ready first."),
+  ("stolen", "Find out who took the horses", "The remuda is gone."),
+  ("hobbs", "Take the old trapper's advice", "Old Hobbs knows the range."),
+  ("signs", "Read the signs of the three trails", "The trails will show which way they went."),
+  ("creek", "Cross the creek at the snag", "The cottonwood bottoms hide a crossing."),
+  ("reunion", "Be reunited with Santa Fe", "Your horse is somewhere ahead."),
+  ("anselmo", "Hear what Anselmo the gaucho knew", "A gaucho sits at a camp fire."),
+  ("tale", "Listen to the tale by the fire", "The camp fire has a story."),
+  ("mark", "Find the mark in the grass", "Dawn shows what the night left."),
+  ("end", "Bring Santa Fe home", "The hunt ends where it began."),
+ ],
+ "renfield_mercy": [
+  ("frenzy", "Find out what upset Room 12", "The attendant has something to say."),
+  ("ledger", "Find the notebook of lives under the floorboard", "Something is hidden in the room."),
+  ("sugar", "Look into the sugar ration", "The day-room keeps the stores."),
+  ("count", "Learn what seven, three, nine mean", "The numbers mean something."),
+  ("plea", "Make your plea to Dr. Seward", "The doctor must be asked."),
+  ("cook", "Hear Cook and the rhyme", "The cook knows an old rhyme."),
+  ("key", "Find the spider's key", "A key is hidden where nobody looks."),
+  ("hodge", "Put the night attendant to sleep", "Someone must not be watching."),
+  ("garden", "Slip out through the garden wicket", "The garden has a way out."),
+  ("warning", "Leave your note for the doctor", "Someone must be warned."),
+  ("wake", "Wake again in Room 12", "The night is over."),
+ ],
+ "seward_asylum": [
+  ("hillingham", "Read Lucy's note", "A note has arrived."),
+  ("debt", "Read the letters from Amsterdam", "Someone is owed a great debt."),
+  ("grief", "Dictate your grief to the phonograph", "The phonograph is in your study."),
+  ("vane", "Hear Miss Vane about her visitor", "A patient has had a visitor."),
+  ("cell", "Visit Renfield in Room 12", "The most curious patient is in Room 12."),
+  ("theory", "Hear Renfield's theory", "Renfield has a theory."),
+  ("draught", "Weigh out the twenty-grain draught", "The dispensary keeps the scales."),
+  ("slip", "Examine the forged prescription", "Somebody has forged a slip."),
+  ("fire", "Put out the fire in the dispensary", "Something is burning."),
+  ("sleepless", "Go back to your study, sleepless", "Three nights without sleep."),
+ ],
+ "vanhelsing_lore": [
+  ("latin", "Read the Latin note", "A note lies in the study."),
+  ("letters", "Read Arminius's letters", "The reading chair holds letters."),
+  ("cross", "Receive the silver cross from your wife", "Someone at home has a gift."),
+  ("debate", "Answer the Dean in the lecture-room", "The Dean has doubts."),
+  ("rite", "Have the Host consecrated", "The chapel of St. Nicholas."),
+  ("village", "Go to Kirchdorf in Styria", "A village far away needs help."),
+  ("pastor", "Speak with Pfarrer Albrecht", "The pastor knows the village."),
+  ("grave", "Ask the sexton about Katharina Lindner", "The sexton keeps the graves."),
+  ("end", "Read what Arminius learned", "The last letter."),
+ ],
+}
+
 
 def main():
     path = os.path.join(ROOT, "data", "objectives.json")
@@ -103,6 +235,21 @@ def main():
             out.append({"id": "o_" + jid, "text": text, "done": "journal:" + jid, "hints": [nudge, g["hints"][1], g["hints"][2]]})
         data[act] = out
         print(act, len(out), "objectives")
+    for arc, beats in CURATED_ARCS.items():
+        gen = {}
+        for o in data.get(arc, []):
+            for part in o["done"].split("&"):
+                gen[part.split(":", 1)[1]] = o
+        out = []
+        for suffix, text, nudge in beats:
+            jid = f"{arc}_j_{suffix}"
+            assert jid in world["journal"], jid
+            g = gen.get(jid)
+            if g is None or g["hints"][2].startswith("Look for what"):
+                raise SystemExit(f"{jid}: no generated 'where/what' hints for it")
+            out.append({"id": "o_" + jid, "text": text, "done": "journal:" + jid, "hints": [nudge, g["hints"][1], g["hints"][2]]})
+        data[arc] = out
+        print(arc, len(out), "objectives")
     json.dump(data, open(path, "w"), indent=1)
 
 

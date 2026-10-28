@@ -582,6 +582,30 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 		print("STORYTEST ", "PASS" if ok else "FAIL")
 		get_tree().quit(0 if ok else 1)
 		return
+	if _args.has("asylumcellartest") and not _link_test_started:
+		## The asylum cellar's own little story: key under the orderly's saucer -> grated cell (crucifix, garlic) and the coal grating.
+		_link_test_started = true
+		Engine.time_scale = 8.0
+		var ok := true
+		for eid in ["asy_bench", "asy_door", "asy_grating"]:
+			ok = ok and loc.entities.has(eid)
+		loc._use("asy_door")                       # nothing selected: refuses
+		ok = ok and not Game.has_item("crucifix")
+		loc._primary("asy_bench")
+		ok = ok and Game.has_item("a3_orderly_key")
+		print("ASYLUMCELLAR key taken: ", Game.has_item("a3_orderly_key"))
+		Game.selected_item = "a3_orderly_key"
+		loc._use("asy_door")
+		await get_tree().create_timer(0.3).timeout
+		ok = ok and Game.has_item("crucifix") and Game.has_item("garlic") and not Game.has_item("a3_orderly_key") and Game.journal.has("a3_j_cellar_cell")
+		print("ASYLUMCELLAR cell opened: ", Game.has_item("crucifix"), " ", Game.has_item("garlic"), " key used up: ", not Game.has_item("a3_orderly_key"))
+		loc._primary("asy_grating")
+		await get_tree().create_timer(0.3).timeout
+		ok = ok and Game.journal.has("a3_j_cellar_grating")
+		print("ASYLUMCELLAR grating journal: ", Game.journal.has("a3_j_cellar_grating"))
+		print("ASYLUMCELLAR ", "PASS" if ok else "FAIL")
+		get_tree().quit(0 if ok else 1)
+		return
 	if _args.has("dungeonlinktest") and not _link_test_started:
 		_link_test_started = true
 		## chapel_crypt -> the dungeon through its injected door, walk away, walk back onto the entrance tile -> chapel_crypt again.

@@ -132,7 +132,7 @@
   {
    "kind": "primary",
    "loc": "a3_renfield_cell",
-   "eid": "a3_pillow"
+   "eid": "a3_cot"
   },
   {
    "kind": "primary",
@@ -364,11 +364,6 @@
    "kind": "primary",
    "loc": "a3_buda_hospital",
    "eid": "a3_coat_chair"
-  },
-  {
-   "kind": "primary",
-   "loc": "a3_buda_hospital",
-   "eid": "a3_coat_pocket"
   },
   {
    "kind": "talk",

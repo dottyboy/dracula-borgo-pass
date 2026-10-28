@@ -1368,6 +1368,12 @@
    "asset": "chest",
    "variant": "dark",
    "desc": "Scarred black leather, brass clasps. Lancets, a stethoscope, a bottle of brandy, and in the lid a pyx of consecrated wafers."
+  },
+  "a3_orderly_key": {
+   "name": "Orderly's key",
+   "asset": "key",
+   "variant": "default",
+   "desc": "A ring-key on a loop of tarred string. It hung under the night orderly's saucer, where a man hides a key he is not supposed to have. It fits the old cell doors in the cellar."
   }
  },
  "loc_data": {
@@ -7232,13 +7238,13 @@
      "asset": "rock",
      "variant": "grey",
      "pos": [
-      -2.0,
+      -1.5,
       0.0,
-      0.5
+      1.0
      ],
      "rot": 0,
-     "scale": 0.25,
-     "radius": 0.4,
+     "scale": 0.6,
+     "radius": 0.6,
      "name": "Wet footprints",
      "interact": {
       "set": "a2_trail_print",
@@ -7319,9 +7325,9 @@
      "asset": "human_peasant_m",
      "variant": "a2_watchman",
      "pos": [
-      4.8,
+      3.0,
       0,
-      -2.8
+      -2.6
      ],
      "rot": -90,
      "name": "Night watchman",
@@ -8497,27 +8503,10 @@
      "radius": 0.9,
      "name": "Iron cot",
      "interact": {
-      "look": "A cot, a blanket, a neatly folded sheet. Some cleaner madness is being hidden here."
-     }
-    },
-    {
-     "id": "a3_pillow",
-     "asset": "rug",
-     "variant": "cream",
-     "pos": [
-      -2.6,
-      0.5,
-      0.2
-     ],
-     "rot": 0,
-     "scale": 0.25,
-     "radius": 0.4,
-     "name": "Pillow",
-     "interact": {
+      "look": "A cot, a blanket, a neatly folded sheet. The pillow is lumpy: it has been slit and sewn up again with fishing-twine.",
       "take": "a3_sugar_lumps",
-      "take_text": "Inside, wrapped in a handkerchief: a dozen lumps of sugar, hoarded from his tea.",
-      "give_once": true,
-      "look": "Lumpy. It has been slit and sewn up again with fishing-twine."
+      "take_text": "Inside the pillow, wrapped in a handkerchief: a dozen lumps of sugar, hoarded from his tea.",
+      "give_once": true
      }
     },
     {
@@ -8542,13 +8531,13 @@
      "asset": "bottle",
      "variant": "glass",
      "pos": [
-      0.8,
+      0.7,
       0.8,
       -2.2
      ],
      "rot": 0,
-     "scale": 1.0,
-     "radius": 0.1,
+     "scale": 2.5,
+     "radius": 0.35,
      "name": "Jam-jar",
      "interact": {
       "take": "a3_fly_jar",
@@ -8562,13 +8551,13 @@
      "asset": "book",
      "variant": "leather",
      "pos": [
-      1.6,
+      1.7,
       0.8,
       -2.2
      ],
      "rot": 0,
-     "scale": 1.0,
-     "radius": 0.15,
+     "scale": 2.5,
+     "radius": 0.35,
      "name": "Notebook",
      "interact": {
       "take": "a3_renfield_notebook",
@@ -9648,11 +9637,11 @@
      "pos": [
       2.0,
       0.8,
-      -4.2
+      -4.0
      ],
      "rot": 0,
-     "scale": 1.0,
-     "radius": 0.12,
+     "scale": 2.5,
+     "radius": 0.35,
      "name": "Stick of wax",
      "interact": {
       "take": "a3_sealing_wax",
@@ -9751,38 +9740,19 @@
      "asset": "chair",
      "variant": "blue",
      "pos": [
-      -3.4,
+      -0.4,
       0.0,
-      3.2
+      2.2
      ],
      "rot": 90,
      "scale": 1.0,
      "radius": 0.4,
      "name": "Jonathan's coat",
      "interact": {
-      "set": "a3_looked_coat",
-      "set_text": "His waistcoat pocket is lumpy. I will have to take what I find there.",
-      "look": "A man's threadbare coat is over the chair-back, with a waistcoat folded beneath it."
-     }
-    },
-    {
-     "id": "a3_coat_pocket",
-     "asset": "goblet",
-     "variant": "default",
-     "pos": [
-      -3.4,
-      0.55,
-      3.2
-     ],
-     "rot": 0,
-     "scale": 0.6,
-     "radius": 0.2,
-     "name": "Waistcoat pocket",
-     "interact": {
+      "look": "A man's threadbare coat is over the chair-back, with a waistcoat folded beneath it. The waistcoat pocket is lumpy.",
       "take": "a3_wedding_ring",
-      "take_text": "A plain gold ring, wrapped in a handkerchief. He bought it before the Castle. I take it.",
-      "give_once": true,
-      "look": "A few coins, a ticket, and something small and round that has gone green with sweat."
+      "take_text": "In the waistcoat pocket, a few coins, a ticket and a plain gold ring wrapped in a handkerchief. He bought it before the Castle. I take it.",
+      "give_once": true
      }
     },
     {
@@ -82235,6 +82205,16 @@
    "title": "What I have learned",
    "source": "Van Helsing's casebook",
    "text": "Verhoeven was right to demand evidence, and the peasants were right to be afraid, and the truth was in neither camp but between them. Arminius has sent a name: Dracula. I do not know what lies behind it. I have a casebook, a ward, and a certain faith that works when the evidence runs out."
+  },
+  "a3_j_cellar_cell": {
+   "title": "The cell of a hundred hands",
+   "source": "Dr. Seward's diary",
+   "text": "With the orderly's key I opened the grated door in the cellar. The plaster is scratched from floor to ceiling with one sentence in a hundred hands: HE IS COMING. On the straw lay a crucifix and a braid of garlic, left by some earlier patient who believed it. I took them. I have never believed in such things, and I did not like how glad I was of them."
+  },
+  "a3_j_cellar_grating": {
+   "title": "How Renfield gets out",
+   "source": "Dr. Seward's diary",
+   "text": "At the far end of the cellar the old coal grating hangs from one hinge, the bars bent outward and the mud beneath it fresh. No orderly bent those bars. It opens on the grounds, and from there it is an easy walk to Carfax. Hennessey asked how Renfield leaves his cell. I think I have found where he goes after."
   }
  },
  "encounter_hooks": {

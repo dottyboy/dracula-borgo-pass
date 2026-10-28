@@ -36,7 +36,10 @@
    "name": "Orderly's bench",
    "radius": 0.3,
    "interact": {
-    "look": "A bench where the night orderly sat and dozed. A cup of cold tea beside it, a week old."
+    "look": "A bench where the night orderly sat and dozed. A cup of cold tea beside it, a week old, and under the saucer the dull gleam of a ring of keys.",
+    "take": "a3_orderly_key",
+    "give_once": true,
+    "take_text": "A ring-key on a loop of tarred string, tucked under the saucer where the orderly thought no one would look. It is stamped for the cellar cells."
    }
   },
   {
@@ -94,7 +97,56 @@
    "rot": 180,
    "radius": 0.3,
    "interact": {
-    "look": "Inside, scratched into the plaster by a hundred hands: 'HE IS COMING.' None of the hands, I am relieved to see, is Renfield's."
+    "look": "Inside, scratched into the plaster by a hundred hands: 'HE IS COMING.' None of the hands, I am relieved to see, is Renfield's. The door is locked.",
+    "use_item": {
+     "a3_orderly_key": [
+      {
+       "say": "The key turns stiffly. In the straw lies what the last frightened patient left behind: a crucifix and a braid of garlic, set out as if for a vigil."
+      },
+      {
+       "take": "a3_orderly_key"
+      },
+      {
+       "give": "crucifix"
+      },
+      {
+       "give": "garlic"
+      },
+      {
+       "set": "a3_cellar_cell_open"
+      },
+      {
+       "journal": "a3_j_cellar_cell"
+      },
+      {
+       "xp": 25
+      }
+     ]
+    },
+    "use_fail": "Locked. A cellar like this has a key, and the night orderly kept things near his bench."
+   }
+  },
+  {
+   "at": "far:1",
+   "id": "asy_grating",
+   "asset": "fence",
+   "variant": "default",
+   "scale": 0.6,
+   "name": "Old coal grating",
+   "radius": 0.3,
+   "interact": {
+    "look": "The bars of a coal grating, bent outward. The mud beneath is fresh.",
+    "do": [
+     {
+      "say": "Bent from the inside by someone far stronger than he looks, and recently. The mud under it is trodden toward the grounds, and beyond them Carfax."
+     },
+     {
+      "journal": "a3_j_cellar_grating"
+     },
+     {
+      "xp": 15
+     }
+    ]
    }
   }
  ]

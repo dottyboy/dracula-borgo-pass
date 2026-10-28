@@ -473,7 +473,7 @@ LOC_DATA["a2_night_steps"] = dict(
              go="a2_east_cliff_night", go_cond="a2_trail_print&a2_trail_cloth&a2_trail_watch",
              go_fail="Three ways lead on from the lamps, and I have nothing to tell me which. I need some sign: a footprint, a scrap, someone who saw her."),
         prop("a2_n_gate", "door", "dark", -5.4, 3.0, rot=90, name="Back to the Crescent", radius=0.5, look="The door I came out of.", go="a2_whitby_lodging"),
-        prop("a2_n_print", "rock", "grey", -2.0, 0.5, scale=0.25, name="Wet footprints", radius=0.4,
+        prop("a2_n_print", "rock", "grey", -1.5, 1.0, scale=0.6, name="Wet footprints", radius=0.6,
              look="Small bare footprints in the wet, going up and to the left. Lucy has gone without her slippers.",
              set="a2_trail_print", set_text="Bare feet, a woman's, heading for the foot of the steps. Bare feet! On these stones."),
         prop("a2_n_rail", "fence", "default", 3.0, -1.0, name="Iron railing", radius=0.4,
@@ -484,7 +484,7 @@ LOC_DATA["a2_night_steps"] = dict(
         prop("a2_n_barrel", "barrel", "dark", -4.6, -3.0, name=None, radius=0.4),
     ],
     npcs=[
-        npc("a2_watchman", "human_peasant_m", "a2_watchman", 4.8, -2.8, rot=-90, name="Night watchman",
+        npc("a2_watchman", "human_peasant_m", "a2_watchman", 3.0, -2.6, rot=-90, name="Night watchman",
             look="A tired night watchman with a lantern and a bad chest.", talk="a2_watchman_talk"),
         npc("a2_boy", "human_peasant_m", "villager", -4.2, 0.6, rot=90, name="Street boy", radius=0.4,
             look="An urchin of eleven, sitting up long past any bedtime, in a coat that was a man's.", talk="a2_boy_talk"),

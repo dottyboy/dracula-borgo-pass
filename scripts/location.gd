@@ -943,7 +943,7 @@ func _props() -> void:
 		node.set_process(false)
 		node.rotation_degrees.y = float(p.get("rot", 0))
 		if p.has("interact") and p.get("name", "") != "":
-			_make_body(node, eid)
+			_make_body(node, eid, false, 2.2 if str(p.asset).contains("schooner") else 0.0)
 			entities[eid] = {"node": node, "data": p, "npc": false}
 		if p.get("pos", [0, 0, 0])[1] < 0.2 and float(p.get("radius", 0)) > 0.25:
 			blockers.append({"pos": Vector2(p.pos[0], p.pos[2]), "r": float(p.radius) * 0.8})
@@ -1003,7 +1003,8 @@ func _apply_conditions() -> void:
 				(b as StaticBody3D).collision_layer = 1 if on else 0
 
 
-func _make_body(node: Node3D, eid: String, tall: bool = false) -> void:
+## `max_height` > 0 cuts a big model's click box down to its base (a ship: the hull is clickable, its rigging is not, so it does not hide people behind it).
+func _make_body(node: Node3D, eid: String, tall: bool = false, max_height: float = 0.0) -> void:
 	var box := AABB()
 	var first := true
 	if node is Actor and (node as Actor).kind == "skinned":
@@ -1020,6 +1021,8 @@ func _make_body(node: Node3D, eid: String, tall: bool = false) -> void:
 		first = false
 	if first:
 		return
+	if max_height > 0.0 and box.size.y > max_height:
+		box.size.y = max_height
 	var body := StaticBody3D.new()
 	var shape := CollisionShape3D.new()
 	var bs := BoxShape3D.new()
@@ -1028,6 +1031,8 @@ func _make_body(node: Node3D, eid: String, tall: bool = false) -> void:
 	shape.position = box.get_center()
 	body.add_child(shape)
 	body.set_meta("eid", eid)
+	if max_height > 0.0:
+		body.set_meta("weak", true)
 	node.add_child(body)
 
 
@@ -1239,7 +1244,24 @@ func _pick(pos: Vector2) -> String:
 	if r.is_empty():
 		return ""
 	var c: Object = r.collider
-	return str(c.get_meta("eid")) if c.has_meta("eid") else ""
+	var first := str(c.get_meta("eid")) if c.has_meta("eid") else ""
+	if not c.has_meta("weak"):
+		return first
+	# a "weak" click box (a ship's hull) gives way to anything clickable behind it: people and props standing beyond the ship
+	var from := cam.project_ray_origin(pos)
+	var to := from + cam.project_ray_normal(pos) * 200.0
+	var skip: Array[RID] = []
+	for _i in 4:
+		skip.append((c as CollisionObject3D).get_rid())
+		var q := PhysicsRayQueryParameters3D.create(from, to)
+		q.exclude = skip
+		var r2 := get_world_3d().direct_space_state.intersect_ray(q)
+		if r2.is_empty():
+			return first
+		c = r2.collider
+		if not c.has_meta("weak"):
+			return str(c.get_meta("eid")) if c.has_meta("eid") else first
+	return first
 
 
 func _floor_point(pos: Vector2) -> Vector3:

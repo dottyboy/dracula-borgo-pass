@@ -211,6 +211,19 @@ static func _layout(ld: Dictionary, rng: RandomNumberGenerator) -> void:
 			if free.size() == 0:
 				break
 			arr[free.pop_back()] = "wall_window_4"
+		# a window latch sits on whichever cell got a window on its wall
+		var win_cells: Array = []
+		for i in n:
+			if arr[i] == "wall_window_4":
+				win_cells.append(i)
+		if not win_cells.is_empty() and side != "south":
+			for p in ld.props:
+				if _side_of(p, w, d) == side and str(p.id).contains("window") and not p.get("interact", {}).has("go"):
+					var wc: float = (-w / 2 if side == "north" else -d / 2) + CELL / 2 + float(win_cells[0]) * CELL
+					if side == "north":
+						p.pos[0] = wc
+					else:
+						p.pos[2] = wc
 		# arrival spawns follow the door the player came through
 		for dp in doors:
 			var sp := [float(dp.pos[0]), float(dp.pos[2])]

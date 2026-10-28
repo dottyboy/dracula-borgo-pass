@@ -14945,13 +14945,13 @@
      "asset": "key",
      "variant": "default",
      "pos": [
-      0.5,
+      0.4,
       0.8,
-      -0.4
+      0.05
      ],
      "rot": 0,
-     "scale": 1.0,
-     "radius": 0.2,
+     "scale": 2.5,
+     "radius": 0.35,
      "name": "Sailor's knife",
      "interact": {
       "take": "knife",
@@ -16538,13 +16538,13 @@
      "asset": "fence",
      "variant": "default",
      "pos": [
-      -2.0,
-      0.9,
-      -3.6
+      2.0,
+      1.0,
+      -3.5
      ],
      "rot": 0,
-     "scale": 0.4,
-     "radius": 0.4,
+     "scale": 0.6,
+     "radius": 0.1,
      "name": "Window latch",
      "interact": {
       "set": "a2_window_fastened",

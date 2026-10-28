@@ -260,7 +260,7 @@ LOC_DATA["a2_coastguard_hut"] = dict(
         prop("a2_t_fire", "fireplace", "soot", -3.5, 0.0, rot=90, name="Stove", radius=0.8, look="A black stove with a kettle that never quite boils."),
         prop("a2_t_bunk", "bed_simple", "black", 2.4, -2.4, name="Bunk", radius=0.7, look="Blankets that smell of tobacco and wet dog. No dog."),
         prop("a2_t_desk", "table", "dark", 0.0, -0.4, name="Chart table and log desk", radius=0.9, talk="a2_log_desk"),
-        prop("a2_t_knife", "key", "default", 0.5, -0.4, y=0.8, name="Sailor's knife", radius=0.2,
+        prop("a2_t_knife", "key", "default", 0.4, 0.05, y=0.8, scale=2.5, name="Sailor's knife", radius=0.35,
              look="A good steel splicing knife with a horn handle, left on the desk.",
              take="knife", take_text="A knife is no weapon against what is coming, but it cuts rope and ash wood and I take it.", give_once=True),
         prop("a2_t_chair", "chair", "green", 0.0, 0.7, rot=180, name="Chair", radius=0.4, look="The coastguard's chair, worn to his shape."),
@@ -435,7 +435,7 @@ LOC_DATA["a2_lucy_bedroom"] = dict(
     props=[
         prop("a2_b_bed_lucy", "bed", "blue", -2.5, -2.2, name="Lucy's bed", radius=0.9, look="A four-poster with Lucy's nightgown thrown across the foot."),
         prop("a2_b_bed_mina", "bed_simple", "green", 1.0, -2.2, name="My bed", radius=0.9, talk="a2_bed_dialogue"),
-        prop("a2_b_window", "fence", "default", -2.0, -3.6, y=0.9, scale=0.4, name="Window latch", radius=0.4,
+        prop("a2_b_window", "fence", "default", 2.0, -3.5, y=1.0, scale=0.6, name="Window latch", radius=0.1,
              look="The sash is open to the sea air; Lucy likes it so.",
              set="a2_window_fastened", set_text="I draw the sash down and shoot the bolt. The sea will have to speak to Lucy through glass."),
         prop("a2_b_wardrobe", "bookshelf", "dark", -3.4, 0.6, rot=90, name="Wardrobe", radius=0.8, look="Dresses, hats and a very large muff."),

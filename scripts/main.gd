@@ -178,6 +178,40 @@ func _ready() -> void:
 	if _args.has("loc"):
 		hud._title.visible = false
 		_start()
+		if _args.has("picktest"):
+			## --picktest: for every clickable entity of the scene, a click on its middle must hit that entity (not another one's collider)
+			await get_tree().create_timer(1.5).timer if false else await get_tree().create_timer(1.5).timeout
+			var vp := get_viewport().get_visible_rect().size
+			var bad_pick := 0
+			for eid in loc.entities:
+				var en: Dictionary = loc.entities[eid]
+				var node: Node3D = en.node
+				var pts := [node.global_position + Vector3(0, 0.9, 0), node.global_position + Vector3(0, 1.4, 0), node.global_position + Vector3(0, 0.4, 0)]
+				var hits := 0
+				var seen: Array = []
+				for pt in pts:
+					if loc.cam.is_position_behind(pt):
+						continue
+					var sp: Vector2 = loc.cam.unproject_position(pt)
+					if sp.x < 0 or sp.y < 0 or sp.x > vp.x or sp.y > vp.y - 130:
+						continue
+					var got: String = loc._pick(sp)
+					seen.append(got)
+					if got == eid:
+						hits += 1
+				if not seen.is_empty() and hits == 0:
+					bad_pick += 1
+					print("PICKTEST ", eid, " (", en.data.get("name", ""), ") is covered by: ", seen)
+			if loc.entities.has("a2_h_wreck"):
+				var wn: Node3D = loc.entities["a2_h_wreck"].node
+				for ch in wn.get_children():
+					if ch is StaticBody3D:
+						var cs: CollisionShape3D = ch.get_child(0)
+						var gb: Vector3 = (cs.shape as BoxShape3D).size
+						print("PICKTEST wreck box size ", gb, " centre ", cs.global_position, " yaw ", wn.rotation_degrees.y, " scale ", wn.scale)
+			print("PICKTEST ", loc.id, ": ", "PASS" if bad_pick == 0 else "FAIL (%d)" % bad_pick, " entities=", loc.entities.size())
+			get_tree().quit(0 if bad_pick == 0 else 1)
+			return
 		if _args.has("hintshot"):
 			## --hintshot=<png>: opens the journal on the objectives page after two hints (for screenshots and a smoke test)
 			await get_tree().create_timer(1.5).timeout

@@ -53,11 +53,18 @@ static func variant_id(id: String) -> String:
 	return id if k == 0 else "%s__v%d" % [id, k]
 
 
+static func load_json(path_: String) -> Dictionary:
+	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(path_))
+	return parsed if parsed is Dictionary else {}
+
+
 static func load_def(id: String) -> Dictionary:
 	var f := FileAccess.open(path(variant_id(id)), FileAccess.READ)
 	var parsed: Variant = JSON.parse_string(f.get_as_text())
 	assert(parsed is Dictionary and str(parsed.get("format", "")).begins_with("gla-export/"), "not a Level Architect export: " + id)
 	var def: Dictionary = parsed
+	if str(def.get("procedural", "")) == "poly":      # made in Godot from the world seed (scripts/poly_dungeon.gd)
+		def = PolyDungeon.generate(def, Game.seed_value)
 	# hand-written story layer: data/dungeons/<id>.story.json (never overwritten by an import)
 	var sp := DIR + id + ".story.json"
 	if FileAccess.file_exists(sp):
@@ -83,7 +90,11 @@ static func story_props(def: Dictionary) -> Array:
 		rooms.append(Vector2(float(r.center[0]), float(r.center[1])))
 	var far := rooms.duplicate()
 	far.sort_custom(func(a: Vector2, b: Vector2) -> bool: return a.distance_to(ent) > b.distance_to(ent))
-	var taken := {}
+	var taken: Array = []
+	var keep: Array = [_cell_at(cells, ent, ts), _cell_at(cells, ex, ts)]
+	if ts < 1.0:                                     # fine grid (generated in Godot): every room must stay reachable too
+		for rc in rooms:
+			keep.append(_cell_at(cells, rc, ts))
 	for p in st.get("props", []):
 		var at := str(p.get("at", "entrance"))
 		var pt := ent
@@ -93,12 +104,18 @@ static func story_props(def: Dictionary) -> Array:
 			pt = rooms[int(at.substr(5)) % rooms.size()]
 		elif at.begins_with("far:") and not far.is_empty():
 			pt = far[int(at.substr(4)) % far.size()]
+		var shift := Vector2(float(p.get("dx", 0.0)), float(p.get("dz", 0.0)))
+		if ts < 1.0:                                      # fine grid: the offset is part of the target, so the connectivity check sees it
+			pt += shift
+			shift = Vector2.ZERO
 		var base := _nearest_cell(cells, ts, pt)
 		if float(p.get("radius", 0.5)) > 0.45 and base != Vector2i(1 << 30, 0):
-			base = _spare_cell(cells, ts, pt, taken, [_cell_at(cells, ent, ts), _cell_at(cells, ex, ts)], base)
-			taken[base] = true
+			var rad := float(p.get("radius", 0.5)) * float(p.get("scale", 1.0))
+			base = _spare_cell(cells, ts, pt, taken, keep, base, rad)
+			if ts >= 1.0:
+				taken.append(base)
 		var c := Vector2(base.x * ts, base.y * ts) if base != Vector2i(1 << 30, 0) else pt
-		var nudged := c + Vector2(float(p.get("dx", 0.0)), float(p.get("dz", 0.0)))
+		var nudged := c + shift
 		if _open(cells, nudged, ts, 0.5):
 			c = nudged
 		var d: Dictionary = (p as Dictionary).duplicate(true)
@@ -111,19 +128,51 @@ static func story_props(def: Dictionary) -> Array:
 	return out
 
 
-## A cell for a prop that blocks movement: the one nearest `pt` whose loss leaves every other free cell (and entrance and exit) connected,
-## so a generated layout never gets a tomb standing in a corridor. Falls back to `base` when nothing qualifies.
-static func _spare_cell(cells: Dictionary, ts: float, pt: Vector2, taken: Dictionary, keep: Array, base: Vector2i) -> Vector2i:
+## A cell for a prop that blocks movement: the nearest candidate whose loss (a whole tile on a coarse grid, a disc of the prop's
+## radius plus the player's clearance on a fine one) leaves the entrance, the exit and every room centre connected, so a generated
+## layout never gets a tomb standing in a corridor or a doorway. Falls back to `base` when nothing qualifies.
+static func _spare_cell(cells: Dictionary, ts: float, pt: Vector2, taken: Array, keep: Array, base: Vector2i, radius: float = 0.5) -> Vector2i:
 	var order: Array = cells.keys()
 	order.sort_custom(func(a: Vector2i, b: Vector2i) -> bool: return Vector2(a.x * ts, a.y * ts).distance_to(pt) < Vector2(b.x * ts, b.y * ts).distance_to(pt))
-	for cand in order.slice(0, 14):
-		if taken.has(cand) or keep.has(cand):
+	var fine := ts < 1.0
+	var reach := radius + 0.45
+	var tried: Array = []
+	for cand in order:
+		if tried.size() >= (28 if fine else 14):
+			break
+		var cp := Vector2(cand.x * ts, cand.y * ts)
+		var near_tried := false
+		if fine:
+			for t in tried:
+				if (t as Vector2).distance_to(cp) < 0.9:
+					near_tried = true
+					break
+		if fine:
+			for tk in taken:                                # not on top of a prop that is already placed
+				if cp.distance_to(tk[0]) < float(tk[1]) + radius + 0.5:
+					near_tried = true
+		if near_tried or keep.has(cand):
 			continue
+		tried.append(cp)
 		var free := {}
 		for k in cells:
-			if k != cand and not taken.has(k):
+			var kp := Vector2(k.x * ts, k.y * ts)
+			var gone: bool = (kp.distance_to(cp) <= reach) if fine else (k == cand)
+			for tk in taken:
+				if fine and kp.distance_to(tk[0]) <= float(tk[1]) + 0.45:
+					gone = true
+			if not fine and taken.has(k):
+				gone = true
+			if not gone:
 				free[k] = true
-		var start: Vector2i = free.keys()[0]
+		var ok := true
+		for kk in keep:
+			if not free.has(kk):
+				ok = false
+				break
+		if not ok or free.is_empty():
+			continue
+		var start: Vector2i = keep[0] if free.has(keep[0]) else free.keys()[0]
 		var seen := {start: true}
 		var todo := [start]
 		while not todo.is_empty():
@@ -133,7 +182,13 @@ static func _spare_cell(cells: Dictionary, ts: float, pt: Vector2, taken: Dictio
 				if free.has(n) and not seen.has(n):
 					seen[n] = true
 					todo.append(n)
-		if seen.size() == free.size():
+		var all_keep := true
+		for kk in keep:
+			if not seen.has(kk):
+				all_keep = false
+		if all_keep and (fine and seen.size() >= free.size() * 0.96 or (not fine and seen.size() == free.size())):
+			if fine:
+				taken.append([cp, radius])
 			return cand
 	return base
 
@@ -305,9 +360,11 @@ static func lights_of(def: Dictionary) -> Array:
 
 ## The level's visuals. Works whether or not Godot has imported the .glb yet (editor import vs. runtime load).
 static func load_scene(def: Dictionary) -> Node3D:
-	var p: String = GLB_DIR + str(def.glb)
+	var p: String = GLB_DIR + str(def.get("glb", ""))
 	var root: Node3D = null
-	if ResourceLoader.exists(p):
+	if def.has("poly"):
+		root = PolyDungeon.build_scene(def)
+	elif ResourceLoader.exists(p):
 		root = (load(p) as PackedScene).instantiate()
 	else:
 		var doc := GLTFDocument.new()

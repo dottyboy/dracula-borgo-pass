@@ -1,0 +1,36 @@
+{
+ "format": "gla-export/1",
+ "id": "dungeon_asylum_cellar",
+ "procedural": "poly",
+ "recipe": {
+  "sides": [
+   5,
+   6,
+   7,
+   8
+  ],
+  "radius": [
+   4.6,
+   6.0
+  ],
+  "rooms": [
+   5,
+   7
+  ],
+  "salt": "v5"
+ },
+ "ambient": {
+  "color": "#4c4a44",
+  "energy": 0.85,
+  "fog": "#0b0b0a"
+ },
+ "entrance_from": {
+  "loc": "a3_asylum_ward",
+  "pos": [
+   0.9,
+   3.0
+  ],
+  "name": "Cellar stair",
+  "look": "A passage leading down into the dark."
+ }
+}

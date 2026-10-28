@@ -10,7 +10,7 @@ Everything visual is generated from the book by the pipeline below - no hand-mad
 * The whole novel as a playable story (six acts, 27 chapters + closing note) with ten optional personal story arcs for the party members.
 * Full Throttle style verb ring, turn-based party combat, crafting, journal, travel map, seeded worlds (same seed = same puzzles and look).
 * Merged open-air regions (Whitby, Hillingham, Hampstead by night, Purfleet) with roads, parks, cliffs and houses on land.
-* Generated places made with the Game Level Architect Blender add-on: crypts, cellars, catacombs and a ruined castle, in several baked layouts per place chosen by the world seed.
+* Generated places: crypts, cellars, catacombs and a ruined castle in several layouts per place chosen by the world seed - baked with the Game Level Architect Blender add-on, plus polygon dungeons (hexagon, octagon, ... rooms joined door to door) generated in Godot itself.
 * The schooner Demeter: a detailed ship model, moored in the harbour at Varna and used as the deck, bow and wheel of the voyage.
 
 ![Opening titles](docs/img/title.png)
@@ -23,6 +23,7 @@ Everything visual is generated from the book by the pipeline below - no hand-mad
 | ![The Demeter at Varna](docs/img/quay_ship.png) | ![On the Demeter's deck](docs/img/ship_deck.png) |
 | ![Generated crypt](docs/img/crypt_generated.png) | ![Generated cellar](docs/img/cellar_generated.png) |
 | ![Ruined castle](docs/img/castle_ruin.png) | ![Verb ring](docs/img/pie_menu.png) |
+| ![Polygon dungeon, overview](docs/img/poly_overview.png) | ![Decagon room with a straight doorway](docs/img/poly_room.png) |
 
 
 ## Download
@@ -142,6 +143,13 @@ Story hooks (no change to world.json, so the story validator is untouched): `--f
 Tests: `--loc=chapel_crypt --dungeonlinktest` (down and back), `--loc=dungeon_castle --dungeontest`; all act/arc replays still pass.
 Props: the package's `props` list replaces Architect's baked decoration with this game's own models (crate_stack, column, coffin, tomb, table, chair, bed, bookshelf, chest, barrel, candelabra; `Dungeon.PROP_MAP`), big ones block movement.
 Not done yet: several floors, doors that open, a story reason for the generated places, tower floors / castle keep interiors.
+
+### Polygon dungeons made in Godot (no Blender)
+`scripts/poly_dungeon.gd` generates levels from the world seed at load time: rooms are regular polygons (pentagon to decagon). A new room is attached to a free edge of an existing one and rotated so that one of
+its edges faces the parent's door exactly; its centre is put where that edge's midpoint meets the end of the straight corridor, so every doorway meets the next doorway in a line. The result has the same shape as an
+Architect package (walk rectangles on a 0.5 m grid, rooms, props, lights), so `Dungeon`, the story anchors and the tests work unchanged; meshes (floor, walls with doorways and lintels) are built in code.
+A recipe file such as `data/dungeons/dungeon_crypt__v5.json` (`"procedural": "poly"`, sides, radius, room count, salt) is simply one more variant of its place; the crypt, abbey undercroft and asylum cellar have two each.
+Tests: `-- --polytest=60` (7 recipes x 60 seeds: rooms, one connected area, entrance to exit), `GLA_VARIANT=5 ... --dungeontest`. Props never stand beside a doorway and the tomb faces away from all doors. Every corridor has a door leaf at its first doorway (hinge-origin node `Door_Panel_k`) that swings open as the player comes close, like the Architect doors.
 
 ### Seeded places (baked variants)
 `pipeline/bake_places.py --addon <levelArchitect_v2.py>` runs Game Level Architect headless in Blender (`pipeline/gla_gen.py`, one recipe per kind of place) and writes

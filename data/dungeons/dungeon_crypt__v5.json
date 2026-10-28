@@ -1,0 +1,37 @@
+{
+ "format": "gla-export/1",
+ "id": "dungeon_crypt",
+ "procedural": "poly",
+ "recipe": {
+  "sides": [
+   6,
+   8,
+   5,
+   7,
+   10
+  ],
+  "radius": [
+   4.6,
+   6.4
+  ],
+  "rooms": [
+   5,
+   7
+  ],
+  "salt": "v5"
+ },
+ "ambient": {
+  "color": "#5a463c",
+  "energy": 0.9,
+  "fog": "#0b0707"
+ },
+ "entrance_from": {
+  "loc": "chapel_crypt",
+  "pos": [
+   4.6,
+   -1.0
+  ],
+  "name": "Narrow stair down",
+  "look": "A passage leading down into the dark."
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "format": "gla-export/1",
+ "id": "dungeon_poly_crypt",
+ "procedural": "poly",
+ "recipe": {
+  "rooms": [
+   5,
+   7
+  ],
+  "sides": [
+   6,
+   8,
+   5,
+   7,
+   10
+  ],
+  "radius": [
+   4.6,
+   6.4
+  ]
+ },
+ "ambient": {
+  "color": "#5a463c",
+  "energy": 0.9,
+  "fog": "#0b0707"
+ }
+}

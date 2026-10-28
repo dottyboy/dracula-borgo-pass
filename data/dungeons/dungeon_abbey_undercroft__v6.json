@@ -1,0 +1,33 @@
+{
+ "format": "gla-export/1",
+ "id": "dungeon_abbey_undercroft",
+ "procedural": "poly",
+ "recipe": {
+  "sides": [
+   8
+  ],
+  "radius": [
+   5.2,
+   6.4
+  ],
+  "rooms": [
+   4,
+   6
+  ],
+  "salt": "v6"
+ },
+ "ambient": {
+  "color": "#3c4452",
+  "energy": 0.8,
+  "fog": "#07090c"
+ },
+ "entrance_from": {
+  "loc": "a2_abbey_ruins",
+  "pos": [
+   -1.8,
+   3.4
+  ],
+  "name": "Sunken steps",
+  "look": "A passage leading down into the dark."
+ }
+}

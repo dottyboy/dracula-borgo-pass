@@ -118,6 +118,56 @@ func _ready() -> void:
 		CombatTest.run(int(_args.get("runs", "100")))
 		get_tree().quit()
 		return
+	if _args.has("polydump"):
+		var pb := Dungeon.load_json("res://data/dungeons/%s.json" % str(_args.get("polyfile", "dungeon_crypt__v5")))
+		var pd := PolyDungeon.generate(pb, int(str(_args.polydump)))
+		for k in (pd.poly.rooms as Array).size():
+			var rr: Dictionary = pd.poly.rooms[k]
+			print("ROOM ", k, " n=", rr.n, " r=", rr.r, " rot=", rr.rot, " c=", rr.c, " doors=", rr.doors)
+		for cc in pd.poly.cors:
+			print("COR ", cc.a, "-", cc.b, " ", cc.p0, " -> ", cc.p1)
+		print("ENTRANCE ", pd.entrance.pos, " EXIT ", pd.exit.pos)
+		for pp in pd.props:
+			print("PROP ", pp.kind, " ", pp.pos)
+		get_tree().quit()
+		return
+	if _args.has("polytest"):
+		## --polytest[=<count>]: many seeds of the Godot-made polygon dungeon; every level must have its rooms, be one connected area,
+		## and get from the entrance to the exit.
+		var bad := 0
+		var files := ["dungeon_poly_crypt", "dungeon_crypt__v5", "dungeon_crypt__v6", "dungeon_abbey_undercroft__v5", "dungeon_abbey_undercroft__v6", "dungeon_asylum_cellar__v5", "dungeon_asylum_cellar__v6"]
+		var t0 := Time.get_ticks_msec()
+		var total_rooms := 0
+		var kinds := {}
+		var count := int(str(_args.polytest)) if str(_args.polytest).is_valid_int() and int(str(_args.polytest)) > 1 else 60
+		for fi in files.size() * count:
+			var base := Dungeon.load_json("res://data/dungeons/%s.json" % files[fi / count])
+			var sd := fi % count + 1
+			var def := PolyDungeon.generate(base, sd)
+			var cells := Dungeon.cells_of(def)
+			var ts := float(def.tile_size)
+			var start := Vector2i(roundi(float(def.entrance.pos[0]) / ts), roundi(float(def.entrance.pos[2]) / ts))
+			var seen := {start: true}
+			var todo: Array = [start]
+			while not todo.is_empty():
+				var cur: Vector2i = todo.pop_back()
+				for dd in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+					var nn: Vector2i = cur + dd
+					if cells.has(nn) and not seen.has(nn):
+						seen[nn] = true
+						todo.append(nn)
+			var ex := Vector2i(roundi(float(def.exit.pos[0]) / ts), roundi(float(def.exit.pos[2]) / ts))
+			var rooms_ok: bool = def.rooms.size() >= 4
+			var one_area: bool = seen.size() == cells.size() and seen.has(ex) and cells.has(start)
+			total_rooms += def.rooms.size()
+			for r in def.rooms:
+				kinds[r.shape] = int(kinds.get(r.shape, 0)) + 1
+			if not (rooms_ok and one_area):
+				bad += 1
+				print("POLYTEST ", files[fi / count], " seed ", sd, " FAILED rooms=", def.rooms.size(), " connected=", one_area, " cells=", cells.size(), " reached=", seen.size())
+		print("POLYTEST ", files.size(), " recipes x ", count, " seeds, ", total_rooms, " rooms ", kinds, ", ", Time.get_ticks_msec() - t0, " ms, ", "PASS" if bad == 0 else "FAIL (%d)" % bad)
+		get_tree().quit(0 if bad == 0 else 1)
+		return
 	if _args.has("selftest"):
 		hud._title.visible = false
 		var code := 0
@@ -680,6 +730,10 @@ func _goto(loc_id: String, from_loc: String, instant := false) -> void:
 				t += 0.25
 			var reached := Vector2(loc.player.position.x - want.x, loc.player.position.z - want.z).length() <= 0.9
 			print("DUNGEONTEST walk to ", g[0], ": ", "OK" if reached else "FAILED", " at ", loc.player.position)
+			if not reached:
+				for b in loc._blockers:
+					if (b.pos as Vector2).distance_to(Vector2(loc.player.position.x, loc.player.position.z)) < 3.5:
+						print("   blocker near player: ", b.pos, " r=", b.r, "   goal ", g[1])
 			ok = ok and reached
 		for eid in loc.entities:
 			var en: Dictionary = loc.entities[eid]

@@ -939,6 +939,10 @@ func _props() -> void:
 		node.position = _v3(p.pos)
 		node.rotation_degrees.y = float(p.get("rot", 0))
 		add_child(node)
+		var py: float = float(p.pos[1])
+		if (it.has("take") or it.has("set") or it.has("do")) and p.get("name", "") != "" and py > 0.2 and py < 1.3 and float(p.get("scale", 1.0)) < 2.0:
+			p["scale"] = 2.0                       # a quest item lying on a table: big enough to see and to click
+			p["radius"] = maxf(float(p.get("radius", 0.3)), 0.3)
 		node.setup(str(p.asset), str(p.variant), float(p.get("scale", 1.0)))
 		node.set_process(false)
 		node.rotation_degrees.y = float(p.get("rot", 0))

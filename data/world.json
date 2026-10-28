@@ -193,6 +193,12 @@
    "variant": "leather",
    "desc": "Columns of figures: so many flies, so many spiders, so many sparrows, in a small, neat, terrible hand."
   },
+  "a3_orderly_key": {
+   "name": "Orderly's key",
+   "asset": "key",
+   "variant": "default",
+   "desc": "A ring-key on a loop of tarred string. It hung under the night orderly's saucer, where a man hides a key he is not supposed to have. It fits the old cell doors in the cellar."
+  },
   "a3_arthur_telegram": {
    "name": "Arthur's telegram",
    "asset": "book",
@@ -1368,12 +1374,6 @@
    "asset": "chest",
    "variant": "dark",
    "desc": "Scarred black leather, brass clasps. Lancets, a stethoscope, a bottle of brandy, and in the lid a pyx of consecrated wafers."
-  },
-  "a3_orderly_key": {
-   "name": "Orderly's key",
-   "asset": "key",
-   "variant": "default",
-   "desc": "A ring-key on a loop of tarred string. It hung under the night orderly's saucer, where a man hides a key he is not supposed to have. It fits the old cell doors in the cellar."
   }
  },
  "loc_data": {
@@ -8503,10 +8503,10 @@
      "radius": 0.9,
      "name": "Iron cot",
      "interact": {
-      "look": "A cot, a blanket, a neatly folded sheet. The pillow is lumpy: it has been slit and sewn up again with fishing-twine.",
       "take": "a3_sugar_lumps",
       "take_text": "Inside the pillow, wrapped in a handkerchief: a dozen lumps of sugar, hoarded from his tea.",
-      "give_once": true
+      "give_once": true,
+      "look": "A cot, a blanket, a neatly folded sheet. The pillow is lumpy: it has been slit and sewn up again with fishing-twine."
      }
     },
     {
@@ -9749,10 +9749,10 @@
      "radius": 0.4,
      "name": "Jonathan's coat",
      "interact": {
-      "look": "A man's threadbare coat is over the chair-back, with a waistcoat folded beneath it. The waistcoat pocket is lumpy.",
       "take": "a3_wedding_ring",
       "take_text": "In the waistcoat pocket, a few coins, a ticket and a plain gold ring wrapped in a handkerchief. He bought it before the Castle. I take it.",
-      "give_once": true
+      "give_once": true,
+      "look": "A man's threadbare coat is over the chair-back, with a waistcoat folded beneath it. The waistcoat pocket is lumpy."
      }
     },
     {
@@ -80276,6 +80276,16 @@
    "source": "Dr. Seward's diary",
    "text": "Under my own asylum lies the old cellar where my predecessors kept the violent cases: padded stalls, iron staples, a dripping tap. Renfield has no business knowing of it, and yet he spoke of 'the cold dark under the house' only last week. I find I do not like the coincidence."
   },
+  "a3_j_cellar_cell": {
+   "title": "The cell of a hundred hands",
+   "source": "Dr. Seward's diary",
+   "text": "With the orderly's key I opened the grated door in the cellar. The plaster is scratched from floor to ceiling with one sentence in a hundred hands: HE IS COMING. On the straw lay a crucifix and a braid of garlic, left by some earlier patient who believed it. I took them. I have never believed in such things, and I did not like how glad I was of them."
+  },
+  "a3_j_cellar_grating": {
+   "title": "How Renfield gets out",
+   "source": "Dr. Seward's diary",
+   "text": "At the far end of the cellar the old coal grating hangs from one hinge, the bars bent outward and the mud beneath it fresh. No orderly bent those bars. It opens on the grounds, and from there it is an easy walk to Carfax. Hennessey asked how Renfield leaves his cell. I think I have found where he goes after."
+  },
   "a3_j_casebook": {
    "title": "An old case-book",
    "source": "Dr. Seward's diary",
@@ -82205,16 +82215,6 @@
    "title": "What I have learned",
    "source": "Van Helsing's casebook",
    "text": "Verhoeven was right to demand evidence, and the peasants were right to be afraid, and the truth was in neither camp but between them. Arminius has sent a name: Dracula. I do not know what lies behind it. I have a casebook, a ward, and a certain faith that works when the evidence runs out."
-  },
-  "a3_j_cellar_cell": {
-   "title": "The cell of a hundred hands",
-   "source": "Dr. Seward's diary",
-   "text": "With the orderly's key I opened the grated door in the cellar. The plaster is scratched from floor to ceiling with one sentence in a hundred hands: HE IS COMING. On the straw lay a crucifix and a braid of garlic, left by some earlier patient who believed it. I took them. I have never believed in such things, and I did not like how glad I was of them."
-  },
-  "a3_j_cellar_grating": {
-   "title": "How Renfield gets out",
-   "source": "Dr. Seward's diary",
-   "text": "At the far end of the cellar the old coal grating hangs from one hinge, the bars bent outward and the mud beneath it fresh. No orderly bent those bars. It opens on the grounds, and from there it is an easy walk to Carfax. Hennessey asked how Renfield leaves his cell. I think I have found where he goes after."
   }
  },
  "encounter_hooks": {

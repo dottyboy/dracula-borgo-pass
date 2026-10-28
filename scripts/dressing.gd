@@ -28,6 +28,8 @@ const DECOR := {
 
 
 static func theme_of(id: String, interior: bool) -> String:
+	if not interior and is_ship(id):
+		return "dock"
 	if not interior:
 		for k in ["churchyard", "cliff", "abbey", "grave", "cemetery", "church"]:
 			if id.contains(k):
@@ -45,6 +47,14 @@ static func theme_of(id: String, interior: bool) -> String:
 			if id.contains(k):
 				return str(c[0])
 	return "hall" if interior else "wild"
+
+
+## Places aboard a ship: no town houses beside them, the town (if any) is a distant shore.
+static func is_ship(id: String) -> bool:
+	for k in ["deck", "forecastle", "bow", "wheel", "galley", "schooner", "launch"]:
+		if id.contains(k):
+			return true
+	return false
 
 
 static func dress(loc: Location) -> void:
@@ -67,13 +77,15 @@ static func dress(loc: Location) -> void:
 		_clutter(loc, rng, w, d, theme, occ, used)
 	else:
 		var sky_n: String = loc._sky_name()
-		if theme in ["dock", "street"]:
+		var ship := is_ship(loc.id)
+		if theme in ["dock", "street"] and not ship:
 			_buildings(loc, rng, w, d, q)
-		_wall_buildings(loc, rng, w, d, theme)
-		_door_buildings(loc, rng, w, d)
-		if theme in ["dock", "street"] and loc.room_w > float(loc.data.cells[0]) * CELL + 1.0 and not loc.data.get("no_west_street", false):
+		if not ship:
+			_wall_buildings(loc, rng, w, d, theme)
+			_door_buildings(loc, rng, w, d)
+		if theme in ["dock", "street"] and not ship and loc.room_w > float(loc.data.cells[0]) * CELL + 1.0 and not loc.data.get("no_west_street", false):
 			_west_street(loc, rng, w, d)
-		if theme == "dock" and loc._is_watery():
+		if theme == "dock" and loc._is_watery() and not ship:
 			_quay_edges(loc, w, d)
 		_clutter(loc, rng, w, d, theme, occ, {})
 		if not loc.data.get("no_backdrop", false):
@@ -378,6 +390,9 @@ static func _clutter(loc: Location, rng: RandomNumberGenerator, w: float, d: flo
 	elif spec.has("scatter"):
 		var half_w := w / 2.0 + 7.0
 		var half_d := d / 2.0 + 6.0
+		if loc._is_watery():                       # a cliff plateau ends a few metres past the room; nothing may hover over the sea
+			half_w = w / 2.0 + 2.0
+			half_d = d / 2.0 + 2.0
 		for entry in spec.scatter:
 			var asset := str(entry[0])
 			if not Assets.has_model(asset):
@@ -560,9 +575,10 @@ static func _backdrop(loc: Location, rng: RandomNumberGenerator, w: float, d: fl
 	var mmi := MultiMeshInstance3D.new()
 	mmi.multimesh = mm
 	loc.add_child(mmi)
-	# town skyline behind the north edge
+	# town skyline behind the north edge; over water it stands on a low far shore, never in the sea
 	if theme in ["dock", "street", "tavern"] and loc.region == "":      # (a region has real land and houses of its own)
 		var count := 6
+		var skyline: Array = []
 		for i in count:
 			var asset := "house_wide" if rng.randf() < 0.5 else "house_row"
 			var x := -w / 2.0 - 10.0 + float(i) * ((w + 20.0) / float(count)) + rng.randf_range(-2.0, 2.0)
@@ -571,7 +587,32 @@ static func _backdrop(loc: Location, rng: RandomNumberGenerator, w: float, d: fl
 			m.position = Vector3(x, 0.0, -d / 2.0 - 16.0 - rng.randf_range(0.0, 10.0))
 			m.scale = Vector3.ONE * sc
 			m.rotation_degrees.y = rng.randf_range(-6.0, 6.0)
-			loc.add_child(m)
+			skyline.append(m)
+		if watery and not is_ship(loc.id) and not loc.data.get("walls", {}).has("north"):
+			var zs: Array = skyline.map(func(m: Node3D) -> float: return m.position.z)
+			var xs: Array = skyline.map(func(m: Node3D) -> float: return m.position.x)
+			var zmin: float = zs.min() - 9.0
+			var zmax: float = zs.max() + 7.0
+			var xmin: float = xs.min() - 9.0
+			var xmax: float = xs.max() + 9.0
+			var shore := MeshInstance3D.new()
+			var bm := BoxMesh.new()
+			bm.size = Vector3(xmax - xmin, 3.0, zmax - zmin)
+			var sm2 := StandardMaterial3D.new()
+			sm2.albedo_color = fog.lerp(Color(0.2, 0.26, 0.18) if sky_n in ["day", "dusk"] else Color(0.07, 0.09, 0.12), 0.6)
+			sm2.roughness = 1.0
+			bm.material = sm2
+			shore.mesh = bm
+			shore.position = Vector3((xmin + xmax) / 2.0, -1.45, (zmin + zmax) / 2.0)
+			loc.add_child(shore)
+			for m in skyline:
+				loc.add_child(m)
+		elif not is_ship(loc.id) and (not watery or loc.data.get("walls", {}).has("north")):
+			for m in skyline:
+				loc.add_child(m)
+		else:
+			for m in skyline:
+				m.free()
 	if watery:
 		for i in 2:
 			var ship := Assets.instantiate("mast_cluster", "brown")

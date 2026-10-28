@@ -119,6 +119,31 @@ class Asset:
         self._finish(r["verts"], mat, True)
         return self
 
+    def quad(self, p0, p1, p2, p3, mat, smooth=False):
+        """One quad face (counter-clockwise seen from the front)."""
+        bm = self.parts[self.cur][0]
+        vs = [bm.verts.new(Vector(p)) for p in (p0, p1, p2, p3)]
+        f = bm.faces.new(vs)
+        f.material_index = self._slot(mat)
+        f.smooth = smooth
+        return f
+
+    def loft(self, rings, mat, smooth=False, flip=False):
+        """Skin through rings (lists of points, same count each); the strip between ring i and i+1 faces out when the
+        rings run along +Y and each ring goes left -> down -> right. `flip` reverses the faces."""
+        for r0, r1 in zip(rings, rings[1:]):
+            for j in range(len(r0) - 1):
+                q = (r0[j], r1[j], r1[j + 1], r0[j + 1])
+                self.quad(*(q[::-1] if flip else q), mat, smooth)
+        return self
+
+    def polygon(self, pts, mat, smooth=False):
+        bm = self.parts[self.cur][0]
+        f = bm.faces.new([bm.verts.new(Vector(p)) for p in pts])
+        f.material_index = self._slot(mat)
+        f.smooth = smooth
+        return f
+
     def beam(self, a, b, thick, mat):
         """Box of square section `thick` spanning point a -> b."""
         a, b = Vector(a), Vector(b)

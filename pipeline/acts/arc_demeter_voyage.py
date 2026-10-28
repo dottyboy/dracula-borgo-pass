@@ -57,10 +57,10 @@ LOC_DATA = {}
 
 # ===================================================================================================== quay
 LOC_DATA["@quay"] = dict(
-    cells=[4, 3], interior=False, wall="cobble", floor="cobble", ambient=AMBIENT["day_exterior"], camera=cam([4, 3]), lights=lights_day(),
+    no_west_street=True, cells=[4, 3], interior=False, wall="cobble", floor="cobble", ambient=AMBIENT["day_exterior"], camera=cam([4, 3]), lights=lights_day(),
     spawn=[0.0, 3.8], spawns={"@deck": [-4.5, 2.5]},
     props=[
-        prop("@q_ship", "@schooner", "weathered", -5.0, -3.2, rot=90, name="The Demeter", radius=2.0,
+        prop("@q_ship", "@schooner", "weathered", -14.6, -1.0, rot=180, y=-1.35, scale=1.15, name="The Demeter", radius=2.0,
              look="Eighty tons of Russian oak, newly tarred. She looks small to be carrying fifty boxes and a secret.", go="@deck"),
         prop("@q_crates", "chest", "oak", 1.6, -3.4, scale=1.4, name="Stencilled crates", radius=0.8,
              look="Stencilled 'Hildesheim & Co., Varna'. Salt fish for Constantinople, they say; the smell is honest, at least."),
@@ -101,9 +101,10 @@ LOC_DATA["@deck"] = dict(
     spawn=[-4.4, 2.4], spawns={"@quay": [-4.4, 2.4], "@cabin": [4.6, -1.4], "@galley": [3.2, -2.4], "@forecastle": [-3.2, -2.4],
                                "@hold": [0.0, -0.2], "@bow": [-4.4, -1.0], "@wheelhouse": [3.6, 2.0]},
     props=[
-        prop("@d_mast1", "column", "planks", -2.6, 0.2, name="Foremast", radius=0.3,
+        prop("@d_hull", "@deckshell", "weathered", 0.0, 0.0, rot=-90, y=-0.94, name=None, radius=0.0),
+        prop("@d_mast1", "@mast", "weathered", -2.6, 0.2, name="Foremast", radius=0.3,
              look="Spruce, tarred, with the sail laced to it. Someone has nailed a small wooden cross to its foot."),
-        prop("@d_mast2", "column", "planks", 2.0, 0.2, name=None, radius=0.3),
+        prop("@d_mast2", "@mast", "weathered", 2.0, 0.2, scale=0.9, name=None, radius=0.3),
         prop("@d_hatch", "stairs", "planks", 0.0, -2.2, name="The hold hatch", radius=0.7,
              look="The main hatchway to the hold, battened and barred. A key hangs somewhere on this ship; a lever would do as well.",
              go="@hold", go_cond="has:@hold_key", go_fail="Barred and padlocked. The hold key is kept somewhere in the ship, not far from where I sleep."),
@@ -111,10 +112,9 @@ LOC_DATA["@deck"] = dict(
              look="Spare blocks, a marline-spike, tarred twine. Everything a ship needs and nothing a man needs."),
         prop("@d_capstan", "barrel", "oak", -1.0, 1.8, scale=0.9, name="Capstan", radius=0.4,
              look="The windlass capstan. Six men to the bars in a calm; I have fewer every week."),
-        prop("@d_rail", "fence", "default", 3.0, -0.4, name=None, radius=0.3),
         prop("@d_lantern", "lantern", "default", 2.8, 1.8, name="Deck lantern", radius=0.3,
              look="A stout lantern on the main-boom crutch. It burns all night now, and the men watch it as men watch a sleeping beast."),
-        prop("@d_sky", "moon", "default", -1.2, -1.0, y=2.3, scale=0.5, name="The sky", radius=0.4,
+        prop("@d_sky", "moon", "default", -1.2, -6.0, y=7.0, scale=0.5, name="The sky", radius=0.4,
              look="Grey above, grey below.", set="@clue_sky",
              set_text="High in the north-west, long white mares'-tails are drawing across the sky, thin as combed hair. The swell has begun to run against the wind. That is weather coming, and not far off."),
         prop("@d_gang", "stairs", "planks", -5.2, 2.4, rot=90, name="Gangway", radius=0.8, look="Back to the quay.", go="@quay", cond="!@p2"),
@@ -318,6 +318,7 @@ LOC_DATA["@bow"] = dict(
     cells=[2, 2], interior=False, wall="planks", floor="planks", ambient=AMBIENT["sea_fog"], camera=cam([2, 2]), lights=lights_day(2.0),
     spawn=[2.4, 1.8], spawns={"@deck": [2.4, 1.8]},
     props=[
+        prop("@b_hull", "@deckshell", "weathered", 0.0, 0.0, rot=180, y=-0.94, name=None, radius=0.0),
         prop("@b_stairs", "stairs", "planks", 2.8, 2.0, rot=-90, name="Aft to the deck", radius=0.8, look="Back along the deck.", go="@deck"),
         prop("@b_cable", "barrel", "dark", -1.0, -2.0, scale=1.1, name="Anchor cable", radius=0.6,
              look="Coiled cable, stiff with salt. A man could lose a hand in it, or find one lost.",
@@ -325,7 +326,6 @@ LOC_DATA["@bow"] = dict(
         prop("@b_bowsprit", "column", "planks", 0.0, -2.8, rot=0, name="Bowsprit", radius=0.3,
              look="The bowsprit points at nothing. The fog begins at its tip."),
         prop("@b_lamp", "lantern", "default", 1.8, -1.6, name="Bow light", radius=0.3, look="The red and green lights burn dull in the fog. A passing ship would see them. None passes."),
-        prop("@b_rail", "fence", "default", -2.4, 0.4, name=None, radius=0.3),
         prop("@b_cap", "key", "gold", -0.6, 0.8, name="A sailor's cap", radius=0.25, cond="@p3",
              look="Lying wet against the rail, a blue knitted cap with a name sewn in the band: PETROFSKY.", take="@cap",
              take_text="Petrofsky's cap. I fold it in my pocket for the day his mother asks me what became of him.", give_once=True),
@@ -347,6 +347,7 @@ LOC_DATA["@wheelhouse"] = dict(
     cells=[2, 2], interior=False, wall="planks", floor="planks", ambient=AMBIENT["sea_fog"], camera=cam([2, 2]), lights=lights_day(2.2),
     spawn=[-2.4, 1.6], spawns={"@deck": [-2.4, 1.6]},
     props=[
+        prop("@w_hull", "@deckshell", "weathered", -6.5, 0.0, rot=-90, y=-0.94, name=None, radius=0.0),
         prop("@w_stairs", "stairs", "planks", -2.8, 2.0, rot=90, name="Forward to the deck", radius=0.8, look="Back down the steps.", go="@deck"),
         prop("@w_wheel", "@wheel", "oak", 0.0, 0.0, name="The ship's wheel", radius=0.6,
              look="Worn smooth by twenty years of hands. The spokes are the length of a man's reach.", talk="@lash"),
@@ -724,9 +725,15 @@ GATES = {
 }
 
 # Re-use the Act II schooner and wheel models through this arc's own asset ids (same builders).
-ASSETS = [dict(id="@schooner", builder="a2_schooner", params={}), dict(id="@wheel", builder="a2_wheel", params={})]
+ASSETS = [dict(id="@schooner", builder="a2_schooner", params={}), dict(id="@wheel", builder="a2_wheel", params={}),
+          dict(id="@deckshell", builder="a2_deckshell", params={}), dict(id="@mast", builder="a2_mast", params={})]
 VARIANTS = {
-    "@schooner": {"default": "weathered", "weathered": {"wood": T("wood_planks", "#8a7458"), "cloth": T("cloth", "#cfc4a8"), "iron": T("iron")}},
+    "@schooner": {"default": "weathered", "weathered": {"wood": T("wood_planks", "#8a7458"), "cloth": T("cloth", "#7a6f55"), "patch": T("cloth", "#615740"), "iron": T("iron"),
+                                                              "tar": T("wood_planks", "#16120f"), "trim": T("wood_planks", "#d9d2bf"), "rope": T("cloth", "#6e5c3e")}},
+    "@deckshell": {"default": "weathered", "weathered": {"wood": T("wood_planks", "#8a7458"), "iron": T("iron"),
+                                                         "tar": T("wood_planks", "#16120f"), "trim": T("wood_planks", "#d9d2bf")}},
+    "@mast": {"default": "weathered", "weathered": {"wood": T("wood_planks", "#7a6246"), "cloth": T("cloth", "#7a6f55"), "iron": T("iron"),
+                                                    "rope": T("cloth", "#6e5c3e")}},
     "@wheel": {"default": "oak", "oak": {"wood": T("wood_planks", "#7a6048"), "iron": T("iron")}},
     "human_peasant_m": {
         "@clerk": human_colors(skin=T("skin", "#e0c4a8"), hair=T("hair", "#3a3a3a"), top=T("wool", "#2a2a32"), bottom=T("wool", "#1e1e24")),

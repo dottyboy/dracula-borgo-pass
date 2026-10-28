@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PIPE = ROOT / "pipeline"
-BLENDER = os.environ.get("BLENDER", str(Path.home() / "Programi/blender-5.2.1/blender"))
+BLENDER = os.environ.get("BLENDER", str(Path.home() / "Programi/blender-5.2.2/blender"))
 
 
 def run(*cmd):

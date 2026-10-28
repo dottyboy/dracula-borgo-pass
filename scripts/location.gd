@@ -184,6 +184,10 @@ var _dungeon_tile := 2.0
 
 ## A generated level (see Dungeon): the glb is the look, the json's walk rectangles are the movement. It runs on the region
 ## machinery (rectangle pathfinding, a camera that follows the player) with one member: the whole dungeon.
+const DUNGEON_FILL := 1.4
+const DUNGEON_LANTERN := 4.2
+
+
 func build_dungeon(did: String, from_loc: String) -> void:
 	var def := Dungeon.load_def(did)
 	region = did
@@ -217,11 +221,44 @@ func build_dungeon(did: String, from_loc: String) -> void:
 	_props()
 	_blockers.append_array(Dungeon.spawn_props(def, dscene))
 	_lights()
+	_dungeon_fill(def)
 	_region_camera()
 	_player(from_loc)
 	player.clamp_fn = Callable(self, "_clamp_region")
+	_dungeon_lantern()
 	_weather()
 	_portal_lights(def)
+
+
+## Readability without lightmaps: one soft shadowless light per room (lit by the torches in spirit, so it is warm and low) ...
+func _dungeon_fill(def: Dictionary) -> void:
+	if not interior:
+		return
+	var warm := Color(str(data.ambient.color)).lerp(Color("#ffc890"), 0.55)
+	for r in def.get("rooms", []):
+		var rc: Array = r.rect
+		var size := maxf(absf(float(rc[2]) - float(rc[0])), absf(float(rc[3]) - float(rc[1])))
+		var o := OmniLight3D.new()
+		o.position = Vector3(float(r.center[0]), 2.4, float(r.center[1]))
+		o.light_color = warm
+		o.light_energy = DUNGEON_FILL
+		o.omni_range = size * 0.75 + 3.0
+		o.shadow_enabled = false
+		add_child(o)
+
+
+## ... and a faint lantern that goes with the player, so a corridor is never black around them.
+func _dungeon_lantern() -> void:
+	if not interior or player == null:
+		return
+	var o := OmniLight3D.new()
+	o.position = Vector3(0, 3.8, 1.4)
+	o.light_color = Color("#ffd9a8")
+	o.light_energy = DUNGEON_LANTERN
+	o.omni_range = 11.0
+	o.light_specular = 0.3
+	o.shadow_enabled = false
+	player.add_child(o)
 
 
 ## Warm light on the tile that leads back up, cold light on the one that leads on.
@@ -591,7 +628,7 @@ func _environment() -> void:
 			env.background_color = Color(str(a.fog))
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	env.ambient_light_color = Color(str(a.color))
-	env.ambient_light_energy = float(a.energy) * (2.0 if interior else 1.25)
+	env.ambient_light_energy = float(a.energy) * ((2.7 if not _dungeon_def.is_empty() else 2.0) if interior else 1.25)
 	env.fog_enabled = true
 	env.fog_light_color = Color(str(a.fog))
 	var sky_n := _sky_name()
@@ -804,6 +841,8 @@ func _walls(w: float, d: float) -> void:
 	var walls: Dictionary = data.get("walls", {})
 	var variant: String = data.wall
 	var t := 0.2
+	if not interior and Dressing.is_ship(id):         # the ship's own hull and bulwarks replace the walls
+		return
 	var town := not interior and Dressing.theme_of(id, false) in ["dock", "street"]
 	for side in walls:
 		if town and side == "north":

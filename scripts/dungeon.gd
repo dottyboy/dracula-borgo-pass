@@ -33,8 +33,28 @@ static func exists(id: String) -> bool:
 	return id.begins_with("dungeon_") and FileAccess.file_exists(path(id))
 
 
+## Baked variants of one place: <id>.json is variant 0, <id>__v1.json ... are other generated layouts of it (pipeline/bake_places.py).
+## The world seed picks one, so the same seed always gives the same level (the story anchors work on any of them).
+static func variant_id(id: String) -> String:
+	# floors of one place (<stem>_f0, _f1 ...) share the stem's choice, so the stairs always meet
+	var stem := id
+	var rx := RegEx.create_from_string("^(.*)_f(\\d+)$")
+	var m := rx.search(id)
+	if m:
+		stem = m.get_string(1)
+	var n := 1
+	while FileAccess.file_exists(DIR + "%s__v%d.json" % [id, n]):
+		n += 1
+	if n == 1:
+		return id
+	var k := absi(hash("place:%d:%s" % [Game.seed_value, stem])) % n
+	if OS.get_environment("GLA_VARIANT") != "":       # tests: pin one variant
+		k = int(OS.get_environment("GLA_VARIANT")) % n
+	return id if k == 0 else "%s__v%d" % [id, k]
+
+
 static func load_def(id: String) -> Dictionary:
-	var f := FileAccess.open(path(id), FileAccess.READ)
+	var f := FileAccess.open(path(variant_id(id)), FileAccess.READ)
 	var parsed: Variant = JSON.parse_string(f.get_as_text())
 	assert(parsed is Dictionary and str(parsed.get("format", "")).begins_with("gla-export/"), "not a Level Architect export: " + id)
 	var def: Dictionary = parsed
@@ -63,6 +83,7 @@ static func story_props(def: Dictionary) -> Array:
 		rooms.append(Vector2(float(r.center[0]), float(r.center[1])))
 	var far := rooms.duplicate()
 	far.sort_custom(func(a: Vector2, b: Vector2) -> bool: return a.distance_to(ent) > b.distance_to(ent))
+	var taken := {}
 	for p in st.get("props", []):
 		var at := str(p.get("at", "entrance"))
 		var pt := ent
@@ -73,6 +94,9 @@ static func story_props(def: Dictionary) -> Array:
 		elif at.begins_with("far:") and not far.is_empty():
 			pt = far[int(at.substr(4)) % far.size()]
 		var base := _nearest_cell(cells, ts, pt)
+		if float(p.get("radius", 0.5)) > 0.45 and base != Vector2i(1 << 30, 0):
+			base = _spare_cell(cells, ts, pt, taken, [_cell_at(cells, ent, ts), _cell_at(cells, ex, ts)], base)
+			taken[base] = true
 		var c := Vector2(base.x * ts, base.y * ts) if base != Vector2i(1 << 30, 0) else pt
 		var nudged := c + Vector2(float(p.get("dx", 0.0)), float(p.get("dz", 0.0)))
 		if _open(cells, nudged, ts, 0.5):
@@ -85,6 +109,33 @@ static func story_props(def: Dictionary) -> Array:
 		d["radius"] = float(p.get("radius", 0.5))
 		out.append(d)
 	return out
+
+
+## A cell for a prop that blocks movement: the one nearest `pt` whose loss leaves every other free cell (and entrance and exit) connected,
+## so a generated layout never gets a tomb standing in a corridor. Falls back to `base` when nothing qualifies.
+static func _spare_cell(cells: Dictionary, ts: float, pt: Vector2, taken: Dictionary, keep: Array, base: Vector2i) -> Vector2i:
+	var order: Array = cells.keys()
+	order.sort_custom(func(a: Vector2i, b: Vector2i) -> bool: return Vector2(a.x * ts, a.y * ts).distance_to(pt) < Vector2(b.x * ts, b.y * ts).distance_to(pt))
+	for cand in order.slice(0, 14):
+		if taken.has(cand) or keep.has(cand):
+			continue
+		var free := {}
+		for k in cells:
+			if k != cand and not taken.has(k):
+				free[k] = true
+		var start: Vector2i = free.keys()[0]
+		var seen := {start: true}
+		var todo := [start]
+		while not todo.is_empty():
+			var cur: Vector2i = todo.pop_back()
+			for d in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+				var n: Vector2i = cur + d
+				if free.has(n) and not seen.has(n):
+					seen[n] = true
+					todo.append(n)
+		if seen.size() == free.size():
+			return cand
+	return base
 
 
 static func story_on_enter(def: Dictionary) -> Array:

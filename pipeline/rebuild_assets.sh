@@ -4,6 +4,6 @@
 set -e
 cd "$(dirname "$0")/.."
 python3 pipeline/bible_src.py --out /tmp/bible_rebuild_$$.json >/dev/null
-BIBLE_JSON=/tmp/bible_rebuild_$$.json ~/Programi/blender-5.2.1/blender -b --factory-startup -P pipeline/blender_gen.py -- "$@" 2>&1 | grep -E "^built|Error|Traceback|line [0-9]+" || true
-~/Programi/blender-5.2.1/blender -b --factory-startup -P pipeline/preview_asset.py -- "$@" 2>&1 | grep -E "^preview|Error" || true
+BIBLE_JSON=/tmp/bible_rebuild_$$.json ~/Programi/blender-5.2.2/blender -b --factory-startup -P pipeline/blender_gen.py -- "$@" 2>&1 | grep -E "^built|Error|Traceback|line [0-9]+" || true
+~/Programi/blender-5.2.2/blender -b --factory-startup -P pipeline/preview_asset.py -- "$@" 2>&1 | grep -E "^preview|Error" || true
 rm -f /tmp/bible_rebuild_$$.json

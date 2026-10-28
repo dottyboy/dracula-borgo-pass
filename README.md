@@ -6,6 +6,13 @@ an optional real-time action mode.
 
 Everything visual is generated from the book by the pipeline below - no hand-made assets.
 
+**What is in it**
+* The whole novel as a playable story (six acts, 27 chapters + closing note) with ten optional personal story arcs for the party members.
+* Full Throttle style verb ring, turn-based party combat, crafting, journal, travel map, seeded worlds (same seed = same puzzles and look).
+* Merged open-air regions (Whitby, Hillingham, Hampstead by night, Purfleet) with roads, parks, cliffs and houses on land.
+* Generated places made with the Game Level Architect Blender add-on: crypts, cellars, catacombs and a ruined castle, in several baked layouts per place chosen by the world seed.
+* The schooner Demeter: a detailed ship model, moored in the harbour at Varna and used as the deck, bow and wheel of the voyage.
+
 ![Opening titles](docs/img/title.png)
 
 | | |
@@ -13,8 +20,13 @@ Everything visual is generated from the book by the pipeline below - no hand-mad
 | ![Golden Krone inn](docs/img/inn.png) | ![Borgo Pass](docs/img/borgo_pass.png) |
 | ![Castle courtyard](docs/img/courtyard.png) | ![Whitby harbour](docs/img/whitby_region.png) |
 | ![Travel map](docs/img/travel_map.png) | ![Turn-based combat](docs/img/combat.png) |
+| ![The Demeter at Varna](docs/img/quay_ship.png) | ![On the Demeter's deck](docs/img/ship_deck.png) |
+| ![Generated crypt](docs/img/crypt_generated.png) | ![Generated cellar](docs/img/cellar_generated.png) |
+| ![Ruined castle](docs/img/castle_ruin.png) | ![Verb ring](docs/img/pie_menu.png) |
 
-![Verb ring](docs/img/pie_menu.png)
+
+## Download
+Linux AppImage on the Releases page: `chmod +x Dracula-*.AppImage && ./Dracula-*.AppImage` (includes the Mixamo characters).
 
 ## Play
     ~/Programi/godot4/Godot_v4.7.1-stable_linux.x86_64 --path .
@@ -108,6 +120,11 @@ Wide scenes (>= 3 cells) automatically get diagonal left/right camera angles: wh
 Debug: `-- --loc=a2_harbour --at=-6.5,1 --shot=out.png` puts the character at x,z first.
 
 
+## The Demeter (2026-10-28)
+`pipeline/acts/act_2_builders.py`: `b_a2_schooner` (lofted hull with sheer, bulwarks and rail, deckhouse, windlass, two masts with gaffs, shrouds, ratlines and patched sails), `b_a2_deckshell` (the hull around a
+walkable deck scene, with bowsprit, rudder and stern lights) and `b_a2_mast`. The quay at Varna has the ship afloat at the west edge; the deck, the bow and the wheel have the hull shell and no town houses.
+Ship scenes are recognised by `Dressing.is_ship`: no houses, no skyline, no trees. Town skylines over water stand on a low far shore, never in the sea.
+
 ## Generated dungeons (from Game Level Architect, 2026-10-21)
 A level made in the Blender add-on "Game Level Architect" (v0.33+) becomes a playable location.
 1. In Architect make a SINGLE-floor level (Height = 1), generate Blueprint, Walls, Doors, Props, then Export tab -> **Export Game Package (glb + json)**.
@@ -125,6 +142,16 @@ Story hooks (no change to world.json, so the story validator is untouched): `--f
 Tests: `--loc=chapel_crypt --dungeonlinktest` (down and back), `--loc=dungeon_castle --dungeontest`; all act/arc replays still pass.
 Props: the package's `props` list replaces Architect's baked decoration with this game's own models (crate_stack, column, coffin, tomb, table, chair, bed, bookshelf, chest, barrel, candelabra; `Dungeon.PROP_MAP`), big ones block movement.
 Not done yet: several floors, doors that open, a story reason for the generated places, tower floors / castle keep interiors.
+
+### Seeded places (baked variants)
+`pipeline/bake_places.py --addon <levelArchitect_v2.py>` runs Game Level Architect headless in Blender (`pipeline/gla_gen.py`, one recipe per kind of place) and writes
+four more layouts of the crypt, abbey undercroft and asylum cellar as `<id>__v1..4`; the hand-picked original stays variant 0. The world seed picks one
+(`Dungeon.variant_id`, same seed = same level, `GLA_VARIANT=k` pins one for tests). Candidates are kept only when entrance and exit are connected. Story props follow the
+anchors, and a prop that blocks movement is moved to the nearest cell whose loss keeps the level connected (`Dungeon._spare_cell`). Blender cannot run inside the shipped game, so variants are baked, not generated live.
+Two-floor places (Carfax cellars, Kingstead catacombs) are baked as pairs (`<id>_f0__vN`, `<id>_f1__vN`, stairs rewritten to the base floor ids) and both floors take the same variant; the castle ruin varies in size, ruin amount and wall damage per seed (`--kind castle`). Tests per variant: `--dungeontest`, `--stairtest`, `--cellartest`, `--ruinstorytest` with `GLA_VARIANT=k`.
+
+Lighting of generated interiors: no lightmaps (torches flicker, doors move, variants change per seed). Instead `Location._dungeon_fill` adds one soft shadowless warm light per room,
+`_dungeon_lantern` a faint light that goes with the player, and the ambient is raised for dungeons (`DUNGEON_FILL`, `DUNGEON_LANTERN` in `scripts/location.gd`).
 
 ### Story: the catacombs below the chapel (optional, Act I)
 After Harker takes the Count's keys in `chapel_crypt`, a low iron door in the east wall (locked without `vault_key`) leads down into the generated `dungeon_crypt`:
@@ -171,9 +198,6 @@ Import recipes: `python3 pipeline/import_dungeon.py abbey.glb abbey_undercroft -
 `kingstead_catacombs` from `a4_kingstead_churchyard:4.2,-5.8` using the `_f0` file).
 
 The game opens with a short title sequence (quotes from the novel over a moonlit approach to the castle); click, Space, Enter or Esc skips it. `--nointro` disables it.
-
-## Download
-Linux AppImage on the Releases page: `chmod +x Dracula-*.AppImage && ./Dracula-*.AppImage` (includes the Mixamo characters).
 
 ## Mixamo characters (optional, not in the repository)
 `pipeline/mixamo/` holds the tooling for skinned characters: `dress.py` dresses Mixamo's X Bot / Y Bot as each procedural human

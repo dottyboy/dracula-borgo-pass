@@ -16,5 +16,5 @@ WANT=${@:-$OWN}
 IDS=""
 for i in $WANT; do case " $OWN " in *" $i "*) IDS="$IDS $i";; esac; done
 [ -z "$IDS" ] && { echo "arc $ID defines no assets"; exit 0; }
-BIBLE_JSON=$B ~/Programi/blender-5.2.1/blender -b --factory-startup -P pipeline/blender_gen.py -- $IDS 2>&1 | grep -E "^built|Error|Traceback|line [0-9]+" || true
-~/Programi/blender-5.2.1/blender -b --factory-startup -P pipeline/preview_asset.py -- $IDS 2>&1 | grep -E "^preview|Error" || true
+BIBLE_JSON=$B ~/Programi/blender-5.2.2/blender -b --factory-startup -P pipeline/blender_gen.py -- $IDS 2>&1 | grep -E "^built|Error|Traceback|line [0-9]+" || true
+~/Programi/blender-5.2.2/blender -b --factory-startup -P pipeline/preview_asset.py -- $IDS 2>&1 | grep -E "^preview|Error" || true

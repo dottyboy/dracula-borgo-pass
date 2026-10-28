@@ -31225,6 +31225,7 @@
    ]
   },
   "demeter_voyage_quay": {
+   "no_west_street": true,
    "cells": [
     4,
     3
@@ -31288,12 +31289,12 @@
      "asset": "demeter_voyage_schooner",
      "variant": "weathered",
      "pos": [
-      -5.0,
-      0.0,
-      -3.2
+      -14.6,
+      -1.35,
+      -1.0
      ],
-     "rot": 90,
-     "scale": 1.0,
+     "rot": 180,
+     "scale": 1.15,
      "radius": 2.0,
      "name": "The Demeter",
      "interact": {
@@ -31649,9 +31650,22 @@
    },
    "props": [
     {
+     "id": "demeter_voyage_d_hull",
+     "asset": "demeter_voyage_deckshell",
+     "variant": "weathered",
+     "pos": [
+      0.0,
+      -0.94,
+      0.0
+     ],
+     "rot": -90,
+     "scale": 1.0,
+     "radius": 0.0
+    },
+    {
      "id": "demeter_voyage_d_mast1",
-     "asset": "column",
-     "variant": "planks",
+     "asset": "demeter_voyage_mast",
+     "variant": "weathered",
      "pos": [
       -2.6,
       0.0,
@@ -31667,15 +31681,15 @@
     },
     {
      "id": "demeter_voyage_d_mast2",
-     "asset": "column",
-     "variant": "planks",
+     "asset": "demeter_voyage_mast",
+     "variant": "weathered",
      "pos": [
       2.0,
       0.0,
       0.2
      ],
      "rot": 0,
-     "scale": 1.0,
+     "scale": 0.9,
      "radius": 0.3
     },
     {
@@ -31733,19 +31747,6 @@
      }
     },
     {
-     "id": "demeter_voyage_d_rail",
-     "asset": "fence",
-     "variant": "default",
-     "pos": [
-      3.0,
-      0.0,
-      -0.4
-     ],
-     "rot": 0,
-     "scale": 1.0,
-     "radius": 0.3
-    },
-    {
      "id": "demeter_voyage_d_lantern",
      "asset": "lantern",
      "variant": "default",
@@ -31768,8 +31769,8 @@
      "variant": "default",
      "pos": [
       -1.2,
-      2.3,
-      -1.0
+      7.0,
+      -6.0
      ],
      "rot": 0,
      "scale": 0.5,
@@ -33467,6 +33468,19 @@
    },
    "props": [
     {
+     "id": "demeter_voyage_b_hull",
+     "asset": "demeter_voyage_deckshell",
+     "variant": "weathered",
+     "pos": [
+      0.0,
+      -0.94,
+      0.0
+     ],
+     "rot": 180,
+     "scale": 1.0,
+     "radius": 0.0
+    },
+    {
      "id": "demeter_voyage_b_stairs",
      "asset": "stairs",
      "variant": "planks",
@@ -33537,19 +33551,6 @@
      "interact": {
       "look": "The red and green lights burn dull in the fog. A passing ship would see them. None passes."
      }
-    },
-    {
-     "id": "demeter_voyage_b_rail",
-     "asset": "fence",
-     "variant": "default",
-     "pos": [
-      -2.4,
-      0.0,
-      0.4
-     ],
-     "rot": 0,
-     "scale": 1.0,
-     "radius": 0.3
     },
     {
      "id": "demeter_voyage_b_cap",
@@ -33702,6 +33703,19 @@
     ]
    },
    "props": [
+    {
+     "id": "demeter_voyage_w_hull",
+     "asset": "demeter_voyage_deckshell",
+     "variant": "weathered",
+     "pos": [
+      -6.5,
+      -0.94,
+      0.0
+     ],
+     "rot": -90,
+     "scale": 1.0,
+     "radius": 0.0
+    },
     {
      "id": "demeter_voyage_w_stairs",
      "asset": "stairs",

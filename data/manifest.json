@@ -11337,8 +11337,12 @@
   "demeter_voyage_schooner": {
    "file": "assets/models/demeter_voyage_schooner.glb",
    "slots": [
+    "tar",
     "wood",
+    "trim",
     "iron",
+    "rope",
+    "patch",
     "cloth"
    ],
    "parts": [
@@ -11347,17 +11351,33 @@
    "default": "weathered",
    "variants": {
     "weathered": {
+     "tar": {
+      "tex": "wood_planks",
+      "tint": "#16120f"
+     },
      "wood": {
       "tex": "wood_planks",
       "tint": "#8a7458"
+     },
+     "trim": {
+      "tex": "wood_planks",
+      "tint": "#d9d2bf"
      },
      "iron": {
       "tex": "iron",
       "tint": "#ffffff"
      },
+     "rope": {
+      "tex": "cloth",
+      "tint": "#6e5c3e"
+     },
+     "patch": {
+      "tex": "cloth",
+      "tint": "#615740"
+     },
      "cloth": {
       "tex": "cloth",
-      "tint": "#cfc4a8"
+      "tint": "#7a6f55"
      }
     }
    }
@@ -11381,6 +11401,72 @@
      "iron": {
       "tex": "iron",
       "tint": "#ffffff"
+     }
+    }
+   }
+  },
+  "demeter_voyage_deckshell": {
+   "file": "assets/models/demeter_voyage_deckshell.glb",
+   "slots": [
+    "tar",
+    "wood",
+    "trim",
+    "iron"
+   ],
+   "parts": [
+    "a2_deckshell"
+   ],
+   "default": "weathered",
+   "variants": {
+    "weathered": {
+     "tar": {
+      "tex": "wood_planks",
+      "tint": "#16120f"
+     },
+     "wood": {
+      "tex": "wood_planks",
+      "tint": "#8a7458"
+     },
+     "trim": {
+      "tex": "wood_planks",
+      "tint": "#d9d2bf"
+     },
+     "iron": {
+      "tex": "iron",
+      "tint": "#ffffff"
+     }
+    }
+   }
+  },
+  "demeter_voyage_mast": {
+   "file": "assets/models/demeter_voyage_mast.glb",
+   "slots": [
+    "wood",
+    "iron",
+    "cloth",
+    "rope"
+   ],
+   "parts": [
+    "a2_mast"
+   ],
+   "default": "weathered",
+   "variants": {
+    "weathered": {
+     "wood": {
+      "tex": "wood_planks",
+      "tint": "#7a6246"
+     },
+     "iron": {
+      "tex": "iron",
+      "tint": "#ffffff"
+     },
+     "cloth": {
+      "tex": "cloth",
+      "tint": "#7a6f55"
+     },
+     "rope": {
+      "tex": "cloth",
+      "tint": "#6e5c3e"
      }
     }
    }

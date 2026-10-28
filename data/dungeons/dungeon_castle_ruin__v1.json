@@ -1,0 +1,218 @@
+{
+ "format": "gla-export/1",
+ "generator": "Game Level Architect 0.56.0",
+ "kind": "castle",
+ "seed": 5101,
+ "glb": "dungeon_castle_ruin__v1.glb",
+ "tile_size": 0.5,
+ "interior": false,
+ "coordinates": "engine: x right, y up, z = -blender_y",
+ "floors": [
+  {
+   "z": 0,
+   "y": 0.0,
+   "cells": 1982,
+   "walk_rects": [
+    [
+     -6.25,
+     13.25,
+     6.25,
+     19.75
+    ],
+    [
+     -1.25,
+     10.75,
+     1.25,
+     13.25
+    ],
+    [
+     -9.75,
+     10.25,
+     9.75,
+     10.75
+    ],
+    [
+     -10.25,
+     9.25,
+     10.25,
+     10.25
+    ],
+    [
+     -11.25,
+     8.75,
+     11.25,
+     9.25
+    ],
+    [
+     -11.75,
+     2.75,
+     11.75,
+     8.75
+    ],
+    [
+     -11.75,
+     -8.75,
+     -5.75,
+     2.75
+    ],
+    [
+     -0.75,
+     0.25,
+     0.75,
+     2.75
+    ],
+    [
+     5.75,
+     -8.75,
+     11.75,
+     2.75
+    ],
+    [
+     -3.25,
+     -6.25,
+     3.25,
+     0.25
+    ],
+    [
+     -11.25,
+     -9.25,
+     11.25,
+     -8.75
+    ],
+    [
+     -10.25,
+     -10.25,
+     10.25,
+     -9.25
+    ],
+    [
+     -9.75,
+     -10.75,
+     9.75,
+     -10.25
+    ]
+   ]
+  }
+ ],
+ "entrance": {
+  "floor": 0,
+  "pos": [
+   0.0,
+   0.0,
+   19.0
+  ]
+ },
+ "exit": {
+  "floor": 0,
+  "pos": [
+   0.0,
+   0.0,
+   19.5
+  ]
+ },
+ "stairs": [],
+ "rooms": [
+  {
+   "id": 0,
+   "shape": "COURTYARD",
+   "floor": 0,
+   "rect": [
+    -1.5,
+    6.0,
+    1.5,
+    9.0
+   ],
+   "center": [
+    0.0,
+    7.5
+   ]
+  },
+  {
+   "id": 1,
+   "shape": "KEEP_FRONT",
+   "floor": 0,
+   "rect": [
+    -1.5,
+    2.0,
+    1.5,
+    5.0
+   ],
+   "center": [
+    0.0,
+    3.5
+   ]
+  },
+  {
+   "id": 2,
+   "shape": "WEST_YARD",
+   "floor": 0,
+   "rect": [
+    -9.5,
+    -4.5,
+    -6.5,
+    -1.5
+   ],
+   "center": [
+    -8.0,
+    -3.0
+   ]
+  },
+  {
+   "id": 3,
+   "shape": "EAST_YARD",
+   "floor": 0,
+   "rect": [
+    6.5,
+    -4.5,
+    9.5,
+    -1.5
+   ],
+   "center": [
+    8.0,
+    -3.0
+   ]
+  },
+  {
+   "id": 4,
+   "shape": "KEEP_HALL",
+   "floor": 0,
+   "rect": [
+    -1.5,
+    -4.5,
+    1.5,
+    -1.5
+   ],
+   "center": [
+    0.0,
+    -3.0
+   ]
+  }
+ ],
+ "lights": [],
+ "props": [],
+ "wall_height": 7.0,
+ "castle": {
+  "width": 26.26479721069336,
+  "depth": 23.95408058166504,
+  "ruin": 0.49029383063316345,
+  "gate": true,
+  "keep": true
+ },
+ "ambient": {
+  "color": "#7a8aa0",
+  "energy": 1.3,
+  "fog": "#a8b4c0"
+ },
+ "entrance_from": {
+  "loc": "a6_castle_gate",
+  "pos": [
+   -1.6,
+   3.3
+  ],
+  "name": "A way down",
+  "look": "A passage leading down into the dark."
+ },
+ "sky": "snow",
+ "moon": false,
+ "id": "dungeon_castle_ruin"
+}
